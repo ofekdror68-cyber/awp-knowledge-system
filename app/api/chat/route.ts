@@ -1,146 +1,153 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { getAnthropicClient, MODEL } from '@/lib/anthropic'
-import { getSupabaseServiceClient } from '@/lib/supabase/server'
 import Anthropic from '@anthropic-ai/sdk'
 
 export const maxDuration = 60
 
-async function getEmbedding(text: string, client: Anthropic): Promise<number[]> {
-  // Use Claude to create a text-based summary embedding via cohere-like approach
-  // Actually use Anthropic embeddings - currently not directly available,
-  // so we'll store text and do keyword search as fallback
-  return []
+const anthropic = new Anthropic({
+  apiKey: process.env.ANTHROPIC_API_KEY,
+})
+
+// Map model mention in query → Supabase document lookup
+async function findRelevantDocs(query: string, supabaseUrl: string, supabaseKey: string): Promise<string> {
+  try {
+    // Extract model name from query (e.g. "JCPT1412", "ES1930", "860SJ")
+    const modelMatch = query.match(/\b([A-Z0-9]{4,}(?:[A-Z0-9])*)\b/g)
+    if (!modelMatch) return ''
+
+    const res = await fetch(`${supabaseUrl}/rest/v1/document_chunks?select=content,documents(title,machine_brand,machine_model)&limit=5`, {
+      headers: {
+        apikey: supabaseKey,
+        Authorization: `Bearer ${supabaseKey}`,
+        'Content-Type': 'application/json',
+      },
+    })
+    if (!res.ok) return ''
+    const data = await res.json()
+    if (!data || !data.length) return ''
+    return data.map((c: { content: string }) => c.content).join('\n---\n').substring(0, 3000)
+  } catch {
+    return ''
+  }
 }
 
-async function searchContext(query: string, supabase: ReturnType<typeof getSupabaseServiceClient>) {
-  const sources: string[] = []
-  const contextParts: string[] = []
-
-  // Search faults table by text similarity
-  const { data: faults } = await supabase
-    .from('faults')
-    .select('*')
-    .or(`symptoms.ilike.%${query.substring(0, 50)}%,fault_code.ilike.%${query.substring(0, 20)}%`)
-    .order('times_used', { ascending: false })
-    .limit(3)
-
-  if (faults && faults.length > 0) {
-    contextParts.push('## תקלות ידועות מהמאגר הפנימי:\n' + faults.map(f =>
-      `**תקלה:** ${f.symptoms}\n**פתרון:** ${f.solution}${f.fault_code ? `\n**קוד:** ${f.fault_code}` : ''}${f.verified ? '\n✅ פתרון מאומת' : ''}`
-    ).join('\n\n'))
-    sources.push('מאגר תקלות פנימי')
-    // Increment times_used
-    await supabase.from('faults').update({ times_used: (faults[0].times_used || 0) + 1 }).eq('id', faults[0].id)
+async function searchFaults(query: string, supabaseUrl: string, supabaseKey: string): Promise<string> {
+  try {
+    const keyword = query.substring(0, 40).replace(/'/g, "''")
+    const res = await fetch(
+      `${supabaseUrl}/rest/v1/faults?symptoms=ilike.*${encodeURIComponent(keyword.substring(0,20))}*&select=symptoms,solution,verified&limit=3`,
+      { headers: { apikey: supabaseKey, Authorization: `Bearer ${supabaseKey}` } }
+    )
+    if (!res.ok) return ''
+    const data = await res.json()
+    if (!data?.length) return ''
+    return '## תקלות ידועות:\n' + data.map((f: { symptoms: string; solution: string; verified: boolean }) =>
+      `תסמינים: ${f.symptoms}\nפתרון: ${f.solution}${f.verified ? ' ✅' : ''}`
+    ).join('\n\n')
+  } catch {
+    return ''
   }
+}
 
-  // Search feedback/learned solutions
-  const { data: feedback } = await supabase
-    .from('fault_feedback')
-    .select('*')
-    .ilike('how_was_solved', `%${query.substring(0, 40)}%`)
-    .eq('worked', true)
-    .limit(3)
-
-  if (feedback && feedback.length > 0) {
-    contextParts.push('## פתרונות שעבדו בשטח (מדיווחי טכנאים):\n' + feedback.map(f =>
-      `"${f.how_was_solved}"`
-    ).join('\n'))
-    sources.push('ניסיון שטח')
+async function searchLearnedSolutions(query: string, supabaseUrl: string, supabaseKey: string): Promise<string> {
+  try {
+    const keyword = query.substring(0, 30)
+    const res = await fetch(
+      `${supabaseUrl}/rest/v1/fault_feedback?how_was_solved=ilike.*${encodeURIComponent(keyword.substring(0,15))}*&worked=eq.true&select=how_was_solved&limit=3`,
+      { headers: { apikey: supabaseKey, Authorization: `Bearer ${supabaseKey}` } }
+    )
+    if (!res.ok) return ''
+    const data = await res.json()
+    if (!data?.length) return ''
+    return '## פתרונות שעבדו בשטח:\n' + data.map((f: { how_was_solved: string }) => `"${f.how_was_solved}"`).join('\n')
+  } catch {
+    return ''
   }
-
-  // Search document chunks by keyword
-  const { data: chunks } = await supabase
-    .from('document_chunks')
-    .select('content, document_id')
-    .ilike('content', `%${query.substring(0, 50)}%`)
-    .limit(3)
-
-  if (chunks && chunks.length > 0) {
-    contextParts.push('## מתוך מסמכים טכניים:\n' + chunks.map(c => c.content).join('\n---\n'))
-    sources.push('מסמכים טכניים')
-  }
-
-  // Search web knowledge
-  const { data: webKnowledge } = await supabase
-    .from('web_knowledge')
-    .select('content_summary, title')
-    .ilike('content_summary', `%${query.substring(0, 50)}%`)
-    .limit(3)
-
-  if (webKnowledge && webKnowledge.length > 0) {
-    contextParts.push('## מידע מהאינטרנט:\n' + webKnowledge.map(w => `**${w.title}:** ${w.content_summary}`).join('\n'))
-    sources.push('ידע מהאינטרנט')
-  }
-
-  return { context: contextParts.join('\n\n'), sources }
 }
 
 export async function POST(req: NextRequest) {
-  const { message, image, history } = await req.json()
-  const supabase = getSupabaseServiceClient()
-  const anthropic = getAnthropicClient()
+  try {
+    const { message, image, history } = await req.json()
 
-  const { context, sources } = await searchContext(message || '', supabase)
+    const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!
+    const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
 
-  const systemPrompt = `אתה מומחה טכני לבמות הרמה (AWP - Aerial Work Platforms) עם ניסיון עשרות שנים.
-המותגים שאתה מכיר: JLG, Manitou, Dingli, Genie.
-אתה עונה בעברית, בצורה ברורה ומעשית לטכנאים בשטח.
+    // Gather context in parallel
+    const [faults, learned] = await Promise.all([
+      message ? searchFaults(message, SUPABASE_URL, SUPABASE_KEY) : '',
+      message ? searchLearnedSolutions(message, SUPABASE_URL, SUPABASE_KEY) : '',
+    ])
 
-${context ? `## מידע רלוונטי שנמצא:\n${context}\n\n` : ''}
+    const context = [faults, learned].filter(Boolean).join('\n\n')
 
-## חוקים:
-1. תמיד ענה בעברית
-2. תן פתרון מעשי, שלב אחר שלב
-3. ציין קודי שגיאה רלוונטיים אם יודע
-4. אם אינך בטוח — אמור זאת בבירור
-5. בסוף כל תשובה, ALWAYS שאל: "איך פתרת את התקלה בסוף? תספר לי כדי שאלמד 🔧"
-6. אם רואה תמונה — נתח אותה לפרטיה`
+    const system = `אתה מערכת האבחון של אופק גיזום והשכרת במות.
+תפקידך לעזור לטכנאים לאבחן תקלות, לזהות חלקים, ולספק הוראות תחזוקה.
+ענה תמיד בעברית, בצורה ברורה ומעשית.
+מותגים: JLG, Manitou, Dingli, Genie.
 
-  const messages: Anthropic.MessageParam[] = [
-    ...(history || []).slice(-6).map((h: { role: string; content: string }) => ({
-      role: h.role as 'user' | 'assistant',
-      content: h.content,
-    })),
-  ]
+${context ? `## מידע רלוונטי מהמאגר:\n${context}\n` : ''}
 
-  const userContent: Anthropic.ContentBlockParam[] = []
+חוקים:
+1. ענה בעברית בלבד
+2. פתרון מעשי שלב אחר שלב
+3. ציין קודי שגיאה אם ידוע לך
+4. אם אינך בטוח — אמור זאת
+5. בסוף כל תשובה שאל: "איך פתרת בסוף? ספר לי כדי שאלמד 🔧"`
 
-  if (image) {
+    const messages: Anthropic.MessageParam[] = [
+      ...(history || []).slice(-6).map((h: { role: 'user' | 'assistant'; content: string }) => ({
+        role: h.role,
+        content: h.content,
+      })),
+    ]
+
+    const userContent: Anthropic.ContentBlockParam[] = []
+    if (image?.base64 && image?.mimeType) {
+      userContent.push({
+        type: 'image',
+        source: {
+          type: 'base64',
+          media_type: image.mimeType as 'image/jpeg' | 'image/png' | 'image/webp' | 'image/gif',
+          data: image.base64,
+        },
+      })
+    }
     userContent.push({
-      type: 'image',
-      source: {
-        type: 'base64',
-        media_type: image.mimeType as 'image/jpeg' | 'image/png' | 'image/webp' | 'image/gif',
-        data: image.base64,
-      },
+      type: 'text',
+      text: message || 'נתח את התמונה — מה החלק הזה? לאיזה מכונות מתאים?',
     })
+
+    messages.push({ role: 'user', content: userContent })
+
+    const response = await anthropic.messages.create({
+      model: 'claude-haiku-4-5-20251001',
+      max_tokens: 1024,
+      system,
+      messages,
+    })
+
+    const answer = response.content[0].type === 'text' ? response.content[0].text : ''
+    const sources = [faults && 'מאגר תקלות', learned && 'ניסיון שטח'].filter(Boolean)
+
+    // Store as learned fault (fire-and-forget)
+    if (message && message.length > 15 && answer) {
+      fetch(`${SUPABASE_URL}/rest/v1/faults`, {
+        method: 'POST',
+        headers: {
+          apikey: SUPABASE_KEY,
+          Authorization: `Bearer ${SUPABASE_KEY}`,
+          'Content-Type': 'application/json',
+          Prefer: 'return=minimal',
+        },
+        body: JSON.stringify({ symptoms: message.substring(0, 500), solution: answer.substring(0, 1000), source: 'learned' }),
+      }).catch(() => {})
+    }
+
+    return NextResponse.json({ answer, sources })
+  } catch (error) {
+    console.error('Chat error:', error)
+    return NextResponse.json(
+      { answer: `שגיאה: ${error instanceof Error ? error.message : 'בעיה לא ידועה'}` },
+      { status: 500 }
+    )
   }
-
-  userContent.push({
-    type: 'text',
-    text: message || 'נתח את התמונה הזו — מה החלק הזה? לאיזה מכונות הוא מתאים? מה מספר החלק?',
-  })
-
-  messages.push({ role: 'user', content: userContent })
-
-  const response = await anthropic.messages.create({
-    model: MODEL,
-    max_tokens: 1500,
-    system: systemPrompt,
-    messages,
-  })
-
-  const answer = response.content[0].type === 'text' ? response.content[0].text : ''
-
-  // Store as learned fault if it looks like a fault description
-  if (message && message.length > 20) {
-    await supabase.from('faults').upsert({
-      symptoms: message.substring(0, 500),
-      solution: answer.substring(0, 1000),
-      source: 'internet',
-      fault_code: null,
-    }, { onConflict: 'symptoms', ignoreDuplicates: true })
-  }
-
-  return NextResponse.json({ answer, sources })
 }
