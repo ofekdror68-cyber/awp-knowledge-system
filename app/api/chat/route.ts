@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import Anthropic from '@anthropic-ai/sdk'
-import { extractModel, getModelDocs, chooseModel, getLearnedSolutions } from '@/lib/doc-retrieval'
+import { extractModel, getModelDocs, chooseModel, getLearnedSolutions, getWebKnowledge } from '@/lib/doc-retrieval'
 
 export const maxDuration = 60
 
@@ -13,31 +13,34 @@ export async function POST(req: NextRequest) {
 
     // 1. Smart context retrieval — parallel, fast
     const model = extractModel(message || '')
-    const [docContext, learnedContext] = await Promise.all([
+    const [docContext, learnedContext, webContext] = await Promise.all([
       model ? getModelDocs(model) : Promise.resolve(''),
       message ? getLearnedSolutions(message) : Promise.resolve(''),
+      message ? getWebKnowledge(message, model) : Promise.resolve(''),
     ])
 
     const contextBlocks = [
       model && docContext ? `## מתוך מסמכי ${model}:\n${docContext}` : '',
       learnedContext,
+      webContext,
     ].filter(Boolean).join('\n\n')
 
     // 2. Choose model — Haiku for simple Q, Sonnet for complex/images
     const aiModel = chooseModel(message || '', hasImage)
 
-    const system = `אתה מערכת האבחון של אופק גיזום והשכרת במות.
-תפקידך לעזור לטכנאים לאבחן תקלות, לזהות חלקים, ולספק הוראות תחזוקה.
-ענה תמיד בעברית, בצורה ברורה ומעשית.
+    const system = `אתה מערכת אבחון טכנית של אופק גיזום והשכרת במות.
+הטכנאי שפונה אליך מוסמך ומנוסה — אם הוא שואל, הוא כבר נתקע.
+
+הנח שכבר בוצעו: בדיקת מתח סוללה, קריאת קודי שגיאה בתצוגה, בדיקת חיבורים ופיוזים, בדיקת נוזלים (הידראוליקה/שמן/קירור).
 מותגים: JLG, Manitou, Dingli, Genie.
 
-${contextBlocks ? `${contextBlocks}\n` : ''}
-חוקים:
-1. ענה בעברית בלבד
-2. פתרון מעשי שלב אחר שלב
-3. ציין קודי שגיאה אם ידועים
-4. אם אינך בטוח — אמור זאת
-5. בסוף כל תשובה: "איך פתרת בסוף? ספר לי כדי שאלמד 🔧"`
+${contextBlocks ? `${contextBlocks}\n` : ''}כללים:
+1. עברית בלבד
+2. קצר וישיר — 3-5 שורות מקסימום
+3. הצעד הבא הכי סביר קודם
+4. קוד שגיאה ספציפי — ציין משמעות ופתרון ישיר
+5. אל תרחיב אלא אם שואלים במפורש
+6. אם לא בטוח — אמור זאת בשורה אחת`
 
     const messages: Anthropic.MessageParam[] = [
       ...(history || []).slice(-6).map((h: { role: 'user' | 'assistant'; content: string }) => ({
@@ -74,6 +77,7 @@ ${contextBlocks ? `${contextBlocks}\n` : ''}
     const sources = [
       model && docContext ? `מסמכי ${model}` : '',
       learnedContext ? 'ניסיון שטח' : '',
+      webContext ? 'ידע אינטרנט' : '',
     ].filter(Boolean)
 
     // Store learned (fire-and-forget)
@@ -90,6 +94,6 @@ ${contextBlocks ? `${contextBlocks}\n` : ''}
     return NextResponse.json({ answer, sources, modelUsed: aiModel })
   } catch (error) {
     console.error('Chat error:', error)
-    return NextResponse.json({ answer: `שגיאה: ${error instanceof Error ? error.message : 'נסה שוב'}` }, { status: 500 })
+    return NextResponse.json({ answer: 'שגיאה פנימית — נסה שוב' }, { status: 500 })
   }
 }

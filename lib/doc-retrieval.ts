@@ -28,20 +28,30 @@ export function extractModel(query: string): string | null {
   return match ? match[1].toUpperCase() : null
 }
 
-/** Get document chunks for a specific model — max 3 most relevant */
+/** Get document chunks for a specific model — max 5 most relevant */
 export async function getModelDocs(model: string, docType?: string): Promise<string> {
   try {
-    let url = `${SUPABASE_URL}/rest/v1/document_chunks?select=content,documents!inner(machine_model,doc_type,title)&documents.machine_model=eq.${encodeURIComponent(model)}&limit=3`
-    if (docType) url += `&documents.doc_type=eq.${docType}`
-
-    const res = await fetch(url, {
+    // Step 1: get document IDs for this model
+    let docsUrl = `${SUPABASE_URL}/rest/v1/documents?select=id&machine_model=eq.${encodeURIComponent(model)}`
+    if (docType) docsUrl += `&doc_type=eq.${docType}`
+    const docsRes = await fetch(docsUrl, {
       headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}` },
     })
-    if (!res.ok) return ''
-    const data = await res.json()
-    if (!data?.length) return ''
+    if (!docsRes.ok) return ''
+    const docs: { id: string }[] = await docsRes.json()
+    if (!docs?.length) return ''
 
-    return data.map((c: { content: string }) => c.content.substring(0, 800)).join('\n---\n')
+    // Step 2: fetch chunks for those document IDs
+    const ids = docs.map(d => d.id).join(',')
+    const chunksUrl = `${SUPABASE_URL}/rest/v1/document_chunks?select=content&document_id=in.(${ids})&limit=5`
+    const chunksRes = await fetch(chunksUrl, {
+      headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}` },
+    })
+    if (!chunksRes.ok) return ''
+    const chunks: { content: string }[] = await chunksRes.json()
+    if (!chunks?.length) return ''
+
+    return chunks.map(c => c.content.substring(0, 800)).join('\n---\n')
   } catch {
     return ''
   }
@@ -68,5 +78,50 @@ export async function getLearnedSolutions(query: string): Promise<string> {
     const data = await res.json()
     if (!data?.length) return ''
     return '## פתרונות שעבדו בשטח:\n' + data.map((f: { how_was_solved: string }) => `"${f.how_was_solved}"`).join('\n')
+  } catch { return '' }
+}
+
+/** Get web knowledge for a model or brand — sourced by daily enrichment agent */
+export async function getWebKnowledge(query: string, model: string | null): Promise<string> {
+  try {
+    const results: { title: string; content_summary: string; reliability_score: number | null }[] = []
+
+    // Search by model name if known
+    if (model) {
+      const modelRes = await fetch(
+        `${SUPABASE_URL}/rest/v1/web_knowledge?equipment_model=ilike.*${encodeURIComponent(model)}*&order=reliability_score.desc&limit=3&select=title,content_summary,reliability_score`,
+        { headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}` } }
+      )
+      if (modelRes.ok) {
+        const data = await modelRes.json()
+        if (Array.isArray(data)) results.push(...data)
+      }
+    }
+
+    // Also search content_summary for query keywords (up to 30 chars)
+    if (results.length < 3) {
+      const keyword = encodeURIComponent(query.substring(0, 30).trim())
+      const kwRes = await fetch(
+        `${SUPABASE_URL}/rest/v1/web_knowledge?content_summary=ilike.*${keyword}*&order=reliability_score.desc&limit=3&select=title,content_summary,reliability_score`,
+        { headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}` } }
+      )
+      if (kwRes.ok) {
+        const data = await kwRes.json()
+        if (Array.isArray(data)) {
+          for (const item of data) {
+            if (!results.find(r => r.title === item.title)) results.push(item)
+          }
+        }
+      }
+    }
+
+    if (!results.length) return ''
+
+    const lines = results.slice(0, 4).map(r => {
+      const trust = r.reliability_score && r.reliability_score >= 0.8 ? '✓ מקור מהימן' : '⚠ מקור חיצוני'
+      return `[${trust}] ${r.title}\n${r.content_summary.substring(0, 600)}`
+    })
+
+    return '## ידע מהאינטרנט (נאסף אוטומטית):\n' + lines.join('\n---\n')
   } catch { return '' }
 }
