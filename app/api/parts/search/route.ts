@@ -13,8 +13,8 @@ export async function POST(req: NextRequest) {
   let analysis = ''
   let searchTerms = query || ''
 
-  // If image provided, analyze it first
   if (image) {
+    // Image provided — analyze visually
     const content: Anthropic.ContentBlockParam[] = [
       {
         type: 'image',
@@ -56,6 +56,34 @@ export async function POST(req: NextRequest) {
       }
     } catch {
       analysis = text
+    }
+  } else if (query && query.trim().length > 2) {
+    // Text-only — use AI to extract technical terms and identify the part
+    const response = await anthropic.messages.create({
+      model: MODEL,
+      max_tokens: 300,
+      messages: [{
+        role: 'user',
+        content: `זהה חלק לבמת הרמה לפי תיאור: "${query}"
+מותגים אפשריים: JLG, Manitou, Dingli, Genie.
+ענה JSON בלבד: { "name": "", "part_number": "", "brands": "", "search_terms": "" }
+אם לא ניתן לזהות בוודאות — תן מונחי חיפוש טכניים מתאימים ב-search_terms.`,
+      }],
+    })
+
+    const text = response.content[0].type === 'text' ? response.content[0].text : ''
+
+    try {
+      const jsonMatch = text.match(/\{[\s\S]*\}/)
+      if (jsonMatch) {
+        const parsed = JSON.parse(jsonMatch[0])
+        if (parsed.name) {
+          analysis = `זוהה: **${parsed.name}**${parsed.brands ? ` | מותגים: ${parsed.brands}` : ''}`
+        }
+        searchTerms = [query, parsed.name, parsed.part_number, parsed.search_terms].filter(Boolean).join(' ')
+      }
+    } catch {
+      // fallback to raw query
     }
   }
 

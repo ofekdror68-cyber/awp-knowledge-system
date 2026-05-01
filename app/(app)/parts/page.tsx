@@ -43,7 +43,7 @@ export default function PartsPage() {
 
   return (
     <div className="p-4 max-w-2xl mx-auto">
-      <h1 className="text-xl font-bold text-white mb-4">זיהוי חלקים</h1>
+      <h1 className="text-xl font-bold mb-4" style={{ color: '#1E293B' }}>זיהוי חלקים</h1>
 
       {/* Search box */}
       <div className="card p-3 mb-4">
@@ -52,7 +52,7 @@ export default function PartsPage() {
             onKeyDown={e => e.key === 'Enter' && search()}
             placeholder="מספר חלק, תיאור, דגם..."
             className="flex-1 text-sm px-3 py-2 rounded-xl outline-none"
-            style={{ background: '#243347', color: '#F1F5F9', border: '1px solid #334155' }} />
+            style={{ background: '#EEF2F7', color: '#1E293B', border: '1px solid #334155' }} />
           <button onClick={search} disabled={loading}
             className="p-2 rounded-xl disabled:opacity-40"
             style={{ background: '#3B82F6', color: '#fff' }}>
@@ -62,7 +62,7 @@ export default function PartsPage() {
         <div className="flex items-center gap-2">
           <button onClick={() => fileRef.current?.click()}
             className="flex items-center gap-1.5 text-sm px-3 py-2 rounded-xl"
-            style={{ background: '#243347', color: '#94A3B8' }}>
+            style={{ background: '#EEF2F7', color: '#64748B' }}>
             <Camera size={15} /> צלם חלק
           </button>
           {imagePreview && (
@@ -89,18 +89,18 @@ export default function PartsPage() {
       {/* Results */}
       {results.length > 0 ? (
         <div className="space-y-3">
-          <h2 className="text-sm font-semibold" style={{ color: '#94A3B8' }}>תוצאות ({results.length})</h2>
+          <h2 className="text-sm font-semibold" style={{ color: '#64748B' }}>תוצאות ({results.length})</h2>
           {results.map(part => (
             <div key={part.id} className="card p-3 flex gap-3">
               {part.image_url
                 ? <img src={part.image_url} alt="" className="w-14 h-14 rounded-xl object-cover flex-shrink-0" />
-                : <div className="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: '#243347' }}>
+                : <div className="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: '#EEF2F7' }}>
                     <Package size={22} style={{ color: '#3B82F6' }} />
                   </div>
               }
-              <div>
-                <div className="font-bold text-sm text-white">{part.part_number}</div>
-                <div className="text-sm mt-0.5" style={{ color: '#94A3B8' }}>{part.description}</div>
+              <div className="min-w-0 flex-1">
+                <div className="font-bold text-sm" style={{ color: '#1E293B' }}>{part.part_number}</div>
+                <div className="text-sm mt-0.5" style={{ color: '#64748B' }}>{part.description}</div>
                 {part.model_compatibility?.length > 0 && (
                   <div className="text-xs mt-1" style={{ color: '#64748B' }}>מודלים: {part.model_compatibility.join(', ')}</div>
                 )}
@@ -116,7 +116,7 @@ export default function PartsPage() {
           <div className="w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center" style={{ background: 'rgba(59,130,246,.15)' }}>
             <Package size={32} style={{ color: '#3B82F6' }} />
           </div>
-          <p className="text-white font-semibold mb-1">זיהוי חלקים חכם</p>
+          <p className="font-semibold mb-1" style={{ color: '#1E293B' }}>זיהוי חלקים חכם</p>
           <p className="text-sm" style={{ color: '#64748B' }}>חפש לפי מספר חלק או צלם תמונה</p>
         </div>
       )}
