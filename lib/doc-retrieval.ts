@@ -260,3 +260,57 @@ export async function getDocumentStats(): Promise<{ count: number; lastUpload: s
     return { count, lastUpload: lastDoc[0]?.uploaded_at || null }
   } catch { return { count: 0, lastUpload: null } }
 }
+
+// Hybrid search: doc_chunks + kb_entities + fault_intelligence via DB function
+// Falls back to empty string gracefully (function may not exist yet)
+export async function getHybridSearchContext(
+  query: string,
+  brand: string | null,
+  model: string | null,
+  faultCode: string | null,
+): Promise<string> {
+  try {
+    type HybridRow = {
+      result_type: string; content: string; brand: string | null;
+      model: string | null; chunk_type: string | null; score: number
+    }
+
+    // Try the DB function first
+    const fnRes = await fetch(`${SUPABASE_URL}/rest/v1/rpc/hybrid_search`, {
+      method: 'POST',
+      headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        query_text: query,
+        query_embedding: null,
+        filter_brand: brand,
+        filter_model: model,
+        filter_fault_code: faultCode,
+        k: 8,
+      }),
+    })
+
+    if (fnRes.ok) {
+      const rows: HybridRow[] = await fnRes.json()
+      if (!rows?.length) return ''
+      const lines = rows
+        .filter(r => r.content && r.content.length > 20 && r.score > 0.05)
+        .slice(0, 6)
+        .map(r => {
+          const label = r.result_type === 'fault' ? 'תקלה' : r.result_type === 'entity' ? 'ישות' : 'מסמך'
+          return `[${label}${r.chunk_type ? ` • ${r.chunk_type}` : ''}] ${r.content.substring(0, 400)}`
+        })
+      return lines.length ? `## חיפוש היברידי (doc_chunks + ישויות + תקלות):\n${lines.join('\n---\n')}` : ''
+    }
+
+    // Fallback: direct doc_chunks text search
+    const kw = encodeURIComponent(query.substring(0, 40))
+    const chunksRes = await fetch(
+      `${SUPABASE_URL}/rest/v1/doc_chunks?content=ilike.*${kw}*${model ? `&related_systems=cs.{}` : ''}&limit=4&select=content,chunk_type,importance_score`,
+      { headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}` } }
+    )
+    if (!chunksRes.ok) return ''
+    const chunks: { content: string; chunk_type: string; importance_score: number }[] = await chunksRes.json()
+    if (!chunks.length) return ''
+    return '## נתחי מסמכים:\n' + chunks.map(c => `[${c.chunk_type}] ${c.content.substring(0, 400)}`).join('\n---\n')
+  } catch { return '' }
+}

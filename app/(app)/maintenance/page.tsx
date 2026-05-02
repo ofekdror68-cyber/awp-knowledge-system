@@ -1,7 +1,12 @@
 'use client'
 
-import { useState, useMemo } from 'react'
-import { AlertTriangle, CheckCircle, Clock, Wrench, X, Check } from 'lucide-react'
+import { useState, useMemo, useEffect } from 'react'
+import { AlertTriangle, CheckCircle, Clock, Wrench, X, Check, Brain, ChevronLeft } from 'lucide-react'
+import Link from 'next/link'
+import { labelFor } from '@/lib/predictive/types'
+import type { Prediction, FleetMachine } from '@/lib/predictive/types'
+
+type PredictionWithMachine = Prediction & { fleet_machines?: FleetMachine }
 
 // ─── Israeli holidays 2026 ───────────────────────────────────────────────────
 const HOLIDAYS_2026 = new Set([
@@ -311,6 +316,80 @@ function ServiceModal({ tool, onClose, onDone }: {
   )
 }
 
+// ─── Predictive alerts section ────────────────────────────────────────────────
+function PredictiveAlerts() {
+  const [preds, setPreds] = useState<PredictionWithMachine[]>([])
+
+  useEffect(() => {
+    fetch('/api/predictions?status=active&limit=5')
+      .then((r) => r.json())
+      .then((d) => setPreds((d.predictions || []).slice(0, 5)))
+      .catch(() => {})
+  }, [])
+
+  if (!preds.length) return null
+
+  return (
+    <div className="mb-4 rounded-2xl overflow-hidden" style={{ border: '1px solid rgba(124,58,237,.2)', background: 'rgba(124,58,237,.04)' }}>
+      <div className="flex items-center justify-between px-4 py-3" style={{ borderBottom: '1px solid rgba(124,58,237,.1)' }}>
+        <div className="flex items-center gap-2">
+          <Brain size={16} style={{ color: '#7C3AED' }} />
+          <span className="font-bold text-sm" style={{ color: '#7C3AED' }}>התראות חיזוי AI</span>
+          <span className="text-xs px-2 py-0.5 rounded-full font-medium" style={{ background: 'rgba(124,58,237,.12)', color: '#6D28D9' }}>
+            {preds.length}
+          </span>
+        </div>
+        <Link href="/predictions" className="flex items-center gap-1 text-xs font-medium" style={{ color: '#7C3AED' }}>
+          הכל <ChevronLeft size={12} />
+        </Link>
+      </div>
+
+      <div className="divide-y" style={{ borderColor: 'rgba(124,58,237,.08)' }}>
+        {preds.map((p) => {
+          const m = p.fleet_machines
+          const isHigh = p.probability >= 70
+          const color = isHigh ? '#DC2626' : '#D97706'
+          return (
+            <div key={p.id} className="px-4 py-3">
+              <div className="flex items-start justify-between gap-3">
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span className="font-semibold text-sm" style={{ color: '#1E293B' }}>
+                      {m ? `${m.brand} ${m.model}` : 'מכונה'}
+                      {m?.mavaatz && m.mavaatz !== '-' && ` מע"צ-${m.mavaatz}`}
+                    </span>
+                    <span className="text-xs font-bold px-1.5 py-0.5 rounded-full" style={{ background: isHigh ? 'rgba(220,38,38,.1)' : 'rgba(217,119,6,.1)', color }}>
+                      {p.probability}%
+                    </span>
+                  </div>
+                  <div className="text-sm mt-0.5" style={{ color }}>
+                    {labelFor(p.predicted_failure_type)}
+                  </div>
+                  {p.recommended_action && (
+                    <div className="text-xs mt-1" style={{ color: '#64748B' }}>
+                      מומלץ: {p.recommended_action}
+                    </div>
+                  )}
+                </div>
+                <div className="text-xs text-center flex-shrink-0" style={{ color: '#94A3B8' }}>
+                  <div>{p.predicted_window_days_min}–{p.predicted_window_days_max}</div>
+                  <div>ימים</div>
+                </div>
+              </div>
+            </div>
+          )
+        })}
+      </div>
+
+      <div className="px-4 py-2.5" style={{ borderTop: '1px solid rgba(124,58,237,.1)' }}>
+        <Link href="/predictions" className="block text-center text-xs font-medium" style={{ color: '#7C3AED' }}>
+          פתח מנוע חיזוי מלא →
+        </Link>
+      </div>
+    </div>
+  )
+}
+
 // ─── Main page ────────────────────────────────────────────────────────────────
 export default function MaintenancePage() {
   const [overrides, setOverrides] = useState<Record<string, string>>(() => {
@@ -372,6 +451,9 @@ export default function MaintenancePage() {
           )
         })}
       </div>
+
+      {/* Predictive AI alerts */}
+      <PredictiveAlerts />
 
       {/* Search */}
       <input value={search} onChange={e => setSearch(e.target.value)}

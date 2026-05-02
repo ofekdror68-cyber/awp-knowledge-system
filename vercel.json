@@ -2,6 +2,10 @@
   "crons": [
     { "path": "/api/cron/forum-scrape", "schedule": "0 5 * * 0" },
     { "path": "/api/cron/oem-recheck", "schedule": "0 4 1 * *" },
-    { "path": "/api/cron/audit-refresh", "schedule": "0 3 * * *" }
+    { "path": "/api/cron/audit-refresh",   "schedule": "0 3 * * *" },
+    { "path": "/api/cron/pattern-learner", "schedule": "0 2 * * 1" },
+    { "path": "/api/cron/predictor",       "schedule": "0 5 * * *" },
+    { "path": "/api/cron/alerts",          "schedule": "0 7 * * *" },
+    { "path": "/api/cron/feedback-loop",   "schedule": "0 6 * * *" }
   ]
 }

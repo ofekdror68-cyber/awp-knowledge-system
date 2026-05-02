@@ -3,7 +3,7 @@ import Anthropic from '@anthropic-ai/sdk'
 import {
   extractModel, getModelDocs, chooseModel, getLearnedSolutions,
   getWebKnowledge, isSchematicQuestion, getSchematicPages, getRepairHistory,
-  getCommunityKnowledge,
+  getCommunityKnowledge, getHybridSearchContext,
 } from '@/lib/doc-retrieval'
 
 export const maxDuration = 60
@@ -41,17 +41,22 @@ export async function POST(req: NextRequest) {
     const faultCodeMatch = (message || '').match(/\b(?:fault|error|code|שגיאה|קוד)\s*[:#]?\s*(\d+)\b/i)
     const faultCode = faultCodeMatch ? faultCodeMatch[1] : null
 
-    const [docContext, learnedContext, webContext, repairContext, schematicPages, communityContext] = await Promise.all([
+    // Extract brand from message
+    const brandMatch = (message || '').match(/\b(JLG|Genie|Dingli|JCPT|Manitou|BT|Skyjack)\b/i)
+    const brand = brandMatch ? brandMatch[1] : null
+
+    const [docContext, learnedContext, webContext, repairContext, schematicPages, communityContext, hybridContext] = await Promise.all([
       model ? getModelDocs(model) : Promise.resolve(''),
       message ? getLearnedSolutions(message) : Promise.resolve(''),
       message ? getWebKnowledge(message, model) : Promise.resolve(''),
       message ? getRepairHistory(model, message) : Promise.resolve(''),
       needsSchematic ? getSchematicPages(model) : Promise.resolve([]),
       message ? getCommunityKnowledge(message, model, faultCode) : Promise.resolve(''),
+      message ? getHybridSearchContext(message, brand, model, faultCode) : Promise.resolve(''),
     ])
 
     const contextBlocks = [
-      model && docContext ? `=== מסמכים רשמיים (${model}) ===\n${docContext}` : '',
+      hybridContext || (model && docContext ? `=== מסמכים רשמיים (${model}) ===\n${docContext}` : ''),
       repairContext,
       learnedContext,
       webContext,
@@ -98,7 +103,7 @@ export async function POST(req: NextRequest) {
 
     const answer = response.content[0].type === 'text' ? response.content[0].text : ''
     const sources = [
-      model && docContext ? `מסמכי ${model}` : '',
+      hybridContext ? 'חיפוש היברידי' : (model && docContext ? `מסמכי ${model}` : ''),
       repairContext ? 'היסטוריית תיקונים' : '',
       learnedContext ? 'ניסיון שטח' : '',
       webContext ? 'ידע אינטרנט' : '',
