@@ -4,15 +4,15 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
-import { MessageCircle, Wrench, Package, FileText, Stethoscope, ClipboardList } from 'lucide-react'
+import { MessageCircle, Wrench, Package, FileText, Stethoscope, ClipboardList, Download, Users } from 'lucide-react'
 
 const nav = [
-  { href: '/maintenance', label: 'תחזוקה', icon: Wrench },
   { href: '/chat', label: 'צ\'אט', icon: MessageCircle },
   { href: '/diagnose', label: 'אבחון', icon: Stethoscope },
-  { href: '/parts', label: 'חלקים', icon: Package },
-  { href: '/documents', label: 'מסמכים', icon: FileText },
   { href: '/audit', label: 'מבדק', icon: ClipboardList },
+  { href: '/acquisition', label: 'איסוף', icon: Download },
+  { href: '/community', label: 'קהילה', icon: Users },
+  { href: '/documents', label: 'מסמכים', icon: FileText },
 ]
 
 function useDocStats() {

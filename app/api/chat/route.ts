@@ -3,6 +3,7 @@ import Anthropic from '@anthropic-ai/sdk'
 import {
   extractModel, getModelDocs, chooseModel, getLearnedSolutions,
   getWebKnowledge, isSchematicQuestion, getSchematicPages, getRepairHistory,
+  getCommunityKnowledge,
 } from '@/lib/doc-retrieval'
 
 export const maxDuration = 60
@@ -19,6 +20,8 @@ const EXPERT_SYSTEM = `אתה מכונאי במות הרמה בכיר עם 30 ש
 4. צטט את המדריך: "ראה עמ' X במדריך [דגם]" כשרלוונטי.
 5. דבר בעברית פשוטה כמו ראש הצוות בסדנה — לא כמו ספר לימוד.
 6. סיים כל אבחון ב: "אחרי שתבדוק — תגיד לי מה ראית, נמשיך מכאן."
+7. כשמשתמש בידע קהילתי: ציין את המקור — "לפי דיון בפורום [שם], מכונאי פתר: [פתרון] (מקור: [url])"
+8. עדיפות: מסמכים רשמיים לנהלים ומפרטים. ידע קהילתי לתקלות חוזרות ופתרונות שטח.
 
 פורמט אבחון (כשיש מספר אפשרויות):
 • חשד #1 (X% סבירות): [הסבר + בדיקה]
@@ -34,19 +37,25 @@ export async function POST(req: NextRequest) {
     const needsSchematic = isSchematicQuestion(message || '')
 
     // Parallel context retrieval
-    const [docContext, learnedContext, webContext, repairContext, schematicPages] = await Promise.all([
+    // Extract fault code from message
+    const faultCodeMatch = (message || '').match(/\b(?:fault|error|code|שגיאה|קוד)\s*[:#]?\s*(\d+)\b/i)
+    const faultCode = faultCodeMatch ? faultCodeMatch[1] : null
+
+    const [docContext, learnedContext, webContext, repairContext, schematicPages, communityContext] = await Promise.all([
       model ? getModelDocs(model) : Promise.resolve(''),
       message ? getLearnedSolutions(message) : Promise.resolve(''),
       message ? getWebKnowledge(message, model) : Promise.resolve(''),
       message ? getRepairHistory(model, message) : Promise.resolve(''),
       needsSchematic ? getSchematicPages(model) : Promise.resolve([]),
+      message ? getCommunityKnowledge(message, model, faultCode) : Promise.resolve(''),
     ])
 
     const contextBlocks = [
-      model && docContext ? `## מתוך מסמכי ${model}:\n${docContext}` : '',
+      model && docContext ? `=== מסמכים רשמיים (${model}) ===\n${docContext}` : '',
       repairContext,
       learnedContext,
       webContext,
+      communityContext ? `=== ידע קהילתי (מכונאים אמיתיים) ===\n${communityContext}` : '',
       schematicPages.length ? `## תיאורי סכמות רלוונטיות:\n${schematicPages.map(p => `[${p.pageRef}]: ${p.description}`).join('\n')}` : '',
     ].filter(Boolean).join('\n\n')
 
@@ -93,6 +102,7 @@ export async function POST(req: NextRequest) {
       repairContext ? 'היסטוריית תיקונים' : '',
       learnedContext ? 'ניסיון שטח' : '',
       webContext ? 'ידע אינטרנט' : '',
+      communityContext ? 'ידע קהילתי' : '',
       schematicPages.length ? 'סכמות' : '',
     ].filter(Boolean)
 

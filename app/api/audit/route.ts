@@ -21,6 +21,11 @@ export const CATEGORIES = [
   { id: 15, name: 'תוויות בטיחות',      en: 'Safety Decals & Labels',     priority: 2 },
   { id: 16, name: 'בדיקה שנתית',        en: 'Annual Inspection Checklist',priority: 3 },
   { id: 17, name: 'תרשים עומסים',       en: 'Load Charts',                priority: 4 },
+  { id: 18, name: 'עדכוני שירות',       en: 'Service Bulletins',          priority: 6 },
+  { id: 19, name: 'הודעות החזרה',       en: 'Recall Notices',             priority: 8 },
+  { id: 20, name: 'עדכוני תוכנה',       en: 'Software/Firmware Updates',  priority: 5 },
+  { id: 21, name: 'מפרטי שמנים',        en: 'Hydraulic Oil & Lubricant Specs', priority: 4 },
+  { id: 22, name: 'נוהלי כיול',         en: 'Calibration Procedures',     priority: 5 },
 ]
 
 function classifyDoc(title: string, docType: string): number {
@@ -42,6 +47,11 @@ function classifyDoc(title: string, docType: string): number {
   if (t.includes('safety') || t.includes('decal') || t.includes('label')) return 15
   if (t.includes('annual') || t.includes('inspection') || t.includes('checklist')) return 16
   if (t.includes('load chart') || t.includes('load table') || t.includes('capacity')) return 17
+  if (t.includes('service bulletin') || t.includes('technical bulletin') || t.includes('tsb')) return 18
+  if (t.includes('recall') || t.includes('safety notice') || t.includes('field notice')) return 19
+  if (t.includes('software update') || t.includes('firmware') || t.includes('flash') || t.includes('software release')) return 20
+  if (t.includes('lubric') || t.includes('oil spec') || t.includes('fluid spec') || t.includes('grease spec')) return 21
+  if (t.includes('calibrat') || t.includes('load sensor') || t.includes('tilt sensor') || t.includes('joystick cal')) return 22
   return 0
 }
 
@@ -117,7 +127,7 @@ export async function GET(): Promise<NextResponse> {
 
     const coveredCats = new Set(Object.keys(coverageCells).map(Number))
     const coverageCount = coveredCats.size
-    const coveragePct = Math.round((coverageCount / 17) * 100)
+    const coveragePct = Math.round((coverageCount / 22) * 100)
 
     const missingCats = CATEGORIES.filter(c => !coveredCats.has(c.id))
     const criticalityScore = missingCats.reduce((sum, c) => sum + c.priority, 0)

@@ -170,6 +170,73 @@ export async function getWebKnowledge(query: string, model: string | null): Prom
   } catch { return '' }
 }
 
+export async function getCommunityKnowledge(query: string, model: string | null, faultCode: string | null): Promise<string> {
+  try {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/community_knowledge?select=source_name,source_url,brand,model,fault_code,symptom,solution,mechanic_advice,confidence,quality&quality=gte.3&confidence=gte.3&order=quality.desc,confidence.desc&limit=5`, {
+      headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}` },
+    })
+    type CKRow = { source_name: string; source_url: string; brand: string | null; model: string | null; fault_code: string | null; symptom: string; solution: string | null; mechanic_advice: string[]; confidence: number; quality: number }
+    const allRows: CKRow[] = res.ok ? await res.json() : []
+
+    const results: CKRow[] = []
+
+    // Priority 1: match by fault code
+    if (faultCode) {
+      const byFault = await fetch(
+        `${SUPABASE_URL}/rest/v1/community_knowledge?fault_code=ilike.*${encodeURIComponent(faultCode)}*&confidence=gte.3&quality=gte.3&select=source_name,source_url,brand,model,fault_code,symptom,solution,mechanic_advice,confidence,quality&limit=3`,
+        { headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}` } }
+      )
+      if (byFault.ok) results.push(...await byFault.json())
+    }
+
+    // Priority 2: match by model
+    if (model && results.length < 5) {
+      const byModel = await fetch(
+        `${SUPABASE_URL}/rest/v1/community_knowledge?model=ilike.*${encodeURIComponent(model)}*&confidence=gte.3&quality=gte.3&select=source_name,source_url,brand,model,fault_code,symptom,solution,mechanic_advice,confidence,quality&limit=3`,
+        { headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}` } }
+      )
+      if (byModel.ok) {
+        const data: CKRow[] = await byModel.json()
+        for (const row of data) {
+          if (!results.find(r => r.source_url === row.source_url)) results.push(row)
+        }
+      }
+    }
+
+    // Priority 3: keyword search on symptom
+    if (results.length < 3 && query.length > 5) {
+      const kw = encodeURIComponent(query.substring(0, 40).trim())
+      const bySymptom = await fetch(
+        `${SUPABASE_URL}/rest/v1/community_knowledge?symptom=ilike.*${kw}*&confidence=gte.2&quality=gte.2&select=source_name,source_url,brand,model,fault_code,symptom,solution,mechanic_advice,confidence,quality&limit=3`,
+        { headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}` } }
+      )
+      if (bySymptom.ok) {
+        const data: CKRow[] = await bySymptom.json()
+        for (const row of data) {
+          if (!results.find(r => r.source_url === row.source_url)) results.push(row)
+        }
+      }
+    }
+
+    if (!results.length) return ''
+
+    const lines = results.slice(0, 5).map(r => {
+      const parts = [
+        `[${r.source_name}${r.fault_code ? ` | קוד: ${r.fault_code}` : ''}]`,
+        `תסמין: ${r.symptom.substring(0, 150)}`,
+        r.solution ? `פתרון: ${r.solution.substring(0, 200)}` : '',
+        r.mechanic_advice?.length ? `טיפים: ${r.mechanic_advice.slice(0, 2).join(' | ')}` : '',
+        `מקור: ${r.source_url}`,
+      ].filter(Boolean)
+      return parts.join('\n')
+    })
+
+    return lines.join('\n---\n')
+  } catch {
+    return ''
+  }
+}
+
 export function chooseModel(query: string, hasImage: boolean): 'claude-haiku-4-5-20251001' | 'claude-sonnet-4-6' {
   if (hasImage) return 'claude-sonnet-4-6'
   const complex = /תיקון מורכב|fault code|error code|אבחון|diagram|wiring|hydraulic|הידראולי|electrical|חשמל|סכמ/i
