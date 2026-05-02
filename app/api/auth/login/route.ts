@@ -4,6 +4,7 @@ import { createSessionToken } from '@/lib/auth'
 const USERS: Record<string, string | undefined> = {
   'הדס':  process.env.AWP_HADAS_PASSWORD,
   'מידן': process.env.AWP_MIDAN_PASSWORD,
+  'אופק': process.env.AWP_OFEK_PASSWORD,
 }
 
 export async function POST(req: NextRequest) {
