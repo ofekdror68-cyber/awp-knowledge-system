@@ -50,7 +50,7 @@ export default function LoginPage() {
             <input
               value={username}
               onChange={e => setUsername(e.target.value)}
-              placeholder="הדס / מידן"
+              placeholder="הדס / מידן / אופק"
               required
               className="w-full px-3 py-2.5 rounded-xl text-sm outline-none"
               style={{ background: '#F8FAFC', border: '1px solid #CBD5E1', color: '#1E293B' }}
