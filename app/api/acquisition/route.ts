@@ -38,22 +38,39 @@ export async function GET() {
 }
 
 export async function POST(req: NextRequest) {
-  const { action, batchSize, includeForums } = await req.json().catch(() => ({}))
+  const { action, batchSize, includeForums, priority } = await req.json().catch(() => ({}))
 
   if (action === 'start') {
-    // Trigger coordinator asynchronously
     const baseUrl = process.env.VERCEL_URL
       ? `https://${process.env.VERCEL_URL}`
       : 'http://localhost:3000'
 
-    // Fire and forget — coordinator runs in background via cron route
+    // If priority=critical: reset all failed critical-category items back to pending first
+    if (priority === 'critical') {
+      const criticalCats = [2, 5, 6, 7, 8, 9]
+      const filter = criticalCats.map(c => `category.eq.${c}`).join(',')
+      await fetch(`${SUPABASE_URL}/rest/v1/acquisition_queue?status=eq.failed&or=(${filter})`, {
+        method: 'PATCH',
+        headers: {
+          apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}`,
+          'Content-Type': 'application/json', Prefer: 'return=minimal',
+        },
+        body: JSON.stringify({ status: 'pending', current_agent: null, retry_count: 0 }),
+      })
+    }
+
     fetch(`${baseUrl}/api/cron/oem-recheck`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ batchSize: batchSize || 20, includeForums: includeForums ?? true }),
+      body: JSON.stringify({ batchSize: batchSize || (priority === 'critical' ? 40 : 20), includeForums: includeForums ?? true }),
     }).catch(() => {})
 
-    return NextResponse.json({ started: true, message: 'Acquisition cycle started in background' })
+    return NextResponse.json({
+      started: true,
+      message: priority === 'critical'
+        ? 'Critical acquisition cycle started — service manuals, schematics, fault codes first'
+        : 'Acquisition cycle started in background',
+    })
   }
 
   if (action === 'reset_failed') {

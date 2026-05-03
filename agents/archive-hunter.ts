@@ -8,24 +8,30 @@ import {
 import { scrapeUrl, tryDownloadPdf } from '@/skills/web-learning/scraper'
 
 const ARCHIVE_SOURCES = [
-  // Wayback Machine (programmatic)
+  // ManualsLib (best free source — has service manuals occasionally)
   (brand: string, model: string, catKw: string) =>
-    `https://web.archive.org/web/*/site:jlg.com+${encodeURIComponent(`${model} ${catKw} filetype:pdf`)}`,
-  // ManualZZ
-  (brand: string, model: string) =>
-    `https://manualzz.com/search#q=${encodeURIComponent(`${brand} ${model}`)}`,
+    `https://www.manualslib.com/search.php?q=${encodeURIComponent(`${brand} ${model} ${catKw}`)}&search=Search+Manuals`,
+  // ManualZZ with keyword
+  (brand: string, model: string, catKw: string) =>
+    `https://manualzz.com/search#q=${encodeURIComponent(`${brand} ${model} ${catKw}`)}`,
+  // HeavyEquipmentForums — often has links to service manuals in posts
+  (brand: string, model: string, catKw: string) =>
+    `https://www.heavyequipmentforums.com/search?q=${encodeURIComponent(`${brand} ${model} ${catKw}`)}&forums[]=14`,
+  // archive.org manuals collection
+  (brand: string, model: string, catKw: string) =>
+    `https://archive.org/search?query=${encodeURIComponent(`${brand} ${model} ${catKw}`)}&and[]=mediatype%3A%22texts%22`,
   // StudyLib
   (brand: string, model: string, catKw: string) =>
     `https://www.studylib.net/search?q=${encodeURIComponent(`${brand} ${model} ${catKw}`)}`,
-  // Yumpu
-  (brand: string, model: string) =>
-    `https://www.yumpu.com/search#q=${encodeURIComponent(`${brand} ${model} manual`)}`,
   // Scribd (public docs)
   (brand: string, model: string, catKw: string) =>
     `https://www.scribd.com/search?query=${encodeURIComponent(`${brand} ${model} ${catKw}`)}`,
   // All-Guides
-  (brand: string, model: string) =>
+  (brand: string, model: string, _catKw: string) =>
     `https://www.all-guides.com/search.php?q=${encodeURIComponent(`${brand} ${model}`)}`,
+  // Yumpu
+  (brand: string, model: string, _catKw: string) =>
+    `https://www.yumpu.com/search#q=${encodeURIComponent(`${brand} ${model} manual`)}`,
 ]
 
 const CATEGORY_KEYWORDS: Record<number, string> = {
@@ -93,12 +99,8 @@ export async function runArchiveHunter(item: QueueItem): Promise<'success' | 'fa
     errors.push(`Wayback: ${e instanceof Error ? e.message : String(e)}`)
   }
 
-  // 2. Archive sites
-  const archiveSitesToTry = [
-    `https://manualzz.com/search#q=${encodeURIComponent(`${item.brand} ${item.model}`)}`,
-    `https://www.studylib.net/search?q=${encodeURIComponent(`${item.brand} ${item.model} ${catKw}`)}`,
-    `https://yumpu.com/search#q=${encodeURIComponent(`${item.brand} ${item.model}`)}`,
-  ]
+  // 2. Archive sites — with category keyword for better precision
+  const archiveSitesToTry = ARCHIVE_SOURCES.map(fn => fn(item.brand, item.model, catKw))
 
   for (const url of archiveSitesToTry) {
     triedUrls.push(url)

@@ -9,6 +9,25 @@ import { runForumScraper } from './forum-scraper'
 
 const CATEGORIES_COUNT = 22
 
+// Categories ordered by operational priority (not by ID)
+// Critical first: service, schematics, fault codes → then PM → then operator → then parts
+const CATEGORY_PRIORITY: number[] = [
+  2,  // service manual         🔴
+  8,  // fault codes            🔴
+  5,  // electrical schematic   🔴
+  6,  // hydraulic schematic    🔴
+  7,  // wiring diagram         🔴
+  9,  // troubleshooting        🔴
+  4,  // PM schedule            🟡
+  10, // diagnostic procedures  🟡
+  18, // service bulletins      🟡
+  19, // recall notices         🟡
+  1,  // operator manual        🟢
+  3,  // parts catalog          🟢
+  17, // load chart             🟢
+  11, 12, 13, 14, 15, 16, 20, 21, 22,
+]
+
 interface AuditModel {
   brand: string
   model: string
@@ -77,7 +96,8 @@ async function buildQueue(auditData: AuditData): Promise<number> {
   for (const modelEntry of auditData.models) {
     const { brand, model, coverageCells } = modelEntry
 
-    for (let catId = 1; catId <= CATEGORIES_COUNT; catId++) {
+    // Use priority order instead of sequential 1→22
+    for (const catId of CATEGORY_PRIORITY) {
       const covered = coverageCells[catId] && coverageCells[catId].length > 0
       if (covered) continue
 
@@ -103,8 +123,11 @@ async function buildQueue(auditData: AuditData): Promise<number> {
   return queued
 }
 
+const CRITICAL_CATS = new Set([2, 5, 6, 7, 8, 9])
+
 async function processItem(item: QueueItem, log: string[]): Promise<'completed' | 'failed' | 'manual'> {
-  log.push(`[${item.brand} ${item.model} cat${item.category}] → OEM Hunter...`)
+  const isCritical = CRITICAL_CATS.has(item.category)
+  log.push(`[${item.brand} ${item.model} cat${item.category}${isCritical ? ' 🔴' : ''}] → OEM Hunter...`)
 
   const oemResult = await runOemHunter(item)
   if (oemResult === 'success') {
@@ -112,7 +135,7 @@ async function processItem(item: QueueItem, log: string[]): Promise<'completed' 
     return 'completed'
   }
 
-  await sleep(2000)
+  await sleep(isCritical ? 1000 : 2000)
   log.push(`  → Distributor Hunter...`)
   const distResult = await runDistributorHunter(item)
   if (distResult === 'success') {
@@ -120,7 +143,7 @@ async function processItem(item: QueueItem, log: string[]): Promise<'completed' 
     return 'completed'
   }
 
-  await sleep(2000)
+  await sleep(isCritical ? 1000 : 2000)
   log.push(`  → Archive Hunter...`)
   const archResult = await runArchiveHunter(item)
   if (archResult === 'success') {
@@ -130,6 +153,22 @@ async function processItem(item: QueueItem, log: string[]): Promise<'completed' 
   if (archResult === 'manual') {
     log.push(`  ⚠ Manual required for ${item.brand} ${item.model} cat${item.category}`)
     return 'manual'
+  }
+
+  // For critical categories: if all 3 failed, retry OEM + Distributor in parallel one more time
+  if (isCritical && item.retry_count < 2) {
+    log.push(`  🔄 Critical cat — parallel retry (OEM + Distributor)...`)
+    await sleep(3000)
+    const [retryOem, retryDist] = await Promise.allSettled([
+      runOemHunter(item),
+      runDistributorHunter(item),
+    ])
+    const oemOk = retryOem.status === 'fulfilled' && retryOem.value === 'success'
+    const distOk = retryDist.status === 'fulfilled' && retryDist.value === 'success'
+    if (oemOk || distOk) {
+      log.push(`  ✓ Parallel retry succeeded`)
+      return 'completed'
+    }
   }
 
   log.push(`  ✗ All agents failed`)
@@ -171,10 +210,24 @@ export async function runCoordinator(options?: {
   emit(`Queued ${queued} new items`)
 
   // 3. Process queue in batches
-  const pendingItems = await sbGet<QueueItem>(
+  // Fetch pending items — critical categories first (lower catId in CATEGORY_PRIORITY = higher priority)
+  // We do two fetches: critical first, then rest
+  const criticalCats = [2, 5, 6, 7, 8, 9]
+  const criticalFilter = criticalCats.map(c => `category.eq.${c}`).join(',')
+  const criticalItems = await sbGet<QueueItem>(
+    'acquisition_queue',
+    `status=eq.pending&or=(${criticalFilter})&order=retry_count.asc,created_at.asc&limit=${Math.ceil(batchSize * 0.7)}`
+  )
+  const normalItems = await sbGet<QueueItem>(
     'acquisition_queue',
     `status=eq.pending&order=retry_count.asc,created_at.asc&limit=${batchSize}`
   )
+  // Merge: critical first, then fill remaining from normal (dedup by id)
+  const criticalIds = new Set(criticalItems.map(i => i.id))
+  const pendingItems = [
+    ...criticalItems,
+    ...normalItems.filter(i => !criticalIds.has(i.id)),
+  ].slice(0, batchSize)
   emit(`Processing ${pendingItems.length} pending items...`)
 
   let completed = 0, failed = 0, manualRequired = 0
