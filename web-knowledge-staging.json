@@ -411,5 +411,95 @@
     "equipment_model": "general",
     "topic": "hydraulics",
     "reliability_score": 0.6
+  },
+  {
+    "url": "https://biberger.de/en/blogs/news/jlg-fehlercodes",
+    "title": "JLG Error Code List: Meaning, Causes & Solutions — BIBERGER",
+    "content_summary": "Comprehensive JLG error code reference guide covering DTC groups and fault descriptions with meanings, causes, and solutions. JLG fault codes organized by group number: Group 1 engine/power, Group 2 drive system, Group 3 platform/boom positioning, Group 4 sensor faults, Group 5 CAN bus communication. Two-part code identifier: group number + specific fault (e.g., 3-3, 5-437). Flash code reading for older pre-CAN models: count first LED flash group then second group. Key codes covered: engine temperature faults, drive motor controller faults, tilt sensor faults, load cell faults, CAN communication errors. Troubleshooting approach: read DTC, consult service manual table, perform recommended checks, reset after repair. Applies to JLG articulating booms (450AJ, 520AJ, 600AJ), telescopic booms (860SJ, 1200SJ), and scissor lifts (2632ES, 3246ES). German language site with English content sections.",
+    "brands_mentioned": ["JLG"],
+    "equipment_model": "general",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1280790/Jlg-E450a.html?page=147",
+    "title": "Help Descriptions And Fault Flash Codes — JLG E450A Service Manual Page 147 | ManualsLib",
+    "content_summary": "JLG E450A (electric 45ft articulating boom) service and maintenance manual page 147 containing help descriptions and fault flash codes. Flash code reading procedure: observe LED indicator on ground control box. Flash codes listed with two-number sequence (e.g., 3-3 = three flashes pause three flashes). Complete fault flash code table: codes organized by system (power, drive, lift, platform, sensors, communications). Each code entry includes: flash sequence, fault description, probable cause, recommended corrective action. The E450A is the electric-powered variant of the JLG 450AJ series. Same flash code structure applies to M450AJ (motor/engine powered). Critical codes: tilt sensor faults, load cell calibration faults, motor controller faults, CAN bus faults. Reset procedure: cycle emergency stop button, cycle key switch.",
+    "brands_mentioned": ["JLG"],
+    "equipment_model": "E450AJ",
+    "topic": "fault_codes",
+    "reliability_score": 0.9
+  },
+  {
+    "url": "https://www.justanswer.com/industrial-equipment/96uer-fault-code-3-3-jlg-450-aj-platform.html",
+    "title": "JLG 450AJ Fault Code 3:3 — Platform Troubleshooting | JustAnswer",
+    "content_summary": "JustAnswer expert discussion about JLG 450AJ fault code 3:3 on the platform control. Fault code 3:3 on JLG 450AJ indicates a short circuit in an output driver — there are at least 50 possible troubleshooting paths for this code. Diagnosis steps: (1) Inspect basket position sensors for dirt, damage, or loose wiring; (2) Check joystick calibration; (3) Ensure all connectors are secure; (4) Reset system by cycling power. Advanced diagnosis: check power and control wiring for shorts in harness and connector pins; if harness tests OK, the controller requires replacement. Note: fault code 3:3 is hardware-related and can originate from any part of the machine. Service manual section for DTC group 3 covers all platform and boom positioning faults. Field tech tip: isolate the issue by disconnecting platform harness and checking if code clears (narrows fault to platform vs. base machine).",
+    "brands_mentioned": ["JLG"],
+    "equipment_model": "450AJ",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.fridayparts.com/blog/jlg-fault-codes",
+    "title": "JLG Fault Codes List, Diagnosis, and Repair | Friday Parts",
+    "content_summary": "JLG fault codes reference covering DTCs for boom lifts and scissor lifts with diagnosis and repair procedures. JLG DTC structure: first digits indicate system group, remaining digits indicate specific fault within that group. Troubleshooting process: (1) Identify DTC from machine display or analyzer; (2) Refer to service manual DTC table for that model; (3) Follow diagnostic flowchart; (4) Perform corrective action (inspect wiring, replace component, calibrate sensor); (5) Clear code and verify repair. Common repair procedures: wiring harness inspection (check for chafing, corrosion, broken conductors at flex points), connector cleaning and re-pinning, sensor replacement and calibration, controller replacement. Parts compatibility note: JLG controllers and sensors are model-specific — verify part numbers before ordering. Covers JLG 450AJ, 520AJ, 510AJ, 860SJ, and scissor lift models.",
+    "brands_mentioned": ["JLG"],
+    "equipment_model": "520AJ",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://ewpspares.com.au/blogs/ewp-knowledge-base/jlg-fault-codes-complete-guide-what-they-mean-ewp-spares-australia",
+    "title": "JLG Fault Codes — Complete Guide & What They Mean | EWP Spares Australia",
+    "content_summary": "Complete guide to JLG fault codes from EWP Spares Australia, a specialist aerial work platform parts supplier. Covers fault code structure, reading procedures, and common codes with solutions. JLG Analyzer (Part 1001249695) provides full fault description, active and historical faults, and live sensor monitoring. Machine analyzer options: tethered cable, mobile handheld, Bluetooth (select scissor models), remote via ClearSky fleet management. Fault code categories: engine codes (Group 1), drive/travel codes (Group 2), boom/platform codes (Group 3), sensor codes (Group 4), CAN communication codes (Group 5), load management codes (Group 9). Specific codes: 5-437 CAN bus communication fault, 3-3 short circuit in output driver, 4-5 platform overload, 9-2/9-3 load management system faults. Reset: cycle emergency stop or key switch after resolving underlying fault. Applies to JLG 450AJ, 520AJ, 860SJ, and scissor lift models common in Australian market.",
+    "brands_mentioned": ["JLG"],
+    "equipment_model": "860SJ",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://biberger.de/en/blogs/news/genie-fehlercodes",
+    "title": "Detect & Fix Genie Error Codes (Troubleshooting) — BIBERGER",
+    "content_summary": "Genie scissor lift and boom lift error code troubleshooting guide from Biberger. Covers Genie SmartLink Diagnostic System (GSDS) fault codes for GS series scissor lifts. Operation Indicator Codes (OIC) with E-prefix: E1 Emergency Stop, E2 Recovery Mode, E4 Low Battery, E6 Tilt Sensor, E7 Platform Overload, E12/E13 Communication fault. Diagnostic Trouble Codes (DTC) numeric: 18 Pothole guard, 42-47 solenoid coil faults, 68 Low Voltage. Troubleshooting steps for each code: E4 Low Battery — measure battery voltage (GS-1932: must be ≥22V, GS-3246: ≥22V), charge batteries, check battery connections and individual cell voltages; E6 Tilt — move machine to level surface, check tilt sensor wiring and mounting; Code 18 Pothole guard — inspect guard mechanism deployment and limit switch continuity. Battery voltage requirements by model family. German language site covering European market Genie equipment.",
+    "brands_mentioned": ["Genie"],
+    "equipment_model": "GS-3246",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.justanswer.com/industrial-equipment/sdh4w-i-m-trying-replace-limit-switches-machine.html",
+    "title": "Genie GS 3246 Error Code 18 After Limit Switch Install | JustAnswer",
+    "content_summary": "JustAnswer expert discussion about Genie GS-3246 showing error code 18 after limit switch replacement. Error code 18 = Pothole guard failure — pothole guard not deploying or limit switch not activating correctly. Diagnosis after switch replacement: (1) Verify wiring harness connections to new limit switch; (2) Inspect pothole guard sensor for damage or misalignment; (3) Reset system codes via ground control override; (4) Test limit switch continuity with multimeter (normally open/closed per wiring diagram); (5) Consider controller recalibration if new switch tests OK electrically. Common causes of persistent code 18 after repair: incorrect switch type installed (NO vs NC), harness connector not fully seated, pothole guard arm not returning to fully deployed position. Reference: Genie GS-3246 service manual wiring diagram for pothole guard circuit. Same procedure applies to GS-2046 and GS-2646 models.",
+    "brands_mentioned": ["Genie"],
+    "equipment_model": "GS-3246",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://diag.manitou-group.com/default-codes",
+    "title": "Manitou Default Fault Codes — Official Manitou Diagnostic Portal",
+    "content_summary": "Official Manitou Group diagnostic portal listing default fault codes for Manitou equipment including ATJ and aerial work platform series. The portal provides manufacturer-level fault code definitions, causes, and corrective actions for Manitou telehandlers and aerial work platforms. Covers Manitou 180ATJ and other ATJ series machines. Fault code categories: engine ECU codes (Deutz engine variants), hydraulic system codes, safety system codes, transmission codes. This is the official Manitou diagnostic reference — supersedes third-party interpretations. Manitou Maintenance & Diagnostic Software (MDS) required for full code reading and clearing; this portal provides the code reference list for field technicians. Key for 180ATJ: Deutz EURO 3 engine codes overlap with platform control codes — must distinguish between engine ECU faults and Manitou platform controller faults.",
+    "brands_mentioned": ["Manitou"],
+    "equipment_model": "180ATJ",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.justanswer.com/industrial-equipment/8ryig-genie-scissor-lift-gs3246-2003-model-getting.html",
+    "title": "Genie Scissor Lift GS3246 2003 Model Fault Light Causes and Fixes | JustAnswer",
+    "content_summary": "JustAnswer expert discussion about a 2003 Genie GS-3246 scissor lift showing fault light. The GS-3246 fault indicator light on the control panel signals an active DTC. Diagnosis steps for 2003 GS-3246 (older model with GEN 5 ECU): (1) Check ground control LED for fault code number; (2) Reference Genie service manual fault code chart for GEN 5; (3) Common faults on older GS-3246: charging system faults (code 52-58), solenoid coil failures (code 42-47 — coils weaken over time), pothole guard wear (code 18). Battery-related issues common on older machines: sulfated batteries causing low voltage codes, charger failure causing persistent low voltage. Maintenance insight: 2003-era Genie GS-3246 uses older hydraulic pump design — pump efficiency decreases with age, may show slow lift even without fault codes. Platform tilt sensor calibration may drift over time.",
+    "brands_mentioned": ["Genie"],
+    "equipment_model": "GS-3246",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.manualslib.com/products/Dingli-Jcpt1412dc-13628217.html",
+    "title": "Dingli JCPT1412DC Manuals — Operator and Service Manuals | ManualsLib",
+    "content_summary": "ManualsLib listing for Dingli JCPT1412DC self-propelled electric scissor lift manuals. The JCPT1412DC is a DC-powered (battery electric) self-propelled scissor lift with 14m working height and 1.2m platform width. Available documentation: Operator's Manual with Maintenance Information (includes fault code list on error indicator readout section). JCPT1412DC fault code system: LED display on ground control box shows two or three digit codes. Code structure same as other Dingli DC models: 10-series ECU alarms, 30-series PCU alarms, 50-series module alarms (overload code 57, pothole code 58, height limit code 59), 100-series CAN bus faults. The DCM (DC Motor controller) variant uses same code set. Hydraulic system: 24V DC motor-driven hydraulic pump. Platform capacity: 230kg (indoor), lower for outdoor/elevated use per rated capacity chart. Dingli service contact for technical support listed in manual.",
+    "brands_mentioned": ["Dingli"],
+    "equipment_model": "JCPT1412DC",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
   }
 ]
