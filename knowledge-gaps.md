@@ -1,5 +1,5 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-05-07_
+_עודכן: 2026-05-09_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
 
@@ -78,13 +78,22 @@ _עודכן: 2026-05-07_
 
 ## הערת מפעיל (Agent)
 
-בסביבת sandbox — גישת רשת ל-Supabase חסומה (Bash + Python: "Host not in allowlist") וWebFetch מוחזר 403 על כלל האתרים (הגנת bot/Cloudflare).
+בסביבת sandbox — גישת רשת ל-Supabase חסומה (DNS לא נפתר ל-yucirvuwucgarlfkfzqx.supabase.co) וWebFetch מוחזר 403 על כלל האתרים (הגנת bot/Cloudflare).
 
-**57 פריטים ב-`web-knowledge-staging.json`** — 47 מריצות קודמות + 10 חדשים מריצה זו.
+**64 פריטים ב-`web-knowledge-staging.json`** — 57 מריצות קודמות + 7 חדשים מריצה זו.
 
 **להעלאה לDB:** הרץ `node scripts/upload-web-knowledge-staging.mjs` מסביבה עם גישת רשת ל-Supabase.
 
-### 10 פריטים חדשים שנוספו בריצה זו (2026-05-07):
+### 7 פריטים חדשים שנוספו בריצה זו (2026-05-09):
+1. Dingli JCPT1208AC — דף מוצר רשמי עם מפרטים (en.cndingli.com, score 1.0) ⭐
+2. Scissor Lift Fault Reset Guide — מדריך troubleshooting כללי לתעשייה (atomoving.com, score 0.4)
+3. Common Scissor Lift Problems — בעיות נפוצות + פתרונות (ihurmo.com, score 0.4)
+4. MEC AWP Fault Codes 95811-SCH — מסמך קודי שגיאה נוסף (mecawp.com, score 0.8)
+5. Genie GS-1930 Error Codes Q&A — פורום JustAnswer עם פרטי GSDS (score 0.6)
+6. JLG EMR2 Engine Fault Codes — קודי מנוע JLG (Scribd, score 0.6)
+7. JLG M450/E450AJ Service Manual p.205 — diagnostic fault codes (manualsdir.com, score 0.6)
+
+### 10 פריטים שנוספו בריצה הקודמת (2026-05-07):
 1. JLG 800S/810SJ/860SJ Parts Manual רשמי (JLG CDN, part 3121140, score 1.0) ⭐
 2. JLG Troubleshooting Tools — דף כלי אבחון רשמי (jlg.com, score 1.0) ⭐
 3. Genie Lift Connect Troubleshooting Guide PDF רשמי (genielift.com, score 1.0) ⭐
@@ -98,13 +107,14 @@ _עודכן: 2026-05-07_
 
 ## סטטיסטיקות
 
-- מקורות web ב-DB לפני הריצה: לא ידוע (גישת רשת חסומה)
-- פריטים בסטייג'ינג לפני הריצה: 47
-- פריטים חדשים שנוספו לסטייג'ינג בריצה זו: 10
-- סה"כ פריטים בסטייג'ינג: 57
-- פריטים שנוספו לDB בריצה זו: 0 (חסימת רשת בסביבת sandbox — הרץ upload-web-knowledge-staging.mjs)
-- מודלים ללא תיעוד fault codes: JCPT1208 (מרכז הורדה זוהה), JCPT1212, JLG 520AJ (ספציפי), JLG 510AJ, JLG 860SJ (שירות מלא), Manitou 180ATJ (ספציפי)
-- מותגים בסטייג'ינג: Dingli (11), JLG (18), Genie (16), Manitou (6), MEC (2), General (4)
+- מקורות web ב-DB לפני הריצה: לא ידוע (Supabase DNS unreachable)
+- פריטים בסטייג'ינג לפני הריצה: 57
+- פריטים חדשים שנוספו לסטייג'ינג בריצה זו: 7
+- סה"כ פריטים בסטייג'ינג: 64
+- פריטים שנוספו לDB בריצה זו: 0 (DNS של yucirvuwucgarlfkfzqx.supabase.co לא נפתר — הרץ upload-web-knowledge-staging.mjs)
+- מודלים ללא תיעוד fault codes: JCPT1208 (דף מוצר בלבד), JCPT1212, JLG 520AJ (ספציפי), JLG 510AJ, JLG 860SJ (שירות מלא), Manitou 180ATJ (ספציפי)
+- מותגים בסטייג'ינג: Dingli (12), JLG (21), Genie (17), Manitou (6), MEC (3), General (5)
 - חיפושים שבוצעו בריצה זו: 15
 - עמודים שנקראו (WebFetch): 0 (403 על כל הבקשות — הגנת bot/Cloudflare)
-- מקורות רשמיים חדשים (score 1.0) שנוספו: 6
+- כפילויות שדולגו: 23 (נמצאו כבר בסטייג'ינג)
+- מקורות רשמיים חדשים (score 1.0) שנוספו: 1 (Dingli JCPT1208AC)
