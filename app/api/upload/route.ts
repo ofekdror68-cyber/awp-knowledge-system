@@ -70,9 +70,8 @@ export async function POST(req: NextRequest) {
 
   // Trigger vision processing async (fire-and-forget for PDF)
   if (mimeType === 'application/pdf' && uploadData) {
-    const baseUrl = process.env.NEXT_PUBLIC_APP_URL || process.env.VERCEL_URL
-      ? `https://${process.env.VERCEL_URL}`
-      : 'http://localhost:3000'
+    const baseUrl = process.env.NEXT_PUBLIC_APP_URL
+      || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000')
     fetch(`${baseUrl}/api/documents/process-vision`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },

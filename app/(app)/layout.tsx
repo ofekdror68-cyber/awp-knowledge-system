@@ -2,9 +2,9 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
-import { MessageCircle, Wrench, Package, FileText, Stethoscope, ClipboardList } from 'lucide-react'
+import { MessageCircle, Wrench, Package, FileText, Stethoscope, ClipboardList, LogOut } from 'lucide-react'
 
 const nav = [
   { href: '/maintenance', label: 'תחזוקה', icon: Wrench },
@@ -50,7 +50,13 @@ function timeAgo(iso: string): string {
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   const path = usePathname()
+  const router = useRouter()
   const docStats = useDocStats()
+
+  async function logout() {
+    await fetch('/api/auth/logout', { method: 'POST' })
+    router.push('/login')
+  }
 
   return (
     <div className="flex flex-col min-h-screen" style={{ background: '#F0F4F8' }}>
@@ -71,6 +77,9 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
               )}
             </div>
           )}
+          <button onClick={logout} className="p-2 rounded-xl flex-shrink-0" style={{ color: '#94A3B8' }} title="התנתק">
+            <LogOut size={18} />
+          </button>
         </div>
       </header>
 

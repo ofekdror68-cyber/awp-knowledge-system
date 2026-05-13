@@ -36,6 +36,7 @@ export default function ServiceLogModal({
   const [checklist, setChecklist] = useState<ChecklistItem[]>([])
   const [parts, setParts] = useState<PartItem[]>([])
   const [saving, setSaving] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   function loadChecklist(intervalType: string) {
     setSelectedInterval(intervalType)
@@ -63,11 +64,12 @@ export default function ServiceLogModal({
 
   async function save() {
     setSaving(true)
+    setError(null)
     try {
       const hoursAtService = parseInt(form.hours_at_service) || machine.hours_current
       const nextServiceHours = hoursAtService + 250
 
-      await fetch('/api/service-logs', {
+      const res = await fetch('/api/service-logs', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -83,7 +85,13 @@ export default function ServiceLogModal({
           next_service_date: null,
         }),
       })
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({}))
+        throw new Error(err.error || `שגיאת שרת ${res.status}`)
+      }
       onSaved()
+    } catch (e) {
+      setError(e instanceof Error ? e.message : 'שגיאה בשמירה')
     } finally {
       setSaving(false)
     }
@@ -240,7 +248,10 @@ export default function ServiceLogModal({
           </div>
         </div>
 
-        <div className="p-4 border-t border-slate-100">
+        <div className="p-4 border-t border-slate-100 space-y-2">
+          {error && (
+            <div className="text-sm text-red-600 bg-red-50 px-3 py-2 rounded-xl">{error}</div>
+          )}
           <button
             onClick={save}
             disabled={saving}
