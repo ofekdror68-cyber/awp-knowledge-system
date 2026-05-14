@@ -1,8 +1,9 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-05-13_
+_עודכן: 2026-05-14_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
 
+> **ריצה 5 (2026-05-14):** 4 פריטים חדשים נוספו לסטייג'ינג (רוב המקורות כבר היו ב-DB מריצות קודמות)
 > **ריצה 4 (2026-05-13):** 30 פריטים חדשים מזוהים — ממתינים לשמירה (ר' הערת רשת למטה)
 
 ### Dingli (ריצה 4 — חדש)
@@ -24,6 +25,12 @@ _עודכן: 2026-05-13_
 - JCPT2223RTB — מנואל מפעיל מלא עם fault codes (ManualsLib)
 - JCPT HD-DC — מדריך חלקים (Scribd, Russian) ✨חדש
 - Scissor general — מנואל מוצרים (Dingli Global PDF) + מרכז הורדה רשמי (en.cndingli.com)
+
+### JLG (ריצה 5 — חדש)
+- 510AJ — מנואל שירות מלא (Scribd, document 459380562) — CAN bus diagnostics, fault codes via JLG Analyzer
+- 450AJ Series 1 (Ford engine) — אבחון תקלת הידראוליקה: אי-שליטה על שסתומים (Forkliftaction forum) — בדיקת connectors ב-harness
+- T350 / T500J — מנואל Troubleshooting רשמי (JLG CDN, 3121203) — כולל CAN diagnostics, hydraulic/electrical fault trees
+- MEC Mast Series — מנואל שירות (95568-A92.20, mecawp.com) — fault codes, solenoid checks
 
 ### JLG (ריצה 4 — חדש)
 - 860SJ — מידע diagnostic port + Machine Analyzer p/n 1001249695 (EWP Spares AU)
@@ -134,23 +141,22 @@ _עודכן: 2026-05-13_
 | 2 | 2026-05-11 | 64 | 15 | 79 |
 | 3 | 2026-05-12 | 79 | 8 | 87 |
 | 4 | 2026-05-13 | 87 | 30* | 117* |
+| 5 | 2026-05-14 | 87 | 4 | 91 |
 
-*ריצה 4: 30 פריטים זוהו ומוכנים לשמירה אך לא הועלו (חסימת רשת ב-sandbox). ר' הערת רשת.
+*ריצה 4: 30 פריטים זוהו ומוכנים לשמירה אך לא הועלו לסטייג'ינג (חסימת רשת ב-sandbox). ר' הערת רשת.
+ריצה 5: WebFetch חסום (403) על כל האתרים — 4 פריטים חדשים לסטייג'ינג מנתוני חיפוש; Supabase עדיין לא נגיש.
 
-**פירוט מותגים בסטייג'ינג (ריצה 4 מצטברת):**
-- Dingli: 21 מקורות (+4)
-- JLG: 36 מקורות (+6)
-- Genie: 29 מקורות (+4)
-- Manitou: 14 מקורות (+2)
-- MEC: 3 מקורות
+**פירוט מותגים בסטייג'ינג (ריצה 5 מצטברת):**
+- Dingli: 21 מקורות
+- JLG: 38 מקורות (+2: 510AJ service manual, 450AJ hydraulic forum; T350/T500J troubleshooting)
+- Genie: 29 מקורות
+- Manitou: 14 מקורות
+- MEC: 4 מקורות (+1: Mast Series 95568)
 
-**פירוט נושאים:**
-- fault_codes: 83 פריטים (+30)
-- maintenance: 12 פריטים
-- hydraulics: 6 פריטים
-- electrical: 5 פריטים
-- parts: 2 פריטים
-- general: 9 פריטים
+**פירוט נושאים (ריצה 5):**
+- fault_codes: 3 פריטים חדשים (510AJ service manual, MEC Mast Series, JLG T350/T500J)
+- electrical: 1 פריט חדש (JLG 450AJ hydraulic/connector forum)
 
-**חיפושים שבוצעו בריצה 4:** 15
-**מודלים ללא תיעוד:** Dingli JCPT1212, JLG 510AJ (ספציפי), Manitou 180ATJ (fault codes ספציפיים)
+**חיפושים שבוצעו בריצה 5:** 15
+**עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 על כל האתרים בריצה זו)
+**מודלים ללא תיעוד:** Dingli JCPT1212, Manitou 180ATJ (fault codes ספציפיים)
