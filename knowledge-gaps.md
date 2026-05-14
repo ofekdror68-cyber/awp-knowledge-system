@@ -50,7 +50,7 @@ _עודכן: 2026-05-14_
 - 860SJ — מנואל חלקים רשמי (JLG CDN) + כלי אבחון (Mechnician/Jaltest) + JLG 3121259 telescope valve fault + JLG 1200SJP/1350SJP TM (cranedude)
 - General — מנגנון קודי שגיאה (jlg.com + aerialequipmentparts.com + Biberger) + כלי אבחון רשמיים
 - CAN Bus Control System — מנואל פרק 6 עם אבחון CAN ו-ECM
-- 510AJ — אין תיעוד ספציפי נמצא
+- 510AJ — מנואל שירות נמצא (Scribd) — fault codes דורשים JLG Analyzer לחילוץ
 
 ### Genie (ריצה 4 — חדש)
 - GS-3246 — אישור קוד 18 (Pothole Guard): בדוק חסימה, limit switches, ו-wiring
@@ -84,6 +84,7 @@ _עודכן: 2026-05-14_
 ### MEC AWP
 - 1330SE — מנואל שירות + קודי שגיאה (mecawp.com)
 - Error Indicator Readout — מסמך קודי תצוגה (mecawp.com)
+- Mast Series 95568-A92.20 — מנואל שירות מאי 2021 (mecawp.com) ✨חדש ריצה 5
 
 ### כללי
 - תחזוקת מלגזות גובה — מדריך מקיף (LGLifter) ✨חדש
@@ -100,7 +101,7 @@ _עודכן: 2026-05-14_
 | Dingli JCPT1212 | שום תיעוד ספציפי — לא נמצא | גבוהה |
 | JLG 520AJ | קודי שגיאה ספציפיים לדגם — נמצאו רק קודים כלליים | גבוהה |
 | JLG 860SJ | מנואל שירות מלא — JLG Online Express בלבד (מנואל חלקים + כלי אבחון נמצאו) | גבוהה |
-| JLG 510AJ | אין תיעוד ספציפי — מנואל קיים ב-JLG Online Express בלבד | בינונית |
+| JLG 510AJ | מנואל שירות נמצא (Scribd) — fault codes דורשים JLG Analyzer | בינונית |
 | Genie GS-3246 | טבלת DTC מלאה (מעל קוד 68) — הפניה לעמ' 182 אך לא חולץ | בינונית |
 | Manitou 180ATJ | קודי שגיאה ספציפיים לדגם — Manitou MDS נדרש לקריאה מלאה | גבוהה |
 | JLG 450AJ | flash codes מורכבים — קוד 5:437 וקודי מוטור נמצאו בפורומים | נמוכה |
@@ -118,7 +119,7 @@ _עודכן: 2026-05-14_
 7. קוד שגיאה 57 (OVERLOAD) על Dingli — כמה פעמים קרה? ייתכן כשל בחיישן עומס
 8. על ה-JLG 520AJ — נראה flash code כלשהו? (נחקור ספציפית)
 9. על ה-Manitou 180ATJ — האם השגיאה מגיעה ממסך Deutz ECU (מנוע) או ממסך פקד הזרוע? (קריטי לאבחון)
-10. יש לך ציוד MEC AWP בצי? (תיעוד MEC 1330SE זמין)
+10. יש לך ציוד MEC AWP בצי? (תיעוד MEC 1330SE + Mast Series 95568 זמין)
 11. על ה-JLG 860SJ — האם נדרש Jaltest לקריאת קודים, או שיש מסך אבחון מובנה? (CAN bus tools required)
 12. האם הדגם Genie GS-1532 קיים בצי? (מנואל שירות רשמי חדש #1272217 נמצא)
 13. על ה-JLG 450AJ — האם ראית קוד 5:437 ספציפית? (נדון בפורום forkliftaction)
@@ -130,6 +131,8 @@ _עודכן: 2026-05-14_
 
 **גישה לרשת:** Supabase אינו נגיש מסביבת ה-CCR sandbox (DNS לא מתפוסת). כל הנתונים נשמרים ב-`web-knowledge-staging.json`.
 להעלאה: `node scripts/upload-web-knowledge-staging.mjs` (מסביבה עם גישת רשת)
+
+**staging JSON:** גיט commit מקומי (79a00f7) עם 91 פריטים — ממתין לדחיפה ידנית: `git push origin HEAD:main`
 
 ---
 
@@ -148,12 +151,12 @@ _עודכן: 2026-05-14_
 
 **פירוט מותגים בסטייג'ינג (ריצה 5 מצטברת):**
 - Dingli: 21 מקורות
-- JLG: 38 מקורות (+2: 510AJ service manual, 450AJ hydraulic forum; T350/T500J troubleshooting)
+- JLG: 38 מקורות (+3 ריצה זו: 510AJ service manual, 450AJ hydraulic forum, T350/T500J troubleshooting)
 - Genie: 29 מקורות
 - Manitou: 14 מקורות
-- MEC: 4 מקורות (+1: Mast Series 95568)
+- MEC: 4 מקורות (+1 ריצה זו: Mast Series 95568)
 
-**פירוט נושאים (ריצה 5):**
+**פירוט נושאים (ריצה 5 בלבד):**
 - fault_codes: 3 פריטים חדשים (510AJ service manual, MEC Mast Series, JLG T350/T500J)
 - electrical: 1 פריט חדש (JLG 450AJ hydraulic/connector forum)
 
