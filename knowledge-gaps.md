@@ -1,77 +1,52 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-05-14_
+_עודכן: 2026-05-15_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
 
-> **ריצה 5 (2026-05-14):** 4 פריטים חדשים נוספו לסטייג'ינג (רוב המקורות כבר היו ב-DB מריצות קודמות)
-> **ריצה 4 (2026-05-13):** 30 פריטים חדשים מזוהים — ממתינים לשמירה (ר' הערת רשת למטה)
-
-### Dingli (ריצה 4 — חדש)
-- JCPT0607A קוד 20 (General Alarm TM1) — עם אבחון ופתרון מפורט (chinaliftsupply.com)
-- JCPT0607A קוד 69 (Power Relay Sleep) — עם אבחון ופתרון מפורט (chinaliftsupply.com)
-- JCPT1912DC קוד 69 (Power Relay Sleep) — ספציפי לדגם (chinaliftsupply.com)
-- JCPT0607DCM — מדריך פרמטרים רשמי PDF (dingliglobal.com/upload)
-
 ### Dingli
 - JCPT0307 — קודי שגיאה מלאים (מנואל רשמי ManualsLib p.29)
-- JCPT0607DCS — קודי שגיאה מלאים (קודים 10–112, ManualsLib p.31)
+- JCPT0607DCS — קודי שגיאה מלאים (קודים 10–112, ManualsLib p.31) + אינדקס מנואלים (ManualsLib product page) ✨חדש
 - JCPT0607A / JCPT1912DC — קוד 69 (Power Relay Sleep) + פתרון
-- JCPT0607A — קוד 20 (General Alarm TM1) + אבחון ופתרון ✨חדש
+- JCPT0607A — קוד 20 (General Alarm TM1) + אבחון ופתרון
 - JCPT0607DCM — מנואל רשמי PDF (Dingli Global) + קודי מנוע דיזל
 - JCPT0607 כללי — דף מנואל ב-Alplift (זוהו וריאנטים: DCS, DCM, DCE)
 - JCPT1412DC / JCPT1612DC — מנואל מפעיל (Advanced Access Platforms PDF) + רשימת מנואלים (ManualsLib)
 - JCPT1418RT — מנואל ANSI רשמי PDF (Dingli Global)
 - JCPT1208AC — דף מוצר + הפניה למרכז הורדה רשמי
 - JCPT2223RTB — מנואל מפעיל מלא עם fault codes (ManualsLib)
-- JCPT HD-DC — מדריך חלקים (Scribd, Russian) ✨חדש
+- JCPT HD-DC — מדריך חלקים (Scribd, Russian)
 - Scissor general — מנואל מוצרים (Dingli Global PDF) + מרכז הורדה רשמי (en.cndingli.com)
-
-### JLG (ריצה 5 — חדש)
-- 510AJ — מנואל שירות מלא (Scribd, document 459380562) — CAN bus diagnostics, fault codes via JLG Analyzer
-- 450AJ Series 1 (Ford engine) — אבחון תקלת הידראוליקה: אי-שליטה על שסתומים (Forkliftaction forum) — בדיקת connectors ב-harness
-- T350 / T500J — מנואל Troubleshooting רשמי (JLG CDN, 3121203) — כולל CAN diagnostics, hydraulic/electrical fault trees
-- MEC Mast Series — מנואל שירות (95568-A92.20, mecawp.com) — fault codes, solenoid checks
-
-### JLG (ריצה 4 — חדש)
-- 860SJ — מידע diagnostic port + Machine Analyzer p/n 1001249695 (EWP Spares AU)
-- Multiple — JLG error codes database: codeready.org (DTC listing), biberger.de (codes+solutions), fridayparts.com
-- 2646 ES — אישור קוד 9-3: חוטים שבורים ב-platform control box connector (Forkliftaction forum)
 
 ### JLG
 - 450A Series II — קודי שגיאה ספציפיים (ManualsLib עמ' 343)
 - 450AJ / E450AJ — מנואל שירות מלא + flash code 3-3 + fault flash codes p.147 + מנואל ANSI 2000 (Rentalex PDF)
-- 450AJ Series II — אבחון חסימות, 2-speed, warning lights (JustAnswer) ✨חדש
-- 45E / 3246ES / E400AJPN — flash fault codes מוטוריים (JustAnswer) ✨חדש
+- 450AJ Series II — אבחון חסימות, 2-speed, warning lights (JustAnswer)
+- 45E / 3246ES / E400AJPN — flash fault codes מוטוריים (JustAnswer)
+- 450AJ Series 1 (Ford) — קורוזיית מחברי חוטים → אובדן שליטה על שסתומים הידראוליים (Forkliftaction) ✨חדש
+- Flash Code System — פירוש: sequence 1 = קטגוריה, sequence 2 = קוד ספציפי (3-3 = sensor, 4-4 = drive) ✨חדש
+- 20MVL — fault code 343 = platform tilt/level sensor circuit (Forkliftaction) ✨חדש
 - M450AJ — שירות מלא (simeri.fi)
 - 2646ES — fault codes 9-2 ו-9-3 (Forkliftaction forum)
 - 660SJ — קוד שגיאה ספציפי (Forkliftaction forum)
-- Error code 5:437 — אבחון forkliftaction forum ✨חדש
+- Error code 5:437 — אבחון forkliftaction forum
 - 520AJ — קודי שגיאה כלליים + JLG fault codes PDF list (elviento.org)
 - 860SJ — מנואל חלקים רשמי (JLG CDN) + כלי אבחון (Mechnician/Jaltest) + JLG 3121259 telescope valve fault + JLG 1200SJP/1350SJP TM (cranedude)
 - General — מנגנון קודי שגיאה (jlg.com + aerialequipmentparts.com + Biberger) + כלי אבחון רשמיים
 - CAN Bus Control System — מנואל פרק 6 עם אבחון CAN ו-ECM
-- 510AJ — מנואל שירות נמצא (Scribd) — fault codes דורשים JLG Analyzer לחילוץ
-
-### Genie (ריצה 4 — חדש)
-- GS-3246 — אישור קוד 18 (Pothole Guard): בדוק חסימה, limit switches, ו-wiring
-- GS-1932 — GSDS: 272 DTC + 6 OIC; 5 קטגוריות; קודים E1/E4/E6/E12/E13
-- GEN5/GEN6 ECU — PDF codes (hindleyelectronics.com) — שני דורות מכוסים
-- Multiple — mechnician.com, aerialequipmentparts.com, biberger.de (עם פתרונות לכל קוד)
+- 510AJ — אין תיעוד ספציפי נמצא
 
 ### Genie
 - GS-3246 / GS-2646 / GS-2046 — מנואל שירות רשמי (#48339) + fault code chart p.50 + קוד 18 (JustAnswer)
 - GS-1930/32 / GS-2032/32 — מנואל שירות רשמי (#96316) + מנואל מעודכן (#97385 Rev E10 2012)
-- GS-1530/1532 / GS-2032 / GS-2632 — מנואל שירות רשמי (#1272217) + גרסת Scribd ✨חדש
+- GS-1530/1532 / GS-2032 / GS-2632 — מנואל שירות רשמי (#1272217) + גרסת Scribd
+- GS-1530/1532 — מנואל מפעיל רשמי (Genie CDN, SN GS30P-200101+) ✨חדש
 - GS-1330m — מנואל שירות רשמי (#1309020)
 - GS-1932 — קודי שגיאה מלאים: OIC E1–E13, DTC 01–68 (aerialequipmentparts, flatearthequipment, mechnician, Biberger)
 - ECU GEN 5 / GEN 6 — מסמכי fault codes (Hindley Electronics)
 - GSDS — 272 קודים כולל + Genie Lift Connect
 - Z-45 XC / Z-60 DC — מנואלי שירות רשמיים (Genie CDN)
+- S-40 XC — מנואל שירות רשמי (#1286829GT) + fault code diagnostics + hydraulic + CAN bus ✨חדש
 - Hybrid Lifts — דף קודי שגיאה (ANSI multi-brand)
-
-### Manitou (ריצה 4 — חדש)
-- ATJ series — מדריך קודי תקלה: machineseeker.com blog, truck-manuals.net DTC
-- Fault Codes PDF (Scribd 446162823) — רשימה כוללת עם פתרונות
 
 ### Manitou
 - 180ATJ — מנואל מפעיל + מעגל חשמלי EURO 3 + Manitou MDS software רשמי
@@ -84,11 +59,16 @@ _עודכן: 2026-05-14_
 ### MEC AWP
 - 1330SE — מנואל שירות + קודי שגיאה (mecawp.com)
 - Error Indicator Readout — מסמך קודי תצוגה (mecawp.com)
-- Mast Series 95568-A92.20 — מנואל שירות מאי 2021 (mecawp.com) ✨חדש ריצה 5
 
 ### כללי
-- תחזוקת מלגזות גובה — מדריך מקיף (LGLifter) ✨חדש
+- תחזוקת מלגזות גובה — מדריך מקיף (LGLifter)
 - הידראוליקה — מניעת תקלות + פתרון (yorkpmh, cylindersinc, atomoving)
+- הידראוליקה מלאה — תחזוקה ואבחון (atomoving 08/2026) ✨חדש
+- Scissor Lift Best Practices — ריצת אבחון שלב-אחר-שלב + manual override (atomoving 12/2026) ✨חדש
+- AWP Troubleshooting Guide — ערכת E-stop/interlock/battery/hydraulic (onenforklifts) ✨חדש
+- Common Scissor Lift Problems — תקלות נפוצות + פתרון (fieldex) ✨חדש
+- Electrical Troubleshooting — CAN bus, controller, wiring (electriciantalk forum) ✨חדש
+- Lift Fault Table — תצוגת תקלות, סיבות, פתרונות (j-lifte) ✨חדש
 
 ---
 
@@ -101,7 +81,7 @@ _עודכן: 2026-05-14_
 | Dingli JCPT1212 | שום תיעוד ספציפי — לא נמצא | גבוהה |
 | JLG 520AJ | קודי שגיאה ספציפיים לדגם — נמצאו רק קודים כלליים | גבוהה |
 | JLG 860SJ | מנואל שירות מלא — JLG Online Express בלבד (מנואל חלקים + כלי אבחון נמצאו) | גבוהה |
-| JLG 510AJ | מנואל שירות נמצא (Scribd) — fault codes דורשים JLG Analyzer | בינונית |
+| JLG 510AJ | אין תיעוד ספציפי — מנואל קיים ב-JLG Online Express בלבד | בינונית |
 | Genie GS-3246 | טבלת DTC מלאה (מעל קוד 68) — הפניה לעמ' 182 אך לא חולץ | בינונית |
 | Manitou 180ATJ | קודי שגיאה ספציפיים לדגם — Manitou MDS נדרש לקריאה מלאה | גבוהה |
 | JLG 450AJ | flash codes מורכבים — קוד 5:437 וקודי מוטור נמצאו בפורומים | נמוכה |
@@ -119,11 +99,14 @@ _עודכן: 2026-05-14_
 7. קוד שגיאה 57 (OVERLOAD) על Dingli — כמה פעמים קרה? ייתכן כשל בחיישן עומס
 8. על ה-JLG 520AJ — נראה flash code כלשהו? (נחקור ספציפית)
 9. על ה-Manitou 180ATJ — האם השגיאה מגיעה ממסך Deutz ECU (מנוע) או ממסך פקד הזרוע? (קריטי לאבחון)
-10. יש לך ציוד MEC AWP בצי? (תיעוד MEC 1330SE + Mast Series 95568 זמין)
+10. יש לך ציוד MEC AWP בצי? (תיעוד MEC 1330SE זמין)
 11. על ה-JLG 860SJ — האם נדרש Jaltest לקריאת קודים, או שיש מסך אבחון מובנה? (CAN bus tools required)
 12. האם הדגם Genie GS-1532 קיים בצי? (מנואל שירות רשמי חדש #1272217 נמצא)
 13. על ה-JLG 450AJ — האם ראית קוד 5:437 ספציפית? (נדון בפורום forkliftaction)
 14. האם ה-Dingli JCPT0607A שלך מציג קוד 20 (TM1) תדיר? ייתכן כשל בבקר הנעה
+15. על ה-JLG 450AJ — בדקת קורוזיה במחברי הכבלים בחיבור הזרוע? זו הסיבה הנפוצה ביותר לאובדן שליטה על שסתומים הידראוליים
+16. יש לך Genie S-40 XC בצי? מנואל שירות מלא נמצא (מספר 1286829GT) כולל fault codes ו-CAN bus
+17. על כל דגם JLG — האם צוות השירות מחזיק JLG handset (service analyzer)? חיוני לאבחון מלא של CAN bus faults
 
 ---
 
@@ -131,8 +114,6 @@ _עודכן: 2026-05-14_
 
 **גישה לרשת:** Supabase אינו נגיש מסביבת ה-CCR sandbox (DNS לא מתפוסת). כל הנתונים נשמרים ב-`web-knowledge-staging.json`.
 להעלאה: `node scripts/upload-web-knowledge-staging.mjs` (מסביבה עם גישת רשת)
-
-**staging JSON:** גיט commit מקומי (79a00f7) עם 91 פריטים — ממתין לדחיפה ידנית: `git push origin HEAD:main`
 
 ---
 
@@ -143,23 +124,36 @@ _עודכן: 2026-05-14_
 | 1 | 2026-05-09 | 0 | 64 | 64 |
 | 2 | 2026-05-11 | 64 | 15 | 79 |
 | 3 | 2026-05-12 | 79 | 8 | 87 |
-| 4 | 2026-05-13 | 87 | 30* | 117* |
-| 5 | 2026-05-14 | 87 | 4 | 91 |
+| 4 | 2026-05-15 | 87 | 12 | 99 |
 
-*ריצה 4: 30 פריטים זוהו ומוכנים לשמירה אך לא הועלו לסטייג'ינג (חסימת רשת ב-sandbox). ר' הערת רשת.
-ריצה 5: WebFetch חסום (403) על כל האתרים — 4 פריטים חדשים לסטייג'ינג מנתוני חיפוש; Supabase עדיין לא נגיש.
+**פירוט מותגים בסטייג'ינג (ריצה 4):**
+- Dingli: 18 מקורות
+- JLG: 33 מקורות
+- Genie: 27 מקורות
+- Manitou: 12 מקורות
+- MEC: 3 מקורות
+- כללי: 6 מקורות
 
-**פירוט מותגים בסטייג'ינג (ריצה 5 מצטברת):**
-- Dingli: 21 מקורות
-- JLG: 38 מקורות (+3 ריצה זו: 510AJ service manual, 450AJ hydraulic forum, T350/T500J troubleshooting)
-- Genie: 29 מקורות
-- Manitou: 14 מקורות
-- MEC: 4 מקורות (+1 ריצה זו: Mast Series 95568)
+**פירוט נושאים:**
+- fault_codes: 56 פריטים
+- maintenance: 13 פריטים
+- hydraulics: 10 פריטים
+- electrical: 7 פריטים
+- parts: 2 פריטים
+- general: 11 פריטים
 
-**פירוט נושאים (ריצה 5 בלבד):**
-- fault_codes: 3 פריטים חדשים (510AJ service manual, MEC Mast Series, JLG T350/T500J)
-- electrical: 1 פריט חדש (JLG 450AJ hydraulic/connector forum)
+**מודלים ללא תיעוד:** Dingli JCPT1212, JLG 510AJ
 
-**חיפושים שבוצעו בריצה 5:** 15
-**עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 על כל האתרים בריצה זו)
-**מודלים ללא תיעוד:** Dingli JCPT1212, Manitou 180ATJ (fault codes ספציפיים)
+**ריצה 4 — פריטים חדשים:**
+- Hydraulic scissor lift maintenance + troubleshooting (atomoving)
+- Scissor lift troubleshooting best practices incl. manual override (atomoving)
+- AWP troubleshooting guide — interlock/battery/hydraulic sequence (onenforklifts)
+- Common scissor lift problems and fixes (fieldex)
+- Electrical troubleshooting — CAN bus, controller, connectors (electriciantalk forum)
+- Lift fault table — causes and solutions (j-lifte)
+- JLG 450AJ Series 1 hydraulic control loss — connector corrosion root cause (forkliftaction)
+- Genie GS-1530/1532 operator manual — official (Genie CDN)
+- Genie S-40 XC service manual — fault codes + hydraulic + CAN (Genie CDN)
+- Dingli JCPT0607DCS manuals index (ManualsLib)
+- JLG 20MVL fault 343 — platform tilt sensor circuit (forkliftaction)
+- JLG flash code system — sequence interpretation guide (forkliftaction)
