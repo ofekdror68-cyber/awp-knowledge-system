@@ -1,11 +1,16 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-05-15_
+_עודכן: 2026-05-16_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
 
+> **ריצה 7 (2026-05-16):** 9 פריטים חדשים נוספו לסטייג'ינג (108 סה"כ)
 > **ריצה 6 (2026-05-15):** 12 פריטים חדשים נוספו לסטייג'ינג (99 סה"כ)
 > **ריצה 5 (2026-05-14):** 4 פריטים חדשים נוספו לסטייג'ינג (רוב המקורות כבר היו ב-DB מריצות קודמות)
 > **ריצה 4 (2026-05-13):** 30 פריטים חדשים מזוהים — לא הועלו לסטייג'ינג (חסימת רשת)
+
+### Dingli (ריצה 7 — חדש)
+- JCPT0607A קוד 58 (Pothole) — פירוט: חיישן pothole guard מופעל; בדוק sensor wiring, arms חופשיות, reset E-stop (chinaliftsupply.com)
+- JCPT1418RT — מנואל מפעיל ANSI מלא עם fault code list (Advanced Access Platforms PDF)
 
 ### Dingli (ריצה 4 — חדש)
 - JCPT0607A קוד 20 (General Alarm TM1) — עם אבחון ופתרון מפורט (chinaliftsupply.com)
@@ -26,6 +31,11 @@ _עודכן: 2026-05-15_
 - JCPT2223RTB — מנואל מפעיל מלא עם fault codes (ManualsLib)
 - JCPT HD-DC — מדריך חלקים (Scribd, Russian) ✨חדש
 - Scissor general — מנואל מוצרים (Dingli Global PDF) + מרכז הורדה רשמי (en.cndingli.com)
+
+### JLG (ריצה 7 — חדש)
+- 450A/AJ Series II — עמוד 343 טבלת fault codes מלאה: קטגוריות 1(ECM), 2(platform), 3(sensor), 4(drive), 5(software) (manualsdir.com)
+- Fault code 43 — קוד 43 = short circuit בdriver output / solenoid coil; בדוק התנגדות סליל 20–30Ω; אם OK — controller פגום (forkliftaction forum)
+- Scissor Lift general — מדריך Intella Parts: drive/lift/limit switches/tilt sensor diagnosis (intellaparts.com)
 
 ### JLG (ריצה 6 — חדש)
 - 450AJ Series 1 (Ford) — קורוזיית מחברי חוטים → אובדן שליטה על שסתומים; בדיקת connectors בחיבור הזרוע (Forkliftaction)
@@ -57,6 +67,12 @@ _עודכן: 2026-05-15_
 - General — מנגנון קודי שגיאה (jlg.com + aerialequipmentparts.com + Biberger) + כלי אבחון רשמיים
 - CAN Bus Control System — מנואל פרק 6 עם אבחון CAN ו-ECM
 - 510AJ — מנואל שירות נמצא (Scribd) — fault codes דורשים JLG Analyzer לחילוץ
+
+### Genie (ריצה 7 — חדש)
+- GS-3246 — Fehlercodes PDF (Scribd, German): DTC קודים 01–68, OIC E1/E2/E3/E4/E6/E12/E13 עם תיאורים (scribd.com)
+- GS-1932 — אינדקס מנואלים: service, operator, maintenance — 9 מנואלים זמינים (ManualsLib)
+- GS Series — מנואל שירות מלא: 272 DTC + 6 OIC, fault diagnosis p.182, CAN bus procedures (manuals.plus)
+- ANSI multi-brand — קודי שגיאה field service ANSI לסוגי scissor lifts שונים (axcs.com)
 
 ### Genie (ריצה 6 — חדש)
 - GS-1530/1532 — מנואל מפעיל רשמי (Genie CDN, SN GS30P-200101+) — SmartLink E-stop reset procedure
@@ -165,33 +181,32 @@ _עודכן: 2026-05-15_
 | 4 | 2026-05-13 | 87 | 0* | 87 |
 | 5 | 2026-05-14 | 87 | 4† | 91 |
 | 6 | 2026-05-15 | 87 | 12 | 99 |
+| 7 | 2026-05-16 | 99 | 9 | 108 |
 
 *ריצה 4: 30 פריטים זוהו אך לא הועלו לסטייג'ינג (חסימת רשת).
 †ריצה 5: JSON בפועל נשאר 87 (commit לא נדחף); 4 פריטים תועדו ב-knowledge-gaps בלבד.
 ריצה 6: WebFetch חסום (403) — 12 פריטים חדשים נוספו לסטייג'ינג מנתוני חיפוש; Supabase עדיין לא נגיש.
+ריצה 7: WebFetch חסום (403), Supabase לא נגיש — 9 פריטים חדשים נוספו לסטייג'ינג מנתוני חיפוש.
 
-**פירוט מותגים בסטייג'ינג (ריצה 6 מצטברת, 99 פריטים):**
-- Dingli: 18 מקורות
-- JLG: 33 מקורות
-- Genie: 27 מקורות
+**פירוט מותגים בסטייג'ינג (ריצה 7 מצטברת, 108 פריטים):**
+- Dingli: 20 מקורות
+- JLG: 36 מקורות
+- Genie: 31 מקורות
 - Manitou: 12 מקורות
 - MEC: 3 מקורות
 - כללי: 6 מקורות
 
-**ריצה 6 — פריטים חדשים:**
-- Hydraulic maintenance: low oil, clogged filter, air in circuit, pressure valve (atomoving)
-- Scissor lift troubleshooting best practices + manual override (atomoving)
-- AWP troubleshooting guide — E-stop/interlock/battery/hydraulic sequence (onenforklifts)
-- Common scissor lift problems — drift, drive, tilt, E-stop (fieldex)
-- Electrical troubleshooting — CAN bus, controller, connectors (electriciantalk forum)
-- Lift fault table — solenoid, air bleed, seals (j-lifte)
-- JLG 450AJ Series 1 — connector corrosion = hydraulic control loss (forkliftaction)
-- Genie GS-1530/1532 operator manual — SmartLink reset (Genie CDN)
-- Genie S-40 XC service manual — fault codes + hydraulic + CAN (Genie CDN)
-- Dingli JCPT0607DCS manuals index (ManualsLib)
-- JLG 20MVL fault 343 — tilt sensor circuit (forkliftaction)
-- JLG flash code sequence interpretation (forkliftaction)
+**ריצה 7 — פריטים חדשים (9):**
+- Dingli JCPT0607A קוד 58 — Pothole protection: sensor check, arms, reset E-stop (chinaliftsupply.com)
+- Dingli JCPT1418RT — מנואל ANSI מלא עם fault code list (advancedaccessplatforms.co.uk PDF)
+- Genie GS-3246 Fehlercodes — DTC 01–68 + OIC E1–E13 פירוט (Scribd, German)
+- Genie GS-1932 — אינדקס 9 מנואלים + GSDS fault categories (ManualsLib)
+- Genie GS Series — שירות מלא: 272 DTC + CAN bus procedures, fault diagnosis p.182 (manuals.plus)
+- ANSI scissor lift error codes — field service cross-reference multi-brand (axcs.com)
+- JLG 450A/AJ Series II — טבלת fault codes p.343: קטגוריות 1–5 (manualsdir.com)
+- JLG fault code 43 — short circuit בdriver/solenoid: בדוק 20–30Ω, אם OK — controller (forkliftaction)
+- JLG scissor lift troubleshooting — drive/lift/limit switches/tilt sensor (intellaparts.com)
 
-**חיפושים שבוצעו בריצה 6:** 15
-**עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 על כל האתרים בריצה זו)
+**חיפושים שבוצעו בריצה 7:** 15
+**עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 / Supabase ECONNREFUSED)
 **מודלים ללא תיעוד:** Dingli JCPT1212, Manitou 180ATJ (fault codes ספציפיים)
