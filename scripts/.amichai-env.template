@@ -1,0 +1,21 @@
+# עמיחי — קובץ הגדרות (אל תשתף קובץ זה!)
+# העתק לנתיב: ~/.amichai-env
+# ערוך עם TextEdit: open -a TextEdit ~/.amichai-env
+
+# ─── טלגרם ──────────────────────────────────────────────────────────────────
+# הטוקן מ-BotFather (שלח /token ל-@BotFather)
+TELEGRAM_BOT_TOKEN=your_token_here
+
+# ה-user_id שלך (שלח /start ל-@userinfobot ב-Telegram)
+TELEGRAM_ALLOWED_USER_ID=your_user_id_here
+
+# ─── Anthropic (Claude AI) ────────────────────────────────────────────────────
+# מ-https://console.anthropic.com/settings/keys
+ANTHROPIC_API_KEY=your_anthropic_key_here
+
+# ─── Supabase ─────────────────────────────────────────────────────────────────
+# מ-app.supabase.com → Settings → API
+NEXT_PUBLIC_SUPABASE_URL=https://xxxxxxxxxxxxx.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+# אופציונלי — לגישה מלאה לנתונים:
+# SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
