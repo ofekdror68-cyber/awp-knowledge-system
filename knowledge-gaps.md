@@ -1,12 +1,21 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-05-16_
+_עודכן: 2026-05-17_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
 
+> **ריצה 8 (2026-05-17):** 30 פריטים חדשים מזוהים — נשמרו ב-`pending_knowledge.json`; Supabase NXDOMAIN. להעלאה: `python3 save_to_supabase.py`
 > **ריצה 7 (2026-05-16):** 9 פריטים חדשים נוספו לסטייג'ינג (108 סה"כ)
 > **ריצה 6 (2026-05-15):** 12 פריטים חדשים נוספו לסטייג'ינג (99 סה"כ)
 > **ריצה 5 (2026-05-14):** 4 פריטים חדשים נוספו לסטייג'ינג (רוב המקורות כבר היו ב-DB מריצות קודמות)
 > **ריצה 4 (2026-05-13):** 30 פריטים חדשים מזוהים — לא הועלו לסטייג'ינג (חסימת רשת)
+
+### ריצה 8 — פריטים חדשים (2026-05-17)
+30 פריטים חדשים נוספו ל-`pending_knowledge.json` לפי מותג:
+- **Dingli (8):** JCPT0607A קוד 58/20/69 (פירוט מלא), JCPT1912DC קוד 69, JCPT0607DCS קודים 10–112, JCPT0307 קודים, JCPT1412DC מנואל, JCPT0607DCM מנואל רשמי, Dingli Scissor PDFs
+- **JLG (9):** 450AJ Series II fault codes, 450AJ שירות PDF, JLG fault codes רשמי, JLG boom codes, 450AJ hydraulic forum, 660SJ forum, intellaparts troubleshooting, manualsdir p.343, ewpspares 860SJ
+- **Genie (7):** GS-3246/2646/2046 שירות רשמי (קוד 18+רשימה), Genie 40+ קודים, ECU GEN5, ECU GEN6, Genie official scissor codes, biberger guide, GS-1932 E1/E4/E6
+- **Manitou (4):** Fault codes PDF (Scribd), DTC list, machineseeker guide, ManualsLib 180ATJ
+- **כללי (2):** scissor lift problems, hydraulic failure prevention
 
 ### Dingli (ריצה 7 — חדש)
 - JCPT0607A קוד 58 (Pothole) — פירוט: חיישן pothole guard מופעל; בדוק sensor wiring, arms חופשיות, reset E-stop (chinaliftsupply.com)
@@ -182,31 +191,52 @@ _עודכן: 2026-05-16_
 | 5 | 2026-05-14 | 87 | 4† | 91 |
 | 6 | 2026-05-15 | 87 | 12 | 99 |
 | 7 | 2026-05-16 | 99 | 9 | 108 |
+| 8 | 2026-05-17 | 108 | 30‡ | 138 |
 
 *ריצה 4: 30 פריטים זוהו אך לא הועלו לסטייג'ינג (חסימת רשת).
 †ריצה 5: JSON בפועל נשאר 87 (commit לא נדחף); 4 פריטים תועדו ב-knowledge-gaps בלבד.
 ריצה 6: WebFetch חסום (403) — 12 פריטים חדשים נוספו לסטייג'ינג מנתוני חיפוש; Supabase עדיין לא נגיש.
 ריצה 7: WebFetch חסום (403), Supabase לא נגיש — 9 פריטים חדשים נוספו לסטייג'ינג מנתוני חיפוש.
+‡ריצה 8: WebFetch חסום (403), Supabase NXDOMAIN — 30 פריטים נשמרו ב-`pending_knowledge.json`; הרץ `python3 save_to_supabase.py` להעלאה.
 
-**פירוט מותגים בסטייג'ינג (ריצה 7 מצטברת, 108 פריטים):**
-- Dingli: 20 מקורות
-- JLG: 36 מקורות
-- Genie: 31 מקורות
-- Manitou: 12 מקורות
+**פירוט מותגים בסטייג'ינג (ריצה 8 מצטברת, 138 פריטים):**
+- Dingli: 28 מקורות
+- JLG: 45 מקורות
+- Genie: 38 מקורות
+- Manitou: 16 מקורות
 - MEC: 3 מקורות
-- כללי: 6 מקורות
+- כללי: 8 מקורות
 
-**ריצה 7 — פריטים חדשים (9):**
-- Dingli JCPT0607A קוד 58 — Pothole protection: sensor check, arms, reset E-stop (chinaliftsupply.com)
-- Dingli JCPT1418RT — מנואל ANSI מלא עם fault code list (advancedaccessplatforms.co.uk PDF)
-- Genie GS-3246 Fehlercodes — DTC 01–68 + OIC E1–E13 פירוט (Scribd, German)
-- Genie GS-1932 — אינדקס 9 מנואלים + GSDS fault categories (ManualsLib)
-- Genie GS Series — שירות מלא: 272 DTC + CAN bus procedures, fault diagnosis p.182 (manuals.plus)
-- ANSI scissor lift error codes — field service cross-reference multi-brand (axcs.com)
-- JLG 450A/AJ Series II — טבלת fault codes p.343: קטגוריות 1–5 (manualsdir.com)
-- JLG fault code 43 — short circuit בdriver/solenoid: בדוק 20–30Ω, אם OK — controller (forkliftaction)
-- JLG scissor lift troubleshooting — drive/lift/limit switches/tilt sensor (intellaparts.com)
+**ריצה 8 — פריטים חדשים (30):**
+- Dingli JCPT0607A קוד 58/20/69 — תיאור מלא של כל קוד עם שלבי תיקון (chinaliftsupply.com)
+- Dingli JCPT1912DC קוד 69 — Power relay sleep (chinaliftsupply.com)
+- Dingli JCPT0607DCS — רשימת קודים 10–112 מלאה (ManualsLib p.31)
+- Dingli JCPT0307 — דף קודים מלא (ManualsLib p.29)
+- Dingli JCPT1412DC — מנואל מפעיל PDF (Advanced Access Platforms)
+- Dingli JCPT0607DCM — מנואל רשמי PDF (dingliglobal.com)
+- Dingli JCPT1418RT — מנואל Rough Terrain (Advanced Access Platforms)
+- Dingli Scissor — מנואל מוצרים כללי (dingliglobal.com PDF)
+- JLG 450A/AJ Series II — קודים עמ' 343 (ManualsLib + ManualsDir)
+- JLG 450AJ — שירות PDF מלא (swiftequipment.com.au)
+- JLG general — fault codes FAQ רשמי (jlg.com)
+- JLG boom lifts — קודי שגיאה (forkliftpdfmanuals.com)
+- JLG 860SJ — מדריך מלא לkodim + JLG Analyzer 1001249695 (ewpspares.com.au)
+- JLG boom lifts — troubleshooting guide (intellaparts.com)
+- JLG 450AJ — hydraulic connector corrosion diagnosis (forkliftaction forum)
+- JLG 660SJ — error code forum (forkliftaction)
+- Genie GS-3246/2646/2046 — שירות רשמי #48339 עם קודים 01–68 (manuals.genielift.com)
+- Genie GS series — 40+ error codes, DTC+OIC types (flatearthequipment.com)
+- Genie ECU GEN 5 — fault code PDF (hindleyelectronics.com)
+- Genie ECU GEN 6 — fault code PDF (hindleyelectronics.com)
+- Genie GS series — scissor error codes רשמי (genielift.com)
+- Genie — biberger troubleshooting guide (biberger.de)
+- Manitou fault codes — PDF list (Scribd)
+- Manitou DTCs — truck-manuals.net
+- Manitou 180ATJ — machineseeker blog guide
+- Manitou 180ATJ — ManualsLib manuals page
+- fieldex — common scissor lift problems guide
+- yorkpmh — hydraulic failure prevention AWP
 
-**חיפושים שבוצעו בריצה 7:** 15
-**עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 / Supabase ECONNREFUSED)
-**מודלים ללא תיעוד:** Dingli JCPT1212, Manitou 180ATJ (fault codes ספציפיים)
+**חיפושים שבוצעו בריצה 8:** 15
+**עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 / Supabase NXDOMAIN)
+**מודלים ללא תיעוד ספציפי:** Dingli JCPT1208, JCPT1212, JLG 520AJ, JLG 510AJ (עמוק), Manitou 180ATJ (קודים ספציפיים)
