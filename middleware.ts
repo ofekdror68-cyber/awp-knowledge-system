@@ -4,7 +4,7 @@ import { verifySessionToken } from '@/lib/auth'
 export async function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl
 
-  if (pathname.startsWith('/login') || pathname.startsWith('/api/auth') || pathname.startsWith('/api/cron') || pathname.startsWith('/api/audit')) {
+  if (pathname.startsWith('/login') || pathname.startsWith('/api/auth') || pathname.startsWith('/api/cron') || pathname.startsWith('/api/audit') || pathname.startsWith('/api/webhooks')) {
     return NextResponse.next()
   }
 
