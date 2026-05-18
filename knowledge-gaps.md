@@ -1,13 +1,20 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-05-17_
+_עודכן: 2026-05-18_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
 
+> **ריצה 9 (2026-05-18):** 14 פריטים חדשים נוספו לסטייג'ינג (122 סה"כ); Supabase ECONNREFUSED; WebFetch חסום (403). להעלאה: `python3 save_to_supabase.py`
 > **ריצה 8 (2026-05-17):** 30 פריטים חדשים מזוהים — נשמרו ב-`pending_knowledge.json`; Supabase NXDOMAIN. להעלאה: `python3 save_to_supabase.py`
 > **ריצה 7 (2026-05-16):** 9 פריטים חדשים נוספו לסטייג'ינג (108 סה"כ)
 > **ריצה 6 (2026-05-15):** 12 פריטים חדשים נוספו לסטייג'ינג (99 סה"כ)
 > **ריצה 5 (2026-05-14):** 4 פריטים חדשים נוספו לסטייג'ינג (רוב המקורות כבר היו ב-DB מריצות קודמות)
 > **ריצה 4 (2026-05-13):** 30 פריטים חדשים מזוהים — לא הועלו לסטייג'ינג (חסימת רשת)
+
+### ריצה 9 — פריטים חדשים (2026-05-18)
+14 פריטים חדשים נוספו לסטייג'ינג לפי מותג:
+- **JLG (9):** 9-9/99-5 Power Module Failure (JLG רשמי), Flash Code 2-5 (pothole sensor JustAnswer), T350 Flash Code 9, Code 211 (power cycle boom lifts), 800S/860SJ Analyzer codes p.308, DSP M DTC p.93, 660SJ/860SJ מדריך מקיף, 520AJ שירות מלא (Issuu), fault codes guide כללי
+- **Genie (4):** Z-45/25 fault codes p.102, GS-2646AV OIC/DTC p.92, GS-1530/32 OIC/DTC p.180, GS-1930/1932 רשימת קודים מלאה עם פתרונות
+- **Manitou (1):** diag.manitou-group.com portal — קודי ברירת מחדל רשמיים
 
 ### ריצה 8 — פריטים חדשים (2026-05-17)
 30 פריטים חדשים נוספו ל-`pending_knowledge.json` לפי מותג:
@@ -40,6 +47,16 @@ _עודכן: 2026-05-17_
 - JCPT2223RTB — מנואל מפעיל מלא עם fault codes (ManualsLib)
 - JCPT HD-DC — מדריך חלקים (Scribd, Russian) ✨חדש
 - Scissor general — מנואל מוצרים (Dingli Global PDF) + מרכז הורדה רשמי (en.cndingli.com)
+
+### JLG (ריצה 9 — חדש)
+- 9-9/99-5 — Power Module Failure / Personality Range Error: כשל ב-EPROM של power module ב-ES Scissors; פתרון: JLG Analyzer + החלפת power module (JLG רשמי, score 1.0)
+- Flash Code 2-5 — JLG 3246ES: drive חסום עקב pothole sensor; בדוק יישור pothole bars שמאל וימין (JustAnswer)
+- Code 211 — Power Cycle Required: אתחול מלא של מכונה (E-stop 30 שניות); אם נמשך — JLG Analyzer; נפוץ ב-450AJ, 520AJ, 860SJ
+- Flash Code 9 — JLG T350: אינדיקציה כוללת לדרישת שירות; חובה JLG Analyzer לפרטים
+- 800S / 860SJ — Analyzer Fault Code Listing עמ' 308: DTC 001 (OK), 002 (ground mode), 0010 (cutback); 5 קבוצות (manualsdir.com)
+- 660SJ / 860SJ — מדריך קודים מקיף + E5002 (engine fault); format X-Y, port באיזור ground control (manualsdump.com)
+- 520AJ — מנואל שירות מלא 3121665 באיסו; ADE system, DTC via Analyzer; Deutz/Perkins codes
+- DSP M — DTC p.93: mast sensor default code; בדוק sensor alignment ו-wiring (ManualsLib)
 
 ### JLG (ריצה 7 — חדש)
 - 450A/AJ Series II — עמוד 343 טבלת fault codes מלאה: קטגוריות 1(ECM), 2(platform), 3(sensor), 4(drive), 5(software) (manualsdir.com)
@@ -77,6 +94,12 @@ _עודכן: 2026-05-17_
 - CAN Bus Control System — מנואל פרק 6 עם אבחון CAN ו-ECM
 - 510AJ — מנואל שירות נמצא (Scribd) — fault codes דורשים JLG Analyzer לחילוץ
 
+### Genie (ריצה 9 — חדש)
+- Z-45/25 — fault codes p.102 (ManualsLib): קודי בקרה לזרוע ארטיקולציה Z-45/25
+- GS-2646AV — OIC/DTC p.92 (ManualsLib): OIC codes LL/PHS; 272 DTC בחמש קטגוריות; אותה מערכת כמו GS-1932/GS-3246
+- GS-1530/GS-1532 — OIC/DTC p.180 (ManualsLib): SmartLink GSDS codes מלאים עם גורמים ופתרונות
+- GS-1930/GS-1932 — רשימת קודים מלאה עם פתרונות (reliableequipmentparts.com): OIC: LL, PHS; DTC: E1 (E-stop), E4 (סוללה נמוכה), E6 (tilt), E12 (תקשורת), E18 (height limit); קודים 52-58 (coil errors: resistance 20-30Ω); קוד 18 (pothole guard); קוד 68 (low voltage); הוראות reset
+
 ### Genie (ריצה 7 — חדש)
 - GS-3246 — Fehlercodes PDF (Scribd, German): DTC קודים 01–68, OIC E1/E2/E3/E4/E6/E12/E13 עם תיאורים (scribd.com)
 - GS-1932 — אינדקס מנואלים: service, operator, maintenance — 9 מנואלים זמינים (ManualsLib)
@@ -103,6 +126,9 @@ _עודכן: 2026-05-17_
 - GSDS — 272 קודים כולל + Genie Lift Connect
 - Z-45 XC / Z-60 DC — מנואלי שירות רשמיים (Genie CDN)
 - Hybrid Lifts — דף קודי שגיאה (ANSI multi-brand)
+
+### Manitou (ריצה 9 — חדש)
+- diag.manitou-group.com — פורטל אבחון רשמי Manitou; קודי ברירת מחדל לכל דגמי Manitou כולל 180ATJ; score 1.0 (מקור רשמי)
 
 ### Manitou (ריצה 4 — חדש)
 - ATJ series — מדריך קודי תקלה: machineseeker.com blog, truck-manuals.net DTC
@@ -142,11 +168,11 @@ _עודכן: 2026-05-17_
 | Dingli JCPT1412DC | טבלת fault codes מפורטת מתוך מנואל (יש הפניה, חסרה חילוץ) | גבוהה |
 | Dingli JCPT1208AC | fault codes — לא נחלץ; מרכז הורדה רשמי זוהה | גבוהה |
 | Dingli JCPT1212 | שום תיעוד ספציפי — לא נמצא | גבוהה |
-| JLG 520AJ | קודי שגיאה ספציפיים לדגם — נמצאו רק קודים כלליים | גבוהה |
-| JLG 860SJ | מנואל שירות מלא — JLG Online Express בלבד (מנואל חלקים + כלי אבחון נמצאו) | גבוהה |
+| JLG 520AJ | מנואל שירות מלא נמצא (Issuu 3121665) — DTC ספציפי לדגם עדיין דרוש JLG Analyzer | בינונית |
+| JLG 860SJ | DTC מלא נמצא (ManualsDir p.308) — מנואל שירות מקורי עדיין JLG Online Express בלבד | בינונית |
 | JLG 510AJ | מנואל שירות נמצא (Scribd) — fault codes דורשים JLG Analyzer | בינונית |
-| Genie GS-3246 | טבלת DTC מלאה (מעל קוד 68) — הפניה לעמ' 182 אך לא חולץ | בינונית |
-| Manitou 180ATJ | קודי שגיאה ספציפיים לדגם — Manitou MDS נדרש לקריאה מלאה | גבוהה |
+| Genie GS-3246 | טבלת DTC מלאה (מעל קוד 68) — הפניה לעמ' 182 אך לא חולץ; GS-2646AV codes נמצאו כתחליף | נמוכה |
+| Manitou 180ATJ | קודי שגיאה ספציפיים — diag.manitou-group.com נמצא (score 1.0); MDS עדיין נדרש לפרטים | בינונית |
 | JLG 450AJ | flash codes מורכבים — קוד 5:437 וקודי מוטור נמצאו בפורומים | נמוכה |
 
 ---
@@ -192,18 +218,20 @@ _עודכן: 2026-05-17_
 | 6 | 2026-05-15 | 87 | 12 | 99 |
 | 7 | 2026-05-16 | 99 | 9 | 108 |
 | 8 | 2026-05-17 | 108 | 30‡ | 138 |
+| 9 | 2026-05-18 | 108§ | 14 | 122 |
 
 *ריצה 4: 30 פריטים זוהו אך לא הועלו לסטייג'ינג (חסימת רשת).
 †ריצה 5: JSON בפועל נשאר 87 (commit לא נדחף); 4 פריטים תועדו ב-knowledge-gaps בלבד.
 ריצה 6: WebFetch חסום (403) — 12 פריטים חדשים נוספו לסטייג'ינג מנתוני חיפוש; Supabase עדיין לא נגיש.
 ריצה 7: WebFetch חסום (403), Supabase לא נגיש — 9 פריטים חדשים נוספו לסטייג'ינג מנתוני חיפוש.
 ‡ריצה 8: WebFetch חסום (403), Supabase NXDOMAIN — 30 פריטים נשמרו ב-`pending_knowledge.json`; הרץ `python3 save_to_supabase.py` להעלאה.
+§ריצה 9: pending_knowledge.json מריצה 8 היה כבר ב-staging; בסיס אמיתי 108. WebFetch חסום (403), Supabase ECONNREFUSED — 14 פריטים חדשים נוספו לסטייג'ינג.
 
-**פירוט מותגים בסטייג'ינג (ריצה 8 מצטברת, 138 פריטים):**
+**פירוט מותגים בסטייג'ינג (ריצה 9 מצטברת, 122 פריטים):**
 - Dingli: 28 מקורות
-- JLG: 45 מקורות
-- Genie: 38 מקורות
-- Manitou: 16 מקורות
+- JLG: 54 מקורות (+9 ריצה 9)
+- Genie: 42 מקורות (+4 ריצה 9)
+- Manitou: 17 מקורות (+1 ריצה 9)
 - MEC: 3 מקורות
 - כללי: 8 מקורות
 
@@ -240,3 +268,25 @@ _עודכן: 2026-05-17_
 **חיפושים שבוצעו בריצה 8:** 15
 **עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 / Supabase NXDOMAIN)
 **מודלים ללא תיעוד ספציפי:** Dingli JCPT1208, JCPT1212, JLG 520AJ, JLG 510AJ (עמוק), Manitou 180ATJ (קודים ספציפיים)
+
+---
+
+**ריצה 9 — פריטים חדשים (14):**
+- JLG 9-9/99-5 — Power Module Failure / Personality Range Error (JLG רשמי, score 1.0)
+- JLG 3246ES Flash Code 2-5 — Pothole sensor/bar misalignment (JustAnswer)
+- JLG T350 Flash Code 9 — Service required (Heavy Equipment Forums)
+- JLG Code 211 — Power Cycle Required on boom lifts (GC Iron support)
+- JLG 800S/860SJ — Analyzer Fault Code Listing p.308 עם DTC 001/002/0010 (ManualsDir)
+- JLG 660SJ/860SJ — מדריך קודים מקיף + E5002 + format X-Y (ManualsDump)
+- JLG 520AJ — מנואל שירות מלא 3121665 + ADE system (Issuu)
+- JLG DSP M — DTC mast sensor default code p.93 (ManualsLib)
+- JLG Fault Codes — מדריך כללי עם סדר אבחון (TractorDetailProblems)
+- Genie Z-45/25 — Control system fault codes p.102 (ManualsLib)
+- Genie GS-2646AV — OIC/DTC p.92 (ManualsLib)
+- Genie GS-1530/1532 — OIC/DTC p.180 (ManualsLib)
+- Genie GS-1930/1932 — רשימת קודים מלאה: E1/E4/E6/E12/E18, קודים 18/52-58/68 + פתרונות (Reliable Equipment Parts)
+- Manitou — diag.manitou-group.com פורטל רשמי (score 1.0)
+
+**חיפושים שבוצעו בריצה 9:** 15
+**עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 / Supabase ECONNREFUSED)
+**מודלים ללא תיעוד ספציפי:** Dingli JCPT1208, JCPT1212, Manitou 180ATJ (קודים ספציפיים — diag.manitou-group.com נמצא)
