@@ -1363,5 +1363,38 @@
     "equipment_model": "JLG 520AJ",
     "topic": "fault_codes",
     "reliability_score": 0.4
+  },
+  {
+    "url": "https://csapps.jlg.com/OnlineManuals/Manuals/JLG/JLG%20Boom%20Lifts/T350_500J/Service%20Manuals/SN%200030000001%20to%200030012032/Troubleshooting_3121203_09-07-05_Global_English.pdf",
+    "title": "JLG T350/T500J Troubleshooting Manual 3121203 (September 2005)",
+    "content_summary": "Official JLG troubleshooting manual for T350 and T500J articulating boom lifts, serial number range 0030000001 to 0030012032. Publication 3121203, dated September 7, 2005. Contains CAN bus diagnostics, electrical and hydraulic fault trees, flash code identification and step-by-step troubleshooting procedures for boom lift faults.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "T350",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.gtaccess.co.uk/system/machineassets/192DI/JCPT0607DCS%20Operation%20manual%20.pdf",
+    "title": "Dingli JCPT0607DCS Operation Manual (GT Access)",
+    "content_summary": "Dingli JCPT0607DCS electric scissor lift operation manual distributed by GT Access UK. Contains error indicator readout (LED fault code display), full list of fault codes with reset procedure (press and release red Emergency Stop button), maintenance schedules, and safety procedures for the JCPT0607DCS model.",
+    "brands_mentioned": [
+      "Dingli"
+    ],
+    "equipment_model": "JCPT0607DCS",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1391516/Genie-Gs-1530.html?page=171",
+    "title": "Fault Code Chart - Genie GS-1530 Service Manual [Page 171] | ManualsLib",
+    "content_summary": "Official Genie GS-1530 scissor lift service manual fault code chart on page 171. Contains complete fault code listing for GS-1530 model including DTC and OIC codes with descriptions, causes, and recommended service actions. Part of the Genie SmartLink Diagnostic System (GSDS) documentation.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "GS-1530",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
   }
 ]

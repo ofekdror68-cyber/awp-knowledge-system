@@ -1,8 +1,9 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-05-18_
+_עודכן: 2026-05-19_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
 
+> **ריצה 10 (2026-05-19):** 3 פריטים חדשים נוספו לסטייג'ינג (125 סה"כ); Supabase ECONNREFUSED; WebFetch חסום (403). 15 חיפושים — כל 50 URL שנבדקו ב-staging חוץ מ-3 חדשים. להעלאה: `python3 save_to_supabase.py`
 > **ריצה 9 (2026-05-18):** 14 פריטים חדשים נוספו לסטייג'ינג (122 סה"כ); Supabase ECONNREFUSED; WebFetch חסום (403). להעלאה: `python3 save_to_supabase.py`
 > **ריצה 8 (2026-05-17):** 30 פריטים חדשים מזוהים — נשמרו ב-`pending_knowledge.json`; Supabase NXDOMAIN. להעלאה: `python3 save_to_supabase.py`
 > **ריצה 7 (2026-05-16):** 9 פריטים חדשים נוספו לסטייג'ינג (108 סה"כ)
@@ -47,6 +48,9 @@ _עודכן: 2026-05-18_
 - JCPT2223RTB — מנואל מפעיל מלא עם fault codes (ManualsLib)
 - JCPT HD-DC — מדריך חלקים (Scribd, Russian) ✨חדש
 - Scissor general — מנואל מוצרים (Dingli Global PDF) + מרכז הורדה רשמי (en.cndingli.com)
+
+### JLG (ריצה 10 — חדש)
+- T350 / T500J — Troubleshooting Manual 3121203 (Sep 2005, SN 0030000001–0030012032): CAN bus diagnostics, electrical/hydraulic fault trees, flash code identification (csapps.jlg.com, score 1.0)
 
 ### JLG (ריצה 9 — חדש)
 - 9-9/99-5 — Power Module Failure / Personality Range Error: כשל ב-EPROM של power module ב-ES Scissors; פתרון: JLG Analyzer + החלפת power module (JLG רשמי, score 1.0)
@@ -93,6 +97,12 @@ _עודכן: 2026-05-18_
 - General — מנגנון קודי שגיאה (jlg.com + aerialequipmentparts.com + Biberger) + כלי אבחון רשמיים
 - CAN Bus Control System — מנואל פרק 6 עם אבחון CAN ו-ECM
 - 510AJ — מנואל שירות נמצא (Scribd) — fault codes דורשים JLG Analyzer לחילוץ
+
+### Genie (ריצה 10 — חדש)
+- GS-1530 — Fault Code Chart p.171 (ManualsLib): DTC ו-OIC codes מלאים עבור GS-1530, חלק ממערכת GSDS (score 1.0)
+
+### Dingli (ריצה 10 — חדש)
+- JCPT0607DCS — Operation Manual (gtaccess.co.uk PDF): error indicator readout, רשימת fault codes, reset procedure (E-stop) (score 0.8)
 
 ### Genie (ריצה 9 — חדש)
 - Z-45/25 — fault codes p.102 (ManualsLib): קודי בקרה לזרוע ארטיקולציה Z-45/25
@@ -219,6 +229,7 @@ _עודכן: 2026-05-18_
 | 7 | 2026-05-16 | 99 | 9 | 108 |
 | 8 | 2026-05-17 | 108 | 30‡ | 138 |
 | 9 | 2026-05-18 | 108§ | 14 | 122 |
+| 10 | 2026-05-19 | 122 | 3 | 125 |
 
 *ריצה 4: 30 פריטים זוהו אך לא הועלו לסטייג'ינג (חסימת רשת).
 †ריצה 5: JSON בפועל נשאר 87 (commit לא נדחף); 4 פריטים תועדו ב-knowledge-gaps בלבד.
@@ -227,11 +238,11 @@ _עודכן: 2026-05-18_
 ‡ריצה 8: WebFetch חסום (403), Supabase NXDOMAIN — 30 פריטים נשמרו ב-`pending_knowledge.json`; הרץ `python3 save_to_supabase.py` להעלאה.
 §ריצה 9: pending_knowledge.json מריצה 8 היה כבר ב-staging; בסיס אמיתי 108. WebFetch חסום (403), Supabase ECONNREFUSED — 14 פריטים חדשים נוספו לסטייג'ינג.
 
-**פירוט מותגים בסטייג'ינג (ריצה 9 מצטברת, 122 פריטים):**
-- Dingli: 28 מקורות
-- JLG: 54 מקורות (+9 ריצה 9)
-- Genie: 42 מקורות (+4 ריצה 9)
-- Manitou: 17 מקורות (+1 ריצה 9)
+**פירוט מותגים בסטייג'ינג (ריצה 10 מצטברת, 125 פריטים):**
+- Dingli: 28 מקורות (+1 ריצה 10: JCPT0607DCS Operation Manual)
+- JLG: 54 מקורות (+1 ריצה 10: T350/T500J Troubleshooting Manual)
+- Genie: 43 מקורות (+1 ריצה 10: GS-1530 Fault Code Chart p.171)
+- Manitou: 17 מקורות
 - MEC: 3 מקורות
 - כללי: 8 מקורות
 
@@ -268,6 +279,18 @@ _עודכן: 2026-05-18_
 **חיפושים שבוצעו בריצה 8:** 15
 **עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 / Supabase NXDOMAIN)
 **מודלים ללא תיעוד ספציפי:** Dingli JCPT1208, JCPT1212, JLG 520AJ, JLG 510AJ (עמוק), Manitou 180ATJ (קודים ספציפיים)
+
+---
+
+**ריצה 10 — פריטים חדשים (3):**
+- JLG T350/T500J — Troubleshooting Manual 3121203 (csapps.jlg.com, score 1.0) — CAN diagnostics + flash codes
+- Dingli JCPT0607DCS — Operation Manual PDF (gtaccess.co.uk, score 0.8) — fault code list + reset procedure
+- Genie GS-1530 — Fault Code Chart p.171 (ManualsLib, score 1.0) — DTC+OIC codes מלאים
+
+**חיפושים שבוצעו בריצה 10:** 15
+**עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 / Supabase ECONNREFUSED)
+**URLים שנבדקו מול staging:** 50 — 47 כפילויות, 3 חדשים
+**מודלים ללא תיעוד ספציפי:** Dingli JCPT1208, JCPT1212, JLG 520AJ (עמוק), Manitou 180ATJ (קודים ספציפיים)
 
 ---
 
