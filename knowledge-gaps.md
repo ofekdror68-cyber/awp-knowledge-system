@@ -1,8 +1,9 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-05-19_
+_עודכן: 2026-05-20_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
 
+> **ריצה 11 (2026-05-20):** 0 פריטים חדשים — כל URL שנמצא בריצה כבר קיים ב-staging (125 סה"כ, אין שינוי). Supabase ECONNREFUSED; WebFetch חסום (403). 15 חיפושים — 50+ URL בדוקים, 0 חדשים. הסטייג'ינג רווי לדפוסי החיפוש הנוכחיים — יש להרחיב לחיפושים חדשים (JCPT1208, JCPT1212, 520AJ DTC). להעלאה: `python3 save_to_supabase.py`
 > **ריצה 10 (2026-05-19):** 3 פריטים חדשים נוספו לסטייג'ינג (125 סה"כ); Supabase ECONNREFUSED; WebFetch חסום (403). 15 חיפושים — כל 50 URL שנבדקו ב-staging חוץ מ-3 חדשים. להעלאה: `python3 save_to_supabase.py`
 > **ריצה 9 (2026-05-18):** 14 פריטים חדשים נוספו לסטייג'ינג (122 סה"כ); Supabase ECONNREFUSED; WebFetch חסום (403). להעלאה: `python3 save_to_supabase.py`
 > **ריצה 8 (2026-05-17):** 30 פריטים חדשים מזוהים — נשמרו ב-`pending_knowledge.json`; Supabase NXDOMAIN. להעלאה: `python3 save_to_supabase.py`
@@ -230,6 +231,7 @@ _עודכן: 2026-05-19_
 | 8 | 2026-05-17 | 108 | 30‡ | 138 |
 | 9 | 2026-05-18 | 108§ | 14 | 122 |
 | 10 | 2026-05-19 | 122 | 3 | 125 |
+| 11 | 2026-05-20 | 125 | 0 | 125 |
 
 *ריצה 4: 30 פריטים זוהו אך לא הועלו לסטייג'ינג (חסימת רשת).
 †ריצה 5: JSON בפועל נשאר 87 (commit לא נדחף); 4 פריטים תועדו ב-knowledge-gaps בלבד.
@@ -237,8 +239,9 @@ _עודכן: 2026-05-19_
 ריצה 7: WebFetch חסום (403), Supabase לא נגיש — 9 פריטים חדשים נוספו לסטייג'ינג מנתוני חיפוש.
 ‡ריצה 8: WebFetch חסום (403), Supabase NXDOMAIN — 30 פריטים נשמרו ב-`pending_knowledge.json`; הרץ `python3 save_to_supabase.py` להעלאה.
 §ריצה 9: pending_knowledge.json מריצה 8 היה כבר ב-staging; בסיס אמיתי 108. WebFetch חסום (403), Supabase ECONNREFUSED — 14 פריטים חדשים נוספו לסטייג'ינג.
+**ריצה 11:** 0 פריטים חדשים — staging רווי. לפתיחת מקורות חדשים יש להרחיב חיפושים ל-JCPT1208/JCPT1212 fault codes, 520AJ DTC ספציפי, ו-Manitou 180ATJ service manual.
 
-**פירוט מותגים בסטייג'ינג (ריצה 10 מצטברת, 125 פריטים):**
+**פירוט מותגים בסטייג'ינג (ריצה 11 מצטברת, 125 פריטים):**
 - Dingli: 28 מקורות (+1 ריצה 10: JCPT0607DCS Operation Manual)
 - JLG: 54 מקורות (+1 ריצה 10: T350/T500J Troubleshooting Manual)
 - Genie: 43 מקורות (+1 ריצה 10: GS-1530 Fault Code Chart p.171)
@@ -291,6 +294,35 @@ _עודכן: 2026-05-19_
 **עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 / Supabase ECONNREFUSED)
 **URLים שנבדקו מול staging:** 50 — 47 כפילויות, 3 חדשים
 **מודלים ללא תיעוד ספציפי:** Dingli JCPT1208, JCPT1212, JLG 520AJ (עמוק), Manitou 180ATJ (קודים ספציפיים)
+
+---
+
+**ריצה 11 — פריטים חדשים (0):**
+כל 50+ URL שנמצאו בחיפושים כבר קיימים ב-staging. הסטייג'ינג רווי לדפוסי החיפוש הנוכחיים.
+
+**אבחנת ריצה 11 — מה נמצא בחיפושים אך כבר ב-staging:**
+- Dingli JCPT0607A קודים 20/58/69 (chinaliftsupply.com) — כבר ב-staging
+- Dingli JCPT0607DCS קודים מלאים (ManualsLib p.31) — כבר ב-staging
+- JLG 450AJ Series II קודים p.343 (ManualsLib) — כבר ב-staging
+- Genie GS-3246 קוד 18/קוד chart (ManualsLib, JustAnswer) — כבר ב-staging
+- Genie GS-1932 service manual (manuals.genielift.com) — כבר ב-staging
+- Manitou 180ATJ (ManualsLib, machineseeker, truck-manuals.net) — כבר ב-staging
+- JLG 860SJ (csapps.jlg.com parts manual) — כבר ב-staging
+- כל 15 URL מחיפושי Genie GS-1932, Manitou 180ATJ, JLG 510AJ, JLG 860SJ, general AWP — כבר ב-staging
+
+**המלצה לריצה 12:** שנה את שאילתות החיפוש ל:
+1. "Dingli JCPT1208 error code LED display fault list" (שאילתה ממוקדת יותר)
+2. "Dingli JCPT1212 scissor lift manual troubleshooting" (דגם לא מכוסה)
+3. "JLG 520AJ DTC 5-437 specific fault code repair" (קוד ספציפי)
+4. "Manitou 180ATJ service manual fault codes download" (מנואל שירות ספציפי)
+5. "forkliftaction.com JLG 520AJ 860SJ forum" (פורום ספציפי)
+6. "Dingli scissor lift CANBUS fault 111 112 repair" (קוד CAN bus ספציפי)
+7. "scissor lift drive motor fault code repair DC motor controller"
+
+**חיפושים שבוצעו בריצה 11:** 15
+**עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 / Supabase ECONNREFUSED)
+**URLים שנבדקו מול staging:** 50+ — 50+ כפילויות, 0 חדשים
+**מודלים ללא תיעוד ספציפי:** Dingli JCPT1208, JCPT1212, JLG 520AJ (DTC מלא), Manitou 180ATJ (קודים ספציפיים)
 
 ---
 
