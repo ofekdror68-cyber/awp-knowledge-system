@@ -1,8 +1,9 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-05-20_
+_עודכן: 2026-05-21_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
 
+> **ריצה 12 (2026-05-21):** 18 פריטים חדשים נוספו לסטייג'ינג (143 סה"כ). Supabase ECONNREFUSED; WebFetch חסום (403). 15 חיפושים — 70+ URL בדוקים, 18 חדשים. כולל: Dingli JCPT1412HD מנואל, Genie GS-3246 מנואל שירות, GS-1932 מנואל רשמי, GS-2669RT, JLG 600SJC fault codes, JLG 520208 קוד, JLG LSS Boom מנואל, 8 threads מ-forkliftaction.com. להעלאה: `python3 save_to_supabase.py`
 > **ריצה 11 (2026-05-20):** 0 פריטים חדשים — כל URL שנמצא בריצה כבר קיים ב-staging (125 סה"כ, אין שינוי). Supabase ECONNREFUSED; WebFetch חסום (403). 15 חיפושים — 50+ URL בדוקים, 0 חדשים. הסטייג'ינג רווי לדפוסי החיפוש הנוכחיים — יש להרחיב לחיפושים חדשים (JCPT1208, JCPT1212, 520AJ DTC). להעלאה: `python3 save_to_supabase.py`
 > **ריצה 10 (2026-05-19):** 3 פריטים חדשים נוספו לסטייג'ינג (125 סה"כ); Supabase ECONNREFUSED; WebFetch חסום (403). 15 חיפושים — כל 50 URL שנבדקו ב-staging חוץ מ-3 חדשים. להעלאה: `python3 save_to_supabase.py`
 > **ריצה 9 (2026-05-18):** 14 פריטים חדשים נוספו לסטייג'ינג (122 סה"כ); Supabase ECONNREFUSED; WebFetch חסום (403). להעלאה: `python3 save_to_supabase.py`
@@ -11,6 +12,13 @@ _עודכן: 2026-05-20_
 > **ריצה 6 (2026-05-15):** 12 פריטים חדשים נוספו לסטייג'ינג (99 סה"כ)
 > **ריצה 5 (2026-05-14):** 4 פריטים חדשים נוספו לסטייג'ינג (רוב המקורות כבר היו ב-DB מריצות קודמות)
 > **ריצה 4 (2026-05-13):** 30 פריטים חדשים מזוהים — לא הועלו לסטייג'ינג (חסימת רשת)
+
+### ריצה 12 — פריטים חדשים (2026-05-21)
+18 פריטים חדשים נוספו לסטייג'ינג לפי מותג:
+- **Dingli (1):** JCPT1412HD מנואל מפעיל PDF (bensrental.sg) — קודים 10/20/30/51-59/69
+- **JLG (7):** 600SJC fault codes עמ' 230 (ManualsLib), JLG fault codes PDF כולל 450AJ/520AJ/860SJ (webflow), JLG LSS Boom מנואל רשמי (JLG CDN), JLG 450A/AJ parts manual (JLG CDN), JLG fault code 520208:10 (JustAnswer), forkliftaction JLG expert advice thread, forkliftaction no-travel diagnosis
+- **Genie (4):** GS-1932 מנואל שירות #1321209 (Genie רשמי score 1.0), GS-2669RT מנואל #1272219 (Genie רשמי), GS-3246 מנואל שירות מלא (rentalex PDF), GS forum general (scissor-lifting.com)
+- **כללי/פורום (6):** 7 threads ב-forkliftaction.com על fault codes כלליים, קריאת קודים, no-travel, קוד 01-3
 
 ### ריצה 9 — פריטים חדשים (2026-05-18)
 14 פריטים חדשים נוספו לסטייג'ינג לפי מותג:
@@ -176,15 +184,16 @@ _עודכן: 2026-05-20_
 
 | מודל | מה חסר | עדיפות |
 |------|---------|--------|
-| Dingli JCPT1412DC | טבלת fault codes מפורטת מתוך מנואל (יש הפניה, חסרה חילוץ) | גבוהה |
 | Dingli JCPT1208AC | fault codes — לא נחלץ; מרכז הורדה רשמי זוהה | גבוהה |
 | Dingli JCPT1212 | שום תיעוד ספציפי — לא נמצא | גבוהה |
-| JLG 520AJ | מנואל שירות מלא נמצא (Issuu 3121665) — DTC ספציפי לדגם עדיין דרוש JLG Analyzer | בינונית |
-| JLG 860SJ | DTC מלא נמצא (ManualsDir p.308) — מנואל שירות מקורי עדיין JLG Online Express בלבד | בינונית |
+| Dingli JCPT1412 | מנואל HD נמצא (ריצה 12); טבלת קודים ל-HA/DC עדיין חסרה | בינונית |
+| JLG 520AJ | מנואל שירות מלא נמצא (Issuu 3121665) — DTC 520208:10 נוסף (ריצה 12); DTC ספציפי נוסף עדיין דרוש | בינונית |
+| JLG 860SJ | DTC מלא נמצא (ManualsDir p.308) + LSS Boom manual — telescope valve fault נמצא; מנואל שירות מקורי עדיין JLG Online Express | בינונית |
 | JLG 510AJ | מנואל שירות נמצא (Scribd) — fault codes דורשים JLG Analyzer | בינונית |
-| Genie GS-3246 | טבלת DTC מלאה (מעל קוד 68) — הפניה לעמ' 182 אך לא חולץ; GS-2646AV codes נמצאו כתחליף | נמוכה |
+| Genie GS-3246 | מנואל שירות מלא נוסף (ריצה 12, rentalex); DTC 01-68 מכוסים; codes 44-47 (motor overload) עדיין צריכים פירוט | נמוכה |
 | Manitou 180ATJ | קודי שגיאה ספציפיים — diag.manitou-group.com נמצא (score 1.0); MDS עדיין נדרש לפרטים | בינונית |
-| JLG 450AJ | flash codes מורכבים — קוד 5:437 וקודי מוטור נמצאו בפורומים | נמוכה |
+| JLG 450AJ | flash codes מורכבים — קוד 5:437 וקודי מוטור נמצאו בפורומים; parts manual נוסף (ריצה 12) | נמוכה |
+| JLG 600SJC | fault codes p.230 נמצאו (ריצה 12) — DTC מלא צריך JLG Analyzer | נמוכה |
 
 ---
 
@@ -232,6 +241,7 @@ _עודכן: 2026-05-20_
 | 9 | 2026-05-18 | 108§ | 14 | 122 |
 | 10 | 2026-05-19 | 122 | 3 | 125 |
 | 11 | 2026-05-20 | 125 | 0 | 125 |
+| 12 | 2026-05-21 | 125 | 18 | 143 |
 
 *ריצה 4: 30 פריטים זוהו אך לא הועלו לסטייג'ינג (חסימת רשת).
 †ריצה 5: JSON בפועל נשאר 87 (commit לא נדחף); 4 פריטים תועדו ב-knowledge-gaps בלבד.
@@ -241,13 +251,13 @@ _עודכן: 2026-05-20_
 §ריצה 9: pending_knowledge.json מריצה 8 היה כבר ב-staging; בסיס אמיתי 108. WebFetch חסום (403), Supabase ECONNREFUSED — 14 פריטים חדשים נוספו לסטייג'ינג.
 **ריצה 11:** 0 פריטים חדשים — staging רווי. לפתיחת מקורות חדשים יש להרחיב חיפושים ל-JCPT1208/JCPT1212 fault codes, 520AJ DTC ספציפי, ו-Manitou 180ATJ service manual.
 
-**פירוט מותגים בסטייג'ינג (ריצה 11 מצטברת, 125 פריטים):**
-- Dingli: 28 מקורות (+1 ריצה 10: JCPT0607DCS Operation Manual)
-- JLG: 54 מקורות (+1 ריצה 10: T350/T500J Troubleshooting Manual)
-- Genie: 43 מקורות (+1 ריצה 10: GS-1530 Fault Code Chart p.171)
+**פירוט מותגים בסטייג'ינג (ריצה 12 מצטברת, 143 פריטים):**
+- Dingli: 29 מקורות (+1 ריצה 12: JCPT1412HD Manual)
+- JLG: 61 מקורות (+7 ריצה 12: 600SJC p.230, LSS Boom, 450A/AJ parts, 520208 fault, forum threads)
+- Genie: 47 מקורות (+4 ריצה 12: GS-1932 #1321209, GS-2669RT #1272219, GS-3246 rentalex, scissor-lifting.com)
 - Manitou: 17 מקורות
 - MEC: 3 מקורות
-- כללי: 8 מקורות
+- כללי: 14 מקורות (+6 ריצה 12: forkliftaction fault-code threads)
 
 **ריצה 8 — פריטים חדשים (30):**
 - Dingli JCPT0607A קוד 58/20/69 — תיאור מלא של כל קוד עם שלבי תיקון (chinaliftsupply.com)
@@ -294,6 +304,37 @@ _עודכן: 2026-05-20_
 **עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 / Supabase ECONNREFUSED)
 **URLים שנבדקו מול staging:** 50 — 47 כפילויות, 3 חדשים
 **מודלים ללא תיעוד ספציפי:** Dingli JCPT1208, JCPT1212, JLG 520AJ (עמוק), Manitou 180ATJ (קודים ספציפיים)
+
+---
+
+---
+
+**ריצה 12 — פריטים חדשים (18):**
+- Dingli JCPT1412HD — מנואל מפעיל PDF (bensrental.sg, score 0.6) — קודים 10/20/30/51-59/69 עם reset procedure
+- Forkliftaction forums (8 threads) — fault-error-code-list, read-fault-codes, error-or-fault-codes, fault-code-help, thread 12152, fault-code-01-3, no-travel, JLG expert — score 0.6
+- scissor-lifting.com — troubleshooting AWP guide (score 0.4)
+- JLG 600SJC fault code list p.230 (ManualsLib, score 0.6)
+- JLG fault codes PDF (webflow CDN, score 0.4) — covers 450AJ/520AJ/860SJ groups
+- Genie GS-1932 service manual #1321209 (manuals.genielift.com, score 1.0)
+- Genie GS-2669RT service manual #1272219 (manuals.genielift.com, score 1.0)
+- Genie GS-3246 service manual (rentalex.com PDF, score 0.8) — DTC 01-68, codes 54/55 most common
+- JLG 520208:10 fault code (JustAnswer, score 0.6) — J1939 SPN/FMI engine code
+- JLG LSS Boom manual 3124287 (JLG CDN, score 1.0)
+- JLG 450A/AJ parts manual 3120750 (JLG CDN, score 1.0)
+
+**חיפושים שבוצעו בריצה 12:** 15
+**עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 / Supabase ECONNREFUSED)
+**URLים שנבדקו:** 70+ — 52 כפילויות, 18 חדשים
+**מודלים ללא תיעוד ספציפי:** Dingli JCPT1208, JCPT1212, Manitou 180ATJ (קודים ספציפיים — diag.manitou-group.com נמצא), JLG 520AJ (DTC ספציפי)
+
+**המלצה לריצה 13:** שנה חיפושים ל:
+1. "Dingli JCPT1208 service manual fault codes LED display" (דגם לא מכוסה)
+2. "Dingli JCPT1212 scissor lift manual troubleshooting error" (דגם לא מכוסה)
+3. "JLG 520AJ DTC 5-437 boom lift specific repair" (קוד ספציפי)
+4. "Manitou 180ATJ service manual fault codes ATJ260 ATJ180" (מנואל שירות ספציפי)
+5. "Dingli scissor lift CANBUS fault 110 111 112 repair solution"
+6. "JLG 860SJ telescope valve open circuit fault repair"
+7. "Genie GS-3246 DTC 44 45 46 47 motor overload repair"
 
 ---
 

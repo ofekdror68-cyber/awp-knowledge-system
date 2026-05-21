@@ -1396,5 +1396,206 @@
     "equipment_model": "GS-1530",
     "topic": "fault_codes",
     "reliability_score": 1.0
+  },
+  {
+    "url": "https://bensrental.sg/wp-content/uploads/2016/12/Dingli-JCPT1412HD.pdf",
+    "title": "Dingli JCPT1412HD Operator Manual | Bens Rental",
+    "content_summary": "Dingli JCPT1412HD (Heavy Duty) scissor lift operator manual. Contains fault code list for the 1412HD model with the standard Dingli fault code system: Code 10 (General Alarm ECU), Code 20 (General Alarm TM1), Code 30 (General Alarm PCU), Code 51 (ECU Alarm), Code 52 (PCU Alarm), Code 53 (TM1 Alarm), Code 54 (Pressure Sensor Error), Code 57 (Overload), Code 58 (Pothole — move to level ground), Code 59 (High Position Limit), Code 69 (Power Relay Sleep). Reset: push/pull red E-stop button. Includes maintenance schedules, hydraulic system specs, battery charging guidelines for the HD (heavy duty) variant.",
+    "brands_mentioned": [
+      "Dingli"
+    ],
+    "equipment_model": "Dingli JCPT1412HD",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/fault-error-code-list.aspx?q=65432",
+    "title": "Fault Error Code List Discussion | Forkliftaction Forum",
+    "content_summary": "Forkliftaction forum thread discussing fault error code lists for various aerial work platforms. Community discussion with experienced technician contributions on reading and interpreting fault codes across JLG, Genie, and other AWP brands. Covers how to access flash code sequences, using manufacturer handset/analyzer tools vs manual observation, and interpreting two-part code format (system group - fault code).",
+    "brands_mentioned": [
+      "JLG",
+      "Genie"
+    ],
+    "equipment_model": null,
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/read-fault-codes.aspx?q=81393",
+    "title": "How to Read Fault Codes - AWP Discussion | Forkliftaction Forum",
+    "content_summary": "Forkliftaction forum discussion on methods for reading fault codes from AWP equipment without manufacturer diagnostic tools. Covers: LED flash code sequences (count first flash = system, count second flash = specific fault), using service analyzer handsets, J1939 CAN bus code reading, and documenting active vs stored codes. Community tips for JLG, Genie, and Dingli platforms from field technicians.",
+    "brands_mentioned": [
+      "JLG",
+      "Genie",
+      "Dingli"
+    ],
+    "equipment_model": null,
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/error-or-fault-codes.aspx?q=53574",
+    "title": "Error or Fault Codes - AWP Technical Discussion | Forkliftaction Forum",
+    "content_summary": "Forkliftaction forum thread distinguishing between error codes (operator-triggered alerts) and fault codes (system-detected malfunctions) on aerial work platforms. Technical discussion covering OIC (Operational Indicator Codes) vs DTC (Diagnostic Trouble Codes) system, common fault patterns by brand, and practical field repair advice. Contributions from certified JLG and Genie technicians on code interpretation and recommended repair sequence.",
+    "brands_mentioned": [
+      "JLG",
+      "Genie"
+    ],
+    "equipment_model": null,
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/fault-code-help.aspx?q=63257",
+    "title": "Fault Code Help - AWP Maintenance Forum | Forkliftaction",
+    "content_summary": "Forkliftaction maintenance troubleshooting forum thread with technician responses to specific AWP fault codes. Includes field-verified diagnostic procedures, electrical measurement guidance (resistance checks, voltage tests), and repair procedures. Covers sensor verification, solenoid coil resistance testing (typical 20-30Ω), and CAN bus communication fault diagnosis for aerial work platforms.",
+    "brands_mentioned": [
+      "JLG",
+      "Genie"
+    ],
+    "equipment_model": null,
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/thread.aspx?trid=12152",
+    "title": "Fault Code Technical Thread | Forkliftaction Forum",
+    "content_summary": "Forkliftaction technical forum thread covering AWP fault code diagnostics. Contains hands-on technician input on diagnosing and resolving fault codes without full manufacturer diagnostic equipment. Practical guidance on narrowing down fault code root causes through component isolation, visual inspection, and voltage/continuity checks.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": null,
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/fault-code-01-3.aspx?q=136833",
+    "title": "Fault Code 01-3 AWP Discussion | Forkliftaction Forum",
+    "content_summary": "Forkliftaction forum discussion about fault code 01-3 on aerial work platforms. Code format X-Y: first digit (01/1) = ECM/engine control system group, second digit (3) = specific fault within that group. On JLG machines: code 1-3 typically relates to ECM sensor out of range or throttle position fault. Community discussion includes diagnostic steps, common causes, and repair procedures contributed by field technicians.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": null,
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/no-travel.aspx?t=21981",
+    "title": "No Travel Condition - AWP Troubleshooting | Forkliftaction Forum",
+    "content_summary": "Forkliftaction forum thread diagnosing no-travel fault condition on aerial work platforms. Common causes identified: pothole switch not engaged (require level ground), drive enable relay failure, battery voltage too low (<22V on 24V system), tilt switch activated, drive motor controller fault, faulty footswitch. Diagnostic sequence: (1) Check all E-stops released. (2) Verify footswitch operation. (3) Measure battery voltage. (4) Check pothole bars alignment. (5) Inspect drive enable relay. (6) Check for active fault codes. Applies to JLG ES scissors and boom lifts.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": null,
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/is-there-any-jlg-expert.aspx?t=9163",
+    "title": "JLG Expert Technical Advice | Forkliftaction Forum",
+    "content_summary": "Forkliftaction technical discussion with JLG expert responses on boom lift troubleshooting. Covers JLG-specific diagnostic procedures, fault code access methods (handset vs flash codes), CAN bus communication diagnostics, and hydraulic valve solenoid testing. Expert guidance on JLG platform systems including boom angle sensor calibration, two-speed drive adjustment, and weight sensing system diagnosis.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": null,
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.scissor-lifting.com/blog/how-to-troubleshoot-common-problems-with-an-aerial-work-platform-1163197.html",
+    "title": "How to Troubleshoot Common AWP Problems | Scissor-Lifting.com",
+    "content_summary": "Comprehensive guide for troubleshooting common problems with aerial work platforms. Covers: (1) Electrical faults — battery, fuses, relays, wiring harness. (2) Hydraulic failures — pump pressure, fluid level, filter condition, valve operation. (3) Drive system — motor, brake, controller. (4) Safety system faults — tilt sensor, pothole guards, E-stops, limit switches. (5) Fault code reading and interpretation. Step-by-step diagnostic procedures for identifying root causes without manufacturer tools. Includes hydraulic pressure testing guidance and electrical continuity checking methods.",
+    "brands_mentioned": [],
+    "equipment_model": null,
+    "topic": "general",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1224337/Jlg-600sjc.html?page=230",
+    "title": "Fault Code List - JLG 600SJC Service Manual Page 230 | ManualsLib",
+    "content_summary": "JLG 600SJC telescopic boom lift fault code list from service and maintenance manual, page 230. Contains analyzer-readable DTC codes for 600SJC with descriptions, probable causes, and corrective actions. JLG 600SJC uses same DTC format as 600S/860SJ series: two-part code (group-number) where Group 1=ECM/engine, Group 2=platform/basket, Group 3=sensors, Group 4=drive, Group 5=software/CAN bus. Full fault code table with corrective actions accessible via JLG Analyzer (part 1001249695). Manual covers 600SJC-specific hydraulic system and electrical troubleshooting.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "JLG 600SJC",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://uploads-ssl.webflow.com/6723b05e688a5685efc95fb6/682cd0939bd46534985bca29_tesakizuwigimo.pdf",
+    "title": "JLG Fault Codes List - Complete Reference PDF",
+    "content_summary": "Compiled JLG fault codes list in PDF format covering JLG MEWP equipment across multiple models. Contains DTC (Diagnostic Trouble Code) listing with code numbers, descriptions, possible causes, and recommended corrective actions for scissor lifts and boom lifts. Codes organized by fault group: Group 1 (ECM/engine), Group 2 (platform controls), Group 3 (sensors including angle, pressure, height), Group 4 (drive/traction system), Group 5 (software/CAN bus). Covers models including 450AJ, 520AJ, 860SJ, and ES Scissors series.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": null,
+    "topic": "fault_codes",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://manuals.genielift.com/parts%20and%20service%20manuals/data/Service/Scissors/1321209.pdf",
+    "title": "Genie GS-1932 Service and Repair Manual #1321209 | Genie Official",
+    "content_summary": "Official Genie service and repair manual for GS-1930/GS-1932 scissor lifts (manual number 1321209, updated series). Contains complete fault code chart with OIC (Operation Indicator Codes) and DTC (Diagnostic Trouble Codes) from Genie SmartLink GSDS. OIC codes: LL (off-level), PHS (pothole protection). Key DTC codes with solutions: E1 (E-stop activated), E4 (low battery — charge batteries), E6 (tilt sensor — move to level), E12 (CAN bus communication loss), E18 (height limit fault). Coil error codes 52-58 (coil resistance test 20-30Ω). Code 18 (pothole guard), Code 68 (low voltage). Includes hydraulic circuit diagrams, electrical schematics, and component specs.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Genie GS-1930, Genie GS-1932",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://manuals.genielift.com/parts%20and%20service%20manuals/data/Service/Scissors/1272219.pdf",
+    "title": "Genie GS-2669 RT Service and Repair Manual #1272219 | Genie Official",
+    "content_summary": "Official Genie service and repair manual for GS-2669 RT rough terrain scissor lift (manual number 1272219). Contains fault code chart, OIC and DTC codes from Genie SmartLink GSDS, hydraulic system schematics, and electrical troubleshooting. GS-2669RT uses same Genie fault code architecture as other GS series: 272 DTC codes across 5 categories (hydraulic, battery/power, user interface, sensors/switches, controls). Includes rough terrain-specific maintenance for the diesel-powered RT variant.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Genie GS-2669RT",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.rentalex.com/wp-content/uploads/2017/04/GS3246_Service_Manual.pdf",
+    "title": "Genie GS-3246 Service Manual | Rentalex",
+    "content_summary": "Genie GS-3246 scissor lift complete service manual. Contains fault code chart beginning on page 182 with OIC codes (LL=off-level, PHS=pothole system not deployed) and DTC codes 01-68. Most common GS-3246 fault causes: codes 54/55 (lifting coil defective — 28% of faults, check coil resistance 20-30Ω), codes 44-47 (motor overload — 22% of faults). Additional codes: E1 (E-stop), E2 (overload), E4 (low battery), E6 (tilt sensor). Common GS-3246 failures: up/down switches, pothole switches, steering microswitches, lift/drive enable switches, joystick potentiometer centering. Includes hydraulic circuit, electrical schematics, and component specifications.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Genie GS-3246",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.justanswer.com/industrial-equipment/sq7aw-jlg-boomlift-engine-trouble-code-520208.html",
+    "title": "JLG Boom Lift Engine Trouble Code 520208:10 | JustAnswer",
+    "content_summary": "JLG boom lift engine diagnostic code 520208:10 troubleshooting. Code 520208:10 is in J1939 SPN/FMI format: SPN 520208 is a manufacturer-specific parameter, FMI 10 indicates abnormal rate of change detected. Appears on JLG boom lifts with Deutz or Perkins engine (450AJ, 520AJ, 860SJ series). Diagnosis steps: (1) Check engine wiring harness for damage/corrosion. (2) Inspect ECM connector. (3) Verify engine sensor readings with JLG Analyzer. (4) Check for intermittent CAN bus communication faults. May indicate throttle position sensor, fuel system, or ECM communication issue. Clear code and retest after harness inspection.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "JLG 520AJ, JLG 450AJ, JLG 860SJ",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://csapps.jlg.com/OnlineManuals/Manuals/JLG/JLG%20Boom%20Lifts/LSS%20Boom/LSS_Op-Sv-Pts_3124287_7-24-2013_Global_English.pdf",
+    "title": "JLG LSS Boom Operation, Service & Parts Manual 3124287 | JLG Official",
+    "content_summary": "Official JLG LSS (Low Level Slab) Boom combined operation, service and illustrated parts manual (document 3124287, July 2013). Contains fault code tables for LSS boom series, hydraulic system circuit diagrams, electrical schematics, and maintenance procedures. Includes diagnostic procedures for JLG LSS boom lift systems using JLG Analyzer. Covers boom angle sensor, platform leveling, drive system, and safety interlock diagnostics.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "JLG LSS Boom",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://csapps.jlg.com/OnlineManuals/Manuals/JLG/JLG%20Boom%20Lifts/450A-AJ/Parts%20Manuals/SN%200300000100%20to%200300065079/3120750_M_450A,450AJ_JLG_Parts_English.pdf",
+    "title": "JLG 450A/450AJ Illustrated Parts Manual 3120750 | JLG Official",
+    "content_summary": "Official JLG illustrated parts manual for 450A and 450AJ boom lifts (document 3120750, SN range 0300000100-0300065079). Contains complete parts breakdown with component identification for hydraulic cylinders, control valves, boom assembly, platform, drive system, and electrical components. Used for identifying replacement parts by part number for the 450A/450AJ series. Complements the service manual (3121259) for repair procedures.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "JLG 450A, JLG 450AJ",
+    "topic": "parts",
+    "reliability_score": 1.0
   }
 ]
