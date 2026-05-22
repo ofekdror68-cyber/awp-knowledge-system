@@ -1597,5 +1597,203 @@
     "equipment_model": "JLG 450A, JLG 450AJ",
     "topic": "parts",
     "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.manualslib.com/products/Manitou-180-Atj-2-E3-Rc-12932952.html",
+    "title": "Manitou 180 ATJ 2 E3 RC Manuals | ManualsLib",
+    "content_summary": "ManualsLib index for Manitou 180 ATJ 2 E3 RC articulating boom lift. Links to operator manual, service manual, and parts manual. The 180ATJ 2 E3 RC is an Euro 3 engine (Deutz) variant. Service manual covers fault codes, hydraulic diagrams, electrical schematics, boom control system, and Manitou MDS diagnostic software interface.",
+    "brands_mentioned": [
+      "Manitou"
+    ],
+    "equipment_model": "180ATJ",
+    "topic": "general",
+    "reliability_score": 0.7
+  },
+  {
+    "url": "https://www.scribd.com/document/324215610/Dumarent-manUSM-Manitou-180ATJ-En",
+    "title": "Manitou 180ATJ Service Manual — English | Scribd",
+    "content_summary": "Manitou 180ATJ articulating boom lift service/repair manual in English on Scribd. Covers engine system (Deutz), hydraulic circuit, boom leveling, platform rotation, fault diagnosis, electrical wiring, and error code interpretation. Useful for fault code lookup specific to 180ATJ model.",
+    "brands_mentioned": [
+      "Manitou"
+    ],
+    "equipment_model": "180ATJ",
+    "topic": "fault_codes",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://diag.manitou-group.com/default-codes-list",
+    "title": "Manitou Default Fault Codes List | Manitou Official Diagnostic Portal",
+    "content_summary": "Official Manitou Group diagnostic portal — default fault codes list page. Lists all Manitou diagnostic codes with SPN/FMI format for all model families including ATJ (articulating boom), MT (telehandler), and MLT series. Covers 180ATJ, ATJ260, and related platforms. Managed by Manitou Group directly.",
+    "brands_mentioned": [
+      "Manitou"
+    ],
+    "equipment_model": "180ATJ",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.justanswer.com/construction-and-road-equipment/m7uj5-manitou-mt-625-no-boom-functions-error-codes-520352.html",
+    "title": "Manitou MT 625 Boom Functions Not Working — Error Code 520352 | JustAnswer",
+    "content_summary": "Manitou MT 625 telehandler: boom functions lost, error code 520352 displayed. Code 520352 is a J1939 SPN/FMI engine diagnostic code. Diagnosis steps: check SPN 520352 via Manitou MDS diagnostic software; isolate hydraulic valve solenoids; check boom control valve signal from ECU. Resolution often involves checking load-sensing hydraulic circuit pressure and boom lock valve.",
+    "brands_mentioned": [
+      "Manitou"
+    ],
+    "equipment_model": "MT625",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.allforkliftmanuals.com/manitou-forklifts/manitou-forklift-fault-codes-list/",
+    "title": "Manitou Fault Codes List | All Forklift Manuals",
+    "content_summary": "Manitou fault codes list covering telehandlers and AWP models. Includes common SPN/FMI codes, Deutz engine codes, and Manitou-specific codes. General troubleshooting: many codes require Manitou MDS diagnostic software for full FMI details. Common codes: hydraulic pressure faults, sensor circuit faults, CAN bus communication errors. Reset procedure: cycle key switch after correcting fault.",
+    "brands_mentioned": [
+      "Manitou"
+    ],
+    "equipment_model": "180ATJ",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://csapps.jlg.com/OnlineManuals/Manuals/JLG/JLG%20Boom%20Lifts/800S_810SJ_860SJ/Parts%20Manuals/SN%200300000100%20to%200300139999/3121842_AJ_800S,860SJ_JLG_Parts_English.pdf",
+    "title": "JLG 800S / 860SJ Parts Manual 3121842_AJ (SN 0300000100–0300139999) | JLG Official",
+    "content_summary": "Official JLG illustrated parts manual for 800S and 860SJ telescopic boom lifts (AJ revision), serial numbers 0300000100 to 0300139999. Covers: platform assembly, upper boom, mid boom, lower boom, telescope cylinder, jib assembly, turntable, axles, drive motors, hydraulic manifold, control valves (including telescope out valve), electrical harness. Companion to service manual 3121259.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "860SJ",
+    "topic": "parts",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.manualslib.com/manual/929104/Jlg-600sj.html?page=266",
+    "title": "Help Fault Codes, Displayed Faults and Descriptions — JLG 600SJ Service Manual Page 266 | ManualsLib",
+    "content_summary": "JLG 600SJ telescopic boom lift fault codes and displayed fault descriptions (service manual page 266). Lists fault flash codes by system: platform system, drive system, boom system, engine/ECM system. JLG 600SJ uses same fault code architecture as 800S/860SJ (two-number format: X-Y where X=system group, Y=specific fault). Engine codes via J1939 diagnostic connector.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "600SJ",
+    "topic": "fault_codes",
+    "reliability_score": 0.7
+  },
+  {
+    "url": "https://www.manualslib.com/products/Jlg-860sj-10459475.html",
+    "title": "JLG 860SJ Manuals Index | ManualsLib",
+    "content_summary": "ManualsLib index for all JLG 860SJ telescopic boom lift manuals: service manual (3121259), operator manual, and parts manual. JLG 860SJ specs: 60ft max platform height, 4WD, Deutz diesel engine. Manual access for fault codes, hydraulic schematic, CAN bus wiring, and Analyzer tool (p/n 1001249695) procedures.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "860SJ",
+    "topic": "general",
+    "reliability_score": 0.7
+  },
+  {
+    "url": "https://www.manualsdir.com/manuals/552512/jlg-800s-service-manual-860sj-service-manual.html?page=245",
+    "title": "Platform Leveling Fault — JLG 800S / 860SJ Service Manual Page 245 | ManualsDir",
+    "content_summary": "JLG 800S/860SJ platform leveling fault diagnosis (service manual 3121259, page 245). Platform leveling fault triggered by: leveling cylinder open/short circuit, level sensor fault, hydraulic leveling valve fault. Diagnosis: (1) Check level cylinder solenoid resistance (20-30 ohm); (2) Inspect level sensor angle reading via JLG Analyzer; (3) Verify hydraulic pressure to leveling circuit. Reset: cycle E-stop after correction.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "860SJ",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.justanswer.com/industrial-equipment/igzuy-jlg-860sj-will-move-forward-not-reverse-analyzer.html",
+    "title": "JLG 860SJ Drives Forward But Not Reverse — Analyzer Fault Code Diagnosis | JustAnswer",
+    "content_summary": "JLG 860SJ telescopic boom lift: drives forward, not reverse. Diagnosis via JLG Analyzer: reverse drive solenoid fault or drive controller fault. Step-by-step: (1) Connect JLG Analyzer to read active DTC; (2) Check reverse drive solenoid coil resistance — spec 20-30 ohm; (3) Inspect wiring harness between controller and reverse solenoid for open circuit or short; (4) If solenoid OK, test drive controller output; (5) Swap controller if output signal absent. Also check: pilot pressure to reverse valve (min 250 PSI).",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "860SJ",
+    "topic": "hydraulics",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.justanswer.com/industrial-equipment/bey7s-2000-jlg-860aj-ugm-module-analyzer-won-t.html",
+    "title": "JLG 860AJ UGM Analyzer Module Not Communicating — Fault Diagnosis | JustAnswer",
+    "content_summary": "JLG 860AJ boom lift: UGM (Universal Gateway Module) analyzer will not communicate. Diagnosis: CAN bus communication failure between UGM and machine ECU. Steps: (1) Check analyzer cable connection at diagnostic port; (2) Verify CAN bus termination resistors (120 ohm each end); (3) Inspect main CAN bus wiring for shorts or opens; (4) Check UGM module power supply; (5) Replace UGM module if bus wiring tests OK. Same procedure applies to 860SJ. UGM provides J1939 DTC and Deutz/Perkins engine fault access.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "860AJ",
+    "topic": "electrical",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.manualslib.com/products/Genie-Gs-3246-3672012.html",
+    "title": "Genie GS-3246 Manuals Index | ManualsLib",
+    "content_summary": "ManualsLib index for all Genie GS-3246 scissor lift manuals: service and repair manual (part 48339), operator's manual, and parts manual. GS-3246 uses Genie SmartLink Diagnostic System (GSDS) with 272 DTCs and 6 OIC codes. Manual includes full fault code chart starting page 50, hydraulic schematic, and ECM wiring diagram.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "GS-3246",
+    "topic": "general",
+    "reliability_score": 0.7
+  },
+  {
+    "url": "https://www.rentalex.com/wp-content/uploads/2017/04/GS3246_Parts_Manual.pdf",
+    "title": "Genie GS-3246 Illustrated Parts Manual | Rentalex",
+    "content_summary": "Genie GS-3246 scissor lift illustrated parts manual. Sections: platform assembly, scissor arm assembly, frame, hydraulic system (pump, cylinder, manifold, filter), drive system (motors, brakes), electrical system (ECM, batteries, charger, harness). Used together with service manual (p/n 48339) for parts identification during fault repair. DTC 44-47 coil errors: coil part numbers in this manual.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "GS-3246",
+    "topic": "parts",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.rentalex.com/wp-content/uploads/2017/04/GS3246_Operators_Manual.pdf",
+    "title": "Genie GS-3246 Operator's Manual | Rentalex",
+    "content_summary": "Genie GS-3246 scissor lift operator's manual. Covers: safety warnings, pre-operation checks, battery level check, operating procedures, fault code display (E1-E13 OIC codes), emergency lowering procedure, and basic maintenance schedule. When OIC code displays: lower platform, turn off, check cause, reset. E1=E-stop; E4=low battery; E6=tilt; E12=platform comms fault; E18=height limit switch.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "GS-3246",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://en.cndingli.com/upload/file/manual/Parts%20Manual/JCPT0807PA-SM012120139_Rev1.2-Parts_Manual.pdf",
+    "title": "Dingli JCPT0807PA Parts Manual SM012120139 Rev1.2 | Dingli Official",
+    "content_summary": "Official Dingli parts manual for JCPT0807PA (8m working height, ANSI/CSA, 4-wheel drive). Part number SM012120139, Rev 1.2. Serial number from JPPA023E00342. Sections: platform assembly, scissors arm structure, drive system (DC motors), hydraulic system (pump, cylinders, manifold), electrical system (ECU, PCU, TM1 controllers, battery, charger). Key part numbers for ECU, PCU and TM1 controller replacement.",
+    "brands_mentioned": [
+      "Dingli"
+    ],
+    "equipment_model": "JCPT0807PA",
+    "topic": "parts",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.vertikaluk.com/wp-content/uploads/2024/07/Dingli-0807-HA.pdf",
+    "title": "Dingli JCPT0807HA Operator's Manual | Vertikaluk",
+    "content_summary": "Dingli JCPT0807HA operator's manual (hydraulic drive, 8m working height). Covers safety, pre-operation checks, and fault code list. Fault codes same structure as JCPT0607 series: Code 10 (ECU alarm), Code 20 (TM1 alarm), Code 30 (PCU alarm), Code 54 (pressure sensor error), Code 57 (overload — reduce load), Code 58 (pothole protection — drive to level ground), Code 59 (high position limit). Reset: cycle Emergency Stop button.",
+    "brands_mentioned": [
+      "Dingli"
+    ],
+    "equipment_model": "JCPT0807HA",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.manualslib.com/manual/2325695/Oshkosh-Jlg-520aj.html",
+    "title": "JLG 520AJ Operation and Safety Manual | ManualsLib",
+    "content_summary": "JLG 520AJ articulating boom lift operation and safety manual on ManualsLib (Oshkosh-JLG newer generation). Covers pre-operation inspection, platform controls, ground controls, emergency procedures. Fault response: observe MDI display for DTC, cycle E-stop/key switch, consult service manual. 520AJ uses ADE (Advanced Drive Electronics) and Deutz engine with J1939 diagnostic protocol for engine fault codes.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "520AJ",
+    "topic": "general",
+    "reliability_score": 0.7
+  },
+  {
+    "url": "https://www.mecawp.com/wp-content/uploads/2020/01/95918-SCH-A92.20.pdf",
+    "title": "MEC SE Series Slab Scissor Lifts Service & Parts Manual 95918-SCH | MEC AWP",
+    "content_summary": "MEC AWP SE Series slab scissor lift service and parts manual (95918-SCH, A92.20). Fault code section: error indicator readout with LED codes, solenoid coil resistance spec (20-30 ohm), hydraulic troubleshooting (low pressure, no lift, drift down), drive system diagnosis, and battery/charger fault isolation. Covers all MEC SE-series electric slab scissor lifts.",
+    "brands_mentioned": [
+      "MEC"
+    ],
+    "equipment_model": "SE Series",
+    "topic": "fault_codes",
+    "reliability_score": 0.7
   }
 ]

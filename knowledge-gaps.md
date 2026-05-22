@@ -1,9 +1,10 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-05-21_
+_עודכן: 2026-05-22_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
 
-> **ריצה 12 (2026-05-21):** 18 פריטים חדשים נוספו לסטייג'ינג (143 סה"כ). Supabase ECONNREFUSED; WebFetch חסום (403). 15 חיפושים — 70+ URL בדוקים, 18 חדשים. כולל: Dingli JCPT1412HD מנואל, Genie GS-3246 מנואל שירות, GS-1932 מנואל רשמי, GS-2669RT, JLG 600SJC fault codes, JLG 520208 קוד, JLG LSS Boom מנואל, 8 threads מ-forkliftaction.com. להעלאה: `python3 save_to_supabase.py`
+> **ריצה 13 (2026-05-22):** 18 פריטים חדשים נוספו לסטייג'ינג (161 סה"כ). Supabase ECONNREFUSED; WebFetch חסום (403). 22 חיפושים — 100+ URL בדוקים, 18 חדשים. כולל: Manitou 180ATJ מנואל שירות (Scribd), Manitou diag portal codes-list, Manitou 180ATJ 2 E3 RC ManualsLib, JLG 860SJ parts AJ רשמי, JLG 860SJ platform leveling fault p.245, JLG 860SJ/860AJ מנואלי אינדקס, JLG 600SJ fault codes p.266, Genie GS-3246 parts+operator, Dingli JCPT0807PA+0807HA, MEC SE Series. להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
+> **ריצה 12 (2026-05-21):** 18 פריטים חדשים נוספו לסטייג'ינג (143 סה"כ). Supabase ECONNREFUSED; WebFetch חסום (403). 15 חיפושים — 70+ URL בדוקים, 18 חדשים. כולל: Dingli JCPT1412HD מנואל, Genie GS-3246 מנואל שירות, GS-1932 מנואל רשמי, GS-2669RT, JLG 600SJC fault codes, JLG 520208 קוד, JLG LSS Boom מנואל, 8 threads מ-forkliftaction.com. להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 > **ריצה 11 (2026-05-20):** 0 פריטים חדשים — כל URL שנמצא בריצה כבר קיים ב-staging (125 סה"כ, אין שינוי). Supabase ECONNREFUSED; WebFetch חסום (403). 15 חיפושים — 50+ URL בדוקים, 0 חדשים. הסטייג'ינג רווי לדפוסי החיפוש הנוכחיים — יש להרחיב לחיפושים חדשים (JCPT1208, JCPT1212, 520AJ DTC). להעלאה: `python3 save_to_supabase.py`
 > **ריצה 10 (2026-05-19):** 3 פריטים חדשים נוספו לסטייג'ינג (125 סה"כ); Supabase ECONNREFUSED; WebFetch חסום (403). 15 חיפושים — כל 50 URL שנבדקו ב-staging חוץ מ-3 חדשים. להעלאה: `python3 save_to_supabase.py`
 > **ריצה 9 (2026-05-18):** 14 פריטים חדשים נוספו לסטייג'ינג (122 סה"כ); Supabase ECONNREFUSED; WebFetch חסום (403). להעלאה: `python3 save_to_supabase.py`
@@ -12,6 +13,14 @@ _עודכן: 2026-05-21_
 > **ריצה 6 (2026-05-15):** 12 פריטים חדשים נוספו לסטייג'ינג (99 סה"כ)
 > **ריצה 5 (2026-05-14):** 4 פריטים חדשים נוספו לסטייג'ינג (רוב המקורות כבר היו ב-DB מריצות קודמות)
 > **ריצה 4 (2026-05-13):** 30 פריטים חדשים מזוהים — לא הועלו לסטייג'ינג (חסימת רשת)
+
+### ריצה 13 — פריטים חדשים (2026-05-22)
+18 פריטים חדשים נוספו לסטייג'ינג לפי מותג:
+- **Manitou (5):** 180ATJ 2 E3 RC ManualsLib, 180ATJ service manual (Scribd EN), diag.manitou-group.com/default-codes-list (רשמי 1.0), Manitou MT625 error code 520352 (JustAnswer), AllForkliftManuals Manitou fault codes
+- **JLG (7):** 860SJ parts manual AJ 3121842 (JLG רשמי 1.0), 600SJ fault codes p.266 (ManualsLib), 860SJ ManualsLib index, 860SJ platform leveling fault p.245 (ManualsDir), 860SJ no-reverse diagnosis (JustAnswer), 860AJ UGM CAN bus fault (JustAnswer), 520AJ operation manual (ManualsLib Oshkosh-JLG)
+- **Genie (3):** GS-3246 ManualsLib index, GS-3246 parts manual (Rentalex), GS-3246 operators manual (Rentalex) עם OIC E1/E4/E6/E12/E18
+- **Dingli (2):** JCPT0807PA parts manual רשמי (Dingli CDN 1.0), JCPT0807HA operator manual (Vertikaluk) עם fault codes 10/20/30/54/57/58/59
+- **MEC (1):** SE Series service manual 95918-SCH עם fault codes וסוליינואיד 20-30Ω
 
 ### ריצה 12 — פריטים חדשים (2026-05-21)
 18 פריטים חדשים נוספו לסטייג'ינג לפי מותג:
@@ -184,16 +193,16 @@ _עודכן: 2026-05-21_
 
 | מודל | מה חסר | עדיפות |
 |------|---------|--------|
-| Dingli JCPT1208AC | fault codes — לא נחלץ; מרכז הורדה רשמי זוהה | גבוהה |
-| Dingli JCPT1212 | שום תיעוד ספציפי — לא נמצא | גבוהה |
-| Dingli JCPT1412 | מנואל HD נמצא (ריצה 12); טבלת קודים ל-HA/DC עדיין חסרה | בינונית |
-| JLG 520AJ | מנואל שירות מלא נמצא (Issuu 3121665) — DTC 520208:10 נוסף (ריצה 12); DTC ספציפי נוסף עדיין דרוש | בינונית |
-| JLG 860SJ | DTC מלא נמצא (ManualsDir p.308) + LSS Boom manual — telescope valve fault נמצא; מנואל שירות מקורי עדיין JLG Online Express | בינונית |
-| JLG 510AJ | מנואל שירות נמצא (Scribd) — fault codes דורשים JLG Analyzer | בינונית |
-| Genie GS-3246 | מנואל שירות מלא נוסף (ריצה 12, rentalex); DTC 01-68 מכוסים; codes 44-47 (motor overload) עדיין צריכים פירוט | נמוכה |
-| Manitou 180ATJ | קודי שגיאה ספציפיים — diag.manitou-group.com נמצא (score 1.0); MDS עדיין נדרש לפרטים | בינונית |
-| JLG 450AJ | flash codes מורכבים — קוד 5:437 וקודי מוטור נמצאו בפורומים; parts manual נוסף (ריצה 12) | נמוכה |
-| JLG 600SJC | fault codes p.230 נמצאו (ריצה 12) — DTC מלא צריך JLG Analyzer | נמוכה |
+| Dingli JCPT1208AC | fault codes — לא נחלץ; מרכז הורדה רשמי זוהה; אין מנואל שירות זמין | גבוהה |
+| Dingli JCPT1212 | שום תיעוד ספציפי — לא נמצא בשום ריצה | גבוהה |
+| Dingli JCPT1412DC | מנואל HD נמצא (ריצה 12); טבלת קודים מלאה ל-DC variant עדיין חסרה | בינונית |
+| JLG 520AJ | מנואל operation נוסף (ריצה 13); DTC ספציפי עדיין דרוש — 520AJ service manual 3121665 ב-Issuu | בינונית |
+| JLG 860SJ | DTC analyzer codes p.308 + platform leveling p.245 + parts AJ manual — כעת מכוסים היטב (ריצה 13) | נמוכה |
+| JLG 510AJ | מנואל שירות נמצא (Scribd) — fault codes דורשים JLG Analyzer לחילוץ | בינונית |
+| Genie GS-3246 | parts+operator נוספו (ריצה 13); DTC 01-68 מכוסים; codes 44-47 (motor overload) עדיין צריכים פירוט תיקון | נמוכה |
+| Manitou 180ATJ | service manual (Scribd EN) + ManualsLib 2 E3 RC + diag portal codes-list — נוספו (ריצה 13); MDS software עדיין נדרש | בינונית |
+| JLG 450AJ | flash codes מכוסים היטב; parts manual זמין; DTC 5:437 תועד | נמוכה |
+| JLG 600SJ / 600SJC | fault codes p.266 (600SJ) + p.230 (600SJC) — שניהם נמצאו | נמוכה |
 
 ---
 
@@ -242,6 +251,7 @@ _עודכן: 2026-05-21_
 | 10 | 2026-05-19 | 122 | 3 | 125 |
 | 11 | 2026-05-20 | 125 | 0 | 125 |
 | 12 | 2026-05-21 | 125 | 18 | 143 |
+| 13 | 2026-05-22 | 143 | 18 | 161 |
 
 *ריצה 4: 30 פריטים זוהו אך לא הועלו לסטייג'ינג (חסימת רשת).
 †ריצה 5: JSON בפועל נשאר 87 (commit לא נדחף); 4 פריטים תועדו ב-knowledge-gaps בלבד.
@@ -250,6 +260,14 @@ _עודכן: 2026-05-21_
 ‡ריצה 8: WebFetch חסום (403), Supabase NXDOMAIN — 30 פריטים נשמרו ב-`pending_knowledge.json`; הרץ `python3 save_to_supabase.py` להעלאה.
 §ריצה 9: pending_knowledge.json מריצה 8 היה כבר ב-staging; בסיס אמיתי 108. WebFetch חסום (403), Supabase ECONNREFUSED — 14 פריטים חדשים נוספו לסטייג'ינג.
 **ריצה 11:** 0 פריטים חדשים — staging רווי. לפתיחת מקורות חדשים יש להרחיב חיפושים ל-JCPT1208/JCPT1212 fault codes, 520AJ DTC ספציפי, ו-Manitou 180ATJ service manual.
+
+**פירוט מותגים בסטייג'ינג (ריצה 13 מצטברת, 161 פריטים):**
+- Dingli: 31 מקורות (+2 ריצה 13: JCPT0807PA parts, JCPT0807HA manual)
+- JLG: 68 מקורות (+7 ריצה 13: 860SJ AJ parts, 600SJ p.266, 860SJ index, 860SJ platform leveling, 860SJ no-reverse, 860AJ UGM, 520AJ ops manual)
+- Genie: 50 מקורות (+3 ריצה 13: GS-3246 index, parts, ops)
+- Manitou: 22 מקורות (+5 ריצה 13: 180ATJ 2 E3 RC, 180ATJ Scribd EN, diag codes-list, MT625 error, AllForkliftManuals)
+- MEC: 4 מקורות (+1 ריצה 13: SE Series 95918-SCH)
+- כללי: 14 מקורות
 
 **פירוט מותגים בסטייג'ינג (ריצה 12 מצטברת, 143 פריטים):**
 - Dingli: 29 מקורות (+1 ריצה 12: JCPT1412HD Manual)
@@ -335,6 +353,42 @@ _עודכן: 2026-05-21_
 5. "Dingli scissor lift CANBUS fault 110 111 112 repair solution"
 6. "JLG 860SJ telescope valve open circuit fault repair"
 7. "Genie GS-3246 DTC 44 45 46 47 motor overload repair"
+
+---
+
+**ריצה 13 — פריטים חדשים (18):**
+- Manitou 180ATJ 2 E3 RC — ManualsLib index (score 0.7)
+- Manitou 180ATJ service manual — Scribd EN (score 0.4)
+- Manitou diag.manitou-group.com/default-codes-list — רשמי (score 1.0)
+- Manitou MT625 — error code 520352 boom functions (JustAnswer, score 0.6)
+- Manitou — AllForkliftManuals fault codes list (score 0.6)
+- JLG 860SJ — parts manual AJ 3121842 (JLG CDN, score 1.0) — telescope out valve parts
+- JLG 600SJ — fault codes p.266 (ManualsLib, score 0.7)
+- JLG 860SJ — ManualsLib manuals index (score 0.7)
+- JLG 860SJ — platform leveling fault p.245 (ManualsDir, score 0.6)
+- JLG 860SJ — no-reverse diagnosis (JustAnswer, score 0.6) — solenoid 20-30Ω, pilot 250 PSI
+- JLG 860AJ — UGM CAN bus communication fault (JustAnswer, score 0.6) — CAN termination 120Ω
+- JLG 520AJ — operation manual Oshkosh-JLG (ManualsLib, score 0.7)
+- Genie GS-3246 — ManualsLib index (score 0.7)
+- Genie GS-3246 — parts manual (Rentalex, score 0.8) — coil part numbers for DTC 44-47
+- Genie GS-3246 — operator manual (Rentalex, score 0.8) — E1/E4/E6/E12/E18 OIC codes
+- Dingli JCPT0807PA — parts manual רשמי (Dingli CDN, score 1.0)
+- Dingli JCPT0807HA — operator manual (Vertikaluk, score 0.6) — fault codes 10/20/30/54/57/58/59
+- MEC SE Series — service manual 95918-SCH (mecawp.com, score 0.7)
+
+**חיפושים שבוצעו בריצה 13:** 22 (15 ראשיים + 7 ממוקדים מהמלצת ריצה 12)
+**עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 / Supabase ECONNREFUSED / DNS blocked)
+**URLים שנבדקו:** 100+ — 82 כפילויות, 18 חדשים
+**מודלים ללא תיעוד ספציפי:** Dingli JCPT1208, JCPT1212, JLG 520AJ (DTC ספציפי)
+
+**המלצה לריצה 14:** שנה חיפושים ל:
+1. "Dingli JCPT1208DC service manual download fault code" (שינוי ניסוח — DC variant)
+2. "Dingli JCPT1212DC JCPT1212HD manual error troubleshooting" (DC/HD variants)
+3. "JLG 520AJ service manual 3121665 fault codes DTC list" (מנואל שירות ספציפי)
+4. "Genie GS-3246 DTC code 44 45 46 47 drive motor repair instructions"
+5. "Manitou 180ATJ Deutz engine fault code CAN bus diagnosis"
+6. "scissor lift drive motor controller fault diagnosis DC motor AWP"
+7. "JLG 860SJ telescope extend retract fault code repair hydraulic"
 
 ---
 
