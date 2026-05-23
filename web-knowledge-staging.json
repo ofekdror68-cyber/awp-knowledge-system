@@ -1795,5 +1795,82 @@
     "equipment_model": "SE Series",
     "topic": "fault_codes",
     "reliability_score": 0.7
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/thread.aspx?q=88170",
+    "title": "Error 6 - JLG fault code discussion | Forkliftaction Forum",
+    "content_summary": "Forkliftaction forum thread discussing JLG Error 6 fault code on scissor and boom lifts. Error 6 is commonly an emergency stop circuit fault or interlock fault. Diagnosis steps: verify all E-stop buttons are released and functional, check interlock switches on platform gate/entry bar, inspect wiring harness for continuity from E-stop circuit to ECM. On some JLG models, Error 6 also relates to tilt sensor activation — confirm machine is on level surface. Reset by cycling key switch after resolving root cause. If error persists, check CAN bus node at platform control box.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "multiple",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.mecawp.com/wp-content/uploads/2021/01/94534-A92.5.pdf",
+    "title": "MEC A92.5 Service & Parts Manual #94534 (October 2024) | MEC AWP",
+    "content_summary": "MEC AWP Service and Parts Manual part number 94534, October 2024 edition, covering A92.5 model series. Serial number range specified inside cover. Contains: fault code list and error indicator readout, solenoid valve specifications (coil resistance 20-30Ω), hydraulic circuit diagram, electrical schematic, lift/drive troubleshooting procedures, parts breakdown with part numbers. Common fault codes include: lift solenoid faults, steering faults, and communication errors. Diagnostic procedure: observe LED display on ground control, identify 2-digit code, refer to fault code table for cause and corrective action.",
+    "brands_mentioned": [
+      "MEC"
+    ],
+    "equipment_model": "A92.5",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.mecawp.com/wp-content/uploads/2021/05/95568-A92.20-SCH.pdf",
+    "title": "MEC Mast Series A92.20 Service & Parts Manual #95568 (May 2021) | MEC AWP",
+    "content_summary": "MEC AWP Mast Series service and parts manual #95568, May 2021 edition, for A92.20 model. Contains fault code list with error indicator readout, electrical schematic for mast lift series, hydraulic diagrams, solenoid specifications. Fault codes include: code for lift solenoid circuit fault (check wiring and coil resistance 20-30Ω), drive motor fault, height sensor fault. The mast series uses a different control architecture from scissor series — single mast vertical lift with simpler fault code set. Reset by E-stop cycle. Parts breakdown included.",
+    "brands_mentioned": [
+      "MEC"
+    ],
+    "equipment_model": "A92.20",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://manuals.genielift.com/parts%20and%20service%20manuals/data/Service/Z%20Booms/1307785.pdf",
+    "title": "Genie Z-Boom Service and Repair Manual #1307785 | Genie Official",
+    "content_summary": "Official Genie service and repair manual for Z-boom series, document number 1307785. Covers Z-45, Z-51, Z-60 articulating boom lifts. Contains: fault code section with DTC list, hydraulic troubleshooting, CAN bus diagnostics, electrical schematics, and repair procedures. Fault codes use same GSDS framework as GS scissor series: E1 (E-stop), E4 (battery), E6 (tilt), E12/E13 (communication), plus boom-specific codes for jib, swing, and telescope functions. Manual includes step-by-step fault isolation procedures and component replacement intervals.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Z-45 / Z-51 / Z-60",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.advancedaccessplatforms.co.uk/product/dingli-jcpt1208ac/",
+    "title": "Dingli JCPT1208AC Scissor Lift | Advanced Access Platforms",
+    "content_summary": "Product page for Dingli JCPT1208AC electric scissor lift. Specifications: 250kg load capacity, 12m working height, fully sealed AC motor system (drive and lift) with waterproofing advantage. Features onboard fault diagnostic system for easy maintenance. AC drive system differs from DC variants — fault codes may differ from JCPT1208DC. No dedicated fault code table found on this page; service documentation must be obtained from Dingli directly via en.cndingli.com/services/download.jsp. Model also known as JCPT1208 with AC suffix indicating AC motor drive system.",
+    "brands_mentioned": [
+      "Dingli"
+    ],
+    "equipment_model": "JCPT1208AC",
+    "topic": "general",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://www.lectura-specs.com/en/model/aerial-work-platform/wheeled-scissor-lifts-dingli/jcpt1412dc-11704951",
+    "title": "Dingli JCPT1412DC Specs (2017-2025) | LECTURA Specs",
+    "content_summary": "Technical specifications for Dingli JCPT1412DC wheeled scissor lift from LECTURA specs database. Production years 2017-2025. Key specs: 500kg load capacity, 14m working height (max 16m), DC electric motor drive, 24V battery system, platform size 2.8x1.2m, stowed height 2.3m, weight approximately 3000kg. The DC suffix indicates DC motor drive system, which uses a separate traction motor controller (TM1/TM2 in fault codes). The JCPT1412DC fault code system is documented in the operator's manual (Advanced Access Platforms PDF). Engine type: electric DC, controller: Curtis or Zapi typically used in this class.",
+    "brands_mentioned": [
+      "Dingli"
+    ],
+    "equipment_model": "JCPT1412DC",
+    "topic": "general",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://h-equips.com/blog/-81",
+    "title": "JLG 3246ES Scissor Lift — Technical Overview | H-Equips",
+    "content_summary": "Technical overview of JLG 3246ES electric scissor lift. The 3246ES features JLG's patented pothole protection system — fault code 2-5 (flash code) indicates pothole bars are misaligned or stuck. Common issues: pothole bar sensor wiring, pothole bar mechanical obstruction. Control system: JLG Multifunction Control Module (MFC) with CAN bus. Flash codes read via platform LED: first sequence = category, second = specific code. Code 3-3 = sensor fault, 4-4 = drive system fault. Battery maintenance critical: 24V 225Ah minimum, check specific gravity quarterly. The 3246ES uses same control platform as 3246RS (rough terrain variant).",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "3246ES",
+    "topic": "fault_codes",
+    "reliability_score": 0.4
   }
 ]
