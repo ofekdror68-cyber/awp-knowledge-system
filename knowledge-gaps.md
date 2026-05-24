@@ -1,8 +1,9 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-05-23_
+_עודכן: 2026-05-24_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
 
+> **ריצה 15 (2026-05-24):** 7 פריטים חדשים נוספו לסטייג'ינג (175 סה"כ). Supabase DNS blocked; WebFetch חסום (403). 15 חיפושים — 100+ URL בדוקים, 7 חדשים נטו (staging רווי מאוד — רוב URL כבר ידועים). כולל: Dingli JCPT0808HA product page (רשמי), 6 threads forkliftaction.com (fault code list, limp mode, check engine, code 25, 335 series, generic fault code). להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 > **ריצה 14 (2026-05-23):** 7 פריטים חדשים נוספו לסטייג'ינג (168 סה"כ). Supabase DNS blocked; WebFetch חסום (403). 15 חיפושים — 90+ URL בדוקים, 15 חדשים נטו, 7 רלוונטיים-טכניים. כולל: JLG Error 6 forum (Forkliftaction), MEC A92.5 manual #94534, MEC A92.20 Mast Series #95568, Genie Z-Boom manual #1307785, Dingli JCPT1208AC product page, Dingli JCPT1412DC LECTURA specs, JLG 3246ES technical overview. להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 > **ריצה 13 (2026-05-22):** 18 פריטים חדשים נוספו לסטייג'ינג (161 סה"כ). Supabase ECONNREFUSED; WebFetch חסום (403). 22 חיפושים — 100+ URL בדוקים, 18 חדשים. כולל: Manitou 180ATJ מנואל שירות (Scribd), Manitou diag portal codes-list, Manitou 180ATJ 2 E3 RC ManualsLib, JLG 860SJ parts AJ רשמי, JLG 860SJ platform leveling fault p.245, JLG 860SJ/860AJ מנואלי אינדקס, JLG 600SJ fault codes p.266, Genie GS-3246 parts+operator, Dingli JCPT0807PA+0807HA, MEC SE Series. להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 > **ריצה 12 (2026-05-21):** 18 פריטים חדשים נוספו לסטייג'ינג (143 סה"כ). Supabase ECONNREFUSED; WebFetch חסום (403). 15 חיפושים — 70+ URL בדוקים, 18 חדשים. כולל: Dingli JCPT1412HD מנואל, Genie GS-3246 מנואל שירות, GS-1932 מנואל רשמי, GS-2669RT, JLG 600SJC fault codes, JLG 520208 קוד, JLG LSS Boom מנואל, 8 threads מ-forkliftaction.com. להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
@@ -14,6 +15,25 @@ _עודכן: 2026-05-23_
 > **ריצה 6 (2026-05-15):** 12 פריטים חדשים נוספו לסטייג'ינג (99 סה"כ)
 > **ריצה 5 (2026-05-14):** 4 פריטים חדשים נוספו לסטייג'ינג (רוב המקורות כבר היו ב-DB מריצות קודמות)
 > **ריצה 4 (2026-05-13):** 30 פריטים חדשים מזוהים — לא הועלו לסטייג'ינג (חסימת רשת)
+
+### ריצה 15 — פריטים חדשים (2026-05-24)
+7 פריטים חדשים נוספו לסטייג'ינג לפי מותג:
+- **Dingli (1):** JCPT0808HA product page רשמי (en.cndingli.com, 1.0) — AC motor controller, specs 8m/300kg
+- **Forkliftaction.com כללי (6):** fault-code-list thread, fault-code-and-limp-mode thread, check-engine-code thread, Code 25 thread, 335-series-fault-codes thread, generic fault-code thread (score 0.6 כולם)
+
+**הערה לריצה 15:** הסטייג'ינג רווי מאוד — כמעט כל URL שנמצא בחיפושים כבר קיים. 100+ URL שנבדקו, רק 7 חדשים. החיפושים הנוכחיים (JCPT1412, JCPT0607, JLG 450AJ/520AJ/860SJ, Genie GS-3246/GS-1932, Manitou 180ATJ) אינם מניבים תוצאות חדשות. נדרשת אסטרטגיית חיפוש שונה לחלוטין.
+
+**המלצה קריטית לריצה 16 — שנה אסטרטגיה:**
+1. "Dingli JCPT1208DC fault code LED display error list" (שינוי ניסוח — DC variant ספציפי)
+2. "Dingli JCPT1212DC JCPT1212HD manual fault troubleshooting" (דגם לא מכוסה בכלל)
+3. "JLG 520AJ service manual 3121665 DTC complete fault code table" (טבלת DTC ספציפית)
+4. "Genie GS-3246 DTC code 44 45 46 47 motor drive overload solution" (קודים ספציפיים)
+5. "Manitou 180ATJ boom lift fault code diagnosis Deutz ECU" (מנוע ספציפי)
+6. "Haulotte scissor lift fault code error AWP" (מותג חדש — לא מכוסה)
+7. "Skyjack SJ III 3219 error code fault list AWP" (מותג חדש)
+8. "Upright scissor lift fault code error AWP" (מותג חדש)
+9. "Snorkel scissor lift fault code troubleshooting" (מותג חדש)
+10. "Dingli JCPT1208 controller wiring diagram fault" (diagram/wiring ספציפי)
 
 ### ריצה 14 — פריטים חדשים (2026-05-23)
 7 פריטים חדשים נוספו לסטייג'ינג לפי מותג:
@@ -264,6 +284,7 @@ _עודכן: 2026-05-23_
 | 12 | 2026-05-21 | 125 | 18 | 143 |
 | 13 | 2026-05-22 | 143 | 18 | 161 |
 | 14 | 2026-05-23 | 161 | 7 | 168 |
+| 15 | 2026-05-24 | 168 | 7 | 175 |
 
 *ריצה 4: 30 פריטים זוהו אך לא הועלו לסטייג'ינג (חסימת רשת).
 †ריצה 5: JSON בפועל נשאר 87 (commit לא נדחף); 4 פריטים תועדו ב-knowledge-gaps בלבד.
@@ -272,6 +293,14 @@ _עודכן: 2026-05-23_
 ‡ריצה 8: WebFetch חסום (403), Supabase NXDOMAIN — 30 פריטים נשמרו ב-`pending_knowledge.json`; הרץ `python3 save_to_supabase.py` להעלאה.
 §ריצה 9: pending_knowledge.json מריצה 8 היה כבר ב-staging; בסיס אמיתי 108. WebFetch חסום (403), Supabase ECONNREFUSED — 14 פריטים חדשים נוספו לסטייג'ינג.
 **ריצה 11:** 0 פריטים חדשים — staging רווי. לפתיחת מקורות חדשים יש להרחיב חיפושים ל-JCPT1208/JCPT1212 fault codes, 520AJ DTC ספציפי, ו-Manitou 180ATJ service manual.
+
+**פירוט מותגים בסטייג'ינג (ריצה 15 מצטברת, 175 פריטים):**
+- Dingli: 34 מקורות (+1 ריצה 15: JCPT0808HA product page)
+- JLG: 70 מקורות (ללא שינוי)
+- Genie: 51 מקורות (ללא שינוי)
+- Manitou: 22 מקורות (ללא שינוי)
+- MEC: 6 מקורות (ללא שינוי)
+- כללי: 20 מקורות (+6 ריצה 15: forkliftaction.com fault code threads)
 
 **פירוט מותגים בסטייג'ינג (ריצה 14 מצטברת, 168 פריטים):**
 - Dingli: 33 מקורות (+2 ריצה 14: JCPT1208AC product page, JCPT1412DC LECTURA specs)
@@ -486,3 +515,21 @@ _עודכן: 2026-05-23_
 **חיפושים שבוצעו בריצה 9:** 15
 **עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 / Supabase ECONNREFUSED)
 **מודלים ללא תיעוד ספציפי:** Dingli JCPT1208, JCPT1212, Manitou 180ATJ (קודים ספציפיים — diag.manitou-group.com נמצא)
+
+---
+
+**ריצה 15 — פריטים חדשים (7):**
+- Dingli JCPT0808HA — product page רשמי (en.cndingli.com, score 1.0) — AC motor system, specs 8m/300kg, fault diagnostic display built-in
+- Forkliftaction fault-code-list (score 0.6) — general fault code list thread
+- Forkliftaction fault-code-and-limp-mode (score 0.6) — limp mode diagnosis thread
+- Forkliftaction check-engine-code (score 0.6) — engine ECU code discussion
+- Forkliftaction Code 25 thread (score 0.6) — specific fault code discussion
+- Forkliftaction 335-series-fault-codes (score 0.6) — 335 series fault codes
+- Forkliftaction generic fault-code thread (score 0.6)
+
+**חיפושים שבוצעו בריצה 15:** 15
+**עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 / Supabase DNS blocked)
+**URLים שנבדקו:** 100+ — 93 כפילויות, 7 חדשים
+**מודלים ללא תיעוד ספציפי:** Dingli JCPT1208, JCPT1212, JLG 520AJ (DTC ספציפי)
+
+**סיכום ריצה 15 — staging רווי:** כמעט כל URL הרלוונטי ל-15 שאילתות החיפוש הסטנדרטיות כבר אינדקס. לריצה 16 נדרשת אסטרטגיה שונה: מותגים חדשים (Haulotte, Skyjack, Snorkel, Upright), ניסוחי חיפוש חדשים, או קודי שגיאה ספציפיים לא מכוסים.

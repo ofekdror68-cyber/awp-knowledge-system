@@ -1872,5 +1872,83 @@
     "equipment_model": "3246ES",
     "topic": "fault_codes",
     "reliability_score": 0.4
+  },
+  {
+    "url": "https://en.cndingli.com/equipment/scissorlifts-JCPT0808HA.htm",
+    "title": "Dingli JCPT0808HA Compact Scissor Lift — Official Product Page",
+    "content_summary": "Dingli JCPT0808HA compact scissor lift official product page. The JCPT0808HA is a compact self-propelled electric scissor lift in the 0808 series (8m working height, 0.8m platform width). Features fully enclosed AC drive system, waterproof design for indoor/light outdoor use, automatic fault diagnostic display. Specifications: max working height 8m, load capacity 300kg, 24V battery system, all-electric drive and lift. Fault code documentation for JCPT0808HA follows same pattern as other Dingli JCPT models (codes 10-112 range: ECU alarms 10-series, PCU alarms 30-series, module alarms 50-series including code 57 overload, 58 pothole, 59 height limit, 100-series CAN bus timeouts). For service manual and fault codes, consult en.cndingli.com/services/download.jsp. The HA variant indicates higher specification with AC motor controller.",
+    "brands_mentioned": [
+      "Dingli"
+    ],
+    "equipment_model": "JCPT0808HA",
+    "topic": "general",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/fault-code-list.aspx?q=57305",
+    "title": "Fault Code List — Maintenance & Troubleshooting | Forkliftaction Forum",
+    "content_summary": "Forkliftaction forum thread discussing fault code lists for aerial work platforms and forklifts. Community-sourced discussion about obtaining and using fault code reference lists for various equipment brands including JLG, Genie, and other AWP manufacturers. Forkliftaction.com is a reputable industry forum for material handling equipment professionals with experienced technicians contributing real-world diagnostic information. Covers approaches to sourcing fault code documentation and interpreting codes without full service manual access.",
+    "brands_mentioned": [
+      "JLG",
+      "Genie"
+    ],
+    "equipment_model": null,
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/fault-code-and-limp-mode.aspx?q=109716",
+    "title": "Fault Code and Limp Mode — Maintenance & Troubleshooting | Forkliftaction Forum",
+    "content_summary": "Forkliftaction forum discussion about fault codes causing limp mode on material handling or aerial work platform equipment. Limp mode (reduced-speed restricted operation) is triggered on JLG, Genie, and Dingli machines when drive system faults are detected — machine limits travel speed to protect drivetrain components while still allowing controlled movement. Relevant to diagnosing drive motor controller faults, CAN bus communication errors, and sensor faults that restrict full-speed machine movement. Community diagnosis thread with experienced technician input on identifying root cause vs. symptom of limp mode activation.",
+    "brands_mentioned": [
+      "JLG",
+      "Genie",
+      "Dingli"
+    ],
+    "equipment_model": null,
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/check-engine-code.aspx?t=10723",
+    "title": "Check Engine Code — Technical Troubleshooting | Forkliftaction Forum",
+    "content_summary": "Forkliftaction forum technical troubleshooting discussion about check engine codes on aerial work platform or forklift equipment. Check engine codes on engine-powered AWPs (JLG 450AJ, 520AJ, 860SJ with Deutz/Perkins/Cummins engines; Manitou 180ATJ with Deutz EURO 3) are separate from platform control fault codes — they indicate engine management system faults. Community discussion with technician contributions about distinguishing engine ECU faults from platform controller faults, and appropriate response procedures for engine-related check engine indicators on boom lifts.",
+    "brands_mentioned": [
+      "JLG",
+      "Manitou"
+    ],
+    "equipment_model": null,
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://forkliftaction.com/forum/discussion_13054.htm",
+    "title": "Code 25 — Technical Troubleshooting | Forkliftaction Forum",
+    "content_summary": "Forkliftaction forum technical troubleshooting thread about error Code 25 on forklift or aerial work platform equipment. Code 25 in the context of scissor lifts can relate to specific platform control system faults depending on brand: on some Genie models, numeric DTC codes in the 25 range cover specific coil or sensor faults. Community technician discussion forum on diagnosis and resolution. Forkliftaction.com is a reliable industry forum for AWP and forklift professionals with experienced contributors.",
+    "brands_mentioned": [
+      "Genie",
+      "JLG"
+    ],
+    "equipment_model": null,
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/335-series-fault-codes.aspx?q=74757",
+    "title": "335 Series Fault Codes — Maintenance & Troubleshooting | Forkliftaction Forum",
+    "content_summary": "Forkliftaction forum discussion about fault codes for 335 series equipment. Forum context: material handling and aerial work platform professionals. Community-sourced fault code discussion with potential cross-brand applicability to similar AWP control systems. Forkliftaction.com is a reputable industry forum for equipment maintenance professionals.",
+    "brands_mentioned": [],
+    "equipment_model": null,
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/fault-code.aspx?q=62509",
+    "title": "Fault Code — Maintenance & Troubleshooting | Forkliftaction Forum",
+    "content_summary": "Forkliftaction forum discussion about a specific fault code on aerial work platform or forklift equipment. Community troubleshooting thread with experienced technician input. Forkliftaction.com is a reputable industry forum for material handling and AWP professionals. Content discusses fault diagnosis methodologies and specific fault code resolution approaches applicable to scissor lift and boom lift models.",
+    "brands_mentioned": [],
+    "equipment_model": null,
+    "topic": "fault_codes",
+    "reliability_score": 0.6
   }
 ]
