@@ -2074,5 +2074,30 @@
     "equipment_model": "JCPT0607DCS",
     "topic": "general",
     "reliability_score": 0.4
+  },
+  {
+    "url": "https://bruddylift.com/emergency-troubleshooting-methods-for-scissor-lifts/",
+    "title": "Emergency Troubleshooting Methods for Scissor Lifts | Bruddylift",
+    "content_summary": "Emergency troubleshooting guide for scissor lifts covering: (1) Platform stuck elevated - manual emergency descent procedure using gravity lowering valve or manual pump. (2) Complete power failure - locate emergency lowering valve, typically red valve on pump unit. (3) Drive failure - check battery charge, fuses, E-stop circuit, footswitch engagement. (4) Lift not raising - check hydraulic oil level, hydraulic pump motor connection, relief valve setting. (5) Machine will not start - verify all E-stops pulled out, footswitch depressed, key switch on, battery voltage above 23V (24V system). General procedure: (a) ensure safety, (b) check obvious causes (E-stop, battery), (c) review fault code display, (d) try manual reset (E-stop cycle), (e) consult manual. Applicable to Dingli, Genie, JLG, Haulotte scissor lifts.",
+    "brands_mentioned": [
+      "Dingli",
+      "Genie",
+      "JLG",
+      "Haulotte"
+    ],
+    "equipment_model": "Scissor Lift (general)",
+    "topic": "maintenance",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://www.genielift.com/docs/default-source/default-document-library/genie-lift-connect-documents/troubleshootingguide.pdf?sfvrsn=415eeeab_27",
+    "title": "Genie Lift Connect Troubleshooting Guide | Genie Official",
+    "content_summary": "Official Genie Lift Connect troubleshooting guide from Genie (Terex). Genie Lift Connect is Genie's telematics/IoT fleet management system. Guide covers: (1) Connection troubleshooting - cellular/GPS module faults, SIM card issues, antenna checks. (2) Data sync problems - inspection data not uploading, connectivity verification steps. (3) Inspection instructions - pre-operation checklist integration with Lift Connect system. (4) Fault code integration - how Lift Connect captures and reports machine fault codes remotely. (5) Gateway device installation checks. Applicable to GS series scissor lifts, Z boom lifts, and S boom lifts with Lift Connect hardware installed. Official Genie manufacturer document (Terex/Genie).",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Genie Lift Connect (GS/Z/S series)",
+    "topic": "maintenance",
+    "reliability_score": 1.0
   }
 ]

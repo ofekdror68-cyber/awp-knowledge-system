@@ -1,8 +1,9 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-05-25_
+_עודכן: 2026-05-26_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
 
+> **ריצה 17 (2026-05-26):** 2 פריטים חדשים נוספו לסטייג'ינג (188 סה"כ). Supabase DNS חסום; WebFetch חסום (403). 15 חיפושים — 105 URL בדוקים, 10 חדשים נטו, 2 רלוונטיים-טכניים (8 סוננו — marketing/specs). כולל: Bruddylift emergency scissor troubleshooting guide (כללי, 0.4), Genie Lift Connect troubleshooting PDF רשמי (1.0). הסטייג'ינג רווי מאוד לשאילתות הסטנדרטיות — ריצה 18 צריכה חיפושים חדשים (Haulotte, Skyjack, Snorkel). להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 > **ריצה 16 (2026-05-25):** 11 פריטים חדשים נוספו לסטייג'ינג (186 סה"כ). Supabase ECONNREFUSED; WebFetch חסום (403). 15 חיפושים — 80+ URL בדוקים, 13 חדשים נטו, 11 רלוונטיים-טכניים. כולל: 7 threads forkliftaction.com (code-20 no fwd/rev, Genie GS2632 C023/C052, slow-lift code-29, Genie GS1930 C021, JLG flash-code-3-3, code-LL, JLG 1930ES), Manitou 160ATJ+180ATJ operators manual, Mechnician JLG Jaltest diagnostic, Intella JLG boom lifts, Just4Access Dingli JCPT0607DCS. להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 > **ריצה 15 (2026-05-24):** 7 פריטים חדשים נוספו לסטייג'ינג (175 סה"כ). Supabase DNS blocked; WebFetch חסום (403). 15 חיפושים — 100+ URL בדוקים, 7 חדשים נטו (staging רווי מאוד — רוב URL כבר ידועים). כולל: Dingli JCPT0808HA product page (רשמי), 6 threads forkliftaction.com (fault code list, limp mode, check engine, code 25, 335 series, generic fault code). להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 > **ריצה 14 (2026-05-23):** 7 פריטים חדשים נוספו לסטייג'ינג (168 סה"כ). Supabase DNS blocked; WebFetch חסום (403). 15 חיפושים — 90+ URL בדוקים, 15 חדשים נטו, 7 רלוונטיים-טכניים. כולל: JLG Error 6 forum (Forkliftaction), MEC A92.5 manual #94534, MEC A92.20 Mast Series #95568, Genie Z-Boom manual #1307785, Dingli JCPT1208AC product page, Dingli JCPT1412DC LECTURA specs, JLG 3246ES technical overview. להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
@@ -26,16 +27,16 @@ _עודכן: 2026-05-25_
 
 **הערה לריצה 16:** הסטייג'ינג ממשיך להתרחב עם threads ספציפיים יותר. קודי שגיאה ספציפיים נמצאו: Genie C021/C023/C052 (דורות שונים), JLG flash-code-3-3 (נפוץ מאוד). ריצה 17 צריכה לעבור למותגים חדשים (Haulotte, Skyjack) ולמנואלי שירות ספציפיים.
 
-**המלצה לריצה 17 — מותגים חדשים ומנואלים ספציפיים:**
-1. "Haulotte scissor lift fault code error AWP 3228 4232" (מותג חדש — לא מכוסה בכלל)
-2. "Skyjack SJ III 3219 3226 error code fault list AWP" (מותג חדש)
-3. "Snorkel scissor lift fault code troubleshooting SL30 SL26" (מותג חדש)
-4. "Dingli JCPT1208DC service manual fault code download PDF" (DC variant ספציפי)
-5. "JLG 520AJ service manual 3121665 DTC complete fault code table" (טבלת DTC ספציפית)
-6. "Genie GS-3246 DTC code 44 45 46 47 motor drive overload repair" (פתרון ספציפי)
-7. "Manitou 180ATJ Deutz engine ECU fault code SPN FMI list" (מנוע ספציפי)
-8. "AWP boom lift platform leveling fault angle sensor calibration" (calibration ספציפי)
-9. "Dingli JCPT1412 PCU CPU CANBUS 110 111 112 repair solution" (קודים CAN ספציפיים)
+**המלצה לריצה 18 — מותגים חדשים לחלוטין:**
+1. "Haulotte Optimum 8 scissor lift fault code error list troubleshooting" (מותג חדש — לא מכוסה)
+2. "Haulotte Star 10 12 fault code diagnosis repair AWP" (מותג חדש)
+3. "Skyjack SJ III 3219 3226 scissor lift error code fault list" (מותג חדש)
+4. "Skyjack SJIII 4626 4632 AWP fault code troubleshooting" (מותג חדש)
+5. "Snorkel SL26 SL30 scissor lift fault code error diagnosis" (מותג חדש)
+6. "Upright UL25 MX19 scissor lift fault code error list" (מותג חדש)
+7. "Dingli JCPT1208DC fault code LED error display complete list" (DC variant ספציפי)
+8. "JLG 520AJ service manual 3121665 fault code DTC table complete" (מנואל ספציפי)
+9. "Manitou 180ATJ Deutz engine ECU fault code SPN FMI list" (מנוע ספציפי)
 10. "aerial work platform overload sensor calibration fault diagnosis" (sensor calibration)
 
 ### ריצה 15 — פריטים חדשים (2026-05-24)
@@ -296,6 +297,7 @@ _עודכן: 2026-05-25_
 | 14 | 2026-05-23 | 161 | 7 | 168 |
 | 15 | 2026-05-24 | 168 | 7 | 175 |
 | 16 | 2026-05-25 | 175 | 11 | 186 |
+| 17 | 2026-05-26 | 186 | 2 | 188 |
 
 *ריצה 4: 30 פריטים זוהו אך לא הועלו לסטייג'ינג (חסימת רשת).
 †ריצה 5: JSON בפועל נשאר 87 (commit לא נדחף); 4 פריטים תועדו ב-knowledge-gaps בלבד.
@@ -304,6 +306,14 @@ _עודכן: 2026-05-25_
 ‡ריצה 8: WebFetch חסום (403), Supabase NXDOMAIN — 30 פריטים נשמרו ב-`pending_knowledge.json`; הרץ `python3 save_to_supabase.py` להעלאה.
 §ריצה 9: pending_knowledge.json מריצה 8 היה כבר ב-staging; בסיס אמיתי 108. WebFetch חסום (403), Supabase ECONNREFUSED — 14 פריטים חדשים נוספו לסטייג'ינג.
 **ריצה 11:** 0 פריטים חדשים — staging רווי. לפתיחת מקורות חדשים יש להרחיב חיפושים ל-JCPT1208/JCPT1212 fault codes, 520AJ DTC ספציפי, ו-Manitou 180ATJ service manual.
+
+**פירוט מותגים בסטייג'ינג (ריצה 17 מצטברת, 188 פריטים):**
+- Dingli: 35 מקורות (ללא שינוי)
+- JLG: 73 מקורות (ללא שינוי)
+- Genie: 55 מקורות (+1 ריצה 17: Genie Lift Connect troubleshooting PDF רשמי)
+- Manitou: 23 מקורות (ללא שינוי)
+- MEC: 6 מקורות (ללא שינוי)
+- כללי: 24 מקורות (+1 ריצה 17: Bruddylift emergency scissor troubleshooting)
 
 **פירוט מותגים בסטייג'ינג (ריצה 16 מצטברת, 186 פריטים):**
 - Dingli: 35 מקורות (+1 ריצה 16: Just4Access JCPT0607DCS)
@@ -534,6 +544,27 @@ _עודכן: 2026-05-25_
 **חיפושים שבוצעו בריצה 9:** 15
 **עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 / Supabase ECONNREFUSED)
 **מודלים ללא תיעוד ספציפי:** Dingli JCPT1208, JCPT1212, Manitou 180ATJ (קודים ספציפיים — diag.manitou-group.com נמצא)
+
+---
+
+**ריצה 17 — פריטים חדשים (2):**
+- Bruddylift — emergency scissor lift troubleshooting guide (כללי, score 0.4) — emergency descent, power failure, drive fault, manual reset procedures; applicable to Dingli/Genie/JLG/Haulotte
+- Genie Lift Connect troubleshooting PDF — מסמך רשמי Genie (score 1.0) — telematics/IoT troubleshooting, connection faults, inspection data sync, fault code remote capture
+
+**חיפושים שבוצעו בריצה 17:** 15
+**עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 / Supabase DNS blocked)
+**URLים שנבדקו:** 105 — 95 כפילויות, 10 חדשים נטו, 8 סוננו (marketing/specs), 2 רלוונטיים-טכניים
+**מודלים ללא תיעוד ספציפי:** Dingli JCPT1208, JCPT1212, JLG 520AJ (DTC ספציפי), Manitou 180ATJ (MDS-level fault codes), Haulotte (לא מכוסה בכלל), Skyjack (לא מכוסה), Snorkel (לא מכוסה)
+
+**המלצה לריצה 18 — מותגים חדשים לחלוטין:**
+1. "Haulotte Optimum 8 scissor lift fault code error list troubleshooting" (מותג חדש — לא מכוסה)
+2. "Haulotte Star 10 12 fault code diagnosis repair AWP" (מותג חדש)
+3. "Skyjack SJ III 3219 3226 scissor lift error code fault list" (מותג חדש)
+4. "Skyjack SJIII 4626 4632 AWP fault code troubleshooting" (מותג חדש)
+5. "Snorkel SL26 SL30 scissor lift fault code error diagnosis" (מותג חדש)
+6. "Upright UL25 MX19 scissor lift fault code error list" (מותג חדש)
+7. "Dingli JCPT1208DC fault code LED error display complete list" (DC variant ספציפי)
+8. "JLG 520AJ service manual 3121665 fault code DTC table complete" (מנואל ספציפי)
 
 ---
 
