@@ -1,8 +1,9 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-05-26_
+_עודכן: 2026-05-27_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
 
+> **ריצה 18 (2026-05-27):** 30 פריטים חדשים נוספו לסטייג'ינג (218 סה"כ). Supabase ECONNREFUSED; WebFetch חסום (403). 12 חיפושים — URL חדשים ממותגים חדשים לחלוטין. **מותגים חדשים:** Haulotte (11 פריטים), Skyjack (5 פריטים), Snorkel (4 פריטים), Upright (4 פריטים), + Genie/JLG/כללי (6 פריטים). כולל: Haulotte Community fault code guide (רשמי 1.0), Haulotte USA troubleshooting+tech tips (רשמי 1.0), Haulotte Optimum 8 training manual p.71 (failures list), Haulotte Summit Series/Star 10/H12SX מנואלים (ManualsLib), Skyjack techpub.skyjack.com פורטל רשמי (1.0), Skyjack SJIII 3226 LED codes p.117 (קודי שגיאה מלאים), Snorkel SL26/SL30 fault codes manual, Upright MX19 troubleshooting guide+forum. להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 > **ריצה 17 (2026-05-26):** 2 פריטים חדשים נוספו לסטייג'ינג (188 סה"כ). Supabase DNS חסום; WebFetch חסום (403). 15 חיפושים — 105 URL בדוקים, 10 חדשים נטו, 2 רלוונטיים-טכניים (8 סוננו — marketing/specs). כולל: Bruddylift emergency scissor troubleshooting guide (כללי, 0.4), Genie Lift Connect troubleshooting PDF רשמי (1.0). הסטייג'ינג רווי מאוד לשאילתות הסטנדרטיות — ריצה 18 צריכה חיפושים חדשים (Haulotte, Skyjack, Snorkel). להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 > **ריצה 16 (2026-05-25):** 11 פריטים חדשים נוספו לסטייג'ינג (186 סה"כ). Supabase ECONNREFUSED; WebFetch חסום (403). 15 חיפושים — 80+ URL בדוקים, 13 חדשים נטו, 11 רלוונטיים-טכניים. כולל: 7 threads forkliftaction.com (code-20 no fwd/rev, Genie GS2632 C023/C052, slow-lift code-29, Genie GS1930 C021, JLG flash-code-3-3, code-LL, JLG 1930ES), Manitou 160ATJ+180ATJ operators manual, Mechnician JLG Jaltest diagnostic, Intella JLG boom lifts, Just4Access Dingli JCPT0607DCS. להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 > **ריצה 15 (2026-05-24):** 7 פריטים חדשים נוספו לסטייג'ינג (175 סה"כ). Supabase DNS blocked; WebFetch חסום (403). 15 חיפושים — 100+ URL בדוקים, 7 חדשים נטו (staging רווי מאוד — רוב URL כבר ידועים). כולל: Dingli JCPT0808HA product page (רשמי), 6 threads forkliftaction.com (fault code list, limp mode, check engine, code 25, 335 series, generic fault code). להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
@@ -17,6 +18,29 @@ _עודכן: 2026-05-26_
 > **ריצה 6 (2026-05-15):** 12 פריטים חדשים נוספו לסטייג'ינג (99 סה"כ)
 > **ריצה 5 (2026-05-14):** 4 פריטים חדשים נוספו לסטייג'ינג (רוב המקורות כבר היו ב-DB מריצות קודמות)
 > **ריצה 4 (2026-05-13):** 30 פריטים חדשים מזוהים — לא הועלו לסטייג'ינג (חסימת רשת)
+
+### ריצה 18 — פריטים חדשים (2026-05-27)
+30 פריטים חדשים נוספו לסטייג'ינג לפי מותג — **ריצה ראשונה עם מותגים חדשים לחלוטין:**
+
+- **Haulotte (11):** Haulotte Community fault code guide רשמי (1.0) — F-series codes, Haulotte Diag app + VCI box, ETI LITE portal; Haulotte USA troubleshooting (1.0); Haulotte USA tech tips (1.0); Optimum 8 training manual p.71 failures list (0.8) — CF07 motor temp sensor; Optimum 8 maintenance book p.218 (0.8); Group 3522A error codes p.56 (0.8) — BCF-1/2/3/4/5 charger codes; Summit Series error codes p.62 (0.8) — F01-F25; Star 10 operator manual (0.8); H12 SX maintenance book (0.8) — H12/H15/H18SX; Group 3632T battery fault codes p.39 (0.8) — BCF-1 through BCF-5; Star 8/10 service manual Scribd (0.6) — CANBOX wiring diagrams
+- **Skyjack (5):** techpub.skyjack.com פורטל רשמי (1.0) — כל מודלי SJIII/SJIV/SJ; SJIII 3226 LED codes p.117 (0.8) — כולל: OVRLOAD, ARMGUARD, HWFS STALL D, P3-4 SHORT TO SUPPLY; SJ4626 parts manual PDF (0.8); SJ4626 operators manual PDF (0.8) — flash code format; SJIII 4632 maintenance manual Scribd (0.6)
+- **Snorkel (4):** SL26 Plus/SL30 fault codes p.20 (0.8) — NEUTRAL FAULT, DRIVE FAULT; SL20 troubleshooting chart p.44 (0.8) — symptom table; SL26RTE battery charge fault codes p.110 (0.8) — Fault 1-5; SL26/30 service manual snorkeljp.com (0.8) — fault codes p.15; snorkellifts.com support portal (1.0)
+- **Upright (4):** MX19 troubleshooting guide p.47 ManualsLib (0.8) — lift solenoid 20-30Ω; MX19 service manual index (0.8); Forkliftaction MX19 forum (0.8) — drive valve stuck; Heavy Equipment Forums MX19 (0.6)
+- **Genie + JLG + כללי (6):** Genie DC slab scissor fault codes (0.6) — GS-1930DC/GS-1932DC; Skyjack+Genie combined guide namrentals.com (0.6); SJIII 4632 Scribd (0.6); Electric scissor won't start guide Mar 2026 (0.6) — Dingli/Genie/JLG/Skyjack/Snorkel; JLG 1350SJP error code 848 CAN bus fault (0.6); Haulotte H15SX manuals index (0.7)
+
+**הערה לריצה 18:** מותגים חדשים (Haulotte, Skyjack, Snorkel, Upright) — לא היו מיוצגים כלל ב-staging לפני ריצה זו. Haulotte: fault code מבנה F-series + Haulotte Diag VCI box + ETI LITE portal. Skyjack: GP102 controller + LED alphanumeric codes. Snorkel: LED flash codes, similar architecture to Upright. המלצה לריצה 19: Haulotte HA16 RTJ boom lift fault codes, Skyjack SJ45AJ/SJ63AJ articulating fault codes, Snorkel TB42 boom lift fault codes.
+
+**המלצה לריצה 19 — הרחבת מותגים חדשים:**
+1. "Haulotte H16 H18 HA16 boom lift fault code diagnosis repair" (boom lifts Haulotte)
+2. "Skyjack SJ45AJ SJ63AJ articulating boom lift fault code error" (boom lifts Skyjack)
+3. "Snorkel TB42 boom lift fault code troubleshooting" (boom lifts Snorkel)
+4. "Dingli JCPT1208DC JCPT1212DC fault code list LED display" (DC variant ספציפי)
+5. "Haulotte Compact 8 12 fault code error diagnosis repair" (Haulotte compact series)
+6. "Skyjack SJ30 SJ40 series boom lift fault code list" (Skyjack boom)
+7. "aerial platform Deutz engine fault code SPN FMI AWP" (engine codes cross-brand)
+8. "JLG 520AJ service manual DTC specific fault code table" (עדיין חסר)
+
+---
 
 ### ריצה 16 — פריטים חדשים (2026-05-25)
 11 פריטים חדשים נוספו לסטייג'ינג לפי מותג:
@@ -245,12 +269,23 @@ _עודכן: 2026-05-26_
 | JLG 450AJ | flash codes מכוסים היטב; parts manual זמין; DTC 5:437 תועד; Error 6 forum נוסף (ריצה 14) | נמוכה |
 | JLG 600SJ / 600SJC | fault codes p.266 (600SJ) + p.230 (600SJC) — שניהם נמצאו | נמוכה |
 | MEC AWP | A92.5 + A92.20 + SE Series + 1330SE + Mast Series — תיעוד מקיף זמין (ריצה 14) | נמוכה |
+| Haulotte Optimum 8 | training manual p.71 + maintenance book נמצאו (ריצה 18); CF07 fault documented; Haulotte Diag app נדרש לאבחון מלא | בינונית |
+| Haulotte Star 10 | service manual Scribd + operator manual נמצאו (ריצה 18); F-series codes partially covered | בינונית |
+| Haulotte H16/HA16 boom | לא מכוסה כלל — boom lift Haulotte עדיין לא ב-staging | גבוהה |
+| Skyjack SJIII 3226/4626 | LED codes p.117 + parts+ops manuals נמצאו (ריצה 18); GP102 controller codes מכוסים חלקית | בינונית |
+| Skyjack SJ45AJ boom | לא מכוסה כלל — articulating boom Skyjack | גבוהה |
+| Snorkel SL26/SL30 | fault codes p.20 + SL26RTE + service manual נמצאו (ריצה 18); neutral fault documented | בינונית |
+| Upright MX19 | troubleshooting guide p.47 + forum threads נמצאו (ריצה 18); drive valve fault documented | נמוכה |
 
 ---
 
 ## שאלות לאופק
 
-1. יש לך מנואל שירות ל-Dingli JCPT1412DC עם טבלת fault codes מלאה? (מנואל מפעיל נמצא, חסרה טבלת קודים)
+1. יש לך ציוד Haulotte? (11 מקורות חדשים נוספו — Optimum, Star, H-SX series; Haulotte Diag VCI box נדרש לאבחון)
+2. יש לך ציוד Skyjack? (GP102 controller + LED codes מכוסים; techpub.skyjack.com זמין)
+3. יש לך ציוד Snorkel? (SL26/SL30 fault codes נמצאו; neutral fault procedure מתועד)
+4. יש לך ציוד Upright MX19? (troubleshooting guide נמצא; drive valve fault הנפוץ ביותר)
+5. יש לך מנואל שירות ל-Dingli JCPT1412DC עם טבלת fault codes מלאה? (מנואל מפעיל נמצא, חסרה טבלת קודים)
 2. יש לך מנואל שירות ל-JLG 860SJ? (נדרש JLG Online Express — האם יש גישה?)
 3. יש מסמך fault codes ספציפי ל-Manitou 180ATJ? (Manitou MDS נדרש — האם יש גישה לתוכנה?)
 4. האם המכונות שלך מחוברות ל-JLG ClearSky או לכלי אחר לאבחון מרחוק?
@@ -298,6 +333,46 @@ _עודכן: 2026-05-26_
 | 15 | 2026-05-24 | 168 | 7 | 175 |
 | 16 | 2026-05-25 | 175 | 11 | 186 |
 | 17 | 2026-05-26 | 186 | 2 | 188 |
+| 18 | 2026-05-27 | 188 | 30 | 218 |
+
+**ריצה 18 — פריטים חדשים (30):**
+- Haulotte Community fault code guide (1.0) — F-series format, Haulotte Diag VCI box, ETI LITE portal
+- Haulotte USA troubleshooting (1.0) — all models
+- Haulotte USA tech tips (1.0) — CF07, F06.01, BCF codes
+- Haulotte Optimum 8 training p.71 (0.8) — CF07 motor temp sensor fault
+- Haulotte Optimum 8 maintenance book p.218 (0.8)
+- Haulotte 3522A error codes p.56 (0.8) — F-04/05/06/08/10, BCF-1/2/3
+- Haulotte Summit Series error codes p.62 (0.8) — F01-F25
+- Haulotte Star 10 operator manual (0.8)
+- Haulotte H12 SX maintenance book (0.8) — H12/H15/H18SX
+- Haulotte 3632T battery fault codes p.39 (0.8) — BCF-1 through BCF-5
+- Haulotte Star 8/10 service manual Scribd (0.6) — CANBOX wiring
+- Skyjack techpub.skyjack.com פורטל רשמי (1.0)
+- Skyjack SJIII 3226 LED codes p.117 (0.8) — OVRLOAD, ARMGUARD, HWFS STALL D, P3-4 SHORT
+- Skyjack SJ4626 parts manual PDF (0.8)
+- Skyjack SJ4626 operators manual PDF (0.8) — flash code format
+- Genie+Skyjack fault codes guide namrentals (0.6)
+- Skyjack SJIII 4632 maintenance manual Scribd (0.6)
+- Snorkel SL26 Plus/SL30 fault codes p.20 (0.8) — NEUTRAL FAULT, DRIVE FAULT
+- Snorkel SL20 troubleshooting chart p.44 (0.8) — symptom table
+- Snorkel SL26RTE battery charge fault codes p.110 (0.8) — Fault 1-5
+- Snorkel SL26/30 service manual snorkeljp.com (0.8) — fault codes p.15
+- Snorkel official support portal (1.0)
+- Upright MX19 troubleshooting guide p.47 (0.8) — solenoid 20-30Ω, drive fault
+- Upright MX19 service manual index (0.8)
+- Upright MX19 Forkliftaction forum (0.8) — drive valve stuck
+- Upright MX19 Heavy Equipment Forums (0.6)
+- Genie DC slab scissor fault codes (0.6) — GS-1930/1932DC
+- Electric scissor won't start practical guide Mar 2026 (0.6) — multi-brand
+- JLG 1350SJP error code 848 CAN bus (0.6) — CAN termination 120Ω
+- Haulotte H15SX manuals index (0.7)
+
+**חיפושים שבוצעו בריצה 18:** 12
+**עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 / Supabase ECONNREFUSED)
+**URLים שנבדקו:** 50+ — 20 כפילויות, 30 חדשים נטו
+**מותגים חדשים שנוספו:** Haulotte, Skyjack, Snorkel, Upright
+
+---
 
 *ריצה 4: 30 פריטים זוהו אך לא הועלו לסטייג'ינג (חסימת רשת).
 †ריצה 5: JSON בפועל נשאר 87 (commit לא נדחף); 4 פריטים תועדו ב-knowledge-gaps בלבד.
@@ -306,6 +381,18 @@ _עודכן: 2026-05-26_
 ‡ריצה 8: WebFetch חסום (403), Supabase NXDOMAIN — 30 פריטים נשמרו ב-`pending_knowledge.json`; הרץ `python3 save_to_supabase.py` להעלאה.
 §ריצה 9: pending_knowledge.json מריצה 8 היה כבר ב-staging; בסיס אמיתי 108. WebFetch חסום (403), Supabase ECONNREFUSED — 14 פריטים חדשים נוספו לסטייג'ינג.
 **ריצה 11:** 0 פריטים חדשים — staging רווי. לפתיחת מקורות חדשים יש להרחיב חיפושים ל-JCPT1208/JCPT1212 fault codes, 520AJ DTC ספציפי, ו-Manitou 180ATJ service manual.
+
+**פירוט מותגים בסטייג'ינג (ריצה 18 מצטברת, 218 פריטים):**
+- Dingli: 35 מקורות (ללא שינוי)
+- JLG: 74 מקורות (+1 ריצה 18: JLG 1350SJP error code 848 CAN bus)
+- Genie: 56 מקורות (+1 ריצה 18: DC slab scissor fault codes)
+- Manitou: 23 מקורות (ללא שינוי)
+- MEC: 6 מקורות (ללא שינוי)
+- **Haulotte: 11 מקורות חדשים (ריצה 18)** — Community + USA troubleshooting + tech tips + Optimum 8 + 3522A + Summit + Star 10 + H12SX + 3632T + Scribd
+- **Skyjack: 5 מקורות חדשים (ריצה 18)** — techpub.skyjack.com + SJIII 3226 LED codes + SJ4626 parts+ops + SJIII 4632 Scribd
+- **Snorkel: 5 מקורות חדשים (ריצה 18)** — SL26 Plus fault codes + SL20 troubleshooting + SL26RTE battery faults + SL26/30 service manual + snorkellifts.com support
+- **Upright: 4 מקורות חדשים (ריצה 18)** — MX19 p.47 + MX19 service manual + Forkliftaction + Heavy Equipment Forums
+- כללי: 26 מקורות (+2 ריצה 18: Genie+Skyjack combined guide, electric scissor won't start guide)
 
 **פירוט מותגים בסטייג'ינג (ריצה 17 מצטברת, 188 פריטים):**
 - Dingli: 35 מקורות (ללא שינוי)

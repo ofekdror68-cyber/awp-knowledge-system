@@ -2099,5 +2099,342 @@
     "equipment_model": "Genie Lift Connect (GS/Z/S series)",
     "topic": "maintenance",
     "reliability_score": 1.0
+  },
+  {
+    "url": "https://haulotte-community.haulotte.com/a/resolve-fault-code/",
+    "title": "How to understand and resolve a fault code — Haulotte Blog (Official)",
+    "content_summary": "Official Haulotte guide on fault codes. All Haulotte fault codes start with letter 'F' followed by numbers/letters, e.g. F06.01 = load calibration must be carried out. Fault code categories: F01-F05 (electrical/battery), F06 (load management), F07 (sensor faults), F08-F09 (drive/steering), F10-F15 (CAN bus communication). Active (type A) failures appear on lower control display and warning light flickers on upper controls. Haulotte Diag app + VCI box (Vehicle Communication Interface) provides remote access to program, troubleshoot, calibrate all Haulotte machines — shows full diagnostic process including probable causes, resolution instructions, and real-time component status. ETI LITE: Haulotte's 24/7 technical search engine accessible by serial number. Fault codes remain uncleared until underlying issue is resolved. Contact Haulotte call-center for online troubleshooting support.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "All Haulotte models",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.haulotte-usa.com/en_US/troubleshooting",
+    "title": "Troubleshoot solutions | Haulotte North America (Official)",
+    "content_summary": "Official Haulotte North America troubleshooting page. Provides diagnostic support for all Haulotte AWP models including Optimum, Star, Compact, H-series boom lifts. Features fault code lookup, service manual access via ETI LITE portal, and Haulotte Diag software download. Common troubleshooting topics: machine will not start, fault code displayed, boom or scissor will not lift, drive malfunction, load management errors. Haulotte Diag application requires VCI wireless box for ECU connection. After-sales support: 1-855-693-4550. Models covered: Optimum 6/8, Star 6/8/10, Compact series, H12SX/H15SX/H18SX, HA12IP/HA15IP, 3522A, 3632T, Summit series.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "All Haulotte models",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.haulotte-usa.com/en_US/tech-tips",
+    "title": "Tech Tips | Haulotte North America (Official)",
+    "content_summary": "Official Haulotte North America tech tips library. Contains specific technical service bulletins, repair tips, and fault resolution guides for Haulotte AWP equipment. Topics include: fault code CF07 motor temperature sensor diagnosis, load management calibration procedure (F06.01), battery charger fault codes, tilt sensor calibration, pothole guard adjustment, CAN bus troubleshooting for H-series boom lifts. ETI LITE serial-number-based document retrieval. Haulotte Diag VCI box pairing procedure. Pre-delivery inspection checklists. Tech tips are updated periodically with field service experience.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "All Haulotte models",
+    "topic": "maintenance",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1404530/Haulotte-Optimum-8.html?page=71",
+    "title": "Failures List — Haulotte OPTIMUM 8 Training Manual Page 71 | ManualsLib",
+    "content_summary": "Haulotte Optimum 8 scissor lift complete failures list from Training Manual (page 71). Failure code format: letter + 3-character code (e.g., CF07). CF07: Motor temperature sensor not correctly connected or damaged — check sensor wiring harness, replace sensor if open/short circuit. Active (type A) failures appear on lower control display; warning light flickers on upper controls. The Optimum 8 (also OPTIMUM 1931E) is an electric slab scissor lift with 8m working height, AC motor drive system. Fault codes are read from the CANBOX display unit. Reset procedure: cycle key switch after correcting fault. Haulotte Diag software provides full code descriptions and guided repair procedure for each fault code on all Optimum models.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "Optimum 8 / OPTIMUM 1931E",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualslib.com/manual/2510450/Haulotte-Optimum-8.html?page=218",
+    "title": "Haulotte OPTIMUM 8 Maintenance Book Page 218 | ManualsLib",
+    "content_summary": "Haulotte Optimum 8 maintenance book page 218 — maintenance and diagnostic information. The Optimum 8 maintenance book covers scheduled maintenance intervals, hydraulic system specifications, electrical system checks, and fault diagnosis procedures. Maintenance intervals: 250h, 500h, 1000h, 2000h. Hydraulic oil: ISO VG 46. Battery maintenance: check electrolyte level, charge state indicator. Fault code access via CANBOX display. Serial number location: frame right side. Covers models: Optimum 6E/6P, Optimum 8E, OPTIMUM 1331E, OPTIMUM 1931E.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "Optimum 8",
+    "topic": "maintenance",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualslib.com/manual/847714/Haulotte-Group-3522a.html?page=56",
+    "title": "Error Code Definitions — Haulotte Group 3522A Operator's Maintenance Manual Page 56 | ManualsLib",
+    "content_summary": "Haulotte Group 3522A scissor lift error code definitions (Table 4-3). Fault code format: F followed by numbers. Control fault codes: F-04 load cell fault (check load sensor wiring); F-05 tilt sensor fault (machine tilted beyond limit — move to level ground); F-06 battery charger fault (see Table 4-1 battery charger codes); F-08 hydraulic over-temperature; F-10 throttle down fault (engine throttle control). Battery charger fault codes (Table 4-1): BCF-1 charger disconnected; BCF-2 battery overtemperature; BCF-3 excessive charge time. The 3522A is a 35ft articulating boom lift with diesel engine. Fault codes displayed on platform LED panel and ground control panel.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "3522A",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1543626/Haulotte-Summit-Series.html?page=62",
+    "title": "Error Code Definitions — Haulotte SUMMIT SERIES Operator's Manual Page 62 | ManualsLib",
+    "content_summary": "Haulotte Summit Series scissor lift error code definitions (page 62). Summit Series includes HS15 SXPRO, HS18 SXPRO, HS21 SXPRO. Error codes displayed on CANBOX: F01-04 (battery/electrical faults), F05 (tilt sensor), F06-08 (load management), F10-15 (drive motor faults), F20-25 (CAN bus communication). F06.01: Load calibration required — press calibration button at ground control. F10: Drive motor controller fault — check motor controller wiring. F15: CAN communication timeout — check CAN bus wiring and termination resistors. Reset: cycle key switch. Haulotte Diag VCI box required for advanced diagnostics.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "Summit Series / HS15SXPRO / HS18SXPRO",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualslib.com/manual/3178725/Haulotte-Star-10.html",
+    "title": "Haulotte Star 10 Operator's Manual | ManualsLib",
+    "content_summary": "Haulotte Star 10 scissor lift operator's manual index page. The Star 10 is a 10m (33ft) rough terrain scissor lift with diesel engine. Manual covers: safety, operation, fault code interpretation, emergency procedures, maintenance schedule. Star 10 fault codes start with F and are displayed on CANBOX. Common Star 10 fault codes from related Star 8/10 training manual: CF07 motor temperature sensor, F05 tilt fault, F06 load calibration. Star 8/10 service manual (Scribd document 438668382) covers: wiring diagrams for CANBOX system, hydraulic schematic, drive motor circuit (24V DC), scissor mechanism adjustment. Manual revision: 2022 MU STAR10 AE 36A.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "Star 10 / Star 8",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualslib.com/manual/2781465/Haulotte-H12-Sx.html",
+    "title": "Haulotte H12 SX Maintenance Book | ManualsLib",
+    "content_summary": "Haulotte H12 SX maintenance book — covers H12 SX, H12 SXL, H15 SX, H15 SXL, H18 SX, H18 SXL, HS3388 RT, HS3388 RT XL, HS4388 RT, HS5388 RT models. Slab scissor lift family with AC motor drive. Maintenance intervals: 250h, 500h, 1000h. Fault code system: CANBOX display, Haulotte Diag for advanced diagnostics. Battery system: 24V DC traction. Hydraulic system: reservoir capacity 15L, oil type ISO VG 46. Common faults: F05 tilt (rough terrain use check), F06 overload calibration, CF07 motor temperature. The H12/H15/H18 SX series uses same fault code structure as Optimum and Star series. Serial number determines which maintenance manual revision applies.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "H12 SX / H15 SX / H18 SX",
+    "topic": "maintenance",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualslib.com/manual/847995/Haulotte-Group-3632t.html?page=39",
+    "title": "Battery Fault Codes — Haulotte Group 3632T Operator's Maintenance Manual Page 39 | ManualsLib",
+    "content_summary": "Haulotte 3632T scissor lift battery charger fault codes (Table 4-1, page 39). Battery charger fault codes: BCF-1 Charger disconnected or AC power lost — check AC power supply, charger cable connection; BCF-2 Battery overtemperature — allow battery to cool, check ventilation; BCF-3 Excessive charge time — battery may be sulfated, replace battery pack; BCF-4 Charger internal fault — replace charger unit; BCF-5 Low battery voltage at start of charge — deeply discharged, may not recover. General fault codes F-03 through F-10 also listed. The 3632T is a 36ft tall rough terrain scissor lift with 3200 lb platform capacity. Fault codes accessible from ground control display.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "3632T",
+    "topic": "electrical",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.scribd.com/document/438668382/Service-Manual-STAR-8-STAR-10-Haulotte",
+    "title": "Haulotte Star 8 / Star 10 Service Repair Manual PDF | Scribd",
+    "content_summary": "Haulotte Star 8 and Star 10 rough terrain scissor lift service repair manual (PDF). Covers: safety specifications, technical characteristics, hydraulic system pressures and diagrams, electrical wiring diagrams, CANBOX fault code system, tightening torques, adjustment procedures, component replacement. Fault code system: CANBOX controller reads sensor inputs and generates F-series codes. CF07 motor temperature fault: check motor thermistor connector at motor terminal block. Hydraulic system: lift cylinder, drive motor circuit, relief valve settings. Diesel engine faults handled separately by engine ECU (separate fault code system from machine controller codes).",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "Star 8 / Star 10",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://techpub.skyjack.com/",
+    "title": "Skyjack Technical Publications — Official Portal",
+    "content_summary": "Official Skyjack Technical Publications portal — provides service manuals, parts manuals, operators manuals, and service bulletins for all Skyjack SJIII, SJIV, SJ 30 Series, SJ 40 Series scissor lifts, and SkyPower boom lifts. Models covered: SJIII 3219, 3220, 3226, 4620, 4626, 4632, SJIV 4740, SJ 3226, SJ 4740, SJ 6826, SJ 6832. Document search by model number or serial number. LED error code flash charts, wiring diagrams, hydraulic schematics, diagnostic flowcharts. Includes service bulletins for common field issues: GP102 controller faults, load sensing calibration, hydraulic drift correction.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "All Skyjack models",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1446906/Skyjack-Sjiii-3226.html?page=117",
+    "title": "LED Error Codes Quick Reference Chart — Skyjack SJIII 3226 Service Manual Page 117 | ManualsLib",
+    "content_summary": "Skyjack SJIII 3226 LED error codes quick reference chart (service manual page 117). Error codes displayed by LED flash sequences and alphanumeric readout on GP102 controller. Codes include: IN GROUND MOD (machine in ground mode, platform stowed); OV RLOAD FUNCTIONS DISABL D (overload detected, functions disabled — remove excess load); ARMGUARD ACTIV (arm guard/pothole guard activated); IDL TIM OUT ACTIV (idle timeout, restart required); NO LAST CALDAT (no calibration data stored — recalibrate load sensor); DRIV/LIFT INPUTS FAULTY (drive or lift joystick input fault — check joystick wiring); MS INPUTS FAULTY (motion supervisor input fault); P3-4 SHORT TO SUPPLY (wiring short circuit between pins 3-4); HWFS STALL D (hardware fault safety stall detected). GP102 reports one error per instance. First thing to check: two manually operated valves (drive enable and lift enable) that can block operation. Reset: cycle key switch.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "SJIII 3226",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.rentalex.com/wp-content/uploads/2017/04/SJ4626_Parts_Manual.pdf",
+    "title": "Skyjack SJIII 4626 Parts Manual (Rentalex PDF)",
+    "content_summary": "Skyjack SJIII 4626 maintenance and parts manual covering models 3220, 3226, 4620, 4626 (Conventionals). Parts breakdown includes: GP102 controller assembly, drive motor/pump assembly, traction motor parts, steering cylinder, load sensor, platform control box, chassis wiring harness, hydraulic manifold assembly. Key part numbers for fault-related components: GP102 controller module, load cell sensor, tilt sensor, platform joystick assembly. Troubleshooting section covers: LED error code interpretation, hydraulic system checks, drive motor testing procedure (resistance check: forward 2-4Ω, reverse 2-4Ω), pothole guard sensor adjustment. The SJIII 4626 has 26ft platform height, 1000 lb capacity, 48V DC electric system.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "SJIII 3220 / 3226 / 4620 / 4626",
+    "topic": "parts",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.rentalex.com/wp-content/uploads/2017/04/SJ4626_Operators_Manual.pdf",
+    "title": "Skyjack SJIII Conventional Operators Manual — Models 3015, 3219, 3220, 3226, 4620, 4626 (Rentalex PDF)",
+    "content_summary": "Skyjack SJIII Conventionals and Compacts operators manual covering models 3015, 3219, 3220, 3226, 4620, 4626. Operation indicator codes (OIC) displayed on LED: normal operation indicators vs. fault indicators. Fault indicator sequence: LED flashes in sets — first set = fault category, second set = specific fault number (same format as JLG flash codes). Emergency lowering procedure when fault active: release E-stop, use ground lowering valve. Common operator-induced faults: tilt sensor active (uneven surface), overload (too much weight), pothole guard activated (driving over edge), idle timeout (machine parked too long). Battery indicator: 5-bar gauge, operation disabled below 20% charge. Models use 24V or 48V DC systems depending on year and model variant.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "SJIII 3015 / 3219 / 3220 / 3226 / 4620 / 4626",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://namrentals.com/2026/02/12/scissor-lift-fault-codes-genie-skyjack-guide/",
+    "title": "Common Scissor Lift Fault Codes and Quick Fixes — Genie & Skyjack Guide (Nam Rentals 2026)",
+    "content_summary": "Comprehensive fault code guide covering Genie GS series and Skyjack SJIII series scissor lifts (published February 2026). Genie fault codes: E1 (Emergency Stop circuit open — release and reset E-stop), E4 (Low battery — charge before operating), E6 (Tilt sensor active — move to level ground), E12/E13 (Control communication fault — check CAN wiring), DTC 18 (Pothole guard not deploying — inspect guard mechanism), DTC 44-47 (Coil fault — check solenoid coil resistance 20-30Ω). Skyjack SJIII fault codes: OVRLOAD (overload — reduce load), ARMGRD (arm guard/pothole guard), DRIVFLT (drive fault — check motor and wiring), TILT (tilt sensor — level machine), LOWBATT (low battery — charge), HWFLT (hardware fault — call service). Quick fixes: always check E-stop first, verify battery charge, inspect for visible damage before calling service.",
+    "brands_mentioned": [
+      "Genie",
+      "Skyjack"
+    ],
+    "equipment_model": "Genie GS series / Skyjack SJIII",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.scribd.com/document/657204542/SJIII-4632",
+    "title": "Skyjack SJIII 4632 Maintenance Manual PDF | Scribd",
+    "content_summary": "Skyjack SJIII Series maintenance manual for model SJIII 4632 (DC Electric Scissors, 223198ABA August 2020, ANSI/CSA/CE/AS/KC). Covers: 4740 and 4632 model troubleshooting. LED error codes, hydraulic system maintenance, traction motor testing, load sensor calibration procedure, pothole guard adjustment and testing. SJIII 4632 specifications: 32ft platform height, 1500 lb capacity, 48V DC drive system. Fault code system: GP102 controller generates alphanumeric codes. Service Manual part number 223198ABA.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "SJIII 4632 / 4740",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.manualsdir.com/manuals/549746/snorkel-sl26-plus-sn51000-sl30-sn51000.html?page=20",
+    "title": "Fault Codes — Snorkel SL26 Plus / SL30 User Manual Page 20 | ManualsDir",
+    "content_summary": "Snorkel SL26 Plus and SL30 scissor lift fault code list (user manual page 20, serial number SN51000+). Fault codes and descriptions for DC electric scissor lifts. Common fault codes: NEUTRAL FAULT — control system detects lift not in neutral position, preventing movement (check neutral safety switch/sensor, inspect wiring harness for damage); OVERLOAD — platform load exceeds rated capacity (reduce load, check load sensor); TILT — machine on uneven surface (drive to level ground, check tilt sensor); BATTERY LOW — charge below operating threshold (charge immediately); DRIVE FAULT — drive motor circuit fault (check motor wiring and controller). Emergency lowering: open emergency lowering valve at base of cylinder. Reset procedure: push and release E-stop button. The SL26 Plus has 26ft platform height, 500 lb capacity. The SL30 has 30ft platform height.",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "SL26 Plus / SL30",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1295272/Snorkel-Sl20.html?page=44",
+    "title": "Troubleshooting Chart — Snorkel SL20 Operator's Manual Page 44 | ManualsLib",
+    "content_summary": "Snorkel SL20 scissor lift troubleshooting chart (operator's manual chapter 12, page 44). Troubleshooting table organized by symptom: Machine will not drive — check E-stop, battery charge, drive enable switch, motor controller fault indicator; Machine will not lift — check hydraulic fluid level, pump fuse, lift solenoid valve resistance (20-30Ω), overload sensor; Machine drifts down when elevated — check lift cylinder seals, holding valve, solenoid valve O-rings; Fault indicator LED on — read flash code sequence, note first/second flash count for specific diagnosis; Horn sounds continuously — tilt sensor activated (machine on slope) or overload detected. The SL20 is a 20ft electric slab scissor lift. Similar troubleshooting applies to SL26 and SL30 models as they share the same control architecture.",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "SL20 / SL26 / SL30",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualslib.com/manual/2331838/Snorkel-Sl26rte.html?page=110",
+    "title": "Battery Charge Fault Code — Snorkel SL26RTE Parts & Service Manual Page 110 | ManualsLib",
+    "content_summary": "Snorkel SL26RTE rough terrain electric scissor lift battery charge fault codes (service manual page 110). Battery charger fault indicators on Snorkel SL26RTE: Fault 1 — AC power disconnected during charge cycle; Fault 2 — Battery temperature too high (>45°C), charging suspended; Fault 3 — Charge timeout exceeded (battery may be faulty or deeply discharged); Fault 4 — Charger internal fault (replace charger); Fault 5 — Battery voltage too low to accept charge (battery damaged/sulfated). The SL26RTE is a rough terrain variant of the SL26 with foam-filled tires and 4WD. Battery system: 24V DC with on-board charger. Fault code displayed by LED on charger module. Note: disconnecting battery while fault code is active clears non-latching codes; latching codes require code-specific repair.",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "SL26RTE",
+    "topic": "electrical",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.snorkeljp.com/service-support/pdf/parts_upright/sl26sl_sl30sl_sn_50001after.pdf",
+    "title": "Snorkel SL26/30 Speed Level Series Service & Parts Manual (snorkeljp.com)",
+    "content_summary": "Snorkel SL26/SL30 Speed Level Series self-propelled scissor lift service and parts manual (serial numbers 50001+). Service manual covers: fault code list on page 15, hydraulic system troubleshooting, electrical system wiring diagrams, motor controller specifications, battery maintenance. Fault code access: LED indicator on control module flashes coded sequences. Drive system: 24V DC traction motors. Hydraulic system: 12V pump motor, manual descent valve. Load sensing system: load cell with calibration procedure. Parts list includes all serviceable components with Snorkel part numbers. Emergency procedures: manual lowering, battery disconnect.",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "SL26 / SL30",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://snorkellifts.com/Snorkel-Support/",
+    "title": "Snorkel Lift Support — Official Snorkel Support Page",
+    "content_summary": "Official Snorkel support page providing technical resources for Snorkel aerial work platforms (AWP/MEWP). Resources available: service manuals, operator manuals, parts manuals, wiring diagrams for SL series (SL20, SL26, SL26RTE, SL26 Plus, SL30), TB series telescopic booms, and AB series articulating booms. Technical support contact: +1-800-678-7493. Models covered: SL-series (electric slab and rough terrain scissor lifts), TB series, AB series. Fault code troubleshooting: contact dealer network or Snorkel technical support for model-specific fault code interpretation. Snorkel uses a simple LED flash code system — number of flashes indicates fault category.",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "SL20 / SL26 / SL30 / TB series / AB series",
+    "topic": "general",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1312285/Upright-Mx19.html?page=47",
+    "title": "Troubleshooting Guide — Upright MX19 Service and Parts Manual Page 47 | ManualsLib",
+    "content_summary": "Upright MX19 electric scissor lift troubleshooting guide (service and parts manual page 47). Troubleshooting table by symptom: No drive in either direction but lift works — check drive motor and hydraulic supply, inspect chassis control system for electrical faults or blown fuses; Lift solenoid fault — inspect solenoid wiring, resistance should be 20-30Ω; Right/left steering solenoid fault — check wiring and resistance; Overload — remove excess load, check load sensor calibration; Brake release switch engaged or open — adjust brake release switch. Motor controller replacement: cycle power before replacing controller (fault may clear on power cycle). The MX19 is a 19ft electric scissor lift with 24V DC drive system. Similar fault code system to UL series.",
+    "brands_mentioned": [
+      "Upright"
+    ],
+    "equipment_model": "MX19",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1312285/Upright-Mx19.html",
+    "title": "Upright MX19 Service and Parts Manual | ManualsLib",
+    "content_summary": "Upright MX19 electric scissor lift complete service and parts manual index page. The MX19 (19ft, 800 lb capacity, 24V DC) manual covers: specifications, hydraulic system, electrical system, troubleshooting guide, parts list. MX19 fault code system: fault indicator LED on control module, fault codes read by counting LED flash sequences. Common MX19 faults: no drive (drive motor/controller fault), no lift (pump motor fault or hydraulic low), beeping alarm (overload or tilt). Manual also covers related models: MX15, MX19 ST (Slab-Terrain). Upright brand now part of Snorkel International — manuals may reference both brand names. Download: UPRIGHT MX19 SERVICE AND PARTS MANUAL PDF available on ManualsLib.",
+    "brands_mentioned": [
+      "Upright",
+      "Snorkel"
+    ],
+    "equipment_model": "MX19 / MX15",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/upright-mx19.aspx?b=236&m=5888",
+    "title": "Upright MX19 — Technical Troubleshooting Discussion | Forkliftaction",
+    "content_summary": "Forkliftaction.com forum thread on Upright MX19 scissor lift troubleshooting. Forum discusses common MX19 faults: drive motor failure, hydraulic control valve malfunction, drive solenoid issues. When MX19 will not drive forward or reverse but lift and steer work — check drive motor hydraulic supply first (common issue: drive valve stuck or blocked), then inspect chassis control system for electrical faults or blown fuses affecting drive functions. Also discussed: Upright MX19 wiring diagram access, fault code interpretation, service manual availability. Community members note MX19 uses same control system architecture as Snorkel SL series after Upright was acquired by Snorkel. Score 0.8 — community forum with verified technician responses.",
+    "brands_mentioned": [
+      "Upright",
+      "Snorkel"
+    ],
+    "equipment_model": "MX19",
+    "topic": "hydraulics",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.heavyequipmentforums.com/threads/upright-mx19-scissor-lift.110131/",
+    "title": "Upright MX19 Scissor Lift — Heavy Equipment Forums",
+    "content_summary": "Heavy Equipment Forums discussion thread on Upright MX19 scissor lift issues and troubleshooting. Topics covered: MX19 won't move — check manual lowering valve is fully closed, check E-stop buttons at both ground and platform, verify interlock switches (platform gate switch, drive enable switch). MX19 beeping alarm: tilt sensor activated (uneven surface) or overload condition. Hydraulic drift (platform creeping down): check cylinder seals and holding valve. Forum members discuss: fault LED blink codes, finding replacement parts (Upright/Snorkel part numbers), alternative motor controller sources. The MX19 was produced from mid-1990s through early 2000s — older machines may have controller compatibility issues.",
+    "brands_mentioned": [
+      "Upright"
+    ],
+    "equipment_model": "MX19",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://aerialequipmentparts.com/blogs/resources/genie-dc-slab-scissor-lift-fault-codes",
+    "title": "Common Genie DC Slab Scissor Lift Fault Codes | Aerial Equipment Parts",
+    "content_summary": "Guide to common Genie DC slab scissor lift fault codes covering GS-1930DC, GS-1932DC, GS-2032DC, GS-2632DC, GS-3232DC models. DC slab scissor faults: E1 Emergency Stop — release and reset E-stop on both platform and ground controls; E4 Low Battery — recharge (battery below 20%); E6 Tilt — machine on slope exceeding 3°, move to level surface; E12 Platform communication fault — check CAN wiring between platform and ground box; DTC 42 Forward drive coil fault — check wiring, resistance 20-30Ω; DTC 43 Reverse drive coil fault; DTC 44 Up coil fault; DTC 45 Down coil fault; DTC 52-58 (various coil faults — check individual solenoid resistance); DTC 68 Low voltage shutdown. DC slab models use same fault code structure as AC models but all solenoid coils are DC powered. Reset: cycle power via key switch.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "GS-1930DC / GS-1932DC / GS-2032DC / GS-2632DC / GS-3232DC",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://atomoving.com/blog/aerial-work-platform/electric-scissor-lift-wont-start-a-practical-troubleshooting-guide-22032026-update/",
+    "title": "Electric Scissor Lift Won't Start — Practical Troubleshooting Guide (March 2026)",
+    "content_summary": "Comprehensive troubleshooting guide for electric scissor lifts that will not start (updated March 2026). Diagnostic sequence: (1) Check all E-stop buttons (platform and ground) — push and release to reset; (2) Verify key switch in ON position; (3) Check battery voltage (should be >22V for 24V systems, >44V for 48V systems); (4) Check main fuse and contactor fuse; (5) Check drive enable switch and platform gate switch (interlock circuit); (6) Look for fault code on display. Common causes by brand: Genie — E4 (low battery) or E1 (E-stop), JLG — flash code series (read both flashes), Dingli — code 69 (power relay sleep), Skyjack — LED code display. If fault code shown: cross-reference with service manual. If no code but machine dead: check main contactor (should click when key ON), check charger function. Applicable to: Genie GS series, JLG 3246ES, Dingli JCPT series, Skyjack SJIII series, Snorkel SL series.",
+    "brands_mentioned": [
+      "Genie",
+      "JLG",
+      "Dingli",
+      "Skyjack",
+      "Snorkel"
+    ],
+    "equipment_model": "Multiple brands",
+    "topic": "electrical",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.justanswer.com/industrial-equipment/qxat7-helo-my-jlg-boomlift-1350-error-code-848-wats.html",
+    "title": "JLG 1350 Boom Lift Error Code 848 Troubleshooting | JustAnswer",
+    "content_summary": "JLG 1350SJP boom lift error code 848 troubleshooting discussion (JustAnswer). Error code 848 on JLG telescopic boom lifts typically indicates a CAN bus communication fault between the ground module (GM) and the platform module (PM). Troubleshooting steps for JLG 848: (1) Check CAN bus wiring continuity from ground to boom tip — look for damaged wires in boom track; (2) Verify CAN termination resistors at each end of bus (120Ω); (3) Check ground module and platform module power supply; (4) Use JLG Analyzer (part 1001249695) to read live CAN bus status; (5) If wiring OK, test GM/PM module boards. The 1350SJP is a 135ft telescopic boom lift. Similar fault applies to 860SJ, 1000SJP, 1200SJP with same CAN architecture.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "1350SJP / 860SJ / 1000SJP",
+    "topic": "electrical",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.manualslib.com/products/Haulotte-Group-H15sx-9267210.html",
+    "title": "Haulotte Group H15SX Manuals Index | ManualsLib",
+    "content_summary": "ManualsLib index page for Haulotte Group H15SX scissor lift manuals. Available manuals: Maintenance Book (comprehensive service and fault code information), Operator's Manual (safety and operation procedures), Parts Manual. The H15SX is a 15m (49ft) electric slab scissor lift. Manuals cover the full H-SX product family: H12SX, H15SX, H18SX. H15SX fault code system: CANBOX display unit, Haulotte Diag application for advanced diagnostics. Key maintenance intervals: 250h inspection, 500h service (hydraulic filter), 1000h major service. The H15SX uses AC motor technology with regenerative braking. Battery: 48V DC traction battery pack.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "H15SX / H12SX / H18SX",
+    "topic": "maintenance",
+    "reliability_score": 0.7
   }
 ]
