@@ -1,7 +1,9 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-05-27_
+_עודכן: 2026-05-28_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
+
+> **ריצה 19 (2026-05-28):** 30 פריטים חדשים נוספו לסטייג'ינג (248 סה"כ). Supabase ECONNREFUSED; WebFetch חסום (403). 20 חיפושים — שאילתות מומלצות מריצה 18 + שאילתות נוספות. **מותגים חדשים/מורחבים:** Haulotte Compact/HA16RTJ (7 פריטים), Skyjack boom lifts SJ63AJ/SJ45T/SJIII (7 פריטים), Snorkel A38E/AB46JE/TB42 articulating booms (7 פריטים), Deutz engine codes cross-brand (5 פריטים), Dingli JCPT1212DC + JLG 520AJ Scribd (2 פריטים), כללי (2 פריטים). להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 
 > **ריצה 18 (2026-05-27):** 30 פריטים חדשים נוספו לסטייג'ינג (218 סה"כ). Supabase ECONNREFUSED; WebFetch חסום (403). 12 חיפושים — URL חדשים ממותגים חדשים לחלוטין. **מותגים חדשים:** Haulotte (11 פריטים), Skyjack (5 פריטים), Snorkel (4 פריטים), Upright (4 פריטים), + Genie/JLG/כללי (6 פריטים). כולל: Haulotte Community fault code guide (רשמי 1.0), Haulotte USA troubleshooting+tech tips (רשמי 1.0), Haulotte Optimum 8 training manual p.71 (failures list), Haulotte Summit Series/Star 10/H12SX מנואלים (ManualsLib), Skyjack techpub.skyjack.com פורטל רשמי (1.0), Skyjack SJIII 3226 LED codes p.117 (קודי שגיאה מלאים), Snorkel SL26/SL30 fault codes manual, Upright MX19 troubleshooting guide+forum. להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 > **ריצה 17 (2026-05-26):** 2 פריטים חדשים נוספו לסטייג'ינג (188 סה"כ). Supabase DNS חסום; WebFetch חסום (403). 15 חיפושים — 105 URL בדוקים, 10 חדשים נטו, 2 רלוונטיים-טכניים (8 סוננו — marketing/specs). כולל: Bruddylift emergency scissor troubleshooting guide (כללי, 0.4), Genie Lift Connect troubleshooting PDF רשמי (1.0). הסטייג'ינג רווי מאוד לשאילתות הסטנדרטיות — ריצה 18 צריכה חיפושים חדשים (Haulotte, Skyjack, Snorkel). להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
@@ -18,6 +20,30 @@ _עודכן: 2026-05-27_
 > **ריצה 6 (2026-05-15):** 12 פריטים חדשים נוספו לסטייג'ינג (99 סה"כ)
 > **ריצה 5 (2026-05-14):** 4 פריטים חדשים נוספו לסטייג'ינג (רוב המקורות כבר היו ב-DB מריצות קודמות)
 > **ריצה 4 (2026-05-13):** 30 פריטים חדשים מזוהים — לא הועלו לסטייג'ינג (חסימת רשת)
+
+### ריצה 19 — פריטים חדשים (2026-05-28)
+30 פריטים חדשים נוספו לסטייג'ינג לפי מותג — **הרחבת מותגים חדשים + Deutz engine codes:**
+
+- **Haulotte (7):** HA16RTJ alarm codes Scribd (0.4) — F-series ACTIVE codes, nacelle fuse relay card 921406F; Compact-Optimum alarm codes Scribd (0.4) — AL12 EEPROM, Alarm 01 YV7/YV9, Alarm 06 serial card; Compact 12 error code Forkliftaction (0.8); Compact service manual after May 2005 simeri.fi (0.6) — AL + F codes; Compact 8-10-12 manual Scribd (0.4) — ZAPI + BCF codes; Compact 12 ManualsLib index (0.8); Summit Series service manual p.25 ManualsLib (0.8) — F01-F25 table 3-3; pdfmanual4trucks Haulotte index (0.4) — HA20/HA26 coverage
+- **Skyjack (7):** SJ63AJ operators manual PDF (0.8) — GP102 controller, OVRLOAD/TILT/DRIVE FAULT codes; SJ3215 LED error codes p.101 ManualsLib (0.8) — OVRLOAD/ARMGUARD/HWFS STALL D; SJIII 3215 Compact LED codes p.103-104 ManualsLib (0.8) — code breakdown chart; Skyjack 3219 common errors Hugg&Hall (0.6); SJIII BDE Section 4 troubleshooting diesel.btc.edu (0.6); Skyjack troubleshooting official page (1.0); Skyjack tech tip First Thing To Check 2015/2021 (1.0); SJ45T telescopic boom operating manual (0.6)
+- **Snorkel (7):** A38E fault codes ManualsDir p.64 (0.6) — codes 01-39 resettable, codes 51-69 replace component; AB46JE manuals ManualsLib (0.8) — same code format as A38E; A38E parts manual snorkeljp.com official (0.8); A38E full manual simeri.fi (0.6); A38E service manual manualzz.com (0.6) — solenoid coil test 20-30Ω; TB Boom Lift service manual Scribd (0.4) — TB42 neutral fault + hydraulic diagnosis
+- **Deutz cross-brand (5):** EMR5 official SPN/FMI serdia.deutz.com (1.0); EMRL1 Main ECU official serdia.deutz.com (1.0); EMR3 DTC codes etrak.by (0.6); Deutz DTC list Scribd (0.4); Deutz EMR3 Scribd 663005639 (+1 not added — duplicate content)
+- **Genie + Deutz (2):** Genie S-80 Deutz D2.9 L4 engine codes ManualsLib p.116 (0.8); Genie+Deutz combined codes Scribd (0.4) — Dutch language, shows engine/platform code interaction
+- **Dingli + JLG (2):** JCPT1212DC ManualsLib index (0.8) — NEW model, parts compatible with 1412DC via DL-00000693 controller; JLG 520AJ service manual 3121665-D Scribd (0.4) — fills gap: complete DTC table for 520AJ
+
+**הערה לריצה 19:** Deutz engine codes חשובים מאוד — מבדילים בין engine ECU faults לבין platform control faults על מכונות עם Deutz (JLG 520AJ, Manitou 180ATJ, Haulotte diesel booms). Snorkel A38E articulating boom: code range 01-39 = reset, 51-69 = replace. Skyjack GP102: multi-character alphanumeric codes (לא מספרי כמו Genie/JLG).
+
+**המלצה לריצה 20:**
+1. "Haulotte HA20 HA26 articulating boom service manual fault code" (boom lifts HA20/HA26 — עדיין חסרים)
+2. "Snorkel S3219E SB15J scissor lift fault code error" (Snorkel scissors נוספים)
+3. "Upright UL25 UL30 scissor lift fault code error diagnosis" (Upright scissors — נוספים)
+4. "Genie Z-boom Z-45 Z-60 fault code specific articulating boom" (Genie boom lifts ספציפי)
+5. "JLG 600SJ 660SJ fault code specific service manual" (JLG medium telescopic — ספציפי)
+6. "Dingli JCPT1212DC fault code list error LED" (DC variant ספציפי — ManualsLib נמצא)
+7. "Haulotte H16 H18 Deutz engine fault code SPN FMI" (engine codes for Haulotte boom lifts)
+8. "aerial work platform scissor lift CAN bus fault code repair tutorial" (CAN bus cross-brand)
+
+---
 
 ### ריצה 18 — פריטים חדשים (2026-05-27)
 30 פריטים חדשים נוספו לסטייג'ינג לפי מותג — **ריצה ראשונה עם מותגים חדשים לחלוטין:**
@@ -334,6 +360,7 @@ _עודכן: 2026-05-27_
 | 16 | 2026-05-25 | 175 | 11 | 186 |
 | 17 | 2026-05-26 | 186 | 2 | 188 |
 | 18 | 2026-05-27 | 188 | 30 | 218 |
+| 19 | 2026-05-28 | 218 | 30 | 248 |
 
 **ריצה 18 — פריטים חדשים (30):**
 - Haulotte Community fault code guide (1.0) — F-series format, Haulotte Diag VCI box, ETI LITE portal
@@ -381,6 +408,19 @@ _עודכן: 2026-05-27_
 ‡ריצה 8: WebFetch חסום (403), Supabase NXDOMAIN — 30 פריטים נשמרו ב-`pending_knowledge.json`; הרץ `python3 save_to_supabase.py` להעלאה.
 §ריצה 9: pending_knowledge.json מריצה 8 היה כבר ב-staging; בסיס אמיתי 108. WebFetch חסום (403), Supabase ECONNREFUSED — 14 פריטים חדשים נוספו לסטייג'ינג.
 **ריצה 11:** 0 פריטים חדשים — staging רווי. לפתיחת מקורות חדשים יש להרחיב חיפושים ל-JCPT1208/JCPT1212 fault codes, 520AJ DTC ספציפי, ו-Manitou 180ATJ service manual.
+
+**פירוט מותגים בסטייג'ינג (ריצה 19 מצטברת, 248 פריטים):**
+- Dingli: 36 מקורות (+1 ריצה 19: JCPT1212DC ManualsLib)
+- JLG: 75 מקורות (+1 ריצה 19: JLG 520AJ service manual Scribd 3121665-D)
+- Genie: 58 מקורות (+2 ריצה 19: S-80 Deutz D2.9 L4 engine codes, Genie+Deutz combined)
+- Manitou: 23 מקורות (ללא שינוי)
+- MEC: 6 מקורות (ללא שינוי)
+- **Haulotte: 19 מקורות (+8 ריצה 19)** — HA16RTJ Scribd, Compact-Optimum Scribd, Compact 12 Forkliftaction, Compact service manual simeri.fi, Compact 8-10-12 Scribd, Compact 12 ManualsLib, Summit Series service manual p.25, pdfmanual4trucks index
+- **Skyjack: 13 מקורות (+8 ריצה 19)** — SJ63AJ operators manual, SJ3215 LED codes p.101, SJIII 3215 Compact p.103-104, Skyjack 3219 Hugg&Hall, SJIII BDE Section 4 troubleshooting, Skyjack official troubleshooting page, SJ45T operating manual, tech tip First Thing To Check
+- **Snorkel: 12 מקורות (+7 ריצה 19)** — A38E fault codes ManualsDir p.64, AB46JE ManualsLib, A38E parts snorkeljp.com, A38E simeri.fi, A38E manualzz.com, TB Boom Lift service Scribd; + existing 5 from run 18
+- Upright: 4 מקורות (ללא שינוי)
+- **Deutz/cross-brand: 5 מקורות חדשים (ריצה 19)** — EMR5 official serdia.deutz.com, EMRL1 official serdia.deutz.com, EMR3 etrak.by, Deutz DTC Scribd 313637192
+- כללי: 26 מקורות (ללא שינוי)
 
 **פירוט מותגים בסטייג'ינג (ריצה 18 מצטברת, 218 פריטים):**
 - Dingli: 35 מקורות (ללא שינוי)

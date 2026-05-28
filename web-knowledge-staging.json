@@ -2436,5 +2436,338 @@
     "equipment_model": "H15SX / H12SX / H18SX",
     "topic": "maintenance",
     "reliability_score": 0.7
+  },
+  {
+    "url": "https://www.scribd.com/document/680216201/Alarmas-ha16rtj",
+    "title": "Haulotte HA16RTJ Fault Code (Alarmas) Guide | Scribd",
+    "content_summary": "Haulotte HA16RTJ articulating telescopic boom lift fault codes (alarm codes). Fault code type A (ACTIVE) appears on CANBOX display with flickering warning light. Categories: contactors, relays, electrovalves, joysticks, and sensors. Fuse relay card faults (nacelle module 921406F) affect HA16PX, HA18SPX. Common faults: unexpected interruptions, fuse failure, intermittent failures and false contact on nacelle board. Fault code list format: internal code + description + troubleshooting steps. HA16RTJ = Haulotte articulating telescopic jib, 16m, rough terrain. Haulotte Diag application needed for detailed diagnosis with VCI box. Original document in Spanish.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "HA16RTJ",
+    "topic": "fault_codes",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://www.scribd.com/document/505128957/coduri-eroare",
+    "title": "Haulotte Compact-Optimum Alarm Codes | Scribd",
+    "content_summary": "Haulotte Compact and Optimum series scissor lift alarm codes (coduri eroare = error codes in Romanian). Key codes: AL12 = Zapi controller EEPROM error — check wire communication, replace ZAPI controller if needed; Alarm 01 = voltage issue on wires YV7, YV9, and 3 — caused by bad wire connection or defective ZAPI controller; Alarm 06 = problem with serial card, bundle, or upper control box supply board. Haulotte fault codes always start with 'F' on newer models; ZAPI controller codes use 'AL' prefix. Format: alarm code + description + possible cause + solution. Covers Haulotte Compact 8/10/12 and Optimum 8 with ZAPI drive system.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "Compact 8",
+    "topic": "fault_codes",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/haulotte-compact-12-error-code.aspx?q=94779",
+    "title": "Haulotte Compact 12 Error Code | Forkliftaction Forum",
+    "content_summary": "Forkliftaction forum discussion about Haulotte Compact 12 electric scissor lift error codes. Community troubleshooting includes: AL12 EEPROM error on ZAPI controller diagnosis, Haulotte Diag application usage for detailed fault information, ETI LITE technical search engine access. Compact 12 uses ZAPI controller for drive and lift. Common faults discussed: controller communication errors (serial card), solenoid valve faults (YV codes), charger faults (BCF codes). Forum participants include experienced Haulotte technicians providing field-level advice. Fault reset: Haulotte Diag application or key switch cycle.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "Compact 12",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://simeri.fi/varaosa-huolto-kirjat/Haulotte/Service%20manual%20Compact%20After%20may%202005.pdf",
+    "title": "Haulotte Compact Series Service Manual (After May 2005) | Simeri",
+    "content_summary": "Service manual for Haulotte Compact electric scissor lifts (Compact 8, 10, 12) produced after May 2005. Contains: complete fault code list with AL-series and F-series codes, ZAPI controller parameters and fault codes, hydraulic system diagrams, electrical schematics, maintenance procedures. Alarm code format: AL## (ZAPI motor controller codes) and F## (Haulotte platform control codes). Key troubleshooting: drive faults (ZAPI AL codes — check motor wiring, controller), lift faults (F-codes — check solenoid valves and pressure sensor), safety faults (tilt, overload). Hosted by Simeri (Finnish AWP parts supplier).",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "Compact 12",
+    "topic": "maintenance",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.scribd.com/doc/43772590/Haulotte-Compact-8-10-12-Elec-Scissor-Manual",
+    "title": "Haulotte Compact 8-10-12 Electric Scissor Lift Manual | Scribd",
+    "content_summary": "Haulotte Compact 8, 10, and 12 electric scissor lift operator and service manual. Machine specifications, operating procedures, maintenance schedule, and complete fault code list. The Compact series uses ZAPI motor controller with AL-series diagnostic codes (e.g., AL12 EEPROM, AL01 voltage fault). Platform fault codes follow Haulotte F-series format (F-prefix, numeric). Key fault categories: drive system (ZAPI AL codes), lift system (F-codes, solenoid check), battery/charger (BCF codes: BCF-1 through BCF-5), safety system (tilt, pothole). Reset procedure: key switch cycle. Haulotte Diag app provides detailed diagnostic information including probable causes and repair instructions.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "Compact 8",
+    "topic": "fault_codes",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://www.manualslib.com/products/Haulotte-Compact-12-10459006.html",
+    "title": "Haulotte COMPACT 12 Manuals | ManualsLib",
+    "content_summary": "ManualsLib listing for Haulotte COMPACT 12 electric scissor lift manuals. Available documentation: Operator's Maintenance Manual (includes AL-series and F-series error code definitions), Service Manual (post-May 2005 with full ZAPI fault code chart). The Compact 12 is a 12m (40ft) indoor electric scissor lift. Fault code display: CANBOX unit or LED display. Diagnostic tools: Haulotte Diag application with VCI box for ZAPI controller codes, ETI LITE search engine for model-specific documentation via serial number. BCF charger codes (BCF-1 through BCF-5) for battery/charging faults. F-series platform codes, AL-series ZAPI codes.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "Compact 12",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualslib.com/manual/2008476/Haulotte-Summit-Series.html?page=25",
+    "title": "Error Code Definitions Table 3-3 — Haulotte SUMMIT Series Parts and Service Manual Page 25 | ManualsLib",
+    "content_summary": "Haulotte Summit Series articulating boom lift error code definitions from the Parts and Service Manual (Table 3-3, page 25) — the service manual version, distinct from the operator manual. Contains complete F-series fault codes for Summit Series: F01-F25+ with descriptions, probable causes, and corrective actions. Summit Series articulating diesel boom lifts (24m/80ft class). Fault codes cover: engine faults, hydraulic system, platform rotation, boom angle sensor, CAN bus communication. The F-series format is consistent across Haulotte boom lift range (H-series, Summit, HA-series). Service manual page 25 is the primary fault code chart for Summit Series technicians.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "Summit Series",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://advancedaccessplatforms.co.uk/wp-content/uploads/2023/10/SkyJack-Operators-Manual-SJ63AJ.pdf",
+    "title": "Skyjack SJ63AJ Articulating Boom Lift Operators Manual 170496AFA September 2020 | Advanced Access Platforms",
+    "content_summary": "Official Skyjack SJ63AJ articulating boom lift operators manual (document 170496AFA, September 2020). SJ63AJ: 63ft (19.2m) diesel articulating boom with 4WD axle-based system, 600 lb capacity. Fault code display: GP102 controller LED alphanumeric display on lower controls. Fault code format same as SJIII scissors: multi-character codes (OVRLOAD, TILT, DRIVE FAULT, BOOM SENSOR). Key safety interlocks: axle level sensor, platform overload, drive tilt. Emergency descent procedure included. Fault reset: cycle key switch after resolving underlying condition. Covers SJ63AJ models produced through 2020.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "SJ63AJ",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1174754/Skyjack-Sj-3215.html?page=101",
+    "title": "LED Error Codes Quick Reference Chart — Skyjack SJ 3215 Service Manual Page 101 | ManualsLib",
+    "content_summary": "Skyjack SJ 3215 scissor lift LED error codes quick reference chart (service manual page 101). Complete LED error code table for SJIII 3215: alphanumeric codes on GP102 controller LED display. Key codes: OVRLOAD (platform overload — reduce load); ARMGUARD (pothole arm guard activated — move machine, check arm deployment); HWFS STALL D (drive motor stall fault — check motor and controller); P3-4 SHORT TO SUPPLY (output short circuit on pump circuit — inspect wiring). Additional codes for tilt, level sensor, battery low, charger fault, and CAN communication errors. Each code: LED display text + description + corrective action.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "SJ3215",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualslib.com/manual/845679/Skyjack-3215-Sjiii-Compact-Series.html?page=103",
+    "title": "LED Error Codes Quick Reference and Code Breakdown Chart — Skyjack 3215 SJIII Compact Series Service Manual Pages 103-104 | ManualsLib",
+    "content_summary": "Skyjack 3215 SJIII Compact Series scissor lift LED error codes from service manual pages 103 (Quick Reference Chart) and 104 (Code Breakdown Chart). The SJIII Compact 3215 is a narrow 32in electric scissor. GP102 controller LED display. Page 103 Quick Reference Chart: all error codes alphabetically with brief description. Page 104 Code Breakdown Chart: explanation of each character position in the multi-character alphanumeric code — position 1 indicates system (D=drive, P=pump, S=safety), subsequent characters indicate specific fault within system. Full code breakdown enables diagnosis without service manual look-up when code is understood structurally.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "SJ3215",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.hugghall.com/news/common-errors-quick-fixes/",
+    "title": "Skyjack Lift 3219 — Common Errors & Quick Fixes | Hugg & Hall",
+    "content_summary": "Common error codes and quick fixes for Skyjack SJIII 3219 electric scissor lift, published by equipment rental company Hugg & Hall. Most frequent errors: (1) Low battery voltage — charge batteries to at least 80%, check connections and charger function; (2) Tilt/level sensor — move machine to level surface, check tilt sensor wiring; (3) Platform overload — remove excess load; (4) Drive fault — check drive motor brushes, controller, and battery voltage under load; (5) Pothole protection — inspect arm deployment and limit switches. The SJIII 3219 uses GP102 controller with alphanumeric LED. Basic reset: Emergency Stop push-in and release. Quick reference for operators and non-specialist technicians.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "SJ3219",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "http://diesel.btc.edu/Hydraulics/SkyJack/050128_1513%20(D)/PDF%20Files/SJIII%20BDE%20129913/S4.pdf",
+    "title": "Skyjack SJIII BDE Troubleshooting — Section 4 Troubleshooting Information",
+    "content_summary": "Skyjack SJIII BDE (Battery/DC Electric) scissor lift Section 4 Troubleshooting Information from official service manual. Systematic troubleshooting procedures for SJIII electric scissors. Covers: drive system troubleshooting flowcharts (check battery voltage, motor brushes, controller output, harness), lift system diagnosis (solenoid valve test, hydraulic pressure check, cylinder seal test), safety system testing (tilt sensor, pothole switch continuity, footswitch), battery and charger fault diagnosis. Error code isolation method: divide system (electrical vs hydraulic) to locate fault. Applicable to SJIII BDE models including 3215, 3219, 3226 with battery-electric drive.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "SJIII BDE",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.manualslib.com/products/Dingli-Jcpt1212dc-13628216.html",
+    "title": "Dingli JCPT1212DC Manuals | ManualsLib",
+    "content_summary": "ManualsLib listing for Dingli JCPT1212DC self-propelled DC electric scissor lift manuals. The JCPT1212DC is a battery-electric scissor lift with 12m working height and 1.2m platform width. Parts compatible with JCPT1412DC — same DL-00000693 DC motor controller used across JCPT1212DC, JCPT1412DC, JCPT1612DC, JCPT0708DCS, JCPT1614DC. Available documentation: Operators Manual With Maintenance Information (includes fault code list). Fault code structure: 10-series ECU alarms, 30-series PCU alarms, 50-series module alarms (57 Overload, 58 Pothole, 59 Height Limit), 100-series CAN bus faults (110/111/112 CANBUS Timeout). Reset: Emergency Stop button cycle.",
+    "brands_mentioned": [
+      "Dingli"
+    ],
+    "equipment_model": "JCPT1212DC",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://serdia.deutz.com/fileadmin/contents/serdia/DTCList_MD1_DE_EN.pdf",
+    "title": "DEUTZ DTC-Codes EMR5 — Diagnosis and Error Codes DTC-Code SPN FMI | Official Deutz Serdia",
+    "content_summary": "Official Deutz EMR5 engine diagnostic trouble codes (DTC) with SPN (Suspect Parameter Number) and FMI (Failure Mode Identifier) values. Published on Deutz Serdia official portal. Relevant to AWP machines with Deutz EMR5 engines: JLG 520AJ Deutz variant, Manitou 180ATJ EURO 4/5. Code format: SPN + FMI + DTCode + Error Text. FMI meanings: 0=above normal, 1=below normal, 2=erratic data, 3=voltage high, 4=voltage low, 5=open circuit, 12=bad device. Key AWP-relevant codes: coolant temperature warning (reduce engine load), rail pressure faults (fuel system), oil pressure low (engine shutdown), exhaust temperature sensor. Category DE/EN bilingual document.",
+    "brands_mentioned": [
+      "Manitou",
+      "JLG"
+    ],
+    "equipment_model": "general",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://serdia.deutz.com/fileadmin/contents/serdia/DTCList_EMRL1_MainECU_EN.pdf",
+    "title": "Deutz EMRL1 Main ECU Diagnosis and Error Codes SPN FMI | Official Deutz Serdia",
+    "content_summary": "Official Deutz EMRL1 Main ECU diagnostic trouble codes from Deutz Serdia portal. Complete SPN/FMI fault code table for EMRL1 engine control unit used in Deutz L-series engines. Format: Error name + SPN + FMI + DTCode + Error Text. Applicable to AWP equipment with Deutz L-series engines. Key code categories: fuel system (injection pressure, fuel temperature), temperature sensors (coolant, intake, exhaust), pressure sensors (oil pressure, boost pressure), speed sensors (crankshaft, camshaft), CAN communication faults. Distinguishing engine ECU faults from platform control faults is critical for efficient AWP diagnosis — this document covers the engine side.",
+    "brands_mentioned": [],
+    "equipment_model": "general",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.scribd.com/document/313637192/Dtc-List-Deutz-Engine",
+    "title": "Deutz Engine Fault Code DTC List | Scribd",
+    "content_summary": "Comprehensive Deutz engine diagnostic trouble code list covering EMR2/EMR3/EMR5 engine controllers. Fault codes with SPN and FMI breakdown for Deutz diesel engines used in AWP equipment: JLG 450AJ, JLG 520AJ, Manitou 180ATJ Deutz EURO 3/4/5, Haulotte diesel boom lifts (HA16, HA20 with Deutz). Key fault categories: coolant temperature warning (codes for stage 1 warning and stage 2 shutdown), engine oil pressure warning, fuel injection quantity faults, intake air temperature faults, crankshaft/camshaft position sensor faults, exhaust gas recirculation (EGR) faults (EURO 4/5). Essential for distinguishing engine ECU faults from platform control system faults on multi-system AWP machines.",
+    "brands_mentioned": [
+      "Manitou",
+      "JLG",
+      "Haulotte"
+    ],
+    "equipment_model": "general",
+    "topic": "fault_codes",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1184617/Genie-S-80.html?page=116",
+    "title": "Deutz D 2.9 L4 Engine Fault Codes — Genie S-80 Service and Repair Manual Page 116 | ManualsLib",
+    "content_summary": "Genie S-80 articulating boom lift service manual page 116: Deutz D 2.9 L4 engine fault codes as they appear in a Genie boom lift context. The Genie S-80 uses a Deutz D 2.9 L4 diesel engine. Engine fault codes listed: coolant temperature high (reduce load / shut down), oil pressure low (shut down immediately), fuel rail pressure fault (check fuel system), intake manifold pressure sensor fault (check wiring and sensor), CAN communication faults between engine ECU and machine control. Demonstrates how engine DTC codes integrate with Genie's GSDS platform fault code display. Same engine family used in other Genie diesel Z-boom and S-series models. Useful for understanding engine vs. platform code separation on Genie boom lifts.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "S-80",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.scribd.com/document/610989797/Foutcodes-Genie-Deutz",
+    "title": "Genie and Deutz Engine Fault Codes Combined Reference | Scribd",
+    "content_summary": "Combined fault code reference document for Genie AWP equipment with Deutz diesel engines (Dutch language: foutcodes = fault codes). Contains both Genie platform control fault codes (SmartLink GSDS DTC numeric codes) and Deutz engine ECU fault codes (SPN/FMI format) in single reference. Covers Genie boom lifts (S-40, S-60, Z-45, Z-60 series) with Deutz engines. Shows code interaction: when engine fault occurs, both Deutz ECU code and Genie platform display code may appear simultaneously. Useful for diagnosing multi-system faults where engine and platform codes overlap or interact.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "general",
+    "topic": "fault_codes",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://www.scribd.com/document/511566288/3121665-D-520AJ-JLG-Service-English",
+    "title": "JLG 520AJ Service and Maintenance Manual 3121665-D (English) | Scribd",
+    "content_summary": "JLG 520AJ articulating boom lift complete service and maintenance manual (document 3121665-D, English) on Scribd. Full factory service reference for JLG 520AJ technicians. Contains: complete DTC fault code table for 520AJ with all analyzer codes, hydraulic circuit diagrams and troubleshooting flowcharts, electrical schematics and CAN bus diagnostics (ADE system), Deutz/Perkins engine fault codes, two-speed drive system diagnosis, boom/swing/level hydraulic circuits, platform weighing system calibration. The 520AJ uses JLG's Advanced Drive Electronics (ADE) with full DTC accessible via JLG Analyzer 1001249695. Fills key gap: specific 520AJ DTC table not otherwise available without JLG Online Express access.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "JLG 520AJ",
+    "topic": "fault_codes",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://www.manualsdir.com/manuals/549980/snorkel-a38e-sn004500.html?page=64",
+    "title": "Troubleshooting — Snorkel A38E (SN004500+) User Manual Page 64 | ManualsDir",
+    "content_summary": "Snorkel A38E articulating electric boom lift fault codes from user manual page 64. Fault code display: upper control box numeric readout. Fault code reset procedure for codes 01-39: ensure all inputs neutral (no buttons depressed, deadman released, joystick neutral, steer rocker off, analog rocker neutral), then re-cycle power via Emergency Stop button — if code persists, faulty control box or identified component. Fault code procedure for codes 51-69: check fault code list to identify problem component (replacement required, cannot be reset). A38E fault code ranges: 01-39 = control/drive system faults (resettable); 51-69 = safety system faults (component replacement required). SN004500 and later models.",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "A38E",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.manualslib.com/products/Snorkel-Ab46je-11162158.html",
+    "title": "Snorkel AB46JE Articulating Boom Lift Manuals | ManualsLib",
+    "content_summary": "ManualsLib listing for Snorkel AB46JE articulating boom lift manuals. AB46JE: electric articulating boom, 46ft working height, jib extension, electric drive. Available documentation: service manual and operator's manual with fault code reference. AB46JE fault code architecture: numeric codes 01-99 on upper control box display. Code ranges: 01-39 = drive and control system faults (emergency stop cycle reset); 40-50 = hydraulic/lift faults; 51-69 = safety system faults (component replacement required). Same code format as A38E. Key faults: boom angle sensor, jib sensor, load cell, turntable rotation sensor, drive system faults. Reset procedure: Emergency Stop cycle after resolving fault.",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "AB46JE",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.snorkeljp.com/service-support/pdf/parts_snorkel/a38e__201901after.pdf",
+    "title": "Snorkel A38E Parts Manual (January 2019+, S/N 00715+) | Snorkel Japan Official",
+    "content_summary": "Official Snorkel A38E articulating electric boom lift parts manual for serial numbers 00715 and after (January 2019 production). Published by Snorkel Japan (official Snorkel distributor). Complete parts breakdown for all assemblies: boom sections, turntable, chassis, platform, hydraulic system (pump, cylinders, manifold), electrical system (control board, drive controller, sensors). Part numbers for wear items: boom angle sensor, load cell, limit switches, solenoid valves. A38E specifications: 12m (38ft) working height, 230kg capacity, electric drive. The A38E is a popular electric articulating boom in Asian and European markets. Parts reference enables component identification for fault code resolution.",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "A38E",
+    "topic": "parts",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://simeri.fi/varaosa-huolto-kirjat/Snorkel/Snorkel%20A38E.pdf",
+    "title": "Snorkel A38E Articulating Boom Lift Complete Manual | Simeri",
+    "content_summary": "Complete Snorkel A38E electric articulating boom lift manual on Simeri (Finnish AWP parts supplier). Contains operator and service sections including complete fault code list. Fault codes 01-39: drive/control system faults (reset via Emergency Stop cycle after ensuring inputs neutral); fault codes 51-69: safety system faults (requires component replacement). Hydraulic system troubleshooting, electrical schematics, maintenance schedule. Fault code display: upper control box numeric readout. A38E uses dedicated controller (similar to Upright/SkyJack platform architecture). Key service note: codes 51-69 indicate safety-critical component failure — do not attempt to bypass, replace faulty component.",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "A38E",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://manualzz.com/doc/61989121/snorkel-a38e-service-manual",
+    "title": "Snorkel A38E Service Manual | Manualzz",
+    "content_summary": "Snorkel A38E articulating electric boom lift service manual on Manualzz. Full service and repair procedures including: complete fault code chart (codes 01-69 with descriptions, causes, corrective actions), hydraulic system service (boom cylinder, jib cylinder, rotation motor, platform level cylinder), electrical troubleshooting (drive controller, solenoid coil resistance checks 20-30 ohm, harness inspection), sensor calibration (boom angle, jib angle, load cell). Maintenance intervals: hydraulic oil change, filter replacement, pivot pin lubrication schedule. Key diagnostic note: the A38E uses a dedicated control board — code interpretation requires the specific A38E code chart as generic scissor lift codes do not apply.",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "A38E",
+    "topic": "maintenance",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.scribd.com/document/197890303/TB-Boom-Lift-Service-Manual",
+    "title": "Snorkel TB Boom Lift Service Manual (TB42 and TB Series) | Scribd",
+    "content_summary": "Snorkel TB-series boom lift service manual on Scribd, covering TB42 and related Deutz-powered telescopic boom models. Common TB42 fault diagnosis: (1) Neutral fault — control system detects not-in-neutral, prevents movement (check neutral safety switch/sensor on transmission or control module for fault or misalignment); (2) Drive shift fault — TB42 remains in low gear, cannot shift to high (verify all shift solenoids for activation, check switch and wiring harness for continuity and corrosion); (3) Hydraulic system issues — after component replacement, verify circuit breakers for power, inspect hydraulic pump drive for mechanical faults; (4) Engine starting — ignition coil failure or CDI unit failure causes no-spark condition. Hydraulic system: open-circuit hydraulic with Deutz diesel engine direct drive.",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "TB42",
+    "topic": "fault_codes",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://www.pdfmanual4trucks.com/haulotte/",
+    "title": "Haulotte Boom Lifts Service and Repair Manuals PDF | pdfmanual4trucks",
+    "content_summary": "Third-party index page for Haulotte service and repair manuals in PDF format. Lists available documentation for Haulotte models: H16 RTJPRO, H18 RTJ, H18 RTJ PRO, HA16, HA20 PX, HA26 PX articulating boom lifts; Optimum 8, Star 10, Summit Series, Compact 8/10/12 scissor lifts; and H-SX slab scissor range. Contains fault codes, wiring diagrams, and workshop manuals for download. Documents available in English, French, and other languages. Quality varies — cross-reference with official ManualsLib sources. Useful as index for identifying Haulotte documentation coverage gaps, especially for HA20 PX and HA26 PX which lack extensive online documentation.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "HA16",
+    "topic": "general",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://www.skyjack.com/taxonomy/term/817",
+    "title": "Troubleshooting Resources | Skyjack Official",
+    "content_summary": "Official Skyjack troubleshooting resources page providing access to Skyjack tech tips, service bulletins, and troubleshooting guides for all Skyjack models. Content covers: SJIII scissor lift common faults, SJ boom lift troubleshooting (SJ45T, SJ63AJ), GP102 controller diagnostics. Skyjack fault code format: alphanumeric LED display codes (OVRLOAD, ARMGUARD, HWFS STALL D, P3-4 SHORT TO SUPPLY etc.). First troubleshooting step per Skyjack: verify all safety switches in normal position (tilt, overload, pothole, footswitch) before further diagnosis. Manufacturer-official troubleshooting resource for field diagnosis of Skyjack equipment including SJIII scissor lifts and SJ articulating/telescopic booms.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "general",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://2342093.fs1.hubspotusercontent-ap1.net/hubfs/2342093/Operators%20manuals/Telescopic%20booms%20SJ45T%20Operating%20manual.pdf",
+    "title": "Skyjack SJ45T Telescopic Boom Lift Operating Manual",
+    "content_summary": "Skyjack SJ45T telescopic boom lift operating manual. SJ45T: 45ft (14m) diesel telescopic boom lift. Fault code display: GP102 controller LED alphanumeric display on lower controls. Fault code format consistent with Skyjack SJIII/SJ boom series: multi-character alphanumeric codes (same GP102 platform). Common SJ45T fault indicators: boom angle sensor fault, turntable rotation sensor fault (check wiring harness through rotating joint), drive fault (check motor and controller), engine fault (check Deutz engine codes via engine diagnostic port). Emergency descent: manual lowering valve location included. Reset procedure: key switch off, resolve condition, restart. Applicable to SJ45T models in Australian and European markets.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "SJ45T",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.skyjack.com/sites/default/files/techtips/2021-03/2015-Tech-tip-First-Thing-To-Check.pdf",
+    "title": "Skyjack Tech Tip — First Thing To Check When Fault Code Appears (2015/2021) | Skyjack Official",
+    "content_summary": "Official Skyjack tech tip document (2015, republished March 2021) — first diagnostic steps when fault code appears on Skyjack equipment. Systematic approach before component replacement: (1) Verify all safety switches in normal positions (platform gate closed, footswitch released, E-stop pulled out); (2) Confirm machine is on level ground (tilt sensor must not be active — max 2.5° slope for most SJIII models); (3) Check platform load is within rated capacity; (4) Verify battery charge level and charger connection; (5) Inspect pothole guard deployment (both sides must be fully down). Basic reset: Emergency Stop push in and pull out. Key message: most fault codes are resolved by addressing basic conditions, not component replacement. Applies to SJIII scissor lifts and SJ boom lifts.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "general",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "http://etrak.by/assets/files/dtcodes.pdf",
+    "title": "Deutz EMR3 Engine Diagnostic Trouble Codes | DTC Reference",
+    "content_summary": "Deutz EMR3 engine management system diagnostic trouble codes reference (Deutz Service Information Systems). The EMR3 controller is found in older Deutz TCD engines in AWP equipment: JLG 520AJ pre-2015, Manitou 180ATJ EURO 3, older Haulotte diesel boom lifts (HA16, HA20). Contains SPN/FMI code table for EMR3. FMI failure mode categories: 0=data valid but above normal, 1=data valid but below normal, 2=data erratic/intermittent/incorrect, 3=voltage above normal, 4=voltage below normal, 5=current below normal (open circuit), 12=bad intelligent device. Key AWP fault codes: coolant temperature stage 1 (warning only, reduce load), coolant temperature stage 2 (engine shutdown imminent), fuel pressure below normal, crankshaft sensor failure. Used by Deutz dealers and AWP technicians to decode engine-side faults separate from machine platform control faults.",
+    "brands_mentioned": [
+      "JLG",
+      "Manitou",
+      "Haulotte"
+    ],
+    "equipment_model": "general",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
   }
 ]
