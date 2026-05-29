@@ -1,7 +1,9 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-05-28_
+_עודכן: 2026-05-29_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
+
+> **ריצה 20 (2026-05-29):** 7 פריטים חדשים נוספו לסטייג'ינג (255 סה"כ). Supabase ECONNREFUSED; WebFetch חסום (403). 15 חיפושים — שאילתות הסטנדרט (Dingli/JLG/Genie/Manitou). **הסטייג'ינג רווי מאוד** — מתוך 100+ URL שנסרקו, רק 7 חדשים. **פריטים חדשים:** Genie S-80 XC service manual רשמי (1.0), Dingli 1412DC manual v2 (0.8), Forkliftaction fault-1123 JLG (0.8), Error-6 tilt sensor forum (0.8), JLG 450AJ hydraulic Design thread (0.8), Manitou forum category (0.8), Just4Access Dingli JCPT0607DCS J4A-1731 (0.4). להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 
 > **ריצה 19 (2026-05-28):** 30 פריטים חדשים נוספו לסטייג'ינג (248 סה"כ). Supabase ECONNREFUSED; WebFetch חסום (403). 20 חיפושים — שאילתות מומלצות מריצה 18 + שאילתות נוספות. **מותגים חדשים/מורחבים:** Haulotte Compact/HA16RTJ (7 פריטים), Skyjack boom lifts SJ63AJ/SJ45T/SJIII (7 פריטים), Snorkel A38E/AB46JE/TB42 articulating booms (7 פריטים), Deutz engine codes cross-brand (5 פריטים), Dingli JCPT1212DC + JLG 520AJ Scribd (2 פריטים), כללי (2 פריטים). להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 
@@ -20,6 +22,28 @@ _עודכן: 2026-05-28_
 > **ריצה 6 (2026-05-15):** 12 פריטים חדשים נוספו לסטייג'ינג (99 סה"כ)
 > **ריצה 5 (2026-05-14):** 4 פריטים חדשים נוספו לסטייג'ינג (רוב המקורות כבר היו ב-DB מריצות קודמות)
 > **ריצה 4 (2026-05-13):** 30 פריטים חדשים מזוהים — לא הועלו לסטייג'ינג (חסימת רשת)
+
+### ריצה 20 — פריטים חדשים (2026-05-29)
+7 פריטים חדשים נוספו לסטייג'ינג — שאילתות סטנדרט, staging רווי מאוד:
+
+- **Genie (1):** S-80 XC stick boom service manual 1280490GT (manuals.genielift.com, 1.0) — GSDS fault codes, CAN bus ECMs, telescope/swing/level sensor codes
+- **Dingli (2):** JCPT1412DC/1612DC manual version 2 (advancedaccessplatforms.co.uk, 0.8) — codes 10/20/30/51-59/69, DL-00000693 controller; JCPT0607DCS J4A-1731 (just4access, 0.4) — variant ID DCS/DCM/DCE
+- **JLG (3):** Fault-1123 Forkliftaction forum (0.8) — DTC 1123 diagnosis; Error-6 tilt sensor forum (0.8) — tilt sensor calibration/replacement; JLG 450AJ hydraulic Design thread (0.8) — connector corrosion → valve control loss
+- **Manitou (1):** Forkliftaction Manitou forum category (forkliftaction.com/forum/manitou.aspx?b=58, 0.8) — ATJ/telehandler threads, Deutz engine + platform code diagnosis
+
+**הערה לריצה 20:** שאילתות הסטנדרט מוצו לחלוטין. מ-100+ URL שנסרקו, 7 בלבד היו חדשים. **הסטייג'ינג עבר לשלב בשלות מלאה לשאילתות הבסיסיות.** ריצה 21 חייבת להשתמש בשאילתות ממוקדות חדשות (ראה המלצות).
+
+**המלצה לריצה 21 — שאילתות חדשות (לא חוזרות לסטנדרט):**
+1. "Haulotte HA20 HA26 articulating boom service manual fault code" (boom lifts Haulotte — עדיין חסר לחלוטין)
+2. "Snorkel S3219E SB15J scissor lift fault code error" (Snorkel scissors נוספים)
+3. "Upright UL25 UL30 scissor lift fault code error diagnosis" (Upright scissors נוספים)
+4. "Dingli JCPT1212DC fault code list error LED" (JCPT1212DC — עדיין חסר)
+5. "Skyjack SJ45AJ SJ63AJ articulating boom lift fault code" (Skyjack boom — לא מכוסה)
+6. "Haulotte H16 H18 Deutz engine fault code SPN FMI" (engine codes Haulotte diesel booms)
+7. "scissor lift CAN bus fault code PCU ECU communication repair" (CAN bus cross-brand ספציפי)
+8. "Genie Z-45 Z-60 articulating boom fault code specific DTC table" (Genie boom DTC)
+
+---
 
 ### ריצה 19 — פריטים חדשים (2026-05-28)
 30 פריטים חדשים נוספו לסטייג'ינג לפי מותג — **הרחבת מותגים חדשים + Deutz engine codes:**
@@ -361,6 +385,7 @@ _עודכן: 2026-05-28_
 | 17 | 2026-05-26 | 186 | 2 | 188 |
 | 18 | 2026-05-27 | 188 | 30 | 218 |
 | 19 | 2026-05-28 | 218 | 30 | 248 |
+| 20 | 2026-05-29 | 248 | 7 | 255 |
 
 **ריצה 18 — פריטים חדשים (30):**
 - Haulotte Community fault code guide (1.0) — F-series format, Haulotte Diag VCI box, ETI LITE portal
@@ -408,6 +433,12 @@ _עודכן: 2026-05-28_
 ‡ריצה 8: WebFetch חסום (403), Supabase NXDOMAIN — 30 פריטים נשמרו ב-`pending_knowledge.json`; הרץ `python3 save_to_supabase.py` להעלאה.
 §ריצה 9: pending_knowledge.json מריצה 8 היה כבר ב-staging; בסיס אמיתי 108. WebFetch חסום (403), Supabase ECONNREFUSED — 14 פריטים חדשים נוספו לסטייג'ינג.
 **ריצה 11:** 0 פריטים חדשים — staging רווי. לפתיחת מקורות חדשים יש להרחיב חיפושים ל-JCPT1208/JCPT1212 fault codes, 520AJ DTC ספציפי, ו-Manitou 180ATJ service manual.
+
+**פירוט מותגים בסטייג'ינג (ריצה 20 מצטברת, 255 פריטים):**
+- Dingli: 38 מקורות (+2 ריצה 20: JCPT1412DC manual v2, JCPT0607DCS J4A-1731)
+- JLG: 78 מקורות (+3 ריצה 20: fault-1123, Error-6, JLG 450AJ hydraulic Design thread)
+- Genie: 59 מקורות (+1 ריצה 20: S-80 XC service manual 1280490GT)
+- Manitou: 24 מקורות (+1 ריצה 20: Forkliftaction Manitou forum category)
 
 **פירוט מותגים בסטייג'ינג (ריצה 19 מצטברת, 248 פריטים):**
 - Dingli: 36 מקורות (+1 ריצה 19: JCPT1212DC ManualsLib)

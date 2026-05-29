@@ -2769,5 +2769,82 @@
     "equipment_model": "general",
     "topic": "fault_codes",
     "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/fault-1123.aspx?q=50207",
+    "title": "Fault 1123 - Maintenance & Troubleshooting | Forkliftaction Forum",
+    "content_summary": "Forkliftaction forum thread discussing JLG fault code 1123 on aerial work platforms. Fault 1123 is a DTC found on JLG models requiring JLG Analyzer for full description. Community technicians share diagnostic steps: check JLG Analyzer connection at ground control diagnostic port, cycle E-stop and key switch to attempt reset, inspect wiring harness for damage, verify battery voltage. Thread includes user experiences and expert responses on resolving code 1123 faults specific to JLG equipment.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": null,
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.just4access.com/dingli-jcpt-0607-dcs-j4a-1731/",
+    "title": "Dingli JCPT 0607 DCS - J4A 1731 | Just4Access",
+    "content_summary": "Just4Access product page for Dingli JCPT0607DCS scissor lift, model reference J4A-1731. Documents this specific variant of the Dingli 0607 scissor lift range. The JCPT0607DCS is the DC-motor-powered version of the 0607 platform. Page helps identify variant differences: DCS (DC System with scissor controller), DCM (DC Motor with separate motor controller), and DCE variants of the Dingli 0607 line. Useful for identifying correct service manual and fault code guide for specific DCS variant.",
+    "brands_mentioned": [
+      "Dingli"
+    ],
+    "equipment_model": "JCPT0607DCS",
+    "topic": "general",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://manuals.genielift.com/parts%20and%20service%20manuals/data/Service/Stick%20Booms/1280490GT.pdf",
+    "title": "Genie S-80 XC Stick Boom Service and Repair Manual (1280490GT) | Genie Official",
+    "content_summary": "Official Genie Industries service and repair manual for S-80 XC stick boom lift (part number 1280490GT), serial range S80XCH-101 and later. Contains complete fault code system using Genie SmartLink GSDS: DTC codes with descriptions, probable causes, and corrective actions. Covers hydraulic circuit diagrams, electrical wiring schematics, CAN bus diagnostics (platform ECM and ground ECM), and component service procedures. S-80 XC is a diesel-powered straight/stick boom lift with 80ft working height and 500 lb capacity. Fault code structure: E-code OIC (operational indicator) + numbered DTC, same family as GS scissor series, with additional stick boom codes for telescope position sensor, swing sensor, platform level calibration, and height limit switches.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Genie S-80 XC",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://advancedaccessplatforms.co.uk/wp-content/uploads/2023/10/Dingli-Operation-Manual-1412DC-1612DC_2.pdf",
+    "title": "Dingli JCPT1412DC / JCPT1612DC Operator's Manual with Maintenance — Version 2 | Advanced Access Platforms",
+    "content_summary": "Second version of the Dingli JCPT1412DC and JCPT1612DC self-propelled scissor lift operator's manual with maintenance information. Covers DC-motor-powered 14ft and 16ft scissor lift models. Contains: fault code indicator LED readout interpretation, error display codes and meanings, emergency lowering procedure, battery maintenance and charging, hydraulic oil specifications, safety interlocks, and periodic service schedules. JCPT1412DC uses DL-00000693 controller. Fault codes follow Dingli standard DC pattern: Code 10/20/30 (ECU/TM/PCU general alarms), Codes 51–59 (sensor and overload faults), Code 69 (power relay sleep — low battery or key switch). Reset: cycle Emergency Stop button.",
+    "brands_mentioned": [
+      "Dingli"
+    ],
+    "equipment_model": "JCPT1412DC, JCPT1612DC",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/error-6.aspx?q=88170",
+    "title": "Error 6 - Maintenance & Troubleshooting | Forkliftaction Forum",
+    "content_summary": "Forkliftaction forum discussion about Error 6 on aerial work platforms (multiple JLG models). Error 6 typically indicates tilt sensor activation: machine detects ground inclination beyond safe operating limits. Diagnostic steps from forum: (1) Verify machine is on level ground — move to flat surface. (2) Check tilt sensor wiring and connector integrity. (3) Inspect tilt sensor for physical damage or contamination. (4) Verify tilt sensor calibration — may need recalibration after replacement. (5) If Error 6 appears on flat ground: tilt sensor likely faulty — test sensor output voltage, check resistance, replace if out of spec. Experienced technicians note that connector corrosion is common cause of intermittent Error 6 on older machines.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": null,
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/jlg-450aj-series-1-ford-engine-hydraulic-issues-loss-of-control-to-valves.aspx?t=25768",
+    "title": "JLG 450AJ Series 1 Ford Engine - Hydraulic Loss of Control to Valves - Design & Engineering | Forkliftaction",
+    "content_summary": "Forkliftaction Design & Engineering discussion on JLG 450AJ Series 1 (Ford engine) intermittent and total loss of hydraulic valve control — affects: platform rotate, platform leveling override, jib, telescope, tower lift, and steering valves. Core finding: connector terminal corrosion inside harness connectors between platform and tractor unit is primary cause of intermittent valve control loss on aged JLG 450AJ units. Recommended checks: inspect all harness connectors at platform/boom junction for internal terminal oxidation, check connector seating and locking, clean or replace corroded pins. JLG handset required to pull active fault codes from ECM. If codes clear but symptoms return, replace connector housings — intermittent internal corrosion evades visual inspection.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "JLG 450AJ",
+    "topic": "hydraulics",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/manitou.aspx?b=58",
+    "title": "Manitou — Technical Troubleshooting Discussions | Forkliftaction Forum",
+    "content_summary": "Forkliftaction forum category page for Manitou equipment technical troubleshooting. Aggregates threads covering Manitou ATJ aerial work platforms (including 160ATJ, 180ATJ), telehandlers, and forklifts. Contains discussions on Manitou fault codes, hydraulic system diagnosis, Deutz engine error codes, electrical troubleshooting, and Manitou MDS diagnostic software usage. Category hosts field technicians sharing diagnostic approaches and repair solutions specific to Manitou equipment. Relevant for 180ATJ fault code diagnosis: check Deutz engine ECU codes separately from platform control codes.",
+    "brands_mentioned": [
+      "Manitou"
+    ],
+    "equipment_model": null,
+    "topic": "fault_codes",
+    "reliability_score": 0.8
   }
 ]
