@@ -1,7 +1,9 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-05-29_
+_עודכן: 2026-05-30_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
+
+> **ריצה 21 (2026-05-30):** 0 פריטים חדשים — staging רווי לחלוטין לשאילתות הסטנדרט (255 סה"כ, ללא שינוי). Supabase ECONNREFUSED; WebFetch חסום (403). 15 חיפושים — כל שאילתות הסטנדרט (Dingli/JLG/Genie/Manitou/כללי). **100+ URL נבדקו — 0 חדשים.** שאילתות הסטנדרט מוצו לחלוטין. **ריצה 22 חייבת שאילתות חדשות בלבד** (ראה המלצות בתחתית). להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 
 > **ריצה 20 (2026-05-29):** 7 פריטים חדשים נוספו לסטייג'ינג (255 סה"כ). Supabase ECONNREFUSED; WebFetch חסום (403). 15 חיפושים — שאילתות הסטנדרט (Dingli/JLG/Genie/Manitou). **הסטייג'ינג רווי מאוד** — מתוך 100+ URL שנסרקו, רק 7 חדשים. **פריטים חדשים:** Genie S-80 XC service manual רשמי (1.0), Dingli 1412DC manual v2 (0.8), Forkliftaction fault-1123 JLG (0.8), Error-6 tilt sensor forum (0.8), JLG 450AJ hydraulic Design thread (0.8), Manitou forum category (0.8), Just4Access Dingli JCPT0607DCS J4A-1731 (0.4). להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 
@@ -33,7 +35,7 @@ _עודכן: 2026-05-29_
 
 **הערה לריצה 20:** שאילתות הסטנדרט מוצו לחלוטין. מ-100+ URL שנסרקו, 7 בלבד היו חדשים. **הסטייג'ינג עבר לשלב בשלות מלאה לשאילתות הבסיסיות.** ריצה 21 חייבת להשתמש בשאילתות ממוקדות חדשות (ראה המלצות).
 
-**המלצה לריצה 21 — שאילתות חדשות (לא חוזרות לסטנדרט):**
+**המלצה לריצה 22 — שאילתות חדשות (לא חוזרות לסטנדרט):**
 1. "Haulotte HA20 HA26 articulating boom service manual fault code" (boom lifts Haulotte — עדיין חסר לחלוטין)
 2. "Snorkel S3219E SB15J scissor lift fault code error" (Snorkel scissors נוספים)
 3. "Upright UL25 UL30 scissor lift fault code error diagnosis" (Upright scissors נוספים)
@@ -42,6 +44,26 @@ _עודכן: 2026-05-29_
 6. "Haulotte H16 H18 Deutz engine fault code SPN FMI" (engine codes Haulotte diesel booms)
 7. "scissor lift CAN bus fault code PCU ECU communication repair" (CAN bus cross-brand ספציפי)
 8. "Genie Z-45 Z-60 articulating boom fault code specific DTC table" (Genie boom DTC)
+
+---
+
+### ריצה 21 — פריטים חדשים (2026-05-30)
+**0 פריטים חדשים** — staging רווי לחלוטין לשאילתות הסטנדרט.
+
+15 שאילתות סטנדרט בוצעו (Dingli JCPT, JLG 450AJ/520AJ/510AJ/860SJ, Genie GS-3246/GS-1932, Manitou 180ATJ, forkliftaction.com, כללי AWP). כל 100+ URL שנמצאו כבר קיימים ב-255 פריטי הסטייג'ינג.
+
+**ממצאי המחקר בריצה 21 (מנתוני חיפוש):**
+- Dingli JCPT: קודים 10/20/30/31/32/51-59/69/110-112 — כוסו במלואם בריצות קודמות
+- JLG 450AJ/860SJ: fault code 3-3 (sensor/control), flash code system, DTC groups 1-5 — כוסה
+- Genie GS-3246/1932: 272 DTC + 6 OIC, קודים E1/E4/E6/E12/E13/18/42-47/68 — כוסה
+- Manitou 180ATJ: SPN/FMI codes, iV diagnostic tool, 18.18m boom specs — כוסה
+- AWP hydraulic troubleshooting: pressure testing, seal checks, pump diagnosis — כוסה
+
+**סיבה לאפס חדשים:** ריצה 21 הפעילה את אותן 15 שאילתות שמוצו כבר בריצות 8-20. הסטייג'ינג עבר לשלב בשלות מלאה לשאילתות הסטנדרטיות.
+
+**חיפושים שבוצעו בריצה 21:** 15
+**עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 / Supabase DNS blocked)
+**URL שנבדקו:** 100+ — 100+ כפילויות, 0 חדשים
 
 ---
 
@@ -386,6 +408,7 @@ _עודכן: 2026-05-29_
 | 18 | 2026-05-27 | 188 | 30 | 218 |
 | 19 | 2026-05-28 | 218 | 30 | 248 |
 | 20 | 2026-05-29 | 248 | 7 | 255 |
+| 21 | 2026-05-30 | 255 | 0 | 255 |
 
 **ריצה 18 — פריטים חדשים (30):**
 - Haulotte Community fault code guide (1.0) — F-series format, Haulotte Diag VCI box, ETI LITE portal
