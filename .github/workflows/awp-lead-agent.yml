@@ -1,0 +1,49 @@
+name: AWP Lead Generation Agent
+
+on:
+  schedule:
+    # Every Sunday at 06:00 UTC (09:00 Israel time)
+    - cron: "0 6 * * 0"
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: "Reason for manual trigger"
+        required: false
+        default: "manual"
+
+jobs:
+  lead-gen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    env:
+      APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+      TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+      TELEGRAM_CHAT: ${{ secrets.TELEGRAM_CHAT }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run AWP lead generation agent
+        run: python3 scripts/lead-gen-agent.py
+
+      - name: Commit CSV fallback (if any)
+        run: |
+          git config user.name "AWP Lead Agent"
+          git config user.email "ofekdror68@gmail.com"
+          CSV=$(ls leads-*.csv 2>/dev/null | head -1)
+          if [ -n "$CSV" ]; then
+            git add "$CSV"
+            git commit -m "leads: add fallback CSV $CSV [skip ci]" || true
+            git push
+          else
+            echo "No CSV fallback generated."
+          fi
