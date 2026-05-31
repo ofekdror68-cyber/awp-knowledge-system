@@ -2846,5 +2846,321 @@
     "equipment_model": null,
     "topic": "fault_codes",
     "reliability_score": 0.8
+  },
+  {
+    "url": "http://www.haulotte.com.au/sites/haulotte_au/files/fichiers/Pages/electric_articulating_booms_operators_manual.pdf",
+    "title": "Haulotte Electric Articulating Booms Operators Manual (Official AU)",
+    "content_summary": "Official Haulotte Australia operators manual for electric articulating boom lifts (HA-E series). Covers HA20, HA26 and full HA electric range. Contains fault code list, error indicators, emergency descent procedures, safe work procedures, and maintenance schedules. Official source (haulotte.com.au) reliability 1.0. Covers: fault code identification, alarm codes, platform/drive diagnostics, battery management, safety interlocks.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "HA20E HA26E Electric Articulating Boom",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://isurplus.com.au/manuals/Haulotte%20HA%20Training%20Manual.pdf",
+    "title": "Haulotte HA Technical Training Manual PDF (isurplus.com.au)",
+    "content_summary": "Technical training manual for Haulotte HA series articulating boom lifts (HA20PX through HA260PX). Covers diagnostic level 2 training: fault code identification, Haulotte Diag VCI box connection, ETI LITE portal usage, platform and drive system fault diagnosis, CAN bus troubleshooting, and component replacement procedures. Key for understanding Haulotte F-series fault codes on diesel/electric boom lifts.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "HA20PX HA260PX Articulating Boom",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.scribd.com/document/520771497/HA20-260-PX-GB-e03-11",
+    "title": "Haulotte Diagnostic Training Manual HA20-260PX (Scribd)",
+    "content_summary": "Haulotte diagnostic training manual for HA20PX through HA260PX articulating boom lifts. Technical training document covering fault code diagnostics, VCI diagnostic box procedures, alarm code structure (F-series codes), and systematic troubleshooting of platform/drive/boom faults. Includes guidance on using Haulotte diagnostic software and interpreting CAN bus fault data on large diesel boom lifts.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "HA20PX HA260PX",
+    "topic": "fault_codes",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://www.autorepairmanuals.ws/arm/threads/haulotte-articulating-boom-lift-ha20-rtj-to-ha61-rtj-pro-operators-manual-4001282510-01-2026-en.198822/",
+    "title": "Haulotte HA20 RTJ to HA61 RTJ PRO Operators Manual 2026 (Part 4001282510)",
+    "content_summary": "Forum thread providing access to latest Haulotte RTJ articulating boom lift operators manual (Part No. 4001282510, edition 01.2026) covering HA20 RTJ through HA61 RTJ PRO models. Includes fault indicator descriptions, alarm codes, emergency stop procedures, and maintenance requirements for the RTJ (Rough Terrain Jib) diesel articulating boom series.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "HA20RTJ HA26RTJ HA61RTJ PRO",
+    "topic": "fault_codes",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://www.autorepairmanuals.ws/arm/threads/haulotte-articulating-boom-lift-ha20-e-to-ha61-e-pro-operators-manual-4001341320-01-2026-en.198816/",
+    "title": "Haulotte HA20 E to HA61 E PRO Operators Manual 2026 (Part 4001341320)",
+    "content_summary": "Forum thread providing access to latest Haulotte electric articulating boom lift operators manual (Part No. 4001341320, edition 01.2026) covering HA20 E through HA61 E PRO models. Contains fault indicators, alarm code descriptions, emergency descent procedures, battery system diagnostics, and preventive maintenance schedules for the E-series electric articulating boom range.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "HA20E HA61E PRO Electric Articulating Boom",
+    "topic": "fault_codes",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://www.4groupci.com/media/30215/haulotte-20m-hybrid-operators-manual.pdf",
+    "title": "Haulotte HA20 LE PRO Hybrid Articulating Boom Operators Manual",
+    "content_summary": "Operators manual for Haulotte HA20 LE PRO hybrid articulating boom lift. Covers fault code indicators and alarm codes for the hybrid (diesel+electric) HA20 LE PRO platform. Contains emergency descent procedures, safety interlock descriptions, maintenance requirements, and fault indicator readout guidance for hybrid boom lift operation.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "HA20 LE PRO Hybrid",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://sd95d2cbd361a0b8d.jimcontent.com/download/version/1635519477/module/15699240222/name/GENIE%20Forklift%20Truck%20Fault%20Codes%20DTC%20(Deutz%20&%20Perkins%20Engines).pdf",
+    "title": "Genie Fault Codes DTC — Deutz TCD3.6 & Perkins Engines (April 2017)",
+    "content_summary": "Genie service and repair manual supplement (April 2017) containing fault codes for Genie machines equipped with Deutz TCD3.6 and Perkins diesel engines. Engine fault codes are in SPN/FMI format. Covers DTC codes at engine ECU level vs. platform controller level — critical for distinguishing engine faults from machine control faults on Genie S-series and Z-series boom lifts with diesel power. Applies to Genie S-60, S-65, S-80, Z-60 with Deutz/Perkins engines.",
+    "brands_mentioned": [
+      "Genie",
+      "Deutz",
+      "Perkins"
+    ],
+    "equipment_model": "Genie S-60 S-65 S-80 Z-60 Deutz Perkins",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://serdia.deutz.com/fileadmin/contents/serdia/DTCList_MD1_DOC_DPF_DE_EN.pdf",
+    "title": "Deutz MD1 ECU DTC List — DOC/DPF Emissions (Official SerDia)",
+    "content_summary": "Official Deutz diagnostic trouble code list for MD1 ECU controllers with DOC (Diesel Oxidation Catalyst) and DPF (Diesel Particulate Filter) equipped engines. SPN/FMI format fault codes for Tier 4 Final / Stage V Deutz engines. Used in newer AWP machines (JLG, Manitou, Haulotte) with Stage V diesel engines. Covers aftertreatment system faults, regeneration faults, and engine management codes. Official source from Deutz SerDia technical documentation system (1.0 reliability).",
+    "brands_mentioned": [
+      "Deutz"
+    ],
+    "equipment_model": "Deutz MD1 DOC DPF Stage V",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.mecawp.com/wp-content/uploads/2020/01/96121-SCH-A9.20.pdf",
+    "title": "MEC SEAC Slab Series Service & Parts Manual 96121-SCH (Oct 2022) — Fault Codes",
+    "content_summary": "MEC AWP SEAC A9.20 Slab Series service and parts manual (document 96121-SCH, October 2022). Page 37 contains fault code list for SEAC slab scissor lifts. Fault codes cover: CAN bus communication faults, PCU/ECU communication errors, hydraulic system fault indicators, battery/charger fault codes, and motion control error codes. Useful for MEC slab scissor lift diagnosis. Fault codes include numerical codes with descriptions and corrective actions.",
+    "brands_mentioned": [
+      "MEC"
+    ],
+    "equipment_model": "MEC SEAC A9.20 Slab Series",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.mecawp.com/wp-content/uploads/2023/05/96265-SCH.pdf",
+    "title": "MEC AWP Fault Code List 96265-SCH (2023)",
+    "content_summary": "MEC AWP fault code list PDF (document 96265-SCH, 2023). Complete fault code table for MEC scissor lift models. Contains fault code numbers, fault descriptions, probable causes, and resolution procedures. Covers electrical faults, hydraulic system faults, CAN bus communication codes, sensor failures, and motor controller codes. Latest MEC fault code reference document available from mecawp.com official documentation.",
+    "brands_mentioned": [
+      "MEC"
+    ],
+    "equipment_model": "MEC AWP Scissor Lifts",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.snorkellifts.com/sites/default/files/pdf/english-ansi-imp/S3215E.pdf",
+    "title": "Snorkel S3215E/S3219E Official Service Manual PDF (snorkellifts.com)",
+    "content_summary": "Official Snorkel service manual PDF for S3215E and S3219E electric slab scissor lifts (ANSI/Imperial). Covers: fault code tables with code numbers and meanings, pump and hydraulic troubleshooting procedures, drive motor and controller fault diagnosis, charger fault indicators, battery management system codes, and electrical schematics. Key fault codes include codes for pump over-speed, drive controller fault, tilt sensor, E-stop, and charger faults. Official source (snorkellifts.com, reliability 1.0).",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "Snorkel S3215E S3219E",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://simeri.fi/varaosa-huolto-kirjat/Snorkel/Snorkel%20X-26.pdf",
+    "title": "Snorkel X-26 Scissor Lift Service Manual (simeri.fi)",
+    "content_summary": "Snorkel X-26 electric scissor lift service manual. Contains fault code list and troubleshooting guide for X-26 model. Covers: error code table with fault descriptions and corrective actions, hydraulic system fault diagnosis, motor controller faults, battery/charger codes, and electrical system troubleshooting procedures. Format similar to SL/S series Snorkel fault codes (numerical codes with LED indicator patterns).",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "Snorkel X-26",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/snorkel-lift.aspx?b=233",
+    "title": "Snorkel Lift Forum — Technical Troubleshooting (Forkliftaction)",
+    "content_summary": "Forkliftaction.com technical forum category dedicated to Snorkel lift troubleshooting. Contains threads covering: S3219E pump and code issues, S3247 overload code diagnosis, drive fault troubleshooting, charger fault codes, SL-series neutral fault, and various Snorkel S and SL model electrical/hydraulic problems. Forum discussions include expert technician responses with specific fault code meanings and repair procedures.",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "Snorkel S3219E S3247 SL26 SL30",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualslib.com/products/Snorkel-S3219e-8783917.html",
+    "title": "Snorkel S3219E Manuals Index (ManualsLib)",
+    "content_summary": "ManualsLib product page for Snorkel S3219E slab scissor lift. Lists available manuals including: Service Maintenance Manual, Operator's Manual, and User Manual. Links to fault code pages within the service manual. Snorkel S3219E is an electric slab scissor lift with 19ft platform height capacity.",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "Snorkel S3219E",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualsdir.com/manuals/549901/snorkel-s1930.html?page=46",
+    "title": "Snorkel S1930 Troubleshooting Chapter p.46 (ManualsDir)",
+    "content_summary": "Chapter 12 troubleshooting section of Snorkel S1930 user manual (page 46). Contains fault diagnosis chart with: symptoms, probable causes, and corrective actions for S1930 electric scissor lift. Covers: machine won't start, won't lift, won't drive, alarm conditions, E-stop reset procedure, and LED indicator code interpretation. Snorkel S1930 uses same control architecture as S3219E family.",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "Snorkel S1930",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.justanswer.com/industrial-equipment/mra7z-snorkel-s3219e-pump-goes-faster-machine-does-not-code.html",
+    "title": "Snorkel S3219E Pump Issues & Error Code FAQ (JustAnswer)",
+    "content_summary": "Expert troubleshooting Q&A for Snorkel S3219E scissor lift: pump motor runs faster but machine does not lift or drive. Fault code diagnosis includes: checking motor controller output, verifying hydraulic pump coupling, inspecting solenoid valve function (lift/drive solenoids), checking for error codes in controller display, testing battery voltage under load. Common causes: worn pump coupling, failed solenoid, controller fault. Error code readout procedure included.",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "Snorkel S3219E",
+    "topic": "hydraulics",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.justanswer.com/industrial-equipment/k3gd1-2021-snorkel-3247-overload-code.html",
+    "title": "Snorkel 3247 Overload Fault Code — Expert Troubleshooting (JustAnswer)",
+    "content_summary": "Expert troubleshooting for 2021 Snorkel 3247 scissor lift showing overload fault code. Diagnosis covers: verifying actual load vs. capacity, checking load sensor calibration, inspecting load cell wiring and connections, sensor recalibration procedure, resetting overload fault after clearing condition. Overload code reset: remove load, press and hold reset button at ground controls, verify load sensor reads zero with empty platform. Applies to Snorkel 3247 and similar S-series models.",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "Snorkel 3247",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.manualslib.com/manual/2011788/Dingli-Jcpt2212dc.html",
+    "title": "Dingli JCPT2212DC Operators Manual with Maintenance Info (ManualsLib)",
+    "content_summary": "ManualsLib page for Dingli JCPT2212DC operators manual with maintenance information. JCPT2212DC is a 22m working height DC electric self-propelled scissor lift. Fault codes covered include: Code 01 (Internal ECU Fault — Main ECU System Fault), Code 02 (Platform ECU Fault — ECU/Platform Communication Fault), Code 99 (Pothole Fault — pothole protection activated), Platform Overload Fault, and emergency descent procedure. Controller: DL-series DC controller compatible with JCPT1412DC/1612DC family.",
+    "brands_mentioned": [
+      "Dingli"
+    ],
+    "equipment_model": "Dingli JCPT2212DC",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1335429/Genie-Z-45.html?page=72",
+    "title": "Genie Z-45 Fault Code Charts — Section 4 p.72 (ManualsLib #1335429)",
+    "content_summary": "Fault code charts section of Genie Z-45 articulating boom lift service and repair manual (ManualsLib manual #1335429). Contains control system fault codes for Z-45 with code numbers, fault descriptions, and corrective actions. Fault code retrieval: alarm produces two short beeps every 30 seconds for 10 minutes. Codes organized by system: lift/swing/drive/telescope/jib. Essential reference for Z-45 fault diagnosis without JLG/Genie analyzer.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Genie Z-45",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1375949/Genie-Z-60-34.html?page=138",
+    "title": "Genie Z-60/34 Fault Codes Control System p.138 (ManualsLib #1375949)",
+    "content_summary": "Fault codes section of Genie Z-60/34 articulating boom lift service manual (ManualsLib manual #1375949, page 138). Control system fault codes for Z-60/34 model. Same alarm pattern as Z-45: two short beeps every 30 seconds. Lists codes for lift cylinder, swing, drive, telescope, and jib functions with corrective actions. Z-60/34 uses GSDS (Genie SmartLink Diagnostic System) with CAN bus communication between platform and ground controllers.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Genie Z-60/34",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://manuals.genielift.com/parts%20and%20service%20manuals/data/Service/Z%20Booms/1297714.pdf",
+    "title": "Genie Z-45 DC Service & Repair Manual #1297714 (Official Genie)",
+    "content_summary": "Official Genie service and repair manual for Z-45 DC electric articulating boom lifts (serial range Z45EM-101, document #1297714). Covers complete fault code tables, GSDS diagnostic trouble codes, hydraulic schematics, electrical diagrams, and component replacement procedures. Z-45 DC uses electric drive and lift with battery power. Fault codes cover all Z-45 DC systems: drive, lift, swing, platform level, jib, E-stop, and CAN bus communication. Official Genie source (reliability 1.0).",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Genie Z-45 DC",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://manuals.genielift.com/parts%20and%20service%20manuals/data/service/stick%20booms/1268489.pdf",
+    "title": "Genie S® Booms Maintenance Manual #1268489 (Official Genie)",
+    "content_summary": "Official Genie maintenance manual for S® Boom (stick boom) series (document #1268489). Covers S-40, S-45, S-60, S-65, S-80, S-85 telescopic boom lifts. Contains: maintenance schedules, fault code reference, inspection checklists, hydraulic system service, electrical system diagnostics, and CAN bus troubleshooting. Key fault types: telescope/boom angle sensor codes, drive system codes, platform level codes, and engine codes for diesel variants. Official source (reliability 1.0).",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Genie S-40 S-45 S-60 S-65 S-80 S-85",
+    "topic": "maintenance",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.manualslib.com/manual/2915770/Genie-Z-45-25.html?page=144",
+    "title": "Genie Z-45/25 Fault Codes Control System p.144 (ManualsLib #2915770)",
+    "content_summary": "Control system fault codes for Genie Z-45/25 articulating boom lift from manual #2915770 (different serial range from #1177560). Page 144 contains updated fault code table with corrective actions. Alarm indication: two short beeps every 30 seconds. Fault codes cover: lift, swing, turntable, jib, drive, platform level functions. Codes in format GSDS DTC with SPN-style identifiers for CAN bus faults.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Genie Z-45/25",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.skyjack.com/node/1098",
+    "title": "Skyjack Service Manual Resource Page (Official skyjack.com)",
+    "content_summary": "Official Skyjack service manual resource page. Provides access to service and maintenance manuals for full Skyjack product range: SJIII 3215/3219/3226/3232 scissor lifts, SJIV series, SJ45AJ/SJ63AJ articulating boom lifts, SJ30T/SJ45T telescopic booms. Includes fault code procedures, GP102 controller diagnostic codes, LED flash code charts, and service bulletins. Official Skyjack website (reliability 1.0).",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "Skyjack SJIII SJIV SJ45AJ SJ63AJ",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.skyjack.com/tech-tips/2016",
+    "title": "Skyjack Tech Tips 2016 — Fault Diagnosis & Service Bulletins (Official)",
+    "content_summary": "Official Skyjack tech tips page (2016 edition) covering common fault diagnosis procedures and service bulletins. Topics include: LED flash code interpretation for SJIII series, GP102 controller diagnostic procedures, First Thing To Check troubleshooting workflow, drive/lift fault common causes, battery charging fault indicators, and service bulletins for SJIII and SJ boom lift series. Complements the 2015 and 2021 tech tip editions already in staging.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "Skyjack SJIII SJ Series",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.onderlift.com/en/blog/meanings-and-solutions-of-manlift-error-codes/",
+    "title": "Meanings and Solutions of Manlift Error Codes (Önder Lift)",
+    "content_summary": "Article covering meanings and solutions for common manlift (AWP) error codes across multiple brands. Covers: E1 (Emergency Stop — check E-stop buttons, reset procedure), E4 (Low Battery — charge battery, check connections), E6 (Tilt Sensor — level machine, calibrate sensor), E12/E13 (CAN communication — check wiring harness, controller reset), overload code (check load, calibrate sensor), pothole guard fault (inspect guard mechanism). General troubleshooting approach applicable to Genie, JLG, Dingli, Skyjack, and similar scissor/boom lifts.",
+    "brands_mentioned": [
+      "Genie",
+      "JLG",
+      "Dingli",
+      "Skyjack"
+    ],
+    "equipment_model": "AWP General",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.practicalmachinist.com/forum/threads/genie-z-boom-issues.398597/",
+    "title": "Genie Z-Boom Lift Issues — Forum Discussion (Practical Machinist)",
+    "content_summary": "Practical Machinist forum thread discussing Genie Z-series articulating boom lift issues. Contains technician discussions covering: fault code diagnosis on Z-45 and Z-60 models, hydraulic system problems (telescope, swing, lift faults), electrical troubleshooting, CAN bus communication issues, platform level sensor calibration, and practical repair advice from experienced heavy equipment technicians. Relevant to fault codes for Genie Z-45, Z-45/25, Z-60 articulating boom lifts.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Genie Z-45 Z-60",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.canbusemulator.com/en/blog/356-deutz-fault-code-list",
+    "title": "Deutz Fault Code List — EMR2/EMR3/MD1 SPN FMI Reference (canbusemulator.com)",
+    "content_summary": "Comprehensive Deutz engine fault code list covering EMR2, EMR3, and MD1 ECU types in SPN/FMI format. Lists common Deutz fault codes with SPN number, FMI code, fault description, and probable causes. Covers: engine temperature sensors, fuel pressure codes, injection timing faults, and aftertreatment codes. Used in AWP machines with Deutz engines: JLG 520AJ (Deutz/Perkins), Manitou 180ATJ (Deutz TD3.6), Haulotte H16SX/H18SX (Deutz). Cross-reference between SPN/FMI and fault description for field diagnosis.",
+    "brands_mentioned": [
+      "Deutz",
+      "JLG",
+      "Manitou",
+      "Haulotte"
+    ],
+    "equipment_model": "Deutz EMR2 EMR3 MD1",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
   }
 ]
