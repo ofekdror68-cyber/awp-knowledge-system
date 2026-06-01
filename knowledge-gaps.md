@@ -1,7 +1,9 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-05-31_
+_עודכן: 2026-06-01_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
+
+> **ריצה 23 (2026-06-01):** 23 פריטים חדשים נוספו לסטייג'ינג (306 סה"כ). Supabase ECONNREFUSED; WebFetch חסום (403). 8 חיפושים ממוקדים (שאילתות מומלצות מריצה 22) + 15 שאילתות סטנדרט (0 חדשים — רוויה מלאה). **מותגים חדשים/מורחבים:** Haulotte HA16RTJ+HT43RTJ PRO+HTL4010 (4 פריטים), Skyjack SJ46AJ++SJ61T+techpub+forum (4 פריטים), Upright service bulletins (1 פריט), Dingli JCPT1212DC+JCPT2223RTA+E-Tech ACE (3 פריטים), Snorkel TM12+S1930+neutral fault+Manualzz+forum (5 פריטים), JLG 510AJ EMR2 p.121+boom 9-9 (2 פריטים), Genie Z-boom #1268548+DTC Scribd+diagnostic tool (3 פריטים), Haulotte fault codes identitum (1 פריט). **פריטים מוגבלי-ערך אך חדשים:** Haulotte identitum (0.4), Snorkel Manualzz (0.4), Snorkel Yesterday's Tractors forum (0.4). להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 
 > **ריצה 22 (2026-05-31):** 28 פריטים חדשים נוספו לסטייג'ינג (283 סה"כ). Supabase ECONNREFUSED; WebFetch חסום (403). 8 חיפושים — שאילתות חדשות ממוקדות (ראה המלצות ריצה 21). **מותגים חדשים/מורחבים:** Haulotte HA20/HA26 boom lifts (6 פריטים — HA20E, HA20RTJ PRO, HA20 LE PRO hybrid, HA Training Manual, Diagnostic Training), Snorkel S3219E/X-26/S3247 (7 פריטים), Genie Z-45 DC + Z-45/25 + Z-60/34 + Booms S® (6 פריטים), MEC SEAC/96265 (2 פריטים), Deutz MD1 DOC/DPF + Genie Deutz&Perkins (2 פריטים), Dingli JCPT2212DC (1 פריט — מודל חדש!), Skyjack service manual + tech-tips 2016 (2 פריטים), כללי (2 פריטים). להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 
@@ -46,6 +48,35 @@ _עודכן: 2026-05-31_
 6. "Genie Z-45 DC fault code complete list DTC control system" (Z-45 DC ספציפי — מנואל נמצא, DTC ספציפיים)
 7. "JLG 510AJ EMR2 fault codes complete list boom lift repair" (510AJ EMR2 — staging has ref but no DTC table)
 8. "Manitou 180ATJ ATJ260 fault code SPN FMI Deutz TD3.6" (engine-level codes for Manitou ATJ)
+
+---
+
+### ריצה 23 — פריטים חדשים (2026-06-01)
+23 פריטים חדשים נוספו לסטייג'ינג — **שאילתות ממוקדות חדשות (Haulotte boom+Skyjack AJ+Snorkel boom+Upright+Dingli DC+JLG 510AJ EMR2+Genie Z-DC):**
+
+- **Haulotte boom lifts (4):** HA16RTJ PRO operator's manual PDF (4groupci.com, 0.6) — F-series codes, contactors/relays/sensors; HA16RTJ technical service doc 4000202840 (Scribd, 0.4) — full failure code list; HT43RTJ PRO maintenance book (ManualsLib, 0.8) — F-series + BCF codes; HTL 4010 troubleshooting p.198 (ManualsLib, 0.8) — symptom→fault→corrective chart
+- **Skyjack articulating/telescopic booms (4):** SJ46 AJ+ Deutz D2.9L fault codes p.227 (ManualsLib, 0.8) — SPN/FMI engine codes; SJ61T DTC p.201 (ManualsLib, 0.8) — OVRLOAD/TILT/DRIVE FAULT/ARMGUARD/HWFS STALL D; techpub document #7166 SJ45AJ (techpub.skyjack.com, 1.0) — official docs; Forkliftaction Skyjack does-nothing (0.8) — GP102 diagnostics, E-stop/ground/contactor procedure
+- **Upright (1):** service bulletins page (epartsplus.com, 0.6) — UL25/UL30/MX19/RT10 bulletins; drive valve, solenoid 20-30Ω, BCF codes
+- **Dingli (3):** JCPT1212DC operator's manual PDF (aerialplatforms.co.uk, 0.8) — **מפתח!** codes 10/20/30/31/32/51-59/69 with DL-00000693 controller; E-Tech ACE Series training manual p.50 (ManualsLib, 0.8) — next-gen controller, digital display, Bluetooth diagnostic; JCPT2223RTA fault codes p.68 (ManualsLib, 0.8) — RT diesel variant codes, overload/tilt/hydraulic
+- **Snorkel (5):** Neutral fault JustAnswer (0.6) — joystick potentiometer not returning to center; TM12 fault codes p.48 (ManualsLib, 0.8) — codes 01-39 reset, 51-69 replace, solenoid 20-30Ω; S1930 parts manual P/N 0361246 (snorkeljp.com, 0.8) — official parts reference; Manualzz doc (0.4); Yesterday's Tractors forum (0.4)
+- **JLG (2):** 510AJ EMR2 fault codes p.121 (ManualsDir, 0.6) — **פריט מפתח!** 36 engine DTCs (SPN 100/110/157/190/91), EMR2 Deutz, 5-sheet section; boom lift 9-9 flash code JustAnswer (0.6) — power module EPROM corruption, ES scissors + boom lifts
+- **Genie (3):** Z-Boom service manual #1268548 (manuals.genielift.com, 1.0) — **מקור רשמי!** fault retrieval procedure (2 beeps), complete code chart; DTC list Scribd 539173102 (0.4) — GS+Z+S booms all codes; Mechnician/Jaltest diagnostic tool page (0.6) — Jaltest protocol for Genie GSDS
+- **Haulotte כללי (1):** identitum compilation (0.4) — F01-F25 descriptions for HA-series, BCF-1 to BCF-5
+
+**חיפושים שבוצעו בריצה 23:** 8 ממוקדים + 15 סטנדרט (= 23 סה"כ)
+**עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 / Supabase ECONNREFUSED)
+**URL שנבדקו:** 100+ — ~80 כפילויות, 23 חדשים
+**מותגים חדשים שהורחבו:** Haulotte (boom lifts: HA16RTJ PRO, HT43RTJ PRO, HTL 4010), Skyjack (boom: SJ46AJ+, SJ61T), Dingli JCPT1212DC (מנואל מלא!), JLG 510AJ EMR2 codes
+
+**המלצה לריצה 24 — שאילתות חדשות:**
+1. "Skyjack SJ45AJ SJ63AJ articulating boom service manual fault code complete" (SJ45AJ עדיין חסר מנואל ספציפי)
+2. "Haulotte HA26 RTJ PRO fault code F-series diagnosis repair" (HA26 — גדול מ-HA20, לא מכוסה)
+3. "Snorkel SB15J SB10J articulating boom lift fault code error diagnosis" (Snorkel boom lifts — לא מכוסה בכלל)
+4. "Upright UL25 UL30 RT10 scissor lift service manual fault code" (Upright — רק bulletins, חסר מנואל)
+5. "Dingli JCPT1208DC scissor lift operator manual fault codes download" (JCPT1208DC variant — עדיין חסר)
+6. "JLG 510AJ complete DTC fault code list boom lift repair manual" (510AJ — EMR2 נמצא, אך platform DTC חסר)
+7. "Manitou 180ATJ ATJ260 Deutz TD3.6 engine fault code SPN FMI repair" (Manitou+Deutz engine-level)
+8. "Genie Z-45 DC electric boom lift fault codes complete DTC" (Z-45 DC ספציפי — DC electric version)
 
 ---
 
@@ -352,14 +383,16 @@ _עודכן: 2026-05-31_
 | מודל | מה חסר | עדיפות |
 |------|---------|--------|
 | Dingli JCPT1208AC | fault codes — לא נחלץ; product page מאשר fault diagnostic system קיים; אין מנואל שירות זמין | גבוהה |
-| Dingli JCPT1212DC | ManualsLib index נמצא (ריצה 19); JCPT2212DC manual נוסף (ריצה 22) אך JCPT1212DC ספציפי עדיין חסר | גבוהה |
+| Dingli JCPT1208DC | operator manual ספציפי עדיין חסר — DC variant לא נמצא (1208AC ≠ 1208DC) | גבוהה |
+| Dingli JCPT1212DC | **מנואל נמצא (ריצה 23)** — aerialplatforms.co.uk PDF; codes 10/20/30/31/32/51-59/69; DL-00000693 | נמוכה |
 | Dingli JCPT2212DC | operators manual נמצא (ריצה 22) — codes 01/02/99/overload; 22m DC variant | נמוכה |
 | Dingli JCPT1412DC | מנואל HD נמצא (ריצה 12) + LECTURA specs (ריצה 14); טבלת קודים מלאה ל-DC variant עדיין חסרה | בינונית |
+| Dingli E-Tech ACE | training manual נמצא (ריצה 23) — ACE controller, Bluetooth diag, next-gen platform | נמוכה |
 | JLG 520AJ | מנואל שירות 3121665-D נמצא (ריצה 19); DTC ספציפי מכוסה חלקית | בינונית |
 | JLG 860SJ | DTC analyzer codes p.308 + platform leveling p.245 + parts AJ manual — מכוסים היטב (ריצה 13) | נמוכה |
-| JLG 510AJ | מנואל שירות נמצא (Scribd) — EMR2 fault codes p.121 — דורש JLG Analyzer לחילוץ מלא | בינונית |
+| JLG 510AJ | **EMR2 fault codes p.121 נמצא (ריצה 23)** — 36 engine DTCs, SPN 100/110/157/190; platform DTC עדיין חסר | בינונית |
 | Genie GS-3246 | parts+operator+Z-boom מכוסים; DTC 01-68 מכוסים; codes 44-47 (motor overload) עדיין צריכים פירוט | נמוכה |
-| Genie Z-45/Z-45 DC | Z-45 XC + Z-45 DC service manuals נמצאו (ריצה 14 + 22); fault code charts p.72/p.144 נוספו (ריצה 22) | נמוכה |
+| Genie Z-45/Z-45 DC | Z-45 XC + Z-45 DC + Z-Boom #1268548 (ריצה 23) — מכוסה היטב | נמוכה |
 | Genie Z-60/34 | Z-60 DC service manual נמצא; fault codes p.138 נוסף (ריצה 22) | נמוכה |
 | Genie S® Booms | Booms S® maintenance #1268489 נוסף (ריצה 22) — S-40/45/60/65/80/85 | נמוכה |
 | Manitou 180ATJ | service manual (Scribd EN) + ManualsLib 2 E3 RC + diag portal — נוספו (ריצה 13); MDS software עדיין נדרש | בינונית |
@@ -368,17 +401,23 @@ _עודכן: 2026-05-31_
 | MEC AWP | A92.5 + A92.20 + SE + SEAC 96121 + 96265 — תיעוד מקיף זמין (ריצה 22 הוסיפה SEAC+96265) | נמוכה |
 | Haulotte Optimum 8 | training manual + maintenance book נמצאו (ריצה 18); CF07 documented; Haulotte Diag VCI נדרש | בינונית |
 | Haulotte Star 10 | service manual Scribd + operator manual נמצאו (ריצה 18); F-series codes partially covered | בינונית |
-| Haulotte HA20/HA26 boom | HA20E+HA20RTJ+HA20 LE PRO manuals נוספו (ריצה 22); Diagnostic Training Manual נוסף — **מכוסה לראשונה!** | בינונית |
-| Haulotte HA16 RTJ boom | לא מכוסה כלל — HA16 specific | גבוהה |
-| Skyjack SJIII 3226/4626 | LED codes p.117 + parts+ops manuals נמצאו (ריצה 18); GP102 codes מכוסים | בינונית |
-| Skyjack SJ45AJ boom | service manual page נוסף (ריצה 22 skyjack.com/node/1098); מנואל ספציפי SJ45AJ עדיין חסר | גבוהה |
+| Haulotte HA16 RTJ boom | **HA16RTJ PRO manual נמצא (ריצה 23)** — 4groupci.com PDF; F-series codes; Scribd service doc | בינונית |
+| Haulotte HA20/HA26 boom | HA20E+HA20RTJ+HA20 LE PRO manuals נוספו (ריצה 22); HA26 ספציפי עדיין חסר | בינונית |
+| Haulotte HT43RTJ PRO | **maintenance book נמצא (ריצה 23)** — ManualsLib; F-series + BCF codes | נמוכה |
+| Haulotte HTL 4010 | **troubleshooting guide p.198 נמצא (ריצה 23)** — symptom/fault/action chart | נמוכה |
+| Skyjack SJIII 3226/4626 | LED codes p.117 + parts+ops manuals נמצאו (ריצה 18); GP102 codes מכוסים | נמוכה |
+| Skyjack SJ45AJ boom | techpub doc #7166 נוסף (ריצה 23); מנואל שירות ספציפי SJ45AJ עדיין חסר | גבוהה |
+| Skyjack SJ46 AJ+ boom | **Deutz D2.9L fault codes p.227 נמצא (ריצה 23)** — ManualsLib, SPN/FMI format | נמוכה |
+| Skyjack SJ61T boom | **DTC p.201 נמצא (ריצה 23)** — OVRLOAD/TILT/DRIVE FAULT/ARMGUARD/HWFS STALL D | נמוכה |
 | Skyjack SJ63AJ boom | operators manual נמצא (ריצה 19); fault codes מכוסים חלקית ע"י GP102 | בינונית |
-| Snorkel SL26/SL30 | fault codes + service manual נמצאו (ריצה 18-19); neutral fault documented | בינונית |
-| Snorkel S3219E | S3215E/S3219E official manual + ManualsLib + JustAnswer נוספו (ריצה 22) — מכוסה טוב | בינונית |
+| Snorkel SL26/SL30 | fault codes + service manual נמצאו (ריצה 18-19); neutral fault documented | נמוכה |
+| Snorkel TM12 boom | **fault codes p.48 נמצא (ריצה 23)** — codes 01-39 reset, 51-69 replace | נמוכה |
+| Snorkel S1930 | **parts manual P/N 0361246 נמצא (ריצה 23)** — official snorkeljp.com | נמוכה |
+| Snorkel S3219E | S3215E/S3219E official manual + ManualsLib + JustAnswer נוספו (ריצה 22) — מכוסה טוב | נמוכה |
 | Snorkel X-26 | manual simeri.fi נוסף (ריצה 22) | נמוכה |
-| Snorkel SB15J boom | לא מכוסה כלל — Snorkel boom lifts | גבוהה |
+| Snorkel SB15J boom | לא מכוסה כלל — Snorkel boom lifts (SB series) | גבוהה |
 | Upright MX19 | troubleshooting guide + forum נמצאו (ריצה 18); drive valve fault documented | נמוכה |
-| Upright UL25/UL30 | לא מכוסה כלל — Upright RT/UL series scissor lifts | גבוהה |
+| Upright UL25/UL30/RT10 | **service bulletins נמצאו (ריצה 23)** — epartsplus.com; מנואל שירות עצמו עדיין חסר | בינונית |
 
 ---
 
@@ -441,6 +480,7 @@ _עודכן: 2026-05-31_
 | 20 | 2026-05-29 | 248 | 7 | 255 |
 | 21 | 2026-05-30 | 255 | 0 | 255 |
 | 22 | 2026-05-31 | 255 | 28 | 283 |
+| 23 | 2026-06-01 | 283 | 23 | 306 |
 
 **ריצה 18 — פריטים חדשים (30):**
 - Haulotte Community fault code guide (1.0) — F-series format, Haulotte Diag VCI box, ETI LITE portal
@@ -488,6 +528,19 @@ _עודכן: 2026-05-31_
 ‡ריצה 8: WebFetch חסום (403), Supabase NXDOMAIN — 30 פריטים נשמרו ב-`pending_knowledge.json`; הרץ `python3 save_to_supabase.py` להעלאה.
 §ריצה 9: pending_knowledge.json מריצה 8 היה כבר ב-staging; בסיס אמיתי 108. WebFetch חסום (403), Supabase ECONNREFUSED — 14 פריטים חדשים נוספו לסטייג'ינג.
 **ריצה 11:** 0 פריטים חדשים — staging רווי. לפתיחת מקורות חדשים יש להרחיב חיפושים ל-JCPT1208/JCPT1212 fault codes, 520AJ DTC ספציפי, ו-Manitou 180ATJ service manual.
+
+**פירוט מותגים בסטייג'ינג (ריצה 23 מצטברת, 306 פריטים):**
+- Dingli: 42 מקורות (+3 ריצה 23: JCPT1212DC PDF, E-Tech ACE Training Manual, JCPT2223RTA p.68)
+- JLG: 80 מקורות (+2 ריצה 23: 510AJ EMR2 codes p.121, boom 9-9 flash JustAnswer)
+- Genie: 68 מקורות (+3 ריצה 23: Z-Boom #1268548 רשמי, DTC Scribd 539173102, Mechnician/Jaltest page)
+- Manitou: 24 מקורות (ללא שינוי)
+- MEC: 8 מקורות (ללא שינוי)
+- **Haulotte: 29 מקורות (+4 ריצה 23)** — HA16RTJ PRO PDF, HA16RTJ Scribd 4000202840, HT43RTJ PRO maintenance, HTL 4010 troubleshooting p.198, identitum compilation
+- **Skyjack: 19 מקורות (+4 ריצה 23)** — SJ46 AJ+ Deutz p.227, SJ61T DTC p.201, techpub doc #7166, Forkliftaction does-nothing
+- **Snorkel: 24 מקורות (+5 ריצה 23)** — neutral fault JustAnswer, TM12 fault codes p.48, S1930 parts manual, Manualzz doc, Yesterday's Tractors forum
+- **Upright: 5 מקורות (+1 ריצה 23)** — service bulletins epartsplus.com
+- Deutz/cross-brand: 7 מקורות (ללא שינוי)
+- כללי: 28 מקורות (ללא שינוי)
 
 **פירוט מותגים בסטייג'ינג (ריצה 22 מצטברת, 283 פריטים):**
 - Dingli: 39 מקורות (+1 ריצה 22: JCPT2212DC operators manual — מודל חדש!)
