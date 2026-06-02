@@ -3415,5 +3415,136 @@
     "equipment_model": "Haulotte HA16RTJ, Haulotte HA20RTJ, Haulotte Optimum, Haulotte Summit",
     "topic": "fault_codes",
     "reliability_score": 0.4
+  },
+  {
+    "url": "https://techpub.skyjack.com/document?type=manual&id=5889",
+    "title": "Skyjack SJ45AJ Articulating Boom Lift Technical Publication | Skyjack Official TechPub",
+    "content_summary": "Official Skyjack Technical Publications document #5889 for the SJ45AJ articulating boom lift. Skyjack TechPub portal (techpub.skyjack.com) is the official service documentation hub for all Skyjack equipment. The SJ45AJ uses the GP102 controller, same as other Skyjack articulating booms. Fault code format: alphanumeric LED codes — OVRLOAD (overload), TILT (tilt sensor active), DRIVE FAULT (drive system), ARMGUARD (arm guard engaged), HWFS STALL D (hydraulic motor stall during drive). Troubleshooting sequence: (1) Check E-stop buttons at all positions. (2) Check footswitch at platform. (3) Check battery connections. (4) Read GP102 controller LED code sequence. (5) Consult wiring diagram for specific code. Official Skyjack support: 1-800-275-9522.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "Skyjack SJ45AJ",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1859225/Skyjack-Sj63aj.html",
+    "title": "Skyjack SJ63AJ Operating Manual | ManualsLib",
+    "content_summary": "Skyjack SJ63AJ articulating boom lift operating manual on ManualsLib. The SJ63AJ is a large diesel articulating boom with GP102 controller. Fault and error indicator codes for the SJ63AJ follow the Skyjack alphanumeric LED code system: OVRLOAD = platform overload, TILT = machine tilt sensor activated (do not operate on slopes exceeding rating), DRIVE FAULT = drive motor or brake system fault, ARMGUARD = upper arm guard switch activated. Reset procedure: lower all functions, verify E-stop is out, cycle ignition. The CE (European) version shares the same fault architecture with additional safety functions. Manual includes hydraulic system schematics, electrical diagrams, and maintenance intervals.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "Skyjack SJ63AJ",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.manualslib.com/manual/2362625/Skyjack-Sj46aj.html",
+    "title": "Skyjack SJ46AJ Operating Manual | ManualsLib",
+    "content_summary": "Skyjack SJ46AJ articulating boom lift operating manual (CE version) on ManualsLib. The SJ46AJ features a Deutz D2.9L4 diesel engine with SPN/FMI engine fault code format and the Skyjack GP102 platform controller with LED alphanumeric fault codes. Engine SPN codes follow SAE J1939 standard — SPN 100 (oil pressure), SPN 110 (coolant temperature), SPN 190 (engine speed), SPN 157 (fuel rail pressure). Platform LED fault codes: OVRLOAD (check load cells and wiring), TILT (check tilt sensor and level machine), DRIVE FAULT (inspect drive motors, brake solenoids), ARMGUARD (check guard switch), HWFS STALL D (hydraulic flow switch stall during drive — check hydraulic motor flow). Manual covers safety, operations, maintenance, and troubleshooting sections.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "Skyjack SJ46AJ",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.manualslib.com/products/Haulotte-Ha26-Rtj-Pro-Sw-10521219.html",
+    "title": "Haulotte HA26 RTJ PRO SW Manuals Index | ManualsLib",
+    "content_summary": "ManualsLib index page for Haulotte HA26 RTJ PRO SW articulating boom lift documentation. Lists all available manuals including Training Manual, Maintenance Book, and Operator's Manual. The HA26 RTJ PRO SW is Haulotte's large diesel articulating boom (26m working height). Uses same F-series fault code system as other Haulotte boom lifts (HA16, HA20): F01-F25 codes for hydraulic/electrical/sensor faults, BCF-1 through BCF-5 for battery charger faults. Haulotte Diag software with VCI interface required for full diagnostic access to controller-level codes. ETI LITE portal provides remote diagnostics. Contact: Haulotte North America haulotte-usa.com or Haulotte Community haulottecommunity.com for fault code library.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "Haulotte HA26 RTJ PRO",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1620191/Haulotte-Ha26-Rtj-Pro-Sw.html",
+    "title": "Haulotte HA26 RTJ PRO SW Training Manual | ManualsLib",
+    "content_summary": "Haulotte HA26 RTJ PRO SW articulating boom lift training manual, full document on ManualsLib. Contains detailed fault code system explanation for the HA26 RTJ PRO SW. F-series fault codes (F01-F25): F01 = main contactor fault, F02 = motor drive fault, F03 = hydraulic pump motor fault, F04 = overload (check load cell and calibration), F05 = tilt sensor active (level machine), F06 = platform level sensor fault, F08 = emergency stop activated, F10 = engine fault (check Deutz ECU), F15 = CAN bus communication error, F25 = general controller fault. Diagnostic procedure: use Haulotte Diag software with VCI box, or read LED codes from control box. Training manual also covers: pre-operation checks, hydraulic system, drive troubleshooting, SPN/FMI Deutz engine codes integration. Reset: press Reset button on ground panel after correcting fault.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "Haulotte HA26 RTJ PRO",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "http://snorkellifts.com/sites/default/files/pdf/multifold/Snorkel%20Multifold_English_Lowres.pdf",
+    "title": "Snorkel Product Range Multifold Guide | Snorkel Official",
+    "content_summary": "Official Snorkel product range multifold guide in English (PDF). Covers all Snorkel product lines: SL-series electric scissors, S-series electric scissors, A-series articulating booms, TB-series telescopic booms, and SB-series boom lifts. Snorkel's fault code architecture across product lines: SL/S-series scissors use numeric LED flash codes (01-69 range); A-series articulating booms use same numeric flash code format (01-39 = resettable, 51-69 = component replacement required); TB/SB boom lifts use Snorkel EMS system with dedicated display. Common cross-model codes: 01 = startup error check, 11 = drive fault, 21 = lift fault, 31 = steering fault (where applicable), 51 = solenoid fault (check coil resistance 20-30Ω), 61 = sensor fault. Contact Snorkel Support: snorkellifts.com/Snorkel-Support/",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "Snorkel SL-series, Snorkel A-series, Snorkel SB-series",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.epartsplus.com/documentation/upright/operator-manuals/",
+    "title": "Upright Scissor Lift Operator Manuals Library | Equipment Parts Plus",
+    "content_summary": "Equipment Parts Plus documentation library for Upright scissor lift operator manuals. Covers all UpRight models: UL25 (25ft, DC electric), UL30 (30ft, DC electric), RT10 (rough terrain, 10ft), MX19 (19ft all-terrain electric), MX26 (26ft). Upright was rebranded as Snorkel in 2010 — Snorkel manuals also apply post-2010. UpRight/Snorkel scissor lifts use LED flash code system: codes 01-39 are operator-resettable faults (E-stop, drive fault, lift fault, tilt, pothole); codes 51-69 indicate component failure requiring technician (solenoid open/short circuit, sensor failure, controller fault). Solenoid coil test: measure resistance 20-30Ω; outside range = replace coil. Platform E-stop must be pulled out before any diagnostic attempt. Also hosts service bulletins for common field issues on UL/RT/MX series.",
+    "brands_mentioned": [
+      "Upright",
+      "Snorkel"
+    ],
+    "equipment_model": "Upright UL25, Upright UL30, Upright RT10, Upright MX19",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.snorkeljp.com/service-support/pdf/parts_upright/xseries_sn_6013-15019.pdf",
+    "title": "Upright X-Series Scissor Lift Service and Parts Manual (SN 6013-15019) | Snorkel Japan",
+    "content_summary": "Upright X-Series scissor lift service and parts manual covering serial numbers 6013-15019, available from Snorkel Japan official portal. The X-Series covers electric slab scissor lifts. Service manual includes: complete fault code table for X-Series controller, hydraulic circuit diagram, electrical schematics with component locations, and parts list with part numbers. X-Series fault code format: numeric LED codes. Key codes: Code 01 = startup fault (check E-stop/footswitch), Code 11 = drive motor fault (check motor brushes, wiring), Code 21 = lift motor fault (check pump motor, check hydraulic fluid), Code 31 = tilt fault (level machine, check tilt sensor), Code 51 = drive solenoid open circuit (resistance should be 20-30Ω), Code 61 = lift solenoid fault. All codes 51-69 require component replacement. Reset procedure: correct fault, cycle key switch.",
+    "brands_mentioned": [
+      "Upright",
+      "Snorkel"
+    ],
+    "equipment_model": "Upright X-Series",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://s4b621f162e87bd31.jimcontent.com/download/version/1639755421/module/11696458795/name/Dtc%20List%20Deutz%20Engine.pdf",
+    "title": "Deutz Engine DTC/SPN Fault Code List | Deutz Technical Reference",
+    "content_summary": "Comprehensive Deutz engine diagnostic trouble code (DTC) and SPN/FMI fault code reference list. Covers EMR2, EMR3, EMR4, EMR5, and MD1 controller generations. Key DTC categories: SPN 100 (Engine Oil Pressure — low oil pressure, check level and sensor), SPN 110 (Engine Coolant Temperature — overheating, check coolant level, radiator), SPN 157 (Fuel Rail Pressure — check fuel filter, injection pump), SPN 190 (Engine Speed — flywheel sensor fault), SPN 91 (Throttle Position — check accelerator pedal/sensor), SPN 636 (Crankshaft Position), SPN 637 (Camshaft Position). FMI codes: FMI 3 = voltage high/open circuit, FMI 4 = voltage low/short to ground, FMI 5 = current low/open circuit, FMI 12 = failed component, FMI 14 = special instruction. Relevant for: JLG 510AJ/520AJ (Deutz D2.9L4), Manitou 180ATJ (Deutz TCD3.6), Haulotte HA20/HA26 RTJ, Skyjack SJ46AJ+ diesel booms.",
+    "brands_mentioned": [
+      "Deutz",
+      "JLG",
+      "Manitou",
+      "Haulotte",
+      "Skyjack"
+    ],
+    "equipment_model": "Deutz EMR2, Deutz EMR3, Deutz MD1",
+    "topic": "electrical",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1245730/Genie-Gth-844.html?page=78",
+    "title": "Deutz TCD3.6 Engine Fault Codes - Genie GTH-844 Service Manual Page 78 | ManualsLib",
+    "content_summary": "Genie GTH-844 telehandler service and repair manual page 78 containing Deutz TCD3.6 engine fault codes. The TCD3.6 engine is used in multiple AWP brands including Manitou 180ATJ. Fault codes from this page (SPN/FMI format): SPN 100 FMI 1 = Oil Pressure Critically Low (shutdown), SPN 100 FMI 17 = Oil Pressure Warning, SPN 110 FMI 15 = Coolant Temperature High Warning, SPN 110 FMI 0 = Coolant Temperature Critically High (shutdown), SPN 157 FMI 1 = Fuel Rail Pressure Low, SPN 190 FMI 14 = Engine Overspeed Protection Active, SPN 91 FMI 3/4 = Accelerator Pedal Position Sensor Open/Short. Corrective actions: check sensor wiring/connectors first before replacing components; oil pressure faults require oil level check and filter inspection; coolant faults require radiator inspection and leak test. Also applicable to: Haulotte diesel boom lifts with TCD3.6, JLG diesel platforms with Deutz engines.",
+    "brands_mentioned": [
+      "Genie",
+      "Deutz",
+      "Manitou",
+      "Haulotte",
+      "JLG"
+    ],
+    "equipment_model": "Genie GTH-844, Deutz TCD3.6",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.jlg.com/-/media/jlg/current-materials-no-password/products/americas---ansi/electric-and-hybrid-boom-lifts/compact-crawler-booms/x550aj/docs/x550aj-operation-and-safety-manual.pdf",
+    "title": "JLG X550AJ Electric Articulating Boom Lift Operation and Safety Manual | JLG Official",
+    "content_summary": "Official JLG operation and safety manual for the X550AJ electric articulating boom lift (compact crawler boom). The X550AJ is an electric boom lift featuring JLG's advanced control system with on-board DTC display. Fault codes appear on the machine display and can also be read via JLG Analyzer. Key electrical boom fault indicators: E-stop status, battery charge level, tilt sensor, drive fault, platform overload. JLG X550AJ specific codes: Machine Tilt (tilt sensor active — level machine), Overload (reduce load and recalibrate), Drive Enable (footswitch or E-stop issue), Battery Low (charge batteries — minimum 80% for operation). As an electric boom, also includes: battery voltage monitoring, motor controller temperature codes, regenerative braking fault codes. Manual covers pre-operation inspection, operating procedures, and emergency lowering procedures.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "JLG X550AJ",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
   }
 ]
