@@ -1,7 +1,9 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-06-02_
+_עודכן: 2026-06-03_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
+
+> **ריצה 25 (2026-06-03):** 0 פריטים חדשים נוספו לסטייג'ינג. Supabase DNS failure (NXDOMAIN); WebFetch חסום (403 על כל האתרים שנוסו — 15+ ניסיונות). 15 שאילתות חיפוש בוצעו — כל שאילתות AWP הסטנדרטיות (Dingli JCPT, JLG 450AJ/520AJ/510AJ/860SJ, Genie GS-3246/GS-1932, Manitou 180ATJ, forkliftaction, כללי AWP hydraulic). נמצאו 33+ URL רלוונטיים-טכניים אך לא ניתן לשמור (Supabase לא נגיש). **מידע טכני שנאסף מסיכומי חיפוש:** Dingli codes 10/20/30/31/32/58/69 אושרו; Genie GS-3246 codes 18/42-47/68 אושרו; JLG 450AJ flash 3-3 אושר; Manitou ManualsLib 180ATJ אושר. **סיבת הכשל:** IP של סביבת הריצה חסום על ידי Cloudflare/WAF ברוב שרתי אינטרנט. **המלצה לריצה 26:** הרחב שאילתות לנושאים שטרם כוסו — Snorkel SB booms, JLG 510AJ platform DTC, Dingli JCPT1208DC. להעלאה כשיתאפשר: `node scripts/upload-web-knowledge-staging.mjs`
 
 > **ריצה 24 (2026-06-02):** 11 פריטים חדשים נוספו לסטייג'ינג (317 סה"כ). Supabase ECONNREFUSED; WebFetch חסום (403). 15 שאילתות סטנדרט (0 חדשים — רוויה מלאה) + 8 שאילתות ממוקדות חדשות מהמלצות ריצה 23. **מותגים חדשים/מורחבים:** Skyjack SJ45AJ techpub doc #5889 + SJ63AJ ManualsLib + SJ46AJ ManualsLib (3 פריטים), Haulotte HA26 RTJ PRO — training manual + index (2 פריטים), Snorkel multifold guide רשמי (1 פריט), Upright — operator-manuals library + X-series manual snorkeljp (2 פריטים), Deutz DTC list (jimcontent) + Genie GTH-844 Deutz TCD3.6 codes p.78 (2 פריטים), JLG X550AJ official PDF (1 פריט). **גפ מרכזי שנותר:** Dingli JCPT1208DC עדיין חסר מנואל ספציפי; Snorkel SB-series booms לא מכוסים; JLG 510AJ platform DTC (לא engine DTC) עדיין חסר. להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 
