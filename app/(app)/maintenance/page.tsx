@@ -417,16 +417,24 @@ export default function MaintenancePage() {
   const [begateUpdatedAt, setBegateUpdatedAt] = useState<string | null>(null)
   const [begateTab, setBegateTab] = useState<'insurance' | 'equipment'>('insurance')
 
-  useEffect(() => {
+  async function loadBegateData() {
     const headers: Record<string, string> = BEGATE_SECRET ? { 'x-begate-secret': BEGATE_SECRET } : {}
-    Promise.all([
-      fetch(`${PORTAL_URL}/api/begate/insurance-licensing`, { headers }).then(r => r.ok ? r.json() : null),
-      fetch(`${PORTAL_URL}/api/begate/equipment-status`, { headers }).then(r => r.ok ? r.json() : null),
-    ]).then(([ins, eq]) => {
+    try {
+      const [ins, eq] = await Promise.all([
+        fetch(`${PORTAL_URL}/api/begate/insurance-licensing`, { headers }).then(r => r.ok ? r.json() : null),
+        fetch(`${PORTAL_URL}/api/begate/equipment-status`, { headers }).then(r => r.ok ? r.json() : null),
+      ])
       if (ins?.data) setBegateInsurance(ins.data)
       if (eq?.data) setBegateEquipment(eq.data)
       if (ins?.received_at) setBegateUpdatedAt(ins.received_at)
-    }).catch(() => {})
+    } catch { /* ignore */ }
+  }
+
+  useEffect(() => {
+    loadBegateData()
+    const interval = setInterval(loadBegateData, 5 * 60 * 1000)
+    return () => clearInterval(interval)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   function handleDone(serial: string, newDate: string) {
