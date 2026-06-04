@@ -391,6 +391,19 @@ function PredictiveAlerts() {
 }
 
 // ─── Main page ────────────────────────────────────────────────────────────────
+const PORTAL_URL = process.env.NEXT_PUBLIC_PORTAL_URL || 'https://ofek-portal.vercel.app'
+const BEGATE_SECRET = process.env.BEGATE_INTERNAL_SECRET || ''
+
+interface BegateInsurance {
+  id: string; barcode: string; item_key: string; item_name: string
+  licence_no: string; model_year: string; type: string; updated_at: string
+}
+interface BegateEquipment {
+  id: string; barcode: string; item_key: string; item_name: string
+  barcode_status: string; licence_no: string; location_account: string
+  last_care_date: string; insurance_date: string; annual_survey: string; updated_at: string
+}
+
 export default function MaintenancePage() {
   const [overrides, setOverrides] = useState<Record<string, string>>(() => {
     if (typeof window === 'undefined') return {}
@@ -399,6 +412,22 @@ export default function MaintenancePage() {
   const [activeTool, setActiveTool] = useState<Tool | null>(null)
   const [filter, setFilter] = useState<'all' | Status>('all')
   const [search, setSearch] = useState('')
+  const [begateInsurance, setBegateInsurance] = useState<BegateInsurance[]>([])
+  const [begateEquipment, setBegateEquipment] = useState<BegateEquipment[]>([])
+  const [begateUpdatedAt, setBegateUpdatedAt] = useState<string | null>(null)
+  const [begateTab, setBegateTab] = useState<'insurance' | 'equipment'>('insurance')
+
+  useEffect(() => {
+    const headers: Record<string, string> = BEGATE_SECRET ? { 'x-begate-secret': BEGATE_SECRET } : {}
+    Promise.all([
+      fetch(`${PORTAL_URL}/api/begate/insurance-licensing`, { headers }).then(r => r.ok ? r.json() : null),
+      fetch(`${PORTAL_URL}/api/begate/equipment-status`, { headers }).then(r => r.ok ? r.json() : null),
+    ]).then(([ins, eq]) => {
+      if (ins?.data) setBegateInsurance(ins.data)
+      if (eq?.data) setBegateEquipment(eq.data)
+      if (ins?.received_at) setBegateUpdatedAt(ins.received_at)
+    }).catch(() => {})
+  }, [])
 
   function handleDone(serial: string, newDate: string) {
     const next = { ...overrides, [serial]: newDate }
@@ -433,9 +462,94 @@ export default function MaintenancePage() {
     off:    { bg: 'rgba(100,116,139,.1)',   border: 'rgba(100,116,139,.2)', text: '#475569', label: 'תקול' },
   }
 
+  const updatedLabel = begateUpdatedAt
+    ? new Date(begateUpdatedAt).toLocaleString('he-IL', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })
+    : null
+
+  const typeColors: Record<string, { bg: string; text: string }> = {
+    'רישוי':                { bg: 'rgba(220,38,38,.1)',  text: '#B91C1C' },
+    'תסקיר שנתי':           { bg: 'rgba(217,119,6,.1)',  text: '#B45309' },
+    'תסקיר חצי שנתי':       { bg: 'rgba(14,165,233,.1)', text: '#0369A1' },
+  }
+
   return (
     <div className="p-4 max-w-2xl mx-auto">
       <h1 className="text-xl font-bold mb-4" style={{ color: '#1E293B' }}>מצבת כלים — תחזוקה</h1>
+
+      {/* Begate live section */}
+      {(begateInsurance.length > 0 || begateEquipment.length > 0) && (
+        <div className="mb-6 rounded-2xl overflow-hidden" style={{ border: '1px solid #E2E8F0' }}>
+          <div className="px-4 py-3 flex items-center justify-between" style={{ background: '#F8FAFC' }}>
+            <div className="flex items-center gap-2">
+              <span className="text-sm font-bold" style={{ color: '#1E293B' }}>נתונים חיים מ-Begate</span>
+              {updatedLabel && <span className="text-xs" style={{ color: '#94A3B8' }}>עודכן {updatedLabel}</span>}
+            </div>
+            <div className="flex gap-1">
+              {(['insurance', 'equipment'] as const).map(tab => (
+                <button key={tab} onClick={() => setBegateTab(tab)}
+                  className="text-xs px-3 py-1 rounded-lg font-medium transition-all"
+                  style={{
+                    background: begateTab === tab ? '#1E293B' : 'transparent',
+                    color: begateTab === tab ? 'white' : '#64748B',
+                  }}>
+                  {tab === 'insurance' ? `ביטוח ורישוי (${begateInsurance.length})` : `מצבת ציוד (${begateEquipment.length})`}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {begateTab === 'insurance' && (
+            <div className="divide-y" style={{ borderColor: '#F1F5F9' }}>
+              {begateInsurance.map(item => {
+                const colors = typeColors[item.type] ?? { bg: 'rgba(100,116,139,.1)', text: '#475569' }
+                return (
+                  <div key={item.id} className="px-4 py-3 flex items-center gap-3">
+                    <div className="flex-1 min-w-0">
+                      <div className="text-sm font-semibold truncate" style={{ color: '#1E293B' }}>{item.item_name}</div>
+                      <div className="text-xs mt-0.5 flex gap-3" style={{ color: '#64748B' }}>
+                        {item.barcode && <span>ברקוד: {item.barcode}</span>}
+                        {item.licence_no && <span>מספר: {item.licence_no}</span>}
+                        {item.model_year && item.model_year !== '0' && <span>שנה: {item.model_year}</span>}
+                      </div>
+                    </div>
+                    <span className="text-xs px-2 py-1 rounded-lg font-medium flex-shrink-0"
+                      style={{ background: colors.bg, color: colors.text }}>
+                      {item.type}
+                    </span>
+                  </div>
+                )
+              })}
+            </div>
+          )}
+
+          {begateTab === 'equipment' && (
+            <div className="divide-y" style={{ borderColor: '#F1F5F9' }}>
+              {begateEquipment.map(item => {
+                const isActive = item.barcode_status === 'פעיל'
+                return (
+                  <div key={item.id} className="px-4 py-3 flex items-center gap-3">
+                    <div className="flex-1 min-w-0">
+                      <div className="text-sm font-semibold truncate" style={{ color: '#1E293B' }}>{item.item_name}</div>
+                      <div className="text-xs mt-0.5 flex gap-3 flex-wrap" style={{ color: '#64748B' }}>
+                        {item.barcode && <span>ברקוד: {item.barcode}</span>}
+                        {item.location_account && <span>מיקום: {item.location_account}</span>}
+                        {item.last_care_date && <span>טיפול אחרון: {item.last_care_date}</span>}
+                      </div>
+                    </div>
+                    <span className="text-xs px-2 py-1 rounded-lg font-medium flex-shrink-0"
+                      style={{
+                        background: isActive ? 'rgba(22,163,74,.1)' : 'rgba(100,116,139,.1)',
+                        color: isActive ? '#15803D' : '#475569',
+                      }}>
+                      {item.barcode_status || 'לא ידוע'}
+                    </span>
+                  </div>
+                )
+              })}
+            </div>
+          )}
+        </div>
+      )}
 
       {/* Stats */}
       <div className="grid grid-cols-4 gap-2 mb-4">
