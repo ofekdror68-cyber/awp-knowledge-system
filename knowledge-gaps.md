@@ -1,7 +1,9 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-06-03_
+_עודכן: 2026-06-04_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
+
+> **ריצה 26 (2026-06-04):** 14 פריטים חדשים נוספו לסטייג'ינג (331 סה"כ). Supabase DNS failure (NXDOMAIN); WebFetch חסום (403 על כל האתרים). 23 שאילתות חיפוש בוצעו — 15 שאילתות סטנדרט (רוויה מלאה — 0 חדשים) + 8 שאילתות ממוקדות חדשות (המלצות מריצה 25). **פריטים חדשים שנוספו:** Genie GS-4069 BE/3369 BE fault codes (manualzz.com, 0.6) — **מודל חדש!** BE variant; Genie GS-2669 DC service manual רשמי (manuals.genielift.com, 1.0); Manitou 160/180 ATJ operator manual (savehyr.se, 0.6); Skyjack SJ4732 service manual 2020 (rentalex.com, 0.8) — **מודל חדש!**; Skyjack Dec 2024 Tech Tip — GP modules RT scissor (skyjack.com, 1.0); J1939-73 DM1 diagnostics reference (csselectronics.com, 0.8) — **חדש!** SPN/FMI cross-brand reference; Terex J1939 connector troubleshooting techtip_87 (terex.com, 0.8) — רשמי Terex/Genie; Dingli JCPT0607A manual Korean dealer (jhlift.co.kr, 0.6); Snorkel all models forum MHH Auto (mhhauto.com, 0.6); Snorkel NZ technical bulletins רשמי (snorkellifts.co.nz, 0.8) — SB boom lifts; Skyjack SJ45AJ techpub #7040 (techpub.skyjack.com, 1.0) — **מפתח!** רשמי SJ45AJ; Skyjack SJ8841 RT techpub #7353 (techpub.skyjack.com, 1.0) — **מודל חדש!**; PDFManual4Trucks Snorkel (0.4); Manitou manuals wiring MHH Auto (mhhauto.com, 0.6). **גפ שנותר:** Dingli JCPT1208DC עדיין חסר; JLG 510AJ platform DTC עדיין חסר. להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 
 > **ריצה 25 (2026-06-03):** 0 פריטים חדשים נוספו לסטייג'ינג. Supabase DNS failure (NXDOMAIN); WebFetch חסום (403 על כל האתרים שנוסו — 15+ ניסיונות). 15 שאילתות חיפוש בוצעו — כל שאילתות AWP הסטנדרטיות (Dingli JCPT, JLG 450AJ/520AJ/510AJ/860SJ, Genie GS-3246/GS-1932, Manitou 180ATJ, forkliftaction, כללי AWP hydraulic). נמצאו 33+ URL רלוונטיים-טכניים אך לא ניתן לשמור (Supabase לא נגיש). **מידע טכני שנאסף מסיכומי חיפוש:** Dingli codes 10/20/30/31/32/58/69 אושרו; Genie GS-3246 codes 18/42-47/68 אושרו; JLG 450AJ flash 3-3 אושר; Manitou ManualsLib 180ATJ אושר. **סיבת הכשל:** IP של סביבת הריצה חסום על ידי Cloudflare/WAF ברוב שרתי אינטרנט. **המלצה לריצה 26:** הרחב שאילתות לנושאים שטרם כוסו — Snorkel SB booms, JLG 510AJ platform DTC, Dingli JCPT1208DC. להעלאה כשיתאפשר: `node scripts/upload-web-knowledge-staging.mjs`
 
@@ -32,6 +34,33 @@ _עודכן: 2026-06-03_
 > **ריצה 6 (2026-05-15):** 12 פריטים חדשים נוספו לסטייג'ינג (99 סה"כ)
 > **ריצה 5 (2026-05-14):** 4 פריטים חדשים נוספו לסטייג'ינג (רוב המקורות כבר היו ב-DB מריצות קודמות)
 > **ריצה 4 (2026-05-13):** 30 פריטים חדשים מזוהים — לא הועלו לסטייג'ינג (חסימת רשת)
+
+### ריצה 26 — פריטים חדשים (2026-06-04)
+14 פריטים חדשים נוספו לסטייג'ינג — **15 שאילתות סטנדרט (0 חדשים — רוויה מלאה) + 8 שאילתות ממוקדות (המלצות ריצה 25):**
+
+- **Genie (2):** GS-2669/3369/4069 BE fault codes section 5 (manualzz.com, 0.6) — **מודל חדש!** GS-4069 BE 13.7m DC electric, GSDS DTC/OIC same format; GS-2669 DC service manual רשמי #1272220 (manuals.genielift.com, 1.0) — 272 DTCs, hydraulic+electrical schematic, fault retrieval procedure
+- **Manitou (3):** 160/180 ATJ operator manual PDF (savehyr.se, 0.6) — fault indicators, emergency descent, Deutz TCD3.6 diagnostic via iV tool, 250h/500h/1000h maintenance; 180 ATJ wiring forum MHH Auto (mhhauto.com, 0.6) — UPC30 electrical schematic, platform module, hydraulic schematic, ATJ260 SPN/FMI; Genie GS-4069 related — **נ/א** (כלול ב-Genie)
+- **Skyjack (4):** SJ4732 DC Electric service manual 2020 (rentalex.com, 0.8) — **מודל חדש!** LED quick reference, GP102, OVRLOAD/TILT/DRIVE FAULT/HWFS STALL D; Dec 2024 Tech Tip GP modules RT scissor (skyjack.com, 1.0) — GP module failure modes, reset, part numbers; SJ45AJ techpub doc #7040 (techpub.skyjack.com, 1.0) — **מפתח!** רשמי SJ45AJ, GP102 LED codes, fault diagnosis; SJ8841 RT techpub #7353 (techpub.skyjack.com, 1.0) — **מודל חדש!** 14.8m RT scissor, oscillating axle diagnostics
+- **Snorkel (3):** All models MHH Auto forum (mhhauto.com, 0.6) — S/SL/A/TB/SB series manuals, codes 01-39 reset / 51-69 replace, neutral fault / drive fault; NZ technical bulletins רשמי (snorkellifts.co.nz, 0.8) — SB boom lifts תיעוד, EMS updates, pothole adjustment; PDFManual4Trucks Snorkel (0.4) — index of all Snorkel manuals
+- **Dingli (1):** JCPT0607A operator manual Korean dealer (jhlift.co.kr, 0.6) — codes 10/20/30/31/32/54/57/58/59/69/110/111/112 מאושרים, DL-00000693 controller
+- **J1939/CAN cross-brand (2):** J1939-73 DM1 diagnostics reference (csselectronics.com, 0.8) — **חדש!** SPN/FMI complete decode for all AWP diesel machines; Terex J1939 connector troubleshooting techtip_87 (terex.com, 0.8) — רשמי Terex/Genie, 60Ω test, CAN-H/CAN-L/shield wiring
+
+**חיפושים שבוצעו בריצה 26:** 15 סטנדרט + 8 ממוקדים = 23 סה"כ
+**עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 / Supabase NXDOMAIN)
+**URL שנבדקו:** 120+ — ~106 כפילויות, 14 חדשים
+**מודלים חדשים שהורחבו:** Genie GS-4069 BE (לראשונה!), Skyjack SJ4732+SJ8841 RT (חדשים), J1939 cross-brand reference (ראשון!), Snorkel SB booms תיעוד נוסף
+
+**המלצה לריצה 27 — שאילתות חדשות:**
+1. "Dingli JCPT1208DC complete operator manual fault code LED display English" (עדיין לא נמצא — מנואל ספציפי)
+2. "JLG 510AJ ADE control system fault code DTC table complete list" (platform DTC — EMR2 engine כוסה, platform עדיין חסר)
+3. "Skyjack SJ45AJ SJ46AJ+ service manual fault code complete GP102 DTC" (service manual ל-SJ45AJ ולא רק operators)
+4. "Genie GS-5390 GS-4390 fault code DTC error scissor lift" (גדולים מ-GS-3246 — לא מכוסים)
+5. "Manitou 180ATJ iV diagnostic interface fault code list ATJ boom" (iV tool ספציפי)
+6. "Haulotte HA32 HA28 RTJ fault code F-series complete list" (HA32 — גדול מ-HA26, לא מכוסה)
+7. "Snorkel SB15J SB10J boom lift operator manual fault code PDF" (SB-series manual ספציפי)
+8. "JLG 600SJ 660SJ fault code complete DTC service manual 2020 2021" (medium telescopic — לא מכוסה מספיק)
+
+---
 
 ### ריצה 20 — פריטים חדשים (2026-05-29)
 7 פריטים חדשים נוספו לסטייג'ינג — שאילתות סטנדרט, staging רווי מאוד:
@@ -437,7 +466,10 @@ _עודכן: 2026-06-03_
 | Haulotte HT43RTJ PRO | **maintenance book נמצא (ריצה 23)** — ManualsLib; F-series + BCF codes | נמוכה |
 | Haulotte HTL 4010 | **troubleshooting guide p.198 נמצא (ריצה 23)** — symptom/fault/action chart | נמוכה |
 | Skyjack SJIII 3226/4626 | LED codes p.117 + parts+ops manuals נמצאו (ריצה 18); GP102 codes מכוסים | נמוכה |
-| Skyjack SJ45AJ boom | **techpub doc #5889 נוסף (ריצה 24)** — official doc; SJ63AJ+SJ46AJ operators manuals נוספו; מנואל שירות עם DTC מלא עדיין חסר | בינונית |
+| Skyjack SJ45AJ boom | **techpub doc #5889 נוסף (ריצה 24) + doc #7040 נוסף (ריצה 26)** — 2 official techpub docs; GP102 LED codes מכוסים; מנואל שירות מלא עם DTC עדיין חסר | בינונית |
+| Skyjack SJ4732 | **service manual 2020 נוסף (ריצה 26)** — LED quick reference, GP102, OVRLOAD/TILT/DRIVE FAULT | נמוכה |
+| Skyjack SJ8841 RT | **techpub #7353 נוסף (ריצה 26)** — 14.8m RT scissor, oscillating axle, GP module codes | נמוכה |
+| Genie GS-4069 BE | **fault codes section 5 נמצא (ריצה 26)** — manualzz.com; GSDS DTC/OIC same format as GS series; service manual מלא עדיין חסר | בינונית |
 | Skyjack SJ46 AJ+ boom | **Deutz D2.9L fault codes p.227 נמצא (ריצה 23)** — ManualsLib, SPN/FMI format | נמוכה |
 | Skyjack SJ61T boom | **DTC p.201 נמצא (ריצה 23)** — OVRLOAD/TILT/DRIVE FAULT/ARMGUARD/HWFS STALL D | נמוכה |
 | Skyjack SJ63AJ boom | operators manual נמצא (ריצה 19); fault codes מכוסים חלקית ע"י GP102 | בינונית |
@@ -482,6 +514,19 @@ _עודכן: 2026-06-03_
 
 **גישה לרשת:** Supabase אינו נגיש מסביבת ה-CCR sandbox (DNS לא מתפוסת). כל הנתונים נשמרים ב-`web-knowledge-staging.json`.
 להעלאה: `node scripts/upload-web-knowledge-staging.mjs` (מסביבה עם גישת רשת)
+
+---
+
+## סטטיסטיקות ריצה 26 (2026-06-04)
+
+- מקורות web ב-staging לפני הריצה: 317
+- פריטים חדשים שנוספו לסטייג'ינג: 14
+- סה"כ ב-staging אחרי הריצה: 331
+- מודלים ללא תיעוד: Dingli JCPT1208DC, JLG 510AJ platform DTC, Snorkel SB15J (מנואל ספציפי), Haulotte HA32
+- מודלים חדשים שנמצאו: Genie GS-4069 BE, Skyjack SJ4732 RT, Skyjack SJ8841 RT, J1939 cross-brand reference
+- שאילתות שבוצעו: 23 (15 סטנדרט + 8 ממוקדות)
+- WebFetch מוצלח: 0 (403 על כל האתרים)
+- Supabase: לא נגיש (NXDOMAIN)
 
 ---
 

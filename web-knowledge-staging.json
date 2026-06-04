@@ -3546,5 +3546,164 @@
     "equipment_model": "JLG X550AJ",
     "topic": "fault_codes",
     "reliability_score": 1.0
+  },
+  {
+    "url": "https://manualzz.com/doc/o/8tktm/gs-2669-3369-4069-be--pn-1257106--section-5-fault-codes",
+    "title": "Genie GS-2669/3369/4069 BE Section 5 Fault Codes | Manualzz (P/N 1257106)",
+    "content_summary": "Genie GS-2669 BE, GS-3369 BE, GS-4069 BE (Battery Electric) scissor lifts fault codes — Section 5 of service manual P/N 1257106. The GS-4069 BE is a 13.7m working-height DC electric scissor. Fault code architecture: same GSDS (Genie SmartLink Diagnostic Systems) used across GS series. DTC types: H (hydraulic), P (power), U (user interface), F (sensors), C (controls). OIC codes: LL (tilt), PHS (high-position override), E1 (E-stop), E4 (low battery), E6 (tilt sensor), E12/E13 (CAN communication). The BE variants use electric drive motors with similar code sets to GS-1930/1932 but scaled for larger platform capacity. 272 DTCs total across GSDS.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "GS-4069 BE / GS-3369 BE / GS-2669 BE",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://manuals.genielift.com/parts%20and%20service%20manuals/data/Service/Scissors/1272220.pdf",
+    "title": "Genie GS-2669 DC Service and Repair Manual P/N 1272220 | Genie Official",
+    "content_summary": "Official Genie service and repair manual for GS-2669 DC (rough terrain DC-powered scissor lift), serial number range from GS6912-1300. Covers: complete GSDS fault code list (272 DTCs + 6 OIC), hydraulic schematic, electrical wiring diagrams, drive system diagnosis, platform leveling, CAN bus troubleshooting. The GS-2669 DC is a rough terrain scissor with foam-filled tires, 4WD, 9m working height. Key fault codes: code 18 (pothole guard), codes 42-47 (coil errors), E4 (low battery), E6 (tilt). Service manual includes fault retrieval procedure and corrective actions for all codes.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "GS-2669 DC",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.savehyr.se/files/pdf/manitou-180-atj.pdf",
+    "title": "Manitou 160 ATJ 180 ATJ Operator Manual PDF | Savehyr.se",
+    "content_summary": "Operator manual covering Manitou 160 ATJ and 180 ATJ articulating boom lifts. The 180 ATJ has 18.18m working height, Deutz TCD 3.6 diesel engine, 230kg platform capacity. Manual covers: fault indicator lights and meanings, emergency procedures (emergency descent from platform), daily pre-operation checks, maintenance schedule (250h/500h/1000h). Safety system includes: overload sensor, tilt sensor, emergency E-stop, platform leveling system. Diagnostic access via iV diagnostic interface (Manitou-specific tool). For engine fault codes: Deutz EMR3/MD1 system with SPN/FMI format. Platform-level fault codes accessed via main display and iV tool. Emergency descent: open manual descent valve at base, lower platform slowly.",
+    "brands_mentioned": [
+      "Manitou"
+    ],
+    "equipment_model": "Manitou 180 ATJ / 160 ATJ",
+    "topic": "maintenance",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.rentalex.com/wp-content/uploads/2020/10/SJ4732-Service-Manual.pdf",
+    "title": "Skyjack SJ4732 DC Electric Scissors Service Manual 223198ABA August 2020 | Rentalex",
+    "content_summary": "Full service manual for Skyjack SJ4732 DC electric scissor lift, document 223198ABA August 2020 (ANSI/CSA, CE, AS, KC standards). Covers: LED error code quick reference chart, GP module diagnostics (GP102 controller), fault code reading procedure (LED flash sequences), drive system troubleshooting, hydraulic system diagnosis, battery charger fault codes (BCF). Key fault codes: OVRLOAD (platform overloaded — check load cell and wiring), TILT (slope sensor active — move to level ground), DRIVE FAULT (drive system error — check motor, drive contactor, wiring harness), ARMGUARD (arm guard activated), HWFS STALL D (hydraulic stall during drive). Reset: cycle key switch and check ground control/platform control. The SJ4732 is a 14m rough-terrain scissor with 4WD and oscillating axle.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "SJ4732",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.skyjack.com/sites/default/files/techtips/2024-11/2024-TechTip-December.pdf",
+    "title": "Skyjack Tech Tip December 2024 — RT Scissor GP Modules | Skyjack Official",
+    "content_summary": "Official Skyjack Tech Tip December 2024 covering RT (Rough Terrain) scissor lift GP Module diagnostics. Addresses: GP module fault code reading procedure for R/T scissors (GP102 and variants), LED flash code sequence interpretation, common GP module failure modes, reset procedures, and when to replace vs. reprogram the GP module. GP modules on Skyjack RT scissors (SJ6832 RT, SJ4732 RT, SJ8841 RT) use same LED-flash fault code architecture as DC scissors but with terrain-specific codes. Module identification: all GP modules have similar operation but fault code lists differ by model — always reference serial-number-specific service manual. Tech tip also covers replacement part numbers for GP modules on current R/T scissor range.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "RT Scissor series",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.csselectronics.com/pages/j1939-73-dm1-diagnostic-message-dtc",
+    "title": "J1939-73 Diagnostics Explained — DM1, DTCs, SPN, FMI | CSS Electronics",
+    "content_summary": "Technical reference for SAE J1939-73 diagnostic messaging protocol used in all heavy AWP equipment (JLG diesel booms, Manitou ATJ, Haulotte diesel, Genie S/Z diesel booms, Skyjack diesel scissors). Explains: DM1 (Diagnostic Message 1) — active fault broadcast on J1939 CAN bus, SPN (Suspect Parameter Number) identifies the faulty component (SPN 100 = oil pressure, SPN 110 = coolant temp, SPN 190 = engine speed, SPN 91 = throttle, SPN 636 = crankshaft sensor), FMI (Failure Mode Identifier) identifies fault type (FMI 0 = above normal, FMI 1 = below normal, FMI 2 = erratic, FMI 3 = short to +, FMI 4 = short to ground, FMI 5 = open circuit, FMI 12 = bad device). Lamp status in DM1: Red Stop Lamp, Yellow Warning Lamp, MIL, protect lamp. Cross-brand reference for all Deutz-powered AWP machines.",
+    "brands_mentioned": [
+      "JLG",
+      "Manitou",
+      "Genie",
+      "Haulotte",
+      "Skyjack"
+    ],
+    "equipment_model": "All diesel AWP (J1939 CAN bus)",
+    "topic": "electrical",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.terex.com/docs/librariesprovider7/tech-tips/techtip_87.pdf",
+    "title": "Terex Tech Tip #87 — Troubleshooting J1939 Connector | Terex Official",
+    "content_summary": "Official Terex Tech Tip #87 for troubleshooting J1939 data link connectors on Terex/Genie equipment. J1939 is the CAN bus standard used on all Genie diesel boom lifts (S-40, S-45, S-60, S-65, S-80, Z-45, Z-60) and rough-terrain scissors. Covers: J1939 network topology (two 120Ω termination resistors required), three-wire connector (yellow = CAN-H, green = CAN-L, shield = ground), wiring fault diagnosis (open circuit, short circuit to ground or battery+, intermittent connection), connector inspection and replacement procedure. Diagnostic steps: (1) disconnect all ECUs except two, measure resistance across J1939 lines — should read ~60Ω (two 120Ω in parallel); (2) wiggle harness to find intermittent faults; (3) check connector pins for corrosion/damage. Key symptom: CAN bus faults manifest as multiple simultaneous ECU DTCs across engine, platform, and chassis modules.",
+    "brands_mentioned": [
+      "Genie",
+      "Terex"
+    ],
+    "equipment_model": "All Genie/Terex diesel boom lifts",
+    "topic": "electrical",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://jhlift.co.kr/download/JCPT0607A.pdf",
+    "title": "Dingli JCPT0607A Mobile Scissor Lift Operator's Manual | JH Lift Korea",
+    "content_summary": "Operator's manual for Dingli JCPT0607A mobile scissor lift (6m working height, 600kg capacity), distributed by Korean dealer JH Lift. Contains: complete fault code list with LED display codes (2-digit and 3-digit), operating procedures, safety requirements, maintenance schedule. Fault code section covers: Code 10 (GENERAL ALARM ECU), Code 20 (GENERAL ALARM TM1 — traction motor controller fault), Code 30 (GENERAL ALARM PCU), Code 31 (PCU CPU0 FAULT), Code 32 (PCU CPU1 FAULT), Code 54 (PRESS SENSOR ERROR), Code 57 (OVERLOAD), Code 58 (POTHOLE protection activated), Code 59 (HIGH POSITION LIMIT), Code 69 (power relay sleep / low battery), Code 110 (ECU WATCHDOG), Code 111-112 (CAN bus timeout). Reset procedure: cycle Emergency Stop button. The JCPT0607A uses DL-00000693 controller platform common to 0607/1208/1412 DC series.",
+    "brands_mentioned": [
+      "Dingli"
+    ],
+    "equipment_model": "JCPT0607A",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://mhhauto.com/Thread-SNORKEL-Repair-Parts-Manual-Parts-List-Maintenance-Manual-Operators-Manual-All-Models",
+    "title": "Snorkel All Models — Repair Parts, Maintenance, Operators Manuals | MHH Auto Forum",
+    "content_summary": "MHH Auto forum thread aggregating Snorkel lift manuals for all models. Covers: S-series scissors (S1930, S2030, S2646, S3219E, S3246, S3247), SL-series (SL20, SL26, SL30), A-series articulating booms (A38E, A46JE, A46JE+), TB-series telescopic booms (TB42, TB50), SB-series straight booms (SB10J, SB15J, SB30J). Includes repair parts manuals, maintenance schedules, and operators manuals. Fault code architecture across Snorkel range: codes 01-39 are resettable (press E-stop button); codes 51-69 require component replacement (solenoid coil, sensor, or module). Common codes: NEUTRAL FAULT (drive controller sees non-neutral input at startup — joystick not centered), DRIVE FAULT (drive system error), code 18 (pothole guard). Solenoid coil test: 20-30Ω resistance.",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "Snorkel S/SL/A/TB/SB series all models",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.snorkellifts.co.nz/service-support/technical-manuals-bulletins/",
+    "title": "Snorkel Technical Manuals & Service Bulletins | Snorkel New Zealand Official",
+    "content_summary": "Official Snorkel New Zealand support page providing access to technical manuals and service bulletins for all Snorkel products. The NZ portal covers models including SB boom lifts (SB10J, SB15J, SB30J) that may not be listed on the global Snorkel support site. Service bulletins address: solenoid valve replacement procedures, EMS (Electronic Management System) software updates, battery charger upgrades, pothole bar adjustment procedures. Technical manuals include operator, parts, and service documentation. The SB-series straight booms use the Snorkel EMS control system with the same fault code architecture (01-39 resettable, 51-69 replace) as the S and A series. Key SB boom fault codes: neutral fault (joystick not at center before startup), overload (platform load exceeds rated), tilt fault (exceed safe slope).",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "Snorkel SB boom lifts (SB10J, SB15J, SB30J)",
+    "topic": "general",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://techpub.skyjack.com/document?type=manual&id=7040",
+    "title": "Skyjack SJ45AJ Technical Publication Document #7040 | Skyjack TechPub Official",
+    "content_summary": "Official Skyjack Technical Publications document #7040 for the SJ45AJ articulating boom lift. The SJ45AJ is a 14.2m working height diesel articulating boom lift using the GP102 controller. Document covers: GP102 fault code system (LED flash sequences — each code displayed as 2 groups of flashes separated by pause), LED error code quick reference chart, drive fault diagnosis, hydraulic system troubleshooting, control system calibration. Common fault codes on SJ45AJ: OVRLOAD (overload sensor active), TILT (tilt sensor — level machine), DRIVE FAULT (drive system fault — check drive motor, contactor, wiring), ARMGUARD (platform arm guard activated), HWFS STALL D (hydraulic stall during drive function). Key diagnostic note: GP102 reports only one fault at a time. Reset: cycle key switch. If fault persists, use Skyjack authorized service center and reference serial-number-specific manual.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "SJ45AJ",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://techpub.skyjack.com/document/?type=manual&id=7353&region=NA&language=en&model_name=SJ8841+RT",
+    "title": "Skyjack SJ8841 RT Technical Publication Document #7353 | Skyjack TechPub Official",
+    "content_summary": "Official Skyjack Technical Publications document #7353 for the SJ8841 RT (Rough Terrain) scissor lift. The SJ8841 RT is a large rough-terrain scissor with 14.8m working height and 680kg capacity. Document covers: GP module LED error codes, diagnostic procedures, hydraulic system (diesel-hydraulic drive), fault reading via LED flash sequences. The SJ8841 RT uses the same GP module family as other RT scissors (SJ4732, SJ6832). Key fault codes: OVRLOAD, TILT, DRIVE FAULT, HWFS STALL D, ARMGUARD, BCF (battery charger fault) codes. Rough terrain specific: oscillating axle diagnostics, 4WD troubleshooting, differential lock fault. Maintenance: hydraulic oil service (every 500h), drive chain tension check, oscillating axle bearings.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "SJ8841 RT",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.pdfmanual4trucks.com/snorkel/",
+    "title": "Snorkel Scissor & Boom Lifts Manuals — Operator, Repair, Wiring, Fault Codes | PDFManual4Trucks",
+    "content_summary": "Collection page for Snorkel scissor lift and boom lift PDF manuals including: operator's manuals, repair/service manuals, parts catalogs, electrical wiring diagrams, and error code references. Covers Snorkel S-series scissors (S1930, S3219E, S3246, S3247), SL-series (SL26, SL30), A-series articulating booms (A38E, A46JE), TB-series telescopic booms, and SB-series straight booms (SB10J, SB15J, SB30J). Fault code architecture: codes 01-39 resettable via E-stop, codes 51-69 require component replacement. Wiring diagrams cover: control module, drive system, hydraulic system, battery/charger. Useful cross-reference for Snorkel and Upright (same parent company — Time Manufacturing) which share similar control architectures.",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "Snorkel all models incl. SB boom lifts",
+    "topic": "fault_codes",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://mhhauto.com/Thread-Manitou-Manuals-Wiring-diagrams",
+    "title": "Manitou Service Manuals & Wiring Diagrams All Models | MHH Auto Forum",
+    "content_summary": "MHH Auto forum thread aggregating Manitou service manuals and wiring diagrams for all models including Manitou ATJ articulating boom lifts (160 ATJ, 180 ATJ, 200 ATJ, 260 ATJ). Includes links to: 180 ATJ Euro 3 electrical schematic (UPC30 control unit diagram), Manitou diagnostic system iV tool documentation, telehandler (MT/MLT series) service manuals with SPN/FMI fault codes. For the 180 ATJ specifically: Deutz TCD 3.6 L4 engine fault codes (accessed via iV diagnostic tool), platform control module fault indicators, hydraulic system schematic (boom, swing, jib, leveling). Key fault indicators: overload sensor circuit, tilt sensor (jib leveling), emergency descent procedure via manual valve. ATJ260 (26m) uses same UPC30 platform but with SPN/FMI Deutz Stage IV engine codes.",
+    "brands_mentioned": [
+      "Manitou"
+    ],
+    "equipment_model": "Manitou 180 ATJ / ATJ series",
+    "topic": "electrical",
+    "reliability_score": 0.6
   }
 ]
