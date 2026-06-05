@@ -3705,5 +3705,225 @@
     "equipment_model": "Manitou 180 ATJ / ATJ series",
     "topic": "electrical",
     "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.manualslib.com/manual/3625195/Dingli-S03-E.html",
+    "title": "Dingli S03-E Operation Service & Parts Manual | ManualsLib",
+    "content_summary": "Official Dingli S03-E series scissor lift complete manual including operation, service and parts. The S03-E is an electric compact slab scissor lift. Manual covers fault indicator readout system, alarm codes on LED display, troubleshooting procedures, hydraulic system specifications, and maintenance schedules. Dingli's S-series uses same DL-00000693 controller family as JCPT-series with identical fault code numbering: codes 10 (ECU), 20 (TM1), 30 (PCU), 31/32 (CPU faults), 54 (pressure sensor), 57 (overload), 58 (pothole), 59 (high limit), 69 (power relay sleep). ManualsLib full PDF download.",
+    "brands_mentioned": [
+      "Dingli"
+    ],
+    "equipment_model": "Dingli S03-E",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1533429/Jlg-1932rs-6rs.html?page=121",
+    "title": "JLG 1932RS/6RS DTC Introduction & Fault Code Table - Service Manual Page 121 | ManualsLib",
+    "content_summary": "JLG 1932RS/6RS scissor lift Service and Maintenance Manual page 121: Introduction to System Fault/DTC Indication section. Documents the ADE (Advanced Digital Engine) control system DTC table for the 1932RS platform-control fault codes. X-connector references for wiring diagnostics. Flash codes are first two digits of full DTC. Fault codes cover: drive system (traction motor, speed sensors), lift system (pump motor, pressure switch), platform leveling (tilt/grade sensor), safety systems (pothole protection, overload). DTC format: flash code X-X where first digit = system group, second = specific fault. JLG analyzer (p/n 1001249695) required for full DTC read.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "JLG 1932RS",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://techpub.skyjack.com/document?type=manual&id=7122",
+    "title": "Skyjack Technical Publication #7122 | Official Skyjack Tech Pub Portal",
+    "content_summary": "Official Skyjack technical publication document #7122 from techpub.skyjack.com. The Skyjack techpub portal (reliability 1.0) hosts official service bulletins, service manuals, and operator manuals for all Skyjack models including SJ45AJ, SJ46AJ+, SJ63AJ, and scissor series. GP102 module LED error codes: codes are read via flashes on GP102 module LED. Common codes: OVRLOAD (overload functions disabled), TILT (machine tilt detected), DRIVE FAULT (drive system fault), HWFS STALL D (drive stall fault), ARMGUARD ACTIVE. Code reset procedure: GP module reset via 5-second hold of enable button. Doc #7122 covers specific articulating boom lift model fault procedures.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "Skyjack articulating boom",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.sunflowerrental.com/files/Skyjack_SJ46AJ_Operating_Manual.pdf",
+    "title": "Skyjack SJ46AJ Articulating Boom Lift Operating Manual | Sunflower Rental",
+    "content_summary": "Skyjack SJ46AJ articulating boom lift operating manual PDF. The SJ46AJ is a 15.72m (51.6ft) working height diesel articulating boom lift. Manual covers: GP102 control module LED fault code display, fault code quick reference chart, pre-operation inspection checklist, emergency lowering procedures, daily maintenance. LED codes displayed on GP102: fault codes read as flash sequences. SJ46AJ uses Deutz D2.9L4 engine; engine fault codes use J1939/SPN-FMI format via CAN bus. Platform controls: enable switch, drive/lift joysticks, emergency stop. Ground controls: key switch, emergency down. Fault diagnosis flowchart included.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "Skyjack SJ46AJ",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1292437/Skyjack-Sj-3220.html?page=117",
+    "title": "LED Error Codes Quick Reference Chart - Skyjack SJ 3220 Service Manual Page 117 | ManualsLib",
+    "content_summary": "Skyjack SJ 3220 scissor lift service manual page 117: complete LED Error Codes Quick Reference Chart for GP102 module. Full table of LED flash code sequences with fault descriptions. Codes include: 1 flash (IN GROUND MODE), 2 flashes (OVERLOAD FUNCTIONS DISABLED), 3 flashes (ARMGUARD ACTIVE), 4 flashes (IDLE TIMEOUT ACTIVE), 5 flashes (DRIVE/LIFT INPUTS FAULTY), 6 flashes (P3-4 SHORT TO SUPPLY), 7 flashes (HWFS STALL), 8 flashes (TILT), 9 flashes (DRIVE FAULT). GP102 reports one error at a time. Reset procedure: clear fault condition then cycle power. SJ 3220 is a 6.0m (20ft) DC electric scissor lift with GP102 load sensing system.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "Skyjack SJ 3220",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualslib.com/manual/3795767/Skyjack-Sjiii-3215.html?page=129",
+    "title": "GP-108 LED Error Codes Quick Reference Chart - Skyjack SJIII 3215 Service Manual Page 129 | ManualsLib",
+    "content_summary": "Skyjack SJIII 3215 compact series service manual page 129: GP-108 module LED Error Codes Quick Reference Chart. The SJIII 3215 uses the newer GP-108 control module (successor to GP102). GP-108 LED fault codes: 1 flash (GROUND MODE ACTIVE), 2 flashes (OVERLOAD DISABLED), 3 flashes (ARMGUARD ACTIVE), 4 flashes (IDLE TIMEOUT), 5 flashes (DRIVE/LIFT INPUT FAULT), 6 flashes (SHORT CIRCUIT P3-4), 7 flashes (HWFS STALL DETECT), 8 flashes (MACHINE TILT), 9 flashes (DRIVE FAULT), 10 flashes (LIFT FAULT), 11 flashes (CALIBRATION REQUIRED). GP-108 upgrade improves diagnostics over GP102: stores last fault, dual sensor inputs, CAN bus compatibility. SJIII 3215 is 4.7m (15.4ft) compact electric scissor.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "Skyjack SJIII 3215",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://manuals.genielift.com/parts%20and%20service%20manuals/data/Service/Scissors/72863.pdf",
+    "title": "Genie GS-3390 GS-4390 GS-5390 Service and Repair Manual #72863 | Official Genie",
+    "content_summary": "Official Genie service and repair manual #72863 covering GS-3390, GS-4390, and GS-5390 scissor lifts. The GS-5390 is a 15.9m (52ft) rough-terrain diesel scissor. Manual includes complete fault code chart for all three models using Genie SmartLink Diagnostic System (GSDS). DTC codes by category: H-codes (hydraulic), P-codes (power/battery), U-codes (user interface), F-codes (sensors/switches), C-codes (controls). OIC codes: LL (off level), PHS (pothole not deployed). Fault retrieval: platform display shows DTC alphanumeric code; ground control (GCON) also displays codes. 272 total DTCs. GS-5390 engine codes via Deutz EMR2/J1939 (SPN/FMI). Hydraulic system: 3000 PSI system pressure, dual-cylinder scissors, 4WD drive motors.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Genie GS-5390 / GS-4390 / GS-3390",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://manuals.genielift.com/parts%20and%20service%20manuals/data/Service/Scissors/1272222.pdf",
+    "title": "Genie GS-3384 Service and Repair Manual #1272222 | Official Genie",
+    "content_summary": "Official Genie service and repair manual #1272222 for the GS-3384 RT scissor lift (GS-3384 series from GS8413-42181). The GS-3384 is a rough-terrain electric scissor lift with foam-filled tires. Manual includes complete GSDS DTC and OIC code charts, hydraulic schematic, electrical schematics, and troubleshooting flowcharts. Fault code format: alphanumeric displayed on platform and ground control displays. GSDS fault retrieval procedure: from ground control, press and hold button to retrieve stored fault codes in sequence. Last 10 fault codes stored in system memory. Code categories same as GS-3246/GS-2669: H (hydraulic), P (power), U (user interface), F (switches/sensors), C (controls). Maintenance intervals: 250h/500h/1000h.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Genie GS-3384",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.genielift.com/docs/default-source/tech-tips/slab-and-rough-terrain-scissors/last_ten_fault_codes_gs_slab_gen_5.pdf",
+    "title": "SERVICE CALL: Viewing Genie DC Slab Scissors Stored Fault Codes (GEN 5 ECU) | Genie Tech Tip",
+    "content_summary": "Official Genie tech tip: How to view stored last-10 fault codes on Genie DC slab scissor lifts with GEN 5 ECU control system. Procedure: (1) Turn key to ground mode. (2) Press and hold function enable + lift up buttons simultaneously for 5 seconds. (3) Ground control display shows stored DTC codes sequentially — up to last 10 faults. (4) Press lift up/down to scroll through fault history. (5) To clear fault memory: repeat procedure with drive reverse held. Applies to GS-1932, GS-2632, GS-2646, GS-3246, GS-2669, GS-3369 DC slab scissors with GEN 5 ECU. GEN 5 ECU fault codes stored in non-volatile memory — survive power cycling. Technician SERVICE CALL document with step-by-step screenshots.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Genie GS-1932 / GS-2632 / GS-3246 / GS-2669 / GS-3369",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.hindleyelectronics.com/support/ecu/grfaultcode.pdf",
+    "title": "Genie ECU Fault Codes GR Series | Hindley Electronics",
+    "content_summary": "Genie GR series aerial work platform ECU fault codes reference document from Hindley Electronics (authorized Genie parts supplier). The GR series includes GR-20 and GR-26 vertical mast lifts. Fault code format for GR series ECU: numeric codes displayed on ECU status LED or digital display. Common GR series faults: drive fault (motor over-current), lift fault (actuator fault), tilt fault (level sensor), charger fault (battery charge system), emergency stop active, overload detected. GR series uses different ECU architecture from GS scissor series (simpler single-motor control). Fault codes compared to GEN 5: GR series uses 2-digit codes vs alphanumeric GSDS codes on scissors. Troubleshooting: check battery voltage first (GR-20 requires 24V minimum).",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Genie GR-20 / GR-26",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.justanswer.com/construction-and-road-equipment/gztod-2002-genie-gs-5390-scissor-lift-won-t-move-all.html",
+    "title": "Genie GS-5390 Scissor Lift Won't Move - Fault Diagnosis | JustAnswer",
+    "content_summary": "JustAnswer expert diagnosis for 2002 Genie GS-5390 scissor lift that won't move. Technician diagnosis: (1) Check main power fuses and battery voltage — GS-5390 requires minimum 48V DC (four 12V batteries). (2) Check hydraulic oil level — low level prevents drive and lift functions. (3) Check for displayed fault codes on platform control display. (4) Test pothole protection bars — both must be fully retracted for drive function. (5) Inspect drive motor brushes — 2002 era GS-5390 uses brush-type motors subject to wear. (6) Check tilt sensor calibration — fault code LL (off level) blocks all movement on slopes >3°. Common fixes: replace worn drive motor brushes, charge/replace batteries, reset pothole bars. GS-5390 is 52ft rough-terrain DC electric scissor.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Genie GS-5390",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://csapps.jlg.com/OnlineManuals/Manuals/JLG/JLG%20Boom%20Lifts/600S_600SJ_660SJ/Service%20manuals/SN%200300171769%20to%200300235167/Service_3121298_04-10-18_Global_English.pdf",
+    "title": "JLG 600S 660SJ Service and Maintenance Manual #3121298 (SN 0300171769-0300235167) | Official JLG",
+    "content_summary": "Official JLG service and maintenance manual #3121298 for models 600S and 660SJ telescopic boom lifts, serial numbers 0300171769 to 0300235167 (2018 edition). Covers complete fault code listing section. The 660SJ reaches 20.1m (66ft) working height. Fault codes include ADE controller DTCs: 0001 (everything OK), 0010 (running at cutback — out of transport position), 0011 (footswitch open), and 50+ additional codes covering: engine faults (via Deutz/Perkins EMR), boom angle sensor out of range, telescope position sensor fault, turntable rotation sensor fault, outrigger sensor fault, jib angle fault, platform overload, E-stop activated, CAN bus communication error. Fault code flash sequence format: X-X (e.g., 3-3 = short circuit in driver). JLG Analyzer p/n 1001249695 for full DTC access.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "JLG 660SJ / JLG 600S",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://csapps.jlg.com/OnlineManuals/Manuals/JLG/JLG%20Boom%20Lifts/600SC_600SJC_660SJC/Service%20manuals/SN%200300074785%20to%200300174702/Service_3121157_11-22-16_Global_English.pdf",
+    "title": "JLG 600SC 660SJC Service and Maintenance Manual #3121157 (SN 0300074785-0300174702) | Official JLG",
+    "content_summary": "Official JLG service and maintenance manual #3121157 for models 600SC and 660SJC (C = HC3 high-capacity) telescopic boom lifts, serial numbers 0300074785 to 0300174702. The 660SJC is the high-capacity variant of the 660SJ with 454kg (1000lb) platform capacity. Fault code system identical to standard 660SJ: ADE controller with flash codes and full DTC table. Additional codes specific to HC3 variant: platform weight sensor calibration, second cylinder position sensor, extended jib fault codes. Manual includes 3D hydraulic schematics, electrical schematics, CAN bus network diagram, and complete parts reference. Fault code retrieval: press and hold platform E-stop + drive forward simultaneously for 3 seconds to enter diagnostic mode.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "JLG 660SJC / JLG 600SC",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://csapps.jlg.com/OnlineManuals/Manuals/JLG/JLG%20Boom%20Lifts/600SC_600SJC_660SJC/Service%20manuals/SN%200300174703%20to%200300236298/Service_3121607_11-08-16_Global_English.pdf",
+    "title": "JLG 600SC 660SJC Service and Maintenance Manual #3121607 (SN 0300174703-0300236298) | Official JLG",
+    "content_summary": "Official JLG service and maintenance manual #3121607 for 600SC and 660SJC boom lifts, serial numbers 0300174703 to 0300236298 (updated edition). Updated fault code table with additional CAN bus diagnostic codes for revised ADE system. Covers fault isolation procedures for: drive system (main contactor, direction contactors, traction motors), lift/telescope hydraulic system (main pump motor, proportional valve solenoids, cylinder position transducers), turntable rotation (brake release solenoid, rotation motor, proximity switch), safety systems (angle sensors, weight management system, wind sensor on SJC). DTC format includes priority levels: Priority 1 (machine stops immediately), Priority 2 (restricted operation), Priority 3 (warning only). Wiring harness diagrams for all X-connectors.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "JLG 660SJC / JLG 600SC",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.manualsdir.com/manuals/551674/jlg-660sj-service-manual-600s-service-manual.html?page=285",
+    "title": "JLG 660SJ / 600S Service Manual Fault Code List - Page 285 | ManualsDir",
+    "content_summary": "JLG 660SJ and 600S boom lift service manual fault code list at page 285 (ManualsDir). Contains complete fault code listing section -39 with DTC table. Fault codes documented include: code 0010 (RUNNING AT CUTBACK — OUT OF TRANSPORT POSITION: boom/jib not fully retracted or stowed for transport, cutback speed active), code 0011 (FSW OPEN: footswitch not pressed, operator not confirmed in platform), code 0012 (DRIVE ENABLED — AT MAX SPEED: informational, not a fault), code 0013 (DRIVE CUTBACK — BOOM ELEVATED: drive speed reduced because boom is elevated above cutback threshold), and 35+ additional codes. Flash code format: first digit = control system area, second digit = specific fault within that area. Reset procedure: lower all functions, engage/disengage E-stop.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "JLG 660SJ / JLG 600S",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.scribd.com/document/432470731/JLG-600S-660SJ-Service-Manual",
+    "title": "JLG 600S & 660SJ Service Manual | Scribd",
+    "content_summary": "JLG 600S and 660SJ telescopic boom lift service and maintenance manual on Scribd (scanned PDF). Contains complete ADE control system fault code table, hydraulic circuit diagrams, electrical schematics, and repair procedures. The JLG 660SJ is a 20m (66ft) telescopic boom lift with Deutz TCD3.6/4.1L engine or Perkins 404F-22 engine. Key fault codes documented in this manual: 3-3 (SHORT CIRCUIT IN DRIVER — most common wiring fault), 4-4 (OPEN CIRCUIT IN DRIVER), 5-5 (DRIVER OVER TEMPERATURE), 6-6 (CONTROLLER POWER SUPPLY FAULT), 7-7 (CAN BUS COMMUNICATION FAULT), 8-8 (PERSONALITY MODULE FAULT), 9-9 (POWER MODULE FAILURE — PERSONALITY RANGE ERROR). Service procedures include: controller calibration, load cell replacement, angle sensor adjustment. Also covers 600S straight-boom variant.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "JLG 660SJ / JLG 600S",
+    "topic": "fault_codes",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://freecranespecs.com/Snorkel-ATB60(1).pdf",
+    "title": "Snorkel ATB60 Articulating Telescoping Boom Lift Manual | FreeCraneSpecs",
+    "content_summary": "Snorkel ATB60 articulating telescoping boom lift (60ft / 18.3m working height) manual from FreeCraneSpecs. The ATB60 is a diesel-powered articulating boom lift. Manual covers fault code system for the ATB60: fault codes use similar numeric system as Snorkel scissor lifts — codes 01-39 indicate controller/sensor faults (reset by cycling power), codes 51-69 indicate component failure requiring replacement. Common ATB60 fault codes: 01 (E-stop active), 02 (platform E-stop), 05 (tilt sensor fault), 10 (drive fault), 11 (lift fault), 12 (telescope fault), 15 (rotation fault), 20 (jib fault). Hydraulic system: load-sensing variable displacement pump, proportional valve block. Engine: Perkins 403D-11. Drive system: 4WD hydrostatic with parking brake.",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "Snorkel ATB60",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.ahernaustralia.com.au/wp-content/themes/xtreme-manufacturing/manuals/operation/SR2770.pdf",
+    "title": "Snorkel SR2770 Rough Terrain Scissor Lift Operator Manual | Ahern Australia",
+    "content_summary": "Snorkel SR2770 rough-terrain scissor lift operator's manual from Ahern Australia (authorized dealer). The SR2770 is a 27ft (8.2m) working height diesel RT scissor lift with 4WD. Manual covers: fault indicator LEDs on platform and ground control, fault code display system, emergency descent procedure, daily inspection checklist, and basic troubleshooting. Fault indicators: OVERLOAD LED (red), DRIVE FAULT LED (amber), LIFT FAULT LED (amber), LOW FUEL indicator. Fault reset: cycle key switch. Hydraulic specs: 2500 PSI maximum system pressure, 5.3L (1.4 gal) reservoir. Engine: Kubota D902 diesel. Drive system: hydrostatic 4WD, 40% grade capability. Pothole protection: automatic deployment on raise, manual reset required on obstruction.",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "Snorkel SR2770",
+    "topic": "maintenance",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualslib.com/brand/snorkel/boom-lifts.html",
+    "title": "Snorkel Boom Lifts User Manuals Download Index | ManualsLib",
+    "content_summary": "ManualsLib comprehensive index of all Snorkel boom lift models with downloadable manuals. Index covers: Snorkel SB-series boom lifts (SB10J, SB15J, SB17J, SB20J), Snorkel S-series and SL-series, Snorkel ATB articulating telescoping booms (ATB40, ATB50, ATB60), and Snorkel A-series articulating booms (A38E, A46JE, A62JE). For each model: Operator's Manual, Repair Parts Manual, and Service Manual available. The SB15J is a 15m (49ft) self-propelled DC electric boom lift. SB10J is 10m electric vertical boom. Fault code systems for SB-series: same format as scissor lifts (codes 01-39 reset/controller, 51-69 replace/component). Manual download links for SB10J service manual, SB15J operator manual.",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "Snorkel SB15J / SB10J / ATB60",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.scribd.com/document/721230270/Snorkel-Operator-s-Manual",
+    "title": "Snorkel Operator's Manual (Multiple Models) | Scribd",
+    "content_summary": "Snorkel multi-model operator's manual on Scribd covering operation, safety and basic maintenance for Snorkel scissor and boom lifts. Documents the Snorkel control system fault indicator readout: fault codes displayed on LED panel at ground control station. Code categories: 01-09 (E-stop/safety circuit faults), 10-19 (drive system faults), 20-29 (lift system faults), 30-39 (controller/communication faults), 51-59 (sensor/switch failures requiring replacement), 60-69 (motor/solenoid failures). Fault 01: Main E-stop activated — check/release E-stops. Fault 05: Platform tilt/angle fault — return to level ground. Fault 10: Drive fault — check drive motor connections and brushes (DC models) or hydrostatic circuit (RT models). Fault 20: Lift fault — check lift cylinder and pump. Fault 30: Controller error — cycle power; if persistent, replace controller.",
+    "brands_mentioned": [
+      "Snorkel"
+    ],
+    "equipment_model": "Snorkel",
+    "topic": "fault_codes",
+    "reliability_score": 0.4
   }
 ]

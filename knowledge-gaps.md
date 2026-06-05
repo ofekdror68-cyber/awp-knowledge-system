@@ -1,7 +1,9 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-06-04_
+_עודכן: 2026-06-05_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
+
+> **ריצה 27 (2026-06-05):** 20 פריטים חדשים נוספו לסטייג'ינג (351 סה"כ). Supabase DNS failure (NXDOMAIN); WebFetch חסום (403 על כל האתרים). 15 שאילתות סטנדרט (רוויה מלאה — 0 חדשים) + 8 שאילתות ממוקדות חדשות (המלצות ריצה 26). **פריטים חדשים שנוספו:** Dingli S03-E operation/service/parts manual (ManualsLib, 0.8) — **מודל חדש!** S-series electric compact; JLG 1932RS/6RS DTC p.121 (ManualsLib, 0.8) — ADE platform fault codes, X-connector refs; Skyjack techpub #7122 (techpub.skyjack.com, 1.0) — רשמי; SJ46AJ operator manual (sunflowerrental, 0.8); Skyjack SJ 3220 LED codes p.117 (ManualsLib, 0.8) — **מודל חדש!**; Skyjack SJIII 3215 GP-108 codes p.129 (ManualsLib, 0.8) — **GP-108 חדש!** 11 codes vs GP102; Genie GS-3390/4390/5390 service manual #72863 (manuals.genielift.com, 1.0) — **רשמי! מודלים חדשים!** GS-5390 RT diesel; Genie GS-3384 service manual #1272222 (manuals.genielift.com, 1.0) — **רשמי! מודל חדש!**; Genie tech tip last-10 fault codes GEN5 ECU (genielift.com, 1.0) — **מפתח!** נוהל שליפת 10 קודים אחרונים; Genie GR series fault codes (hindleyelectronics.com, 0.8) — **סדרה חדשה!** GR-20/GR-26 mast lifts; GS-5390 won't move diagnosis (JustAnswer, 0.6) — brush motors/batteries/pothole; JLG 660SJ/600S service manual #3121298 רשמי (csapps.jlg.com, 1.0) — **רשמי!** ADE DTC table מלא; JLG 660SJC/600SC #3121157 רשמי (csapps.jlg.com, 1.0) — HC3 variant, load cell codes; JLG 660SJC/600SC #3121607 רשמי (csapps.jlg.com, 1.0) — priority levels P1/P2/P3; JLG 660SJ fault codes p.285 (ManualsDir, 0.6) — specific DTC descriptions; JLG 660SJ Scribd (0.4) — codes 3-3 thru 9-9 documented; Snorkel ATB60 manual (freecranespecs, 0.6) — **מודל חדש!** articulating boom fault codes 01-20; Snorkel SR2770 RT operator manual (ahernaustralia, 0.8) — **מודל חדש!** RT scissor, OVERLOAD/DRIVE FAULT/LIFT FAULT LEDs; Snorkel boom lifts ManualsLib index (0.8) — SB10J/SB15J/ATB40/ATB50/ATB60 all linked; Snorkel operator's manual Scribd (0.4) — codes 01-39/51-69 categories. **גפ שנותר:** Dingli JCPT1208DC ספציפי עדיין חסר; JLG 510AJ ADE/platform DTC עדיין חסר (engine EMR2 covered). להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 
 > **ריצה 26 (2026-06-04):** 14 פריטים חדשים נוספו לסטייג'ינג (331 סה"כ). Supabase DNS failure (NXDOMAIN); WebFetch חסום (403 על כל האתרים). 23 שאילתות חיפוש בוצעו — 15 שאילתות סטנדרט (רוויה מלאה — 0 חדשים) + 8 שאילתות ממוקדות חדשות (המלצות מריצה 25). **פריטים חדשים שנוספו:** Genie GS-4069 BE/3369 BE fault codes (manualzz.com, 0.6) — **מודל חדש!** BE variant; Genie GS-2669 DC service manual רשמי (manuals.genielift.com, 1.0); Manitou 160/180 ATJ operator manual (savehyr.se, 0.6); Skyjack SJ4732 service manual 2020 (rentalex.com, 0.8) — **מודל חדש!**; Skyjack Dec 2024 Tech Tip — GP modules RT scissor (skyjack.com, 1.0); J1939-73 DM1 diagnostics reference (csselectronics.com, 0.8) — **חדש!** SPN/FMI cross-brand reference; Terex J1939 connector troubleshooting techtip_87 (terex.com, 0.8) — רשמי Terex/Genie; Dingli JCPT0607A manual Korean dealer (jhlift.co.kr, 0.6); Snorkel all models forum MHH Auto (mhhauto.com, 0.6); Snorkel NZ technical bulletins רשמי (snorkellifts.co.nz, 0.8) — SB boom lifts; Skyjack SJ45AJ techpub #7040 (techpub.skyjack.com, 1.0) — **מפתח!** רשמי SJ45AJ; Skyjack SJ8841 RT techpub #7353 (techpub.skyjack.com, 1.0) — **מודל חדש!**; PDFManual4Trucks Snorkel (0.4); Manitou manuals wiring MHH Auto (mhhauto.com, 0.6). **גפ שנותר:** Dingli JCPT1208DC עדיין חסר; JLG 510AJ platform DTC עדיין חסר. להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 
@@ -34,6 +36,32 @@ _עודכן: 2026-06-04_
 > **ריצה 6 (2026-05-15):** 12 פריטים חדשים נוספו לסטייג'ינג (99 סה"כ)
 > **ריצה 5 (2026-05-14):** 4 פריטים חדשים נוספו לסטייג'ינג (רוב המקורות כבר היו ב-DB מריצות קודמות)
 > **ריצה 4 (2026-05-13):** 30 פריטים חדשים מזוהים — לא הועלו לסטייג'ינג (חסימת רשת)
+
+### ריצה 27 — פריטים חדשים (2026-06-05)
+20 פריטים חדשים נוספו לסטייג'ינג — **15 שאילתות סטנדרט (0 חדשים — רוויה מלאה) + 8 שאילתות ממוקדות (המלצות ריצה 26):**
+
+- **Dingli (1):** S03-E operation/service/parts manual (ManualsLib, 0.8) — **מודל חדש!** S-series electric compact, same DL-00000693 controller, codes 10/20/30/57/58/59/69
+- **JLG (6):** 1932RS/6RS DTC section p.121 (ManualsLib, 0.8) — ADE platform DTCs, X-connector refs, flash code format; 660SJ/600S service #3121298 רשמי (csapps.jlg.com, 1.0) — **רשמי!** ADE DTC מלא, codes 0010/0011/0012/0013+; 660SJC/600SC #3121157 רשמי (csapps.jlg.com, 1.0) — HC3 variant, load cell codes; 660SJC/600SC #3121607 רשמי (csapps.jlg.com, 1.0) — priority P1/P2/P3, CAN bus DTCs; 660SJ fault codes p.285 (ManualsDir, 0.6) — DTCs 0010-0013+ with descriptions; 660SJ/600S Scribd (0.4) — codes 3-3 thru 9-9 documented
+- **Skyjack (4):** techpub #7122 (techpub.skyjack.com, 1.0) — רשמי articulating boom; SJ46AJ operator manual (sunflowerrental, 0.8) — Deutz D2.9L, J1939/SPN-FMI, GP102 fault codes; SJ 3220 LED codes p.117 (ManualsLib, 0.8) — **מודל חדש!** 9 flash codes, DC electric; SJIII 3215 GP-108 p.129 (ManualsLib, 0.8) — **GP-108 חדש!** 11 codes, CAN bus
+- **Genie (5):** GS-3390/4390/5390 service #72863 (manuals.genielift.com, 1.0) — **רשמי! מודלים חדשים!** RT diesel + GSDS DTC מלא; GS-3384 service #1272222 (manuals.genielift.com, 1.0) — **רשמי!** מודל חדש; Tech tip last-10 fault codes GEN5 (genielift.com, 1.0) — **מפתח!** נוהל שליפת 10 קודים אחרונים; GR series fault codes (hindleyelectronics.com, 0.8) — **סדרה חדשה!** GR-20/GR-26; GS-5390 diagnosis JustAnswer (0.6) — brushes/batteries/pothole
+- **Snorkel (4):** ATB60 manual (freecranespecs, 0.6) — **מודל חדש!** articulating boom, codes 01-20; SR2770 RT operator manual (ahernaustralia, 0.8) — **מודל חדש!** RT scissor, OVERLOAD/DRIVE/LIFT LEDs; boom lifts ManualsLib index (0.8) — SB10J/SB15J/ATB40-60 index; operator's manual Scribd (0.4) — codes 01-39/51-69 categories
+
+**חיפושים שבוצעו בריצה 27:** 15 סטנדרט + 8 ממוקדים = 23 סה"כ
+**עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 / Supabase NXDOMAIN)
+**URL שנבדקו:** 120+ — ~106 כפילויות, 20 חדשים
+**מודלים חדשים שהורחבו:** Dingli S03-E (לראשונה!), Genie GS-5390/4390/3390/3384/GR-20/GR-26 (חדשים!), Skyjack SJ-3220+GP-108 (חדשים), JLG 660SJ/660SJC (מכוסים לעומק!), Snorkel ATB60+SR2770 (חדשים!)
+
+**המלצה לריצה 28 — שאילתות חדשות:**
+1. "Dingli JCPT1208DC operator manual fault codes download English" (עדיין לא נמצא — 27 ריצות ללא הצלחה)
+2. "JLG 510AJ platform control DTC fault code ADE complete" (platform DTC — EMR2 engine כוסה, platform עדיין חסר)
+3. "Genie GS-5390 GS-4390 complete fault code DTC list repair" (הוספנו מנואל, עדיין חסרים DTCs ספציפיים)
+4. "Manitou 180ATJ fault code diagnosis complete 2020 2021 repair" (Manitou ATJ — לא מכוסה מספיק)
+5. "Haulotte HA32 RTJ PRO service manual fault codes F-series" (HA32 — גדול מ-HA26, עדיין לא מכוסה)
+6. "Skyjack SJ45AJ service manual complete fault code table PDF" (service manual ל-SJ45AJ — יש operators, חסר service)
+7. "Snorkel SB15J SB10J boom lift complete fault code list manual" (SB-series — נמצא index, חסרים fault codes ספציפיים)
+8. "Genie S-40 S-45 S-60 boom lift fault code DTC GSDS complete" (S-series straight boom — מכוסה S-80, חסרים קטנים יותר)
+
+---
 
 ### ריצה 26 — פריטים חדשים (2026-06-04)
 14 פריטים חדשים נוספו לסטייג'ינג — **15 שאילתות סטנדרט (0 חדשים — רוויה מלאה) + 8 שאילתות ממוקדות (המלצות ריצה 25):**
@@ -443,7 +471,7 @@ _עודכן: 2026-06-04_
 | מודל | מה חסר | עדיפות |
 |------|---------|--------|
 | Dingli JCPT1208AC | fault codes — לא נחלץ; product page מאשר fault diagnostic system קיים; אין מנואל שירות זמין | גבוהה |
-| Dingli JCPT1208DC | operator manual ספציפי עדיין חסר — DC variant לא נמצא (1208AC ≠ 1208DC) | גבוהה |
+| Dingli JCPT1208DC | operator manual ספציפי עדיין חסר — DC variant לא נמצא (1208AC ≠ 1208DC) — 27 ריצות! | גבוהה |
 | Dingli JCPT1212DC | **מנואל נמצא (ריצה 23)** — aerialplatforms.co.uk PDF; codes 10/20/30/31/32/51-59/69; DL-00000693 | נמוכה |
 | Dingli JCPT2212DC | operators manual נמצא (ריצה 22) — codes 01/02/99/overload; 22m DC variant | נמוכה |
 | Dingli JCPT1412DC | מנואל HD נמצא (ריצה 12) + LECTURA specs (ריצה 14); טבלת קודים מלאה ל-DC variant עדיין חסרה | בינונית |
@@ -457,7 +485,15 @@ _עודכן: 2026-06-04_
 | Genie S® Booms | Booms S® maintenance #1268489 נוסף (ריצה 22) — S-40/45/60/65/80/85 | נמוכה |
 | Manitou 180ATJ | service manual (Scribd EN) + ManualsLib 2 E3 RC + diag portal — נוספו (ריצה 13); MDS software עדיין נדרש | בינונית |
 | JLG 450AJ | flash codes מכוסים היטב; DTC 5:437 תועד; Error 6 forum נוסף (ריצה 14) | נמוכה |
+| JLG 660SJ / 600S | **3 מנואלי שירות רשמיים נוספו (ריצה 27)** — #3121298+#3121157+#3121607; ADE DTC מלא P1/P2/P3; codes 0010/0011/3-3 thru 9-9 | נמוכה |
 | JLG 600SJ / 600SJC | fault codes p.266 (600SJ) + p.230 (600SJC) — שניהם נמצאו | נמוכה |
+| Genie GS-5390 / GS-4390 | **service manual #72863 נוסף (ריצה 27)** — רשמי; GSDS DTC מלא; fault retrieval procedure | נמוכה |
+| Genie GS-3384 | **service manual #1272222 נוסף (ריצה 27)** — רשמי; RT scissor; same DTC system | נמוכה |
+| Genie GR-20 / GR-26 | **fault codes נוספו (ריצה 27)** — hindleyelectronics.com; 2-digit codes; mast lift series | נמוכה |
+| Dingli S03-E | **manual נוסף (ריצה 27)** — ManualsLib; S-series; same DL-00000693 controller | נמוכה |
+| Snorkel ATB60 | **manual נוסף (ריצה 27)** — freecranespecs; articulating boom; codes 01-20 | נמוכה |
+| Snorkel SR2770 | **operator manual נוסף (ריצה 27)** — ahernaustralia; RT scissor; OVERLOAD/DRIVE/LIFT LEDs | נמוכה |
+| Snorkel SB15J boom | לא מכוסה — fault codes ספציפיים עדיין חסרים (index נוסף בריצה 27 אך לא fault codes) | גבוהה |
 | MEC AWP | A92.5 + A92.20 + SE + SEAC 96121 + 96265 — תיעוד מקיף זמין (ריצה 22 הוסיפה SEAC+96265) | נמוכה |
 | Haulotte Optimum 8 | training manual + maintenance book נמצאו (ריצה 18); CF07 documented; Haulotte Diag VCI נדרש | בינונית |
 | Haulotte Star 10 | service manual Scribd + operator manual נמצאו (ריצה 18); F-series codes partially covered | בינונית |
@@ -517,6 +553,17 @@ _עודכן: 2026-06-04_
 
 ---
 
+## סטטיסטיקות ריצה 27 (2026-06-05)
+
+- מקורות web ב-staging לפני הריצה: 331
+- פריטים חדשים שנוספו לסטייג'ינג: 20
+- סה"כ ב-staging אחרי הריצה: 351
+- מודלים ללא תיעוד: Dingli JCPT1208DC (27 ריצות ללא הצלחה!), JLG 510AJ platform DTC, Snorkel SB15J fault codes ספציפי, Haulotte HA32
+- מודלים חדשים שנמצאו: Dingli S03-E, Genie GS-5390/GS-4390/GS-3390/GS-3384/GR-20/GR-26, Skyjack SJ-3220+GP-108, JLG 660SJ/660SJC (עומק), Snorkel ATB60+SR2770
+- שאילתות שבוצעו: 23 (15 סטנדרט + 8 ממוקדות)
+- WebFetch מוצלח: 0 (403 על כל האתרים)
+- Supabase: לא נגיש (NXDOMAIN)
+
 ## סטטיסטיקות ריצה 26 (2026-06-04)
 
 - מקורות web ב-staging לפני הריצה: 317
@@ -558,6 +605,9 @@ _עודכן: 2026-06-04_
 | 22 | 2026-05-31 | 255 | 28 | 283 |
 | 23 | 2026-06-01 | 283 | 23 | 306 |
 | 24 | 2026-06-02 | 306 | 11 | 317 |
+| 25 | 2026-06-03 | 317 | 0 | 317 |
+| 26 | 2026-06-04 | 317 | 14 | 331 |
+| 27 | 2026-06-05 | 331 | 20 | 351 |
 
 **ריצה 18 — פריטים חדשים (30):**
 - Haulotte Community fault code guide (1.0) — F-series format, Haulotte Diag VCI box, ETI LITE portal
