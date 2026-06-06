@@ -3925,5 +3925,59 @@
     "equipment_model": "Snorkel",
     "topic": "fault_codes",
     "reliability_score": 0.4
+  },
+  {
+    "url": "https://support.gciron.com/hc/en-us/articles/10907953508628-666-Canbus-Failure-Engine-Controller",
+    "title": "666: Canbus Failure - Engine Controller – GCIron",
+    "content_summary": "JLG boom lift fault code 666: CAN bus Failure - Engine Controller. Appears on JLG boom lifts (660SJ, 860SJ, 600SJ series) when the engine controller loses CAN bus communication. The ECM detects it cannot communicate with the engine controller module. Symptoms: machine may not start, engine-dependent functions unavailable. Diagnosis: (1) Check CAN bus wiring continuity — CAN-H and CAN-L lines. (2) Verify 60Ω termination resistance between CAN-H and CAN-L at connector (two 120Ω terminators in parallel). (3) Check for damaged or shorted wiring in CAN harness. (4) Inspect engine controller module connectors. Reset: cycle power after repairs. If fault persists check engine controller module integrity. Related to JLG ADE/CANopen control system architecture on telescopic boom lifts.",
+    "brands_mentioned": ["JLG"],
+    "equipment_model": "JLG 660SJ/860SJ/600SJ",
+    "topic": "electrical",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.justanswer.com/medium-and-heavy-truck/g5klr-c023-machine-fault-gs-2632-trying-reset-it-happened.html",
+    "title": "Genie C023 Machine Model Fault: Troubleshooting and Resetting | JustAnswer",
+    "content_summary": "Genie GS-2632 fault code C023 — Machine Model Fault. An incorrect machine model has been programmed in the GCON or PCON ECM, or there is a controller compatibility issue. This code appears when a replacement controller from a different machine model is installed without proper reprogramming, or when ECM detects a model configuration mismatch. Symptoms: machine may not operate normally, control system shows fault. Solutions: (1) Disconnect batteries for 10-15 minutes to allow controllers to reboot and self-test — sometimes resolves transient C023. (2) If fault persists, the control module requires dealer programming with correct machine model configuration. (3) Verify any replaced GCON/PCON controller matches original machine specification. Do not install used controllers from different machine models without reprogramming. Related codes: C023 appears on GS-1932, GS-2632, GS-3246 with SmartLink GSDS system. Associated with C052 (tilt sensor not detected).",
+    "brands_mentioned": ["Genie"],
+    "equipment_model": "Genie GS-2632",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/jlg-4394rt-no-drive-forward-and-reverse.aspx?q=122973",
+    "title": "JLG 4394RT No Drive Forward and Reverse — Forkliftaction Forum",
+    "content_summary": "Forkliftaction troubleshooting discussion: JLG 4394RT rough-terrain scissor lift has no drive function in forward or reverse. The JLG 4394RT is an AWP rough-terrain scissor. Common causes discussed: (1) Tilt sensor — machine on slope beyond safe angle inhibits drive. (2) Pothole guard switches — bars not fully deployed or switches faulty. (3) Drive motor connections and contactors. (4) Height cut-out switch — elevated platform limits drive speed/enables drive cutout. (5) DTCs readable via JLG Analyzer. (6) Wiring harness damage between ground control and drive motors. Field technicians recommend checking hydraulic drive motor case drain, hydraulic pressure to drive motors, and control module drive enable signals before condemning motors or controllers.",
+    "brands_mentioned": ["JLG"],
+    "equipment_model": "JLG 4394RT",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/error-code-5-437.aspx?t=30568",
+    "title": "Error code 5:437 — Technical Troubleshooting | Forkliftaction",
+    "content_summary": "Forkliftaction technical troubleshooting forum thread on JLG fault code 5:437 from the JLG control system. JLG ADE-based machines use a numeric DTC format (system:code). Code group 5 relates to sensor/input faults on JLG boom lifts and scissors. Code 437 within group 5 indicates a specific sensor input fault. Full description requires JLG Analyzer connection. Diagnosis steps from forum experts: (1) Connect JLG Analyzer (p/n 1001249695) to read full DTC description and affected circuit. (2) Check corresponding sensor wiring, connectors, and sensor calibration. (3) Cycle E-stop to clear active code after sensor repair. Forum participants are aerial work platform technicians sharing diagnostic approaches for JLG equipment.",
+    "brands_mentioned": ["JLG"],
+    "equipment_model": "JLG boom lifts/scissors",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/lift-has-low-speed-but-does-not-have-high-speed.aspx?q=132577",
+    "title": "Scissor Lift Has Low Speed But Not High Speed — Forkliftaction Forum",
+    "content_summary": "Forkliftaction maintenance troubleshooting thread: aerial work platform scissor lift operates only at low drive speed and cannot engage high speed. Relevant to multiple AWP brands. Common causes discussed by technicians: (1) Height cut-out sensor — machine detects platform is elevated, inhibiting high speed drive for safety. (2) Speed selector switch fault — switch stuck in low-speed position or wiring open. (3) Drive motor controller issue — controller defaulting to low-speed mode. (4) Tilt sensor active — tilt detection forces low speed. (5) Load sensor — overload detection can restrict speed. Troubleshooting sequence: verify platform height, check speed switch continuity, inspect tilt sensor, read fault codes via diagnostic tool. Solution often found in switch, sensor, or wiring harness inspection.",
+    "brands_mentioned": ["JLG", "Genie", "Dingli"],
+    "equipment_model": null,
+    "topic": "fault_codes",
+    "reliability_score": 0.5
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/thread.aspx?trid=16467",
+    "title": "JLG 2032E2 Scissor Lift Troubleshooting — Forkliftaction Forum",
+    "content_summary": "Forkliftaction forum thread on JLG 2032E2 scissor lift troubleshooting. The JLG 2032E2 is an electric slab scissor AWP. Discussion covers common fault diagnosis for the E2 series including: drive and lift issues, pothole protection, E-stop and interlock troubleshooting, flash code reading, battery management and charging faults. The JLG 2032E2 uses flash codes similar to other JLG ES scissors. Technicians note that flash code system on E2 series: connect JLG Analyzer for full DTC read, cycle E-stop to reset codes. Common issues: pothole bar misalignment causing drive lockout, battery charge level faults inhibiting lift, wiring connector corrosion.",
+    "brands_mentioned": ["JLG"],
+    "equipment_model": "JLG 2032E2",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
   }
 ]

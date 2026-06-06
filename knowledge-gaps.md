@@ -1,7 +1,9 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-06-05_
+_עודכן: 2026-06-06_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
+
+> **ריצה 28 (2026-06-06):** 6 פריטים חדשים נוספו לסטייג'ינג (357 סה"כ). Supabase ECONNREFUSED; WebFetch חסום (403 על כל האתרים). 15 שאילתות סטנדרט (רוויה מלאה — 0 חדשים) + 7 שאילתות ממוקדות נוספות. **פריטים חדשים שנוספו:** GCIron fault code 666 CAN bus Failure - Engine Controller (gciron.com, 0.8) — **JLG 660SJ/860SJ CAN bus fault, diagnosis procedure, 60Ω termination test;** Genie C023 Machine Model Fault on GS-2632 (justanswer, 0.6) — battery disconnect 10-15min, dealer reprogramming, GCON/PCON mismatch; JLG 4394RT No Drive Forward/Reverse (forkliftaction, 0.6) — **AWP RT scissor, tilt/pothole/height-cutout diagnosis;** JLG error code 5:437 (forkliftaction t=30568, 0.6) — JLG ADE sensor input fault, Analyzer required; Scissor lift low speed / no high speed (forkliftaction, 0.5) — speed selector, tilt, height cut-out, load sensor; JLG 2032E2 troubleshooting (forkliftaction trid=16467, 0.6) — ES-series flash codes, pothole alignment, battery fault. **גפ שנותר:** Dingli JCPT1208DC עדיין לא נמצא (28 ריצות); JLG 510AJ platform DTC עדיין חסר. להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 
 > **ריצה 27 (2026-06-05):** 20 פריטים חדשים נוספו לסטייג'ינג (351 סה"כ). Supabase DNS failure (NXDOMAIN); WebFetch חסום (403 על כל האתרים). 15 שאילתות סטנדרט (רוויה מלאה — 0 חדשים) + 8 שאילתות ממוקדות חדשות (המלצות ריצה 26). **פריטים חדשים שנוספו:** Dingli S03-E operation/service/parts manual (ManualsLib, 0.8) — **מודל חדש!** S-series electric compact; JLG 1932RS/6RS DTC p.121 (ManualsLib, 0.8) — ADE platform fault codes, X-connector refs; Skyjack techpub #7122 (techpub.skyjack.com, 1.0) — רשמי; SJ46AJ operator manual (sunflowerrental, 0.8); Skyjack SJ 3220 LED codes p.117 (ManualsLib, 0.8) — **מודל חדש!**; Skyjack SJIII 3215 GP-108 codes p.129 (ManualsLib, 0.8) — **GP-108 חדש!** 11 codes vs GP102; Genie GS-3390/4390/5390 service manual #72863 (manuals.genielift.com, 1.0) — **רשמי! מודלים חדשים!** GS-5390 RT diesel; Genie GS-3384 service manual #1272222 (manuals.genielift.com, 1.0) — **רשמי! מודל חדש!**; Genie tech tip last-10 fault codes GEN5 ECU (genielift.com, 1.0) — **מפתח!** נוהל שליפת 10 קודים אחרונים; Genie GR series fault codes (hindleyelectronics.com, 0.8) — **סדרה חדשה!** GR-20/GR-26 mast lifts; GS-5390 won't move diagnosis (JustAnswer, 0.6) — brush motors/batteries/pothole; JLG 660SJ/600S service manual #3121298 רשמי (csapps.jlg.com, 1.0) — **רשמי!** ADE DTC table מלא; JLG 660SJC/600SC #3121157 רשמי (csapps.jlg.com, 1.0) — HC3 variant, load cell codes; JLG 660SJC/600SC #3121607 רשמי (csapps.jlg.com, 1.0) — priority levels P1/P2/P3; JLG 660SJ fault codes p.285 (ManualsDir, 0.6) — specific DTC descriptions; JLG 660SJ Scribd (0.4) — codes 3-3 thru 9-9 documented; Snorkel ATB60 manual (freecranespecs, 0.6) — **מודל חדש!** articulating boom fault codes 01-20; Snorkel SR2770 RT operator manual (ahernaustralia, 0.8) — **מודל חדש!** RT scissor, OVERLOAD/DRIVE FAULT/LIFT FAULT LEDs; Snorkel boom lifts ManualsLib index (0.8) — SB10J/SB15J/ATB40/ATB50/ATB60 all linked; Snorkel operator's manual Scribd (0.4) — codes 01-39/51-69 categories. **גפ שנותר:** Dingli JCPT1208DC ספציפי עדיין חסר; JLG 510AJ ADE/platform DTC עדיין חסר (engine EMR2 covered). להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 
@@ -36,6 +38,30 @@ _עודכן: 2026-06-05_
 > **ריצה 6 (2026-05-15):** 12 פריטים חדשים נוספו לסטייג'ינג (99 סה"כ)
 > **ריצה 5 (2026-05-14):** 4 פריטים חדשים נוספו לסטייג'ינג (רוב המקורות כבר היו ב-DB מריצות קודמות)
 > **ריצה 4 (2026-05-13):** 30 פריטים חדשים מזוהים — לא הועלו לסטייג'ינג (חסימת רשת)
+
+### ריצה 28 — פריטים חדשים (2026-06-06)
+6 פריטים חדשים נוספו לסטייג'ינג — **15 שאילתות סטנדרט (0 חדשים — רוויה מלאה) + 7 שאילתות ממוקדות:**
+
+- **JLG (4):** GCIron fault code 666 CAN bus Failure - Engine Controller (gciron.com, 0.8) — **מפתח!** JLG 660SJ/860SJ/600SJ: CAN-H/CAN-L continuity check, 60Ω termination resistance test (שני 120Ω terminators במקביל), engine controller module diagnosis; JLG 4394RT RT scissor No Drive fwd/rev (forkliftaction, 0.6) — **מודל חדש!** RT rough-terrain scissor, tilt/pothole/height-cutout/motor-contactor diagnosis sequence; JLG error code 5:437 forum thread (forkliftaction t=30568, 0.6) — ADE sensor input fault group, Analyzer required for full DTC; JLG 2032E2 electric slab scissor troubleshooting (forkliftaction trid=16467, 0.6) — **מודל חדש!** flash code system, pothole bar alignment, battery charge faults
+- **Genie (1):** C023 Machine Model Fault on GS-2632 (justanswer, 0.6) — מחלף GCON/PCON ללא תכנות → disconnect batteries 10-15min, dealer reprogramming required; related: C052 tilt sensor
+- **כללי AWP (1):** Scissor lift low speed / no high speed diagnosis (forkliftaction, 0.5) — speed selector switch, tilt sensor, height cut-out, overload sensor — cross-brand
+
+**חיפושים שבוצעו בריצה 28:** 15 סטנדרט + 7 ממוקדים = 22 סה"כ
+**עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 / Supabase ECONNREFUSED)
+**URL שנבדקו:** 130+ — ~124 כפילויות, 6 חדשים
+**מודלים חדשים שהורחבו:** JLG 4394RT RT scissor (לראשונה!), JLG 2032E2 (לראשונה!), CAN bus 666 code (תיעוד חדש לג'יי-אל-ג'י telescopic)
+
+**המלצה לריצה 29 — שאילתות חדשות (לא לחזור לסטנדרט):**
+1. "Dingli JCPT1208DC scissor lift operator manual download PDF English 2023 2024" (עדיין לא נמצא — 28 ריצות)
+2. "JLG 510AJ platform ADE DTC fault code complete list AWP boom lift" (platform DTC — EMR2 engine כוסה)
+3. "Genie GS-5390 GS-4390 fault code DTC list scissor lift repair" (גדולים מ-GS-3246 — לא מכוסים)
+4. "Haulotte HA32 RTJ PRO fault code service manual F-series" (HA32 — גדול מ-HA26)
+5. "Skyjack SJ45AJ complete service manual fault code GP102 DTC table" (service manual ספציפי)
+6. "Snorkel SB15J SB10J boom lift fault code manual EMS system" (SB-series booms)
+7. "Genie S-40 S-45 S-60 boom lift GSDS fault code DTC complete" (S-series straight booms)
+8. "JLG 600SJ 660SJ fault code ADE DTC complete list 2020 2021" (medium telescopic ספציפי)
+
+---
 
 ### ריצה 27 — פריטים חדשים (2026-06-05)
 20 פריטים חדשים נוספו לסטייג'ינג — **15 שאילתות סטנדרט (0 חדשים — רוויה מלאה) + 8 שאילתות ממוקדות (המלצות ריצה 26):**
