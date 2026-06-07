@@ -1,7 +1,9 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-06-06_
+_עודכן: 2026-06-07_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
+
+> **ריצה 29 (2026-06-07):** 6 פריטים חדשים נוספו לסטייג'ינג (363 סה"כ). Supabase ECONNREFUSED; WebFetch חסום (403 על כל האתרים). 15 שאילתות סטנדרט (רוויה מלאה — 0 חדשים) + 7 שאילתות ממוקדות (המלצות ריצה 28). **פריטים חדשים שנוספו:** Dingli JCPT HD-DC Parts Manual (Scribd, 0.6) — parts reference for JCPT1412HD/DC, JCPT1208HD/DC; JLG 510AJ Service Manual ManualsDir (0.6) — 402 pages, EMR2 fault codes + ADE DTC, hydraulics/electrical; JLG 510AJ Service Manual Scribd (0.6) — DTC 3-3/9-2/9-3, CAN bus, platform codes; **JLG CAN System Troubleshooting SI 1201 (csapps.jlg.com, 1.0) — רשמי מלא!** 60Ω test, node identification, fault code group 9 complete; Manitou 180ATJ Repair Manuals listing (diyrepairmanuals.com, 0.4) — operator+service+wiring+parts; JLG Direct Access FAQ alt-URL (jlg.com, 1.0) — ADE code format, groups 1-9 explained. **גפ שנותר:** Dingli JCPT1208DC עדיין לא נמצא (29 ריצות); JLG 510AJ platform DTC — נוספו מקורות, עדיין חסרה טבלה מלאה. להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 
 > **ריצה 28 (2026-06-06):** 6 פריטים חדשים נוספו לסטייג'ינג (357 סה"כ). Supabase ECONNREFUSED; WebFetch חסום (403 על כל האתרים). 15 שאילתות סטנדרט (רוויה מלאה — 0 חדשים) + 7 שאילתות ממוקדות נוספות. **פריטים חדשים שנוספו:** GCIron fault code 666 CAN bus Failure - Engine Controller (gciron.com, 0.8) — **JLG 660SJ/860SJ CAN bus fault, diagnosis procedure, 60Ω termination test;** Genie C023 Machine Model Fault on GS-2632 (justanswer, 0.6) — battery disconnect 10-15min, dealer reprogramming, GCON/PCON mismatch; JLG 4394RT No Drive Forward/Reverse (forkliftaction, 0.6) — **AWP RT scissor, tilt/pothole/height-cutout diagnosis;** JLG error code 5:437 (forkliftaction t=30568, 0.6) — JLG ADE sensor input fault, Analyzer required; Scissor lift low speed / no high speed (forkliftaction, 0.5) — speed selector, tilt, height cut-out, load sensor; JLG 2032E2 troubleshooting (forkliftaction trid=16467, 0.6) — ES-series flash codes, pothole alignment, battery fault. **גפ שנותר:** Dingli JCPT1208DC עדיין לא נמצא (28 ריצות); JLG 510AJ platform DTC עדיין חסר. להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 
@@ -38,6 +40,40 @@ _עודכן: 2026-06-06_
 > **ריצה 6 (2026-05-15):** 12 פריטים חדשים נוספו לסטייג'ינג (99 סה"כ)
 > **ריצה 5 (2026-05-14):** 4 פריטים חדשים נוספו לסטייג'ינג (רוב המקורות כבר היו ב-DB מריצות קודמות)
 > **ריצה 4 (2026-05-13):** 30 פריטים חדשים מזוהים — לא הועלו לסטייג'ינג (חסימת רשת)
+
+### ריצה 29 — פריטים חדשים (2026-06-07)
+6 פריטים חדשים נוספו לסטייג'ינג — **15 שאילתות סטנדרט (0 חדשים — רוויה מלאה) + 7 שאילתות ממוקדות (המלצות ריצה 28):**
+
+- **Dingli (1):** JCPT HD-DC Parts Manual (Scribd, 0.6) — חוברת חלקים לסדרת HD/DC כולל JCPT1412HD, JCPT1412DC, JCPT1208HD, JCPT1208DC; תרשימי חיווט DC, מעגלי הידראוליקה, זיהוי רכיבים
+- **JLG (5):**
+  - JLG 510AJ Service Manual — ManualsDir (0.6): 402 עמ' — EMR2 Deutz fault codes (36 codes: SPN 100/110/157/190/91), ADE control system DTC, הידראוליקה + חשמל; **מפתח לגפ הפתוח של 510AJ**
+  - JLG 510AJ Service Manual — Scribd (0.6): DTC 3-3 (sensor/control), 9-2 (EEprom), 9-3 (mux stream — check platform connector); CAN bus, platform controller
+  - **JLG CAN System SI 1201 (csapps.jlg.com, 1.0) — רשמי מלא!** Service Bulletin: ארכיטקטורת CAN, בדיקת 60Ω (CAN-H/CAN-L), זיהוי node כושל (platform/base/engine ECM), fault code group 9 codes 9-1 עד 9-5 מלאים — חל על 450AJ/510AJ/520AJ/860SJ
+  - Manitou 180ATJ Repair Manuals listing (diyrepairmanuals.com, 0.4): רשימת מסמכי מפעל — operator+service+wiring+parts; diagnostic via MDR/EasyDiag; Canopy control system SPN/FMI
+  - JLG Direct Access FAQ (jlg.com/en/direct-access, 1.0): פורמט DTC מוסבר: SYSTEM:CODE; groups 1-2 (drive), 3 (boom/lift), 5 (sensors), 7 (outputs), 9 (CAN); JLG Analyzer p/n 1001249695; Online Express knowledge base
+
+**מידע טכני מרכזי שנאסף בריצה 29 (מסיכומי WebSearch):**
+- **Dingli JCPT fault codes מאושרים:** 10 (ECU alarm), 20 (TM1 alarm), 30 (PCU alarm), 31 (PCU CPU0), 32 (PCU CPU1), 51 (ECU), 52 (PCU), 53 (TM1), 54 (pressure sensor), 57 (overload), 58 (pothole — move to level, inspect guards, reset, clean), 59 (high position limit), 69 (power relay sleep — restart, check battery, verify key switch); reset: E-stop push+pull
+- **Genie GS-3246 fault codes מאושרים:** E1 (emergency stop), E4 (low battery), E6 (tilt sensor), E12/E13 (control communication); codes 01-03 (ECM errors), 18 (pothole guard — check limit switches), 42 (fwd coil), 43 (rev coil), 45 (up coil), 46 (down coil), 47 (right coil), 52 (left coil), 53 (brake coil), 56 (low voltage); 272 DTCs + 6 OIC total
+- **JLG 450AJ flash codes מאושרים:** 3-3 (sensor/control — basket sensor or joystick, short circuit in driver; 50+ diagnostic paths), 9-2 (EEprom fault), 9-3 (mux stream — broken wires at platform control box connector underneath), Error 6 (Drive Hand Controller Fault), 775 (right-side drive motor — wiring/motor/controller)
+- **Manitou 180ATJ:** uses SPN/FMI (SAE) + manufacturer codes; Canopy control; MDR/EasyDiag tool required; service/wiring/parts manuals available commercially
+
+**חיפושים שבוצעו בריצה 29:** 15 סטנדרט + 7 ממוקדים = 22 סה"כ
+**עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 על כל האתרים; Supabase ECONNREFUSED)
+**URL שנבדקו:** 66 ב-batch ראשון + ~50 נוספים = 116 סה"כ — ~110 כפילויות, 6 חדשים
+**מודלים שהורחבו:** JLG 510AJ (מקורות שירות נוספים!), JLG CAN bus group 9 (תיעוד רשמי!), Manitou 180ATJ (אזכור מסמכים רשמיים)
+
+**המלצה לריצה 30 — שאילתות חדשות (לא לחזור לסטנדרט):**
+1. "Dingli JCPT1208DC operator manual 2022 2023 fault indicator English download" (עדיין לא נמצא — 29 ריצות! נסה "JCPT1208DC DCM manual English PDF" ו-"Dingli 1208 DC ladder type scissors")
+2. "JLG 510AJ ADE platform controller DTC fault code list 3121xxx" (service manual נמצא — מחפשים את טבלת ה-DTC המלאה של platform controller)
+3. "Genie S-40 S-45 S-60 boom lift GSDS fault code complete DTC 2020" (S-series straight boom קטן — S-80 מכוסה, S-40/S-45 לא)
+4. "Haulotte HA32 RTJ PRO service manual fault code F-series 2021 2022" (HA32 — גדול מ-HA26, עדיין לא מכוסה)
+5. "Skyjack SJ45AJ complete service manual fault code table 3121xxx PDF" (service manual — יש techpub, חסר service manual מלא)
+6. "JLG 860SJ service manual ADE DTC fault codes 3121xxx complete list" (860SJ service manual מלא — יש parts, חסר service+DTC)
+7. "Manitou 180ATJ fault code E3 E4 RC platform controller diagnosis" (platform-level DTCs ספציפיים ל-180ATJ)
+8. "Dingli JCPT1412AC JCPT1412ACE fault code E-TECH ACE system diagnosis" (גרסת ACE של 1412 — ACE controller שונה מ-DCM/PCU)
+
+---
 
 ### ריצה 28 — פריטים חדשים (2026-06-06)
 6 פריטים חדשים נוספו לסטייג'ינג — **15 שאילתות סטנדרט (0 חדשים — רוויה מלאה) + 7 שאילתות ממוקדות:**
