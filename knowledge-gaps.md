@@ -1,7 +1,54 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-06-07_
+_עודכן: 2026-06-08_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
+
+> **ריצה 30 (2026-06-08):** 12 פריטים חדשים נוספו לסטייג'ינג (375 סה"כ). Supabase ECONNREFUSED; WebFetch חסום (403 על כל האתרים). 15 שאילתות סטנדרט (רוויה מלאה — 0 חדשים) + 8 שאילתות ממוקדות (המלצות ריצה 29). **פריטים חדשים שנוספו:** Genie S-40 fault codes p.153 (ManualsLib, 0.8) — **מודל חדש!** S-40 GSDS fault codes; Terex Genie S-40 control system fault codes p.86+p.85 (ManualsLib, 0.8) — Terex variant, retrieval procedure; **Haulotte HA32 RTJ / HA43 RTJ operators manual (haulotte.com.au, 1.0) — רשמי!** fills HA32 gap; Haulotte HA32RTJ PRO maintenance book (ManualsLib, 0.8) — F-series codes מלאים; JLG Control System technical manual S/N 61718+ (manuals.plus, 0.6) — ADE DTC groups 1-9; JLG AE1932 DTC English (Scribd, 0.6) — **מודל חדש!** electric slab scissor; JLG 450AJ Fault Code List Scribd (0.6) — switch mapping; **Dingli E-TECH ACE fault codes p.50 (ManualsLib, 0.8) — 12 ACE codes מלאים!** (54/OL/LL/18/01-03/31/32/37/68/80-99); Manitou codigos Scribd (0.4) — Spanish; Manitou MRT 2150P E3 JustAnswer (0.6) — E3 diagnosis approach; Skyjack NJ Hire operating manual (0.6). **גפ שנותר:** Dingli JCPT1208DC עדיין לא נמצא (30 ריצות); JLG 510AJ platform DTC — עדיין חסרה טבלה מלאה; JLG 860SJ service manual ADE DTC — קיים parts, חסר service+DTC. להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
+
+### ריצה 30 — פריטים חדשים (2026-06-08)
+12 פריטים חדשים נוספו לסטייג'ינג — **15 שאילתות סטנדרט (0 חדשים — רוויה מלאה) + 8 שאילתות ממוקדות (המלצות ריצה 29):**
+
+- **Genie S-series booms (3):**
+  - Genie S-40 fault codes p.153 (ManualsLib #1231669, 0.8) — **מודל חדש!** S-40 14m stick boom, GSDS fault codes same architecture as GS-series scissors
+  - Terex Genie S-40 control system fault codes p.86 (ManualsLib #2036544, 0.8) — Terex-branded variant, control system DTC table: ECU comms, platform/chassis, sensor, drive motor, boom cylinder codes
+  - Terex Genie S-40 fault code retrieval procedure p.85 (ManualsLib #2036544, 0.8) — diagnostic mode entry, GCON/PCON display, clear codes procedure
+- **Haulotte HA32 RTJ (2) — גפ סגור!**
+  - **Haulotte HA32 RTJ / HA43 RTJ Operators Manual (haulotte.com.au, 1.0) — רשמי!** F-series codes F01-F25, emergency descent, VCI box, 32m + 43m variants
+  - Haulotte HA32RTJ PRO Maintenance Book (ManualsLib #1918052, 0.8) — F01=contactor, F04=overload, F05=tilt, F10=engine, F15=CAN bus; 250h/500h/1000h/2000h maintenance schedule; reset procedure
+- **JLG (3):**
+  - JLG Control System Technical Manual S/N 61718+ (manuals.plus, 0.6) — ADE DTC groups 1-9, CAN bus procedures, analyzer connection, priority P1/P2/P3
+  - JLG AE1932 DTC English (Scribd doc 684764434, 0.6) — **מודל חדש!** AE1932 electric narrow-aisle scissor, full DTC table: battery/charger, tilt, drive, lift, platform/ground comms
+  - JLG 450AJ Fault Code List (Scribd doc 708243971, 0.6) — switch-category DTC mapping, supplement to existing 450AJ sources
+- **Dingli (1) — ACE codes מלאים!**
+  - Dingli E-TECH ACE Series training manual p.50 (ManualsLib #3384241, 0.8) — **12 ACE fault codes:** 54 (Lift Coil Fault), OL (Overload), LL (Tilt), 18 (Pothole Guard), 01-03 (system init/comm/option), 31-32 (pressure/angle sensor), 37 (battery drain), 68 (low voltage), 80/90/99 (load %). Bluetooth diagnostic. Applies to JCPT1412ACE.
+- **Manitou (2):**
+  - Manitou codigos (Scribd doc 469639700, 0.4) — Spanish fault codes reference for Manitou telehandlers + ATJ boom lifts
+  - Manitou MRT 2150P E3 JustAnswer (0.6) — E3 architecture: iV tool, SPN/FMI, UPC30 platform controller, Deutz TCD3.6 codes; applicable to 180ATJ E3 RC variant
+- **Skyjack (1):**
+  - Skyjack SJIII operating manual NJ Hire NZ (njchire.co.nz, 0.6) — LED codes: OVRLOAD/TILT/DRIVE FAULT/ARMGUARD/HWFS STALL D; GP102 reset procedure
+
+**מידע טכני מרכזי שנאסף בריצה 30 (מסיכומי WebSearch):**
+- **Dingli E-TECH ACE codes מאושרים:** 54 (Lift Up Coil Fault), OL (Overload), LL (Tilt), 18 (Pothole Guard), 01 (Init Fault), 02 (Comm Fault), 31 (Pressure Sensor), 32 (Angle Sensor), 37 (Battery Drain), 68 (Low Voltage), 80/90/99 (Load warnings)
+- **Haulotte HA32 RTJ:** fills the HA32 gap — same F-series architecture as HA26 but 32m/43m working height; F01/F04/F05/F10/F15 confirmed
+- **JLG AE1932:** narrow/compact slab scissor with full ADE DTC system — first AE-series model documented in staging
+- **Genie S-40:** confirms GSDS fault code system extends to straight boom S-series (S-40/S-45/S-60/S-80)
+
+**חיפושים שבוצעו בריצה 30:** 15 סטנדרט + 8 ממוקדים = 23 סה"כ
+**עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403 על כל האתרים; Supabase ECONNREFUSED)
+**URL שנבדקו:** 120+ — ~108 כפילויות, 12 חדשים
+**מודלים חדשים שהורחבו:** Genie S-40 (S-series booms confirmed!), Haulotte HA32/HA43 RTJ (gap סגור!), JLG AE1932 (חדש!), Dingli E-TECH ACE JCPT1412ACE (codes מלאים!)
+
+**המלצה לריצה 31 — שאילתות חדשות (לא לחזור לסטנדרט):**
+1. "Dingli JCPT1208DC ladder scissor 2022 2023 fault code manual English operator" (30+ ריצות ללא הצלחה — נסה: "Dingli 1208 DC narrow scissor fault LED" או "Dingli JCPT1208DC DL-00000693 controller")
+2. "JLG 860SJ service manual 3121xxx ADE DTC fault code complete 800S" (860SJ service — יש parts מנואל, חסר service+DTC; נסה 800S מקביל)
+3. "JLG 510AJ 520AJ complete ADE platform DTC fault code service 3121xxx" (platform DTC for 510AJ/520AJ still missing)
+4. "Genie S-45 S-60 boom lift GSDS fault codes complete DTC list" (S-45/S-60 — S-40/S-80 מכוסים, S-45/S-60 חסרים)
+5. "Haulotte HA43 RTJ PRO fault code F-series service manual 2022 2023" (HA43 — יש operators, חסר service manual עם full F-code table)
+6. "Skyjack SJ45AJ SJ46AJ service manual complete fault code GP102 DTC table" (service manual — יש operators, חסר service)
+7. "MEC A92.20 aerial lift fault code complete list 2022 2023 PDF" (MEC 92.20 series — יש SCH, חסרים DTC ספציפיים)
+8. "Manitou 180ATJ service manual 2020 2021 fault code diagnosis iV tool" (full service manual for 180ATJ)
+
+---
 
 > **ריצה 29 (2026-06-07):** 6 פריטים חדשים נוספו לסטייג'ינג (363 סה"כ). Supabase ECONNREFUSED; WebFetch חסום (403 על כל האתרים). 15 שאילתות סטנדרט (רוויה מלאה — 0 חדשים) + 7 שאילתות ממוקדות (המלצות ריצה 28). **פריטים חדשים שנוספו:** Dingli JCPT HD-DC Parts Manual (Scribd, 0.6) — parts reference for JCPT1412HD/DC, JCPT1208HD/DC; JLG 510AJ Service Manual ManualsDir (0.6) — 402 pages, EMR2 fault codes + ADE DTC, hydraulics/electrical; JLG 510AJ Service Manual Scribd (0.6) — DTC 3-3/9-2/9-3, CAN bus, platform codes; **JLG CAN System Troubleshooting SI 1201 (csapps.jlg.com, 1.0) — רשמי מלא!** 60Ω test, node identification, fault code group 9 complete; Manitou 180ATJ Repair Manuals listing (diyrepairmanuals.com, 0.4) — operator+service+wiring+parts; JLG Direct Access FAQ alt-URL (jlg.com, 1.0) — ADE code format, groups 1-9 explained. **גפ שנותר:** Dingli JCPT1208DC עדיין לא נמצא (29 ריצות); JLG 510AJ platform DTC — נוספו מקורות, עדיין חסרה טבלה מלאה. להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 
@@ -533,11 +580,11 @@ _עודכן: 2026-06-07_
 | מודל | מה חסר | עדיפות |
 |------|---------|--------|
 | Dingli JCPT1208AC | fault codes — לא נחלץ; product page מאשר fault diagnostic system קיים; אין מנואל שירות זמין | גבוהה |
-| Dingli JCPT1208DC | operator manual ספציפי עדיין חסר — DC variant לא נמצא (1208AC ≠ 1208DC) — 27 ריצות! | גבוהה |
+| Dingli JCPT1208DC | operator manual ספציפי עדיין חסר — DC variant לא נמצא (1208AC ≠ 1208DC) — **30 ריצות!** | גבוהה |
 | Dingli JCPT1212DC | **מנואל נמצא (ריצה 23)** — aerialplatforms.co.uk PDF; codes 10/20/30/31/32/51-59/69; DL-00000693 | נמוכה |
 | Dingli JCPT2212DC | operators manual נמצא (ריצה 22) — codes 01/02/99/overload; 22m DC variant | נמוכה |
 | Dingli JCPT1412DC | מנואל HD נמצא (ריצה 12) + LECTURA specs (ריצה 14); טבלת קודים מלאה ל-DC variant עדיין חסרה | בינונית |
-| Dingli E-Tech ACE | training manual נמצא (ריצה 23) — ACE controller, Bluetooth diag, next-gen platform | נמוכה |
+| Dingli E-Tech ACE | **fault codes p.50 נוספו (ריצה 30)** — 12 codes מלאים: 54/OL/LL/18/01-03/31/32/37/68/80-99; JCPT1412ACE מכוסה | נמוכה |
 | JLG 520AJ | מנואל שירות 3121665-D נמצא (ריצה 19); DTC ספציפי מכוסה חלקית | בינונית |
 | JLG 860SJ | DTC analyzer codes p.308 + platform leveling p.245 + parts AJ manual — מכוסים היטב (ריצה 13) | נמוכה |
 | JLG 510AJ | **EMR2 fault codes p.121 נמצא (ריצה 23)** — 36 engine DTCs, SPN 100/110/157/190; platform DTC עדיין חסר | בינונית |
@@ -563,6 +610,10 @@ _עודכן: 2026-06-07_
 | Haulotte HA20/HA26 boom | HA20E+HA20RTJ+HA20 LE PRO manuals נוספו (ריצה 22); **HA26 RTJ PRO training manual נמצא (ריצה 24)** — F01-F25 מלאים | נמוכה |
 | Haulotte HT43RTJ PRO | **maintenance book נמצא (ריצה 23)** — ManualsLib; F-series + BCF codes | נמוכה |
 | Haulotte HTL 4010 | **troubleshooting guide p.198 נמצא (ריצה 23)** — symptom/fault/action chart | נמוכה |
+| Haulotte HA32 RTJ | **operators manual + maintenance book נוספו (ריצה 30)** — F01/F04/F05/F10/F15; 32m/43m variants; גפ סגור! | נמוכה |
+| JLG AE1932 | **DTC English Scribd נוסף (ריצה 30)** — narrow-aisle slab scissor; full ADE DTC table | נמוכה |
+| Genie S-40 | **fault codes p.153 + Terex variant p.85/86 נוספו (ריצה 30)** — GSDS S-series boom; retrieval procedure | נמוכה |
+| Genie S-45 / S-60 | fault codes ספציפיים חסרים — S-40/S-80 מכוסים; S-45/S-60 עדיין ריקים | בינונית |
 | Skyjack SJIII 3226/4626 | LED codes p.117 + parts+ops manuals נמצאו (ריצה 18); GP102 codes מכוסים | נמוכה |
 | Skyjack SJ45AJ boom | **techpub doc #5889 נוסף (ריצה 24) + doc #7040 נוסף (ריצה 26)** — 2 official techpub docs; GP102 LED codes מכוסים; מנואל שירות מלא עם DTC עדיין חסר | בינונית |
 | Skyjack SJ4732 | **service manual 2020 נוסף (ריצה 26)** — LED quick reference, GP102, OVRLOAD/TILT/DRIVE FAULT | נמוכה |
@@ -614,6 +665,17 @@ _עודכן: 2026-06-07_
 להעלאה: `node scripts/upload-web-knowledge-staging.mjs` (מסביבה עם גישת רשת)
 
 ---
+
+## סטטיסטיקות ריצה 30 (2026-06-08)
+
+- מקורות web ב-staging לפני הריצה: 363
+- פריטים חדשים שנוספו לסטייג'ינג: 12
+- סה"כ ב-staging אחרי הריצה: 375
+- מודלים ללא תיעוד: Dingli JCPT1208DC (30 ריצות ללא הצלחה!), JLG 510AJ platform DTC, Genie S-45/S-60, JLG 860SJ service manual DTC, Snorkel SB15J fault codes
+- מודלים חדשים שנמצאו: Genie S-40 (S-series booms!), Haulotte HA32/HA43 RTJ (גפ סגור!), JLG AE1932 (מודל חדש!), Dingli E-TECH ACE codes מלאים
+- שאילתות שבוצעו: 23 (15 סטנדרט + 8 ממוקדות)
+- WebFetch מוצלח: 0 (403 על כל האתרים)
+- Supabase: לא נגיש (ECONNREFUSED)
 
 ## סטטיסטיקות ריצה 27 (2026-06-05)
 
@@ -670,6 +732,9 @@ _עודכן: 2026-06-07_
 | 25 | 2026-06-03 | 317 | 0 | 317 |
 | 26 | 2026-06-04 | 317 | 14 | 331 |
 | 27 | 2026-06-05 | 331 | 20 | 351 |
+| 28 | 2026-06-06 | 351 | 6 | 357 |
+| 29 | 2026-06-07 | 357 | 6 | 363 |
+| 30 | 2026-06-08 | 363 | 12 | 375 |
 
 **ריצה 18 — פריטים חדשים (30):**
 - Haulotte Community fault code guide (1.0) — F-series format, Haulotte Diag VCI box, ETI LITE portal

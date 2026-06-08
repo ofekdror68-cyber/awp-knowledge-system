@@ -4059,5 +4059,137 @@
     "equipment_model": "JLG general (all ADE-equipped models)",
     "topic": "fault_codes",
     "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1231669/Genie-S-40.html?page=153",
+    "title": "Fault Codes - Genie S-40 Service Manual Page 153 | ManualsLib",
+    "content_summary": "Genie S-40 stick boom lift fault code table from service manual page 153 (ManualsLib manual #1231669). The S-40 uses Genie SmartLink Diagnostic System (GSDS) same as GS-series scissors. Contains control system fault codes for S-40 straight boom lift with GSDS ECU. Categories: hydraulic, battery/power, user interface, sensors/switches, controls — same 5-category DTC system as Genie scissors. Fault codes are displayed on the platform control alphanumeric display and ground control display. Retrieval procedure: connect Jaltest diagnostic tool or use manual retrieval mode. This manual covers S-40 with working height 14m (46ft). Key fault codes include pothole/overload codes and tilt sensor codes common across Genie boom/scissor line. Reference for Genie S-series straight boom fault diagnosis.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "S-40",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualslib.com/manual/2036544/Terex-Genie-S-40.html?page=86",
+    "title": "Control System Fault Codes - Terex Genie S-40 Service And Repair Manual Page 86 | ManualsLib",
+    "content_summary": "Terex Genie S-40 control system fault codes from service and repair manual page 86. This is the Terex-branded version of the Genie S-40 stick boom lift (Terex acquired Genie prior to Oshkosh). Contains complete control system fault code table with code numbers, descriptions, and corrective actions. Fault codes use GSDS format. This manual (ManualsLib #2036544) covers a later production variant of the S-40 with Terex branding. Control system fault codes cover: ECU communication faults, platform/chassis communication, sensor faults (tilt, angle, load), drive motor faults, boom cylinder sensor faults, and power system faults. Important for diagnosing S-40 units with Terex-era controllers.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "S-40",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualslib.com/manual/2036544/Terex-Genie-S-40.html?page=85",
+    "title": "How To Retrieve Control System Fault Codes - Terex Genie S-40 Service And Repair Manual Page 85 | ManualsLib",
+    "content_summary": "Terex Genie S-40 fault code retrieval procedure from service manual page 85. Documents how to retrieve stored fault codes from the Genie GSDS control system on the S-40 boom lift. Procedure: lower platform to stowed position, cycle key off then on, activate override mode using specific button sequence on platform control box, display shows stored fault codes in sequence. Also documents how to clear fault codes after repairs. Companion to page 86 (fault code table). This page explains: entering diagnostic mode, scrolling through active and stored DTCs, interpreting code display format (alphanumeric on GCON and PCON displays), and exiting diagnostic mode. Critical procedure for field service technicians diagnosing S-40 units.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "S-40",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "http://www.haulotte.com.au/sites/haulotte_au/files/fichiers/Pages/ha32-ha43rtj_operators_manual.pdf",
+    "title": "Haulotte HA32 RTJ / HA43 RTJ Operators Manual | Haulotte Australia Official",
+    "content_summary": "Official Haulotte Australia operators manual covering HA32 RTJ and HA43 RTJ articulating boom lifts. Published by Haulotte Group / Haulotte Australia (reliability 1.0). Contains: machine operation instructions, fault indicator descriptions for F-series codes (F01-F25 diagnostic range), self-diagnosis procedures using lower control box, emergency descent procedures, pre-use inspection checklist. HA32 RTJ specs: 32m (105ft) working height, diesel engine, proportional controls. HA43 RTJ specs: 43m (141ft) working height. Both use same Haulotte control architecture as HA26 RTJ PRO but with extended boom sections. Fault diagnosis: machine displays F-codes on lower control panel digital display; use Haulotte Diag app + VCI box for full diagnostics. This fills gap for HA32 RTJ fault code documentation not previously in staging.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "HA32RTJ",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1918052/Haulotte-Ha32rtj-Pro.html",
+    "title": "HAULOTTE HA32RTJ PRO MAINTENANCE BOOK | ManualsLib",
+    "content_summary": "Haulotte HA32RTJ PRO maintenance book on ManualsLib (manual #1918052). Contains complete maintenance and diagnostic information for the Haulotte HA32 RTJ PRO articulating boom lift. Key sections: F-series fault code definitions (F01=contactor fault, F04=overload, F05=tilt sensor, F10=engine fault, F15=CAN bus communication, etc.), maintenance schedule (250h/500h/1000h/2000h intervals), hydraulic system pressure specs, electrical schematic index, Haulotte Diag app procedure, VCI box connection protocol, ETI Lite portal access. HA32 RTJ PRO is the pro/premium variant with enhanced controls and load management. Important fill for the HA32 gap — only HA16 and HA26 RTJ PRO were previously documented in staging. F-code reset procedure also documented.",
+    "brands_mentioned": [
+      "Haulotte"
+    ],
+    "equipment_model": "HA32RTJ PRO",
+    "topic": "maintenance",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://manuals.plus/m/4e45935541379a609cb8bf307709259a39931d64ee58a6e58e045a96aa786b77",
+    "title": "JLG Control System Technical Manual and Fault Codes (S/N 61718 to Present)",
+    "content_summary": "JLG control system section technical manual covering S/N 61718 to present for articulating/telescopic boom lifts. Contains ADE (Advanced Diagnostic Electronics) control system DTC table organized by group: Group 1-2 (drive system), Group 3 (boom/lift), Group 5 (sensors), Group 7 (output faults), Group 9 (CAN bus). Format: SYSTEM:CODE (e.g., 3:3 = boom/lift sensor fault). Applicable to JLG models including 450AJ, 510AJ, 520AJ, 860SJ and related. Includes: CAN bus diagnostic procedures, platform and ground controller communication faults, analyzer connection procedures (Part 1001249695), fault code priority levels (P1/P2/P3). This manual variant covers S/N range starting from unit 61718 which corresponds to approx. 2000s production era.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "general",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.scribd.com/document/684764434/AE1932-JLG-DTC-English",
+    "title": "AE1932 JLG DTC Fault Codes English | Scribd",
+    "content_summary": "JLG AE1932 electric scissor lift complete DTC (Diagnostic Trouble Code) list in English on Scribd. AE1932 is a JLG electric slab scissor lift (19ft/5.8m lift height, 32in/0.81m width). Contains full DTC table with code numbers, descriptions, and corrective actions. Key codes include: battery/charger faults, tilt sensor codes, drive fault codes, lift fault codes, platform/ground communication faults. The AE1932 uses JLG's ADE control system in compact form. Fault code format matches JLG standard SYSTEM:CODE notation. This document is important for narrow-aisle and slab scissor fault diagnosis. Complements JLG 1932RS/2632RS service manual data already in staging. Reliability 0.6 (Scribd community upload, not official JLG source).",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "AE1932",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.scribd.com/document/708243971/Co-digo-JLG",
+    "title": "JLG 450AJ Fault Code List (Código JLG) | Scribd",
+    "content_summary": "JLG 450AJ articulating boom lift fault code list uploaded to Scribd (document 708243971). Title 'Código JLG' suggests Spanish-language or bilingual DTC reference. Contains fault codes organized by switch categories as PDF extract from JLG 450AJ service documentation. Covers DTC groups: drive system, boom/lift system, sensor faults, CAN communication. Includes switch circuit diagrams and fault code-to-switch mapping useful for diagnosing JLG 450AJ electronic faults without full service manual. The 450AJ is one of the most common JLG boom lifts and this document supplements the ManualsLib and ManualsDir sources already in staging. Reliability 0.6 (Scribd community upload).",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "450AJ",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.manualslib.com/manual/3384241/Dingli-E-Tech-Ace-Series.html?page=50",
+    "title": "Dingli E-TECH ACE Series Training Manual Page 50 — Fault Code List | ManualsLib",
+    "content_summary": "Dingli E-TECH ACE Series training manual page 50 containing the complete fault code list for ACE-controller scissor lifts. The E-TECH ACE is Dingli's next-generation control system (replacing PCU/ECU/DCM architecture). Fault codes on ACE series: Code 54 = Lift Up Coil Fault (disables lifting and driving — check lift solenoid circuit); Code OL = Platform Overloaded (disables all motion — reduce load); Code LL = Machine Tilted (disables lifting and driving — move to level ground); Code 18 = Pothole Guard Fault (disables lifting and driving — inspect pothole guard mechanism); Code 01 = System Initialization Fault (all motion disabled — power cycle, contact service); Code 02 = System Communication Fault (CAN bus or module communication issue); Code 03 = Invalid Option Setting Fault; Code 31 = Pressure Sensor Fault; Code 32 = Angle Sensor Fault; Code 37 = Battery Drain Shutdown; Code 68 = Battery Low Voltage; Codes 80/90/99 = Load Warning at 80%/90%/99% of rated capacity. ACE system uses Bluetooth diagnostic via mobile app. Applies to JCPT1412ACE and other ACE variants.",
+    "brands_mentioned": [
+      "Dingli"
+    ],
+    "equipment_model": "JCPT1412ACE",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.scribd.com/document/469639700/codigos-manitou",
+    "title": "Manitou Error Codes and Troubleshooting Guide (Códigos Manitou) | Scribd",
+    "content_summary": "Manitou equipment error codes in Spanish (Códigos Manitou) uploaded to Scribd (document 469639700). Contains fault codes for Manitou telehandlers and articulating boom lifts. Error code format: combinations of letters and numbers indicating system (engine, hydraulic, electrical, CAN, platform). Includes: engine-level SPN/FMI codes (Deutz or Perkins), platform controller codes, transmission codes for telescopic handlers. While primarily in Spanish, the fault code numbers and diagnostic approach are cross-applicable to Spanish-market Manitou machines including ATJ boom lifts. Reliability 0.4 (Scribd community upload, Spanish language). Supplementary to existing Manitou documentation in staging.",
+    "brands_mentioned": [
+      "Manitou"
+    ],
+    "equipment_model": "general",
+    "topic": "fault_codes",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://www.justanswer.com/construction-and-road-equipment/i8i9x-manitou-mrt-2150p-e3-giving-error.html",
+    "title": "Manitou MRT 2150P E3 Error Codes Expert Troubleshooting | JustAnswer",
+    "content_summary": "JustAnswer expert discussion for Manitou MRT 2150P E3 error code diagnosis. The E3 designation in Manitou models refers to engine emission certification (EU Stage IIIA). Diagnostic approach for Manitou MRT-series E3 machines: connect Manitou iV (interactive View) diagnostic tool to machine diagnostic port; iV tool reads SPN/FMI codes from engine ECU and platform UPC30 controller simultaneously. Common E3-era Manitou fault causes: Deutz TCD3.6 engine sensor faults (SPN codes for oil pressure/coolant temp/fuel rail pressure), UPC30 platform communication faults, hydraulic pressure sensor faults. The MRT 2150P is a rotating telehandler — diagnostic procedure similar to ATJ boom lifts. Useful reference for diagnosing Manitou 180ATJ E3 RC variant which uses same E3 engine tier and similar UPC30 platform architecture.",
+    "brands_mentioned": [
+      "Manitou"
+    ],
+    "equipment_model": "MRT 2150P E3",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://njchire.co.nz/wp-content/uploads/Sky-Jack-Operating-Manual.pdf",
+    "title": "Skyjack Scissor Lift Operating Manual | NJ Hire New Zealand",
+    "content_summary": "Skyjack scissor lift operating manual PDF hosted by NJ Hire (New Zealand hire company). Contains operating instructions and fault indicator information for Skyjack SJIII-series DC electric scissor lifts. LED fault indicator codes: OVRLOAD (platform load exceeds capacity), TILT (chassis tilt sensor active — move to level ground), DRIVE FAULT (drive system malfunction — check motor/wiring/controller), ARMGUARD (arm guard bar activated), HWFS STALL D (hydraulic/wheel drive stall detected). GP102 controller reset procedure: E-stop cycle, check for mechanical obstruction. This document represents a generic Skyjack operating reference for NZ-market equipment. Supplements Skyjack technical publications and service manuals already in staging.",
+    "brands_mentioned": [
+      "Skyjack"
+    ],
+    "equipment_model": "SJIII",
+    "topic": "general",
+    "reliability_score": 0.6
   }
 ]
