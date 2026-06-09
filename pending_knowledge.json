@@ -163,5 +163,170 @@
     "equipment_model": "JLG 520AJ",
     "topic": "fault_codes",
     "reliability_score": 0.4
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1911193/Dingli-Jcpt0307.html?page=29",
+    "title": "Error Indicator Readout — Fault Code List: Dingli JCPT0307 Operator's Manual Page 29 | ManualsLib",
+    "content_summary": "Complete Dingli JCPT0307 scissor lift fault code list from official operator's manual page 29. 13 fault codes documented: Code 10 (General Alarm ECU — ECU controller general fault), Code 20 (General Alarm TM1 — Traction Motor 1 controller fault), Code 30 (General Alarm PCU — Platform Control Unit general fault), Code 31 (PCU CPU0 Fault), Code 32 (PCU CPU1 Fault), Code 51 (ECU Alarm), Code 52 (PCU Alarm), Code 53 (TM1 Alarm), Code 54 (Pressure Sensor Error — check lift pressure sensor and wiring), Code 57 (Overload — reduce load below rated capacity), Code 58 (Pothole Protection Activated — move machine to level surface, inspect pothole guards), Code 59 (High Position Limit — boom/platform at maximum height), Code 69 (Power Relay Sleep — system entered sleep mode, restart power, check battery and key switch). Reset procedure: push in and pull out red Emergency Stop button. Same code architecture applies to JCPT0607, JCPT0607DCS, JCPT1208, JCPT1412 series.",
+    "brands_mentioned": [
+      "Dingli"
+    ],
+    "equipment_model": "Dingli JCPT0307",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.chinaliftsupply.com/troubleshooting/dingli/jcpt0607a/58",
+    "title": "How to Fix Dingli JCPT0607A Fault Code 58 (Pothole) | ChinaLiftSupply",
+    "content_summary": "Dingli JCPT0607A fault code 58 — Pothole Protection Activated. Symptom: machine stops operating or restricts movement on uneven surface. Cause: pothole protection device activated due to uneven/sloped ground surface. Solution: (1) Move machine to level ground. (2) Inspect pothole guards for physical damage or obstruction. (3) Reset guards to normal extended position. (4) Clean debris from guard mechanisms. (5) Check pothole guard limit switches for continuity. After correction, push in and pull out Emergency Stop button to reset fault. Same pothole protection system applies to JCPT1208, JCPT1412, JCPT0607DCS variants. Related codes: Code 57 (Overload), Code 59 (High Position Limit).",
+    "brands_mentioned": [
+      "Dingli"
+    ],
+    "equipment_model": "Dingli JCPT0607A",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.chinaliftsupply.com/troubleshooting/dingli/jcpt0607a/20",
+    "title": "How to Fix Dingli JCPT0607A Fault Code 20 (General Alarm TM1) | ChinaLiftSupply",
+    "content_summary": "Dingli JCPT0607A fault code 20 — General Alarm TM1 (Traction Motor 1 Controller Fault). Symptom: drive/traction function disabled, machine cannot travel. Cause: Traction Motor 1 controller fault or motor driver issue. Solution: (1) Check battery charge level — insufficient charge can trigger TM1 faults. (2) Inspect TM1 motor controller wiring connections and terminals for corrosion or looseness. (3) Check motor phase wiring for damage. (4) Verify motor controller cooling is adequate. (5) If fault persists, TM1 controller may need replacement. Reset: cycle Emergency Stop button. Related codes: Code 10 (ECU general alarm), Code 53 (TM1 Alarm — more specific TM1 fault).",
+    "brands_mentioned": [
+      "Dingli"
+    ],
+    "equipment_model": "Dingli JCPT0607A",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1617028/Dingli-Jcpt0607dcs.html?page=31",
+    "title": "Error Indicator Readout — Dingli JCPT0607DCS Operator's Manual Page 31 | ManualsLib",
+    "content_summary": "Dingli JCPT0607DCS scissor lift error indicator readout from official operator's manual page 31. DCS variant fault display system. If LED diagnostic readout displays an error code (such as LL), push in and pull out the red Emergency Stop button to reset the system. Fault codes follow same numbering as JCPT0307/JCPT0607A series: 10 (ECU), 20 (TM1), 30-32 (PCU faults), 51-54 (alarms and pressure sensor), 57 (Overload), 58 (Pothole), 59 (High Position Limit), 69 (Power Relay Sleep). DCS = DC Slab variant. Full operator manual includes maintenance schedule, hydraulic system, and electrical troubleshooting.",
+    "brands_mentioned": [
+      "Dingli"
+    ],
+    "equipment_model": "Dingli JCPT0607DCS",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://advancedaccessplatforms.co.uk/wp-content/uploads/2023/10/Dingli-Operation-Manual-1412DC-1612DC.pdf",
+    "title": "Dingli JCPT1412DC / JCPT1612DC Self-Propelled Scissor Lift Operator's Manual | Advanced Access Platforms",
+    "content_summary": "Official Dingli JCPT1412DC and JCPT1612DC self-propelled scissor lift operator's manual with maintenance information. DC variant (battery-powered) scissor lift. Contains: fault code list (error indicator readout section), maintenance schedule, hydraulic system overview, electrical system checks, safety procedures. Models covered: JCPT1412DC (14m platform height DC variant) and JCPT1612DC (16m DC variant). Fault codes follow standard Dingli code set: 10/20/30/31/32/51/52/53/54/57/58/59/69. Machine specifications: 24V DC motor drive system, hydraulic lift cylinder, 230kg rated load. Available via authorized UK distributor Advanced Access Platforms.",
+    "brands_mentioned": [
+      "Dingli"
+    ],
+    "equipment_model": "Dingli JCPT1412DC, Dingli JCPT1612DC",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.dingliglobal.com/upload/file/manual/parameter/JCPT0607DCM.pdf",
+    "title": "Dingli JCPT0607DCM Parameter Manual | Dingli Global (Official)",
+    "content_summary": "Official Dingli JCPT0607DCM parameter and configuration manual from Dingli Global website. DCM variant of the JCPT0607 scissor lift series. Contains: controller parameter settings, fault code definitions, diagnostic procedures, and technical specifications specific to the DCM variant. DCM = DC Motor variant with specific motor controller configuration. This is a manufacturer-official document from dingliglobal.com — reliability score 1.0. Fault parameters and alarm thresholds configurable via controller interface. Supports same core fault code set as JCPT0607DCS (codes 10-69 range) with DCM-specific motor controller parameters.",
+    "brands_mentioned": [
+      "Dingli"
+    ],
+    "equipment_model": "Dingli JCPT0607DCM",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.forkliftaction.com/forum/jlg-450aj-series-1-ford-engine-hydraulic-issues-loss-of-control-to-valves.aspx?q=110809",
+    "title": "JLG 450AJ Series 1 — Hydraulic Issues: Loss of Control to Valves | Forkliftaction Forum",
+    "content_summary": "Forkliftaction forum discussion on JLG 450AJ Series 1 (Ford engine) hydraulic control loss for multiple valve functions. Problem: Platform Rotate, Platform Leveling Override, Jib, Telescope, Tower Lift, and Steering all lose control simultaneously. Root cause identified: corrosion in electrical connector terminals at harness junction between boom and tractor unit. Over time/outdoor use, connector terminals corrode inside the connector housings, causing intermittent or complete connection failures to the hydraulic control valves. Solution: (1) Inspect harness connectors at front of platform. (2) Check connectors where they pass from tractor unit into boom. (3) Clean corroded terminals with electrical contact cleaner. (4) Apply dielectric grease to prevent future corrosion. (5) Replace damaged connectors. Diagnostic tip: Having a JLG handheld diagnostic tool significantly aids in pulling fault codes from the ECM. Light on platform console flashes MIL codes; light on control board inside ground control box also available.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "JLG 450AJ",
+    "topic": "hydraulics",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1303839/Jlg-450a-Series-Ii.html?page=343",
+    "title": "Fault Codes — JLG 450A/450AJ Series II Service and Maintenance Manual Page 343 | ManualsLib",
+    "content_summary": "JLG 450A and 450AJ Series II articulating boom lift complete fault code listing from service and maintenance manual page 343 (of 396 total pages). Full DTC table with fault descriptions, probable causes, and corrective actions. Flash code 3/3 (3 flashes, pause, 3 flashes) = basket sensor or joystick calibration fault. Troubleshooting: inspect basket angle sensor for dirt/damage/loose wiring, check joystick calibration, verify all harness connectors are secure. Flash code procedures: (1) Note code pattern. (2) Check MIL light on platform console. (3) Use JLG Analyzer for full DTC reading. Common faults: pothole sensor misalignment, platform angle sensor errors, hydraulic pressure sensor faults, control module communication issues. Reset: cycle E-stop after correcting fault.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "JLG 450A, JLG 450AJ",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://ewpspares.com.au/blogs/ewp-knowledge-base/jlg-fault-codes-complete-guide-what-they-mean-ewp-spares-australia",
+    "title": "JLG Fault Codes — Complete Guide and What They Mean | EWP Spares Australia",
+    "content_summary": "Comprehensive JLG fault code guide from Australian AWP parts specialist EWP Spares. Covers JLG boom lifts including 860SJ telescopic boom. Key content: JLG machines use onboard diagnostic system monitoring inputs/outputs across the control system — when fault detected, code logged and machine restricts/shuts down. Fault codes displayed on platform and/or ground control panel. Diagnostic port on 860SJ located inside ground control box for handset connection. Common fault code examples: ECT (Engine Coolant Temperature) codes — higher than stage 1 limit triggers warning; ECT voltage low/high sensor codes. Three JLG analyzer readers: tethered cable, mobile, and Bluetooth (select models). All models: use analyzer to search fault codes and enable/disable machine options. JLG Knowledge Base (directaccess): 1,500+ articles by fault code or symptom.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "JLG 860SJ",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://intellaparts.com/blog/jlg-boom-lifts/",
+    "title": "JLG Boom Lift Troubleshooting Guide | Intella Parts",
+    "content_summary": "JLG boom lift troubleshooting guide covering diagnosis and repair for JLG articulating and telescopic boom lifts. General troubleshooting approach: document code exactly as displayed on MDI (Multifunction Digital Indicator), perform initial checks (connections/battery/restart), use JLG Knowledge Base directaccess.jlg.com. Step-by-step fault approach: (1) Note all active DTCs. (2) Check battery voltage — low battery causes cascade faults. (3) Inspect E-stops — all must be pulled out and released. (4) Check footswitch engagement. (5) Inspect control module connections for corrosion. (6) Use JLG Analyzer for live data. (7) Cycle power after each repair to verify code clears. Common boom lift faults: sensor out of range (angle/pressure/height sensors), CAN bus communication errors, drive system faults, engine-related codes (on engine-powered machines). Safety: halt operations immediately when fault code appears.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": null,
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1270156/Genie-Gs-2046.html?page=50",
+    "title": "Fault Code Chart — Genie GS-2046 / GS-2646 / GS-3246 Service Manual Page 50 | ManualsLib",
+    "content_summary": "Genie GS-2046, GS-2646, and GS-3246 scissor lift fault code chart from service manual page 50. Same fault code architecture applies across all three models. Codes documented: 01 (Platform ECM error — replace platform ECM), 02 (Undefined platform DIP switch settings — verify DIP switch configuration), 03 (Chassis up/down switch closed at startup — inspect chassis controls), 12 (Pothole guard failure — check guard deployment and limit switches), 43-57 (Coil errors: 43=forward, 44=reverse, 45=up, 46=down, 47=left, 48=right, 56=brake coil — for coil faults: check coil resistance 20-30Ω, inspect wiring, verify connector integrity), 68 (Low Voltage — charge batteries, check battery connections and condition). Additional code 18: Pothole guard — limit switch fault after replacement, verify wiring harness connections and sensor alignment. DTC system: Genie SmartLink GSDS with 272 total codes. OIC codes: LL (off-level — lower platform), PHS (pothole system status).",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Genie GS-2046, Genie GS-2646, Genie GS-3246",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.hindleyelectronics.com/support/ecu/gsfaultcode.pdf",
+    "title": "Genie ECU Fault Codes GEN 5 | Hindley Electronics",
+    "content_summary": "Official Genie GEN 5 ECU fault code reference document from Hindley Electronics, an authorized Genie service partner. GEN 5 ECU is used in Genie GS-series scissor lifts manufactured during a specific production period. Contains complete fault code table for GEN 5 controller with code numbers, descriptions, and corrective actions. Key resource for differentiating GEN 5 vs GEN 6 fault codes — code numbers may differ between generations. GEN 5 covers models including GS-1930, GS-2032, GS-2632, GS-3246 (earlier serial numbers). This PDF is the definitive reference for GEN 5 ECU troubleshooting. Hindley Electronics specializes in Genie/Terex aerial work platform electronic components and repair.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Genie GS series (GEN 5 ECU)",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.hindleyelectronics.com/support/ecu/gsfaultcode_GEN6.pdf",
+    "title": "Genie ECU Fault Codes GEN 6 | Hindley Electronics",
+    "content_summary": "Official Genie GEN 6 ECU fault code reference document from Hindley Electronics. GEN 6 ECU represents updated controller generation for Genie GS-series scissor lifts. Updated fault code set with revisions from GEN 5. GEN 6 covers newer serial number ranges of GS-1932, GS-2646, GS-3246, GS-4655. DTC format: numeric codes with 272 total diagnostic trouble codes across 5 categories: hydraulic, battery/power, user interface, sensors/switches, controls. OIC codes (operational indicator): LL (off level), PHS (pothole system). Key difference from GEN 5: updated coil fault codes and additional sensor diagnostic codes. This PDF is the definitive reference for GEN 6 ECU troubleshooting. Critical to know which ECU generation your machine uses before referencing fault codes.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Genie GS series (GEN 6 ECU)",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.scribd.com/document/446162823/MANITOU-FAULT-CODES-LIST",
+    "title": "Manitou Fault Codes List | Scribd",
+    "content_summary": "Manitou fault codes list document on Scribd covering telehandler and aerial work platform fault codes. Includes fault codes for Manitou equipment lines including ATJ boom lifts and MT telehandler series. Manitou fault code structure: error codes are displayed on the machine's control panel or diagnostic interface. Codes organized by system: engine (Deutz/Perkins), hydraulic, electrical, and control module. For Manitou ATJ aerial work platforms (including 180ATJ): fault codes accessed via Manitou MDS (Manitou Diagnostic Software) or through the onboard display. Common fault categories: transmission faults, hydraulic pressure errors, load sensor faults, boom position sensor errors. Manitou recommends using local sales partners for diagnostic resolution — dealer locator available on manitou.com.",
+    "brands_mentioned": [
+      "Manitou"
+    ],
+    "equipment_model": "Manitou ATJ series, Manitou MT series",
+    "topic": "fault_codes",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://www.truck-manuals.net/manitou-fault-codes/",
+    "title": "Manitou Fault Codes DTC | Truck-Manuals.Net",
+    "content_summary": "Manitou DTC (Diagnostic Trouble Code) index from truck-manuals.net covering Manitou telehandlers and aerial platforms. Fault codes organized by system group for Manitou equipment. Covers Manitou ATJ boom lift series and MT telehandler series. Manitou diagnostic approach: iV (integrated Validation) diagnostic tool or Manitou MDS software required for full DTC reading on newer models. For ATJ aerial platforms including 180ATJ: platform controller (UPC30) handles platform-side faults; boom/drive side codes accessed via main ECU. Engine fault codes follow Deutz SPN/FMI format (SPN = Suspect Parameter Number, FMI = Failure Mode Indicator) on E3 engine models. Hydraulic fault codes cover: pressure sensor errors, solenoid valve faults, cylinder position errors. Electrical codes: battery voltage, CAN bus communication errors.",
+    "brands_mentioned": [
+      "Manitou"
+    ],
+    "equipment_model": "Manitou 180ATJ, Manitou ATJ series",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
   }
 ]
