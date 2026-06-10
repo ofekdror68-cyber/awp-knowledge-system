@@ -1,7 +1,9 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-06-09_
+_עודכן: 2026-06-10_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
+
+> **ריצה 32 (2026-06-10):** 0 פריטים חדשים נוספו לסטייג'ינג. Supabase לא נגיש (DNS fails + ECONNREFUSED); WebFetch חסום (403 על כל האתרים). 15 שאילתות סטנדרט בוצעו (Dingli JCPT scissor/1412/1208/0607, JLG 450AJ/520AJ/510AJ/860SJ, Genie GS-3246/GS-1932, Manitou 180ATJ, forkliftaction×2, כללי AWP hydraulic + AWP PDF). **רוויה מלאה** — כל 15 השאילתות הסטנדרטיות מייצרות URL כפילויות בלבד; לא נמצאו פריטים חדשים מעבר לריצה 31. מידע טכני מרכזי שאושר מחדש: Dingli JCPT codes 10/20/30/31/32/51-54/57-59/69; Genie GS-3246 codes 01-03/12/18/42-47/52-58/68; Genie GS-1932 E1/E4/E6/E12/E13 (272 DTC + 6 OIC); JLG 450AJ flash 3-3=tilt sensor, hydraulic valve loss=connector corrosion. **גפ קריטי שנותר:** Dingli JCPT1208DC (32 ריצות!); JLG 510AJ platform DTC; JLG 860SJ service+DTC. **המלצה:** שאילתות חדשות בלבד לריצה 33 (ראה רשימה למטה). להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 
 > **ריצה 31 (2026-06-09):** 15 פריטים חדשים נוספו לסטייג'ינג (390 סה"כ). Supabase ECONNREFUSED; WebFetch חסום (403 על כל האתרים). 15 שאילתות סטנדרט (ריצת בסיס). **פריטים חדשים שנוספו:** Dingli JCPT0307 fault codes מלאים p.29 (ManualsLib, 0.8) — 13 codes; Dingli JCPT0607A codes 58/20/69 (chinaliftsupply, 0.6) — pothole/TM1/sleep; Dingli JCPT0607DCS fault indicator p.31 (ManualsLib, 0.8); Dingli 1412DC/1612DC operator manual (advancedaccessplatforms, 0.8); Dingli JCPT0607DCM manual (dingliglobal.com, 1.0) — רשמי; JLG 450AJ hydraulic valve loss forum (forkliftaction, 0.8); JLG 450A Series II fault codes p.343 (ManualsLib, 0.8); JLG 860SJ complete fault guide (ewpspares.com.au, 0.6); JLG boom lift troubleshooting (intellaparts, 0.6); JLG fault codes safety (aerialequipmentparts, 0.6); Genie GS-3246 fault code chart p.50 (ManualsLib, 0.8); Genie ECU GEN 5 codes (hindleyelectronics, 0.8) — PDF; Genie ECU GEN 6 codes (hindleyelectronics, 0.8) — PDF; Manitou fault codes list Scribd (0.4); Manitou fault codes truck-manuals.net (0.6). **קידמה:** Dingli JCPT0307 קודי תקלה מלאים תועדו לראשונה; Genie GEN5/GEN6 ECU PDFs זוהו. **גפ שנותר:** Dingli JCPT1208DC עדיין לא נמצא (31 ריצות!); JLG 510AJ platform DTC; JLG 860SJ service manual ADE DTC. להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 
@@ -71,7 +73,7 @@ _עודכן: 2026-06-09_
 **URL שנבדקו:** 120+ — ~108 כפילויות, 12 חדשים
 **מודלים חדשים שהורחבו:** Genie S-40 (S-series booms confirmed!), Haulotte HA32/HA43 RTJ (gap סגור!), JLG AE1932 (חדש!), Dingli E-TECH ACE JCPT1412ACE (codes מלאים!)
 
-**המלצה לריצה 31 — שאילתות חדשות (לא לחזור לסטנדרט):**
+**המלצה לריצה 32 — שאילתות חדשות (לא לחזור לסטנדרט):**
 1. "Dingli JCPT1208DC ladder scissor 2022 2023 fault code manual English operator" (30+ ריצות ללא הצלחה — נסה: "Dingli 1208 DC narrow scissor fault LED" או "Dingli JCPT1208DC DL-00000693 controller")
 2. "JLG 860SJ service manual 3121xxx ADE DTC fault code complete 800S" (860SJ service — יש parts מנואל, חסר service+DTC; נסה 800S מקביל)
 3. "JLG 510AJ 520AJ complete ADE platform DTC fault code service 3121xxx" (platform DTC for 510AJ/520AJ still missing)
@@ -80,6 +82,16 @@ _עודכן: 2026-06-09_
 6. "Skyjack SJ45AJ SJ46AJ service manual complete fault code GP102 DTC table" (service manual — יש operators, חסר service)
 7. "MEC A92.20 aerial lift fault code complete list 2022 2023 PDF" (MEC 92.20 series — יש SCH, חסרים DTC ספציפיים)
 8. "Manitou 180ATJ service manual 2020 2021 fault code diagnosis iV tool" (full service manual for 180ATJ)
+
+**המלצה לריצה 33 — שאילתות חדשות (לא לחזור לסטנדרט — רוויה מלאה):**
+1. "Dingli JCPT1208DC DL-00000693 narrow straddle scissor fault code LED display" — 32 ריצות ללא הצלחה, נסה מספר חלק בקר
+2. "JLG 800S 860SJ ADE platform controller service manual DTC 3121298" — 800S מקביל
+3. "JLG 510AJ 520AJ ADE controller platform fault code 51xx 52xx list" — platform codes ספציפיים
+4. "Genie S-45 S-60 S-65 S-80 GSDS fault code DTC complete service manual" — S-series gaps
+5. "Manitou 180ATJ E3 RC fault code iV diagnostic Deutz Perkins service" — 180ATJ specific
+6. "Haulotte HA43 RTJ PRO F-code service repair manual 2021 2022" — HA43 service gap
+7. "Terex AWP TL50 TL65 fault code service manual DTC" — Terex brand gap
+8. "Niftylift HR28 HR21 fault code diagnosis service manual" — brand gap
 
 ---
 
