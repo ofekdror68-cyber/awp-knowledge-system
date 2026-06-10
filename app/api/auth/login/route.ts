@@ -2,9 +2,12 @@ import { NextRequest, NextResponse } from 'next/server'
 import { createSessionToken } from '@/lib/auth'
 
 const USERS: Record<string, string | undefined> = {
-  'הדס':  process.env.AWP_HADAS_PASSWORD,
-  'מידן': process.env.AWP_MIDAN_PASSWORD,
-  'אופק': process.env.AWP_OFEK_PASSWORD,
+  'אופק':   process.env.AWP_OFEK_PASSWORD,
+  'מאיר':   process.env.AWP_MEIR_PASSWORD,
+  'מידן':   process.env.AWP_MIDAN_PASSWORD,
+  'הדס':    process.env.AWP_HADAS_PASSWORD,
+  'ישראל':  process.env.AWP_ISRAEL_PASSWORD,
+  'הורשיו': process.env.AWP_HORSHIO_PASSWORD,
 }
 
 export async function POST(req: NextRequest) {

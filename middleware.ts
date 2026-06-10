@@ -9,7 +9,7 @@ export async function middleware(req: NextRequest) {
   }
 
   // Portal SSO: auto-login when ?pt=PORTAL_SSO_TOKEN is present
-  const pt = req.nextUrl.searchParams.get('pt')
+  const pt = (req.nextUrl.searchParams.get('pt') ?? '').trim()
   const portalSecret = (process.env.PORTAL_SSO_TOKEN ?? '').trim()
   if (pt && portalSecret && pt === portalSecret) {
     const sessionToken = await createSessionToken()
