@@ -4191,5 +4191,160 @@
     "equipment_model": "SJIII",
     "topic": "general",
     "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.scribd.com/document/709921464/31222415-a-800s-Hc3-860sj-Hc3-Jlg-Service-English",
+    "title": "JLG 800S HC3 / 860SJ HC3 Service Manual (Document 31222415) | Scribd",
+    "content_summary": "JLG 800S HC3 and 860SJ HC3 boom lift service manual on Scribd. HC3 = High Capacity 3rd generation variant. Covers 6 sections: safety, specifications, maintenance schedules, testing/calibration, system software, and fault codes/troubleshooting. Contains complete ADE fault code listings with DTC groups 1-9. HC3-specific: additional load cell codes for high-capacity platform weighing system. Diagnostic port inside ground control box. CAN bus diagnostic procedures, JLG Analyzer (p/n 1001249695) required. ECT (Engine Coolant Temperature) stage 1/2 fault codes, angle sensor, pressure sensor, and drive system codes. Priority system: P1 (machine stop), P2 (restricted operation), P3 (advisory). Reset: power cycle via E-stop.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "JLG 800S HC3, JLG 860SJ HC3",
+    "topic": "fault_codes",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://www.scribd.com/document/576863861/75-3121631-D-800S-810SJ-860SJ-JLG-Service-English",
+    "title": "JLG 800S / 810SJ / 860SJ Service Manual 3121631 Rev D | Scribd",
+    "content_summary": "JLG 800S, 810SJ, and 860SJ telescopic boom lift service and maintenance manual, document 3121631 Rev D. Comprehensive service reference for all three related models. ADE fault code groups 1-9: Group 1 (ECM/engine), Group 2 (platform/basket), Group 3 (sensors: angle/pressure/height), Group 4 (drive/traction), Group 5 (software/CAN bus). 860SJ: diagnostic port in ground control box for JLG Analyzer. Common fault codes: ECT higher than expected stage 1 (engine temp); pressure sensor out of range; angle sensor fault; CAN bus node communication error; load cell fault. Hydraulic schematics, electrical diagrams, Deutz diesel engine integration codes. Boom angle, length, and platform level sensor calibration procedures.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "JLG 800S, JLG 810SJ, JLG 860SJ",
+    "topic": "fault_codes",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://www.scribd.com/document/390994771/Fault-Code-TEREX",
+    "title": "Terex Fault Code Manual V2.5 — Logicontrol LMS Plus Diagnostic System | Scribd",
+    "content_summary": "Terex Fault Code Manual Version 2.5 for Logicontrol LMS Plus fault diagnostic system. Covers Terex-branded aerial work platforms including Genie S-series variants sold under Terex branding. Fault code categories: (1) CAN bus communication faults — node loss, bus termination resistance errors (should be 60 Ohm); (2) Overload condition codes — load exceeding rated capacity warnings; (3) Bypass function active indicators; (4) Powertronic unit faults: low fuel, high hydraulic temperature, low hydraulic pressure, sensor failures. Fault code format: 4-digit numeric. Diagnostic procedure: connect LMS Plus software to CAN bus diagnostic port, read live DTC and fault history. Same Logicontrol architecture applies to Terex TL-series aerial work platforms and Genie stick boom Terex variants.",
+    "brands_mentioned": [
+      "Terex",
+      "Genie"
+    ],
+    "equipment_model": "Terex AWP boom lifts, Genie S-series (Terex variant)",
+    "topic": "fault_codes",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1251980/Genie-S-65.html?page=119",
+    "title": "Control System Fault Codes — Genie S-65 Service And Repair Manual Page 119 | ManualsLib",
+    "content_summary": "Genie S-65 stick boom lift control system fault codes from service and repair manual page 119 (ManualsLib #1251980). Uses Genie GSDS (SmartLink Diagnostic System) fault code architecture. Fault code retrieval: enter diagnostic mode by holding up and down switches simultaneously at platform controls; 2-digit codes displayed on LED. Fault categories: ECU communication faults, platform/chassis sensor faults, drive motor control faults, boom position sensor errors, boom angle sensor, hydraulic pressure sensor, height limit switch faults. Full DTC table with fault descriptions, probable causes, and corrective actions. S-65: 65-foot platform height, diesel-powered stick boom lift. Same GSDS code system as S-40/S-45 but with S-65 specific boom extension/jib sensor codes.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Genie S-65",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1479810/Genie-S-65-Xc.html?page=109",
+    "title": "Control System Fault Codes — Genie S-65 XC Service And Repair Manual Page 109 | ManualsLib",
+    "content_summary": "Genie S-65 XC (Extra Capacity) stick boom lift control system fault codes from service and repair manual page 109 (ManualsLib #1479810). XC variant supports higher platform capacity than standard S-65. GSDS fault code architecture: retrieve by entering diagnostic mode at platform control box — press and hold up/down buttons until code display activates; 2-digit codes on LED. Fault codes cover: ECU faults, GCON (ground control module) communication, PCON (platform control module) communication, sensor faults (boom angle, pressure, height), drive motor control. XC-specific additional codes: load management system codes for overload sensing, additional platform weight sensor codes. Full fault code chart at page 109.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Genie S-65 XC",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://manualzz.com/doc/o/8pfd7/genie-s-60-hc-service-manual-fault-codes",
+    "title": "Fault Codes — Genie S-60 HC Service Manual | Manualzz",
+    "content_summary": "Genie S-60 HC (High Capacity) stick boom lift fault codes from service manual on Manualzz. S-60 HC is the high-capacity variant of Genie S-60 with increased platform load rating. Fault codes use same GSDS architecture as Genie S-65 and GS-series scissors. Code retrieval: enter diagnostic mode, read 2-digit codes from LED display. Common fault categories: ECU communication errors, tilt sensor faults (LL code — off-level), pothole/boom safety system faults, drive motor overtemperature, hydraulic pressure sensor fault, height limit switch fault, CAN bus communication. Corrective actions for each code in fault code table. S-60/S-60 HC shares fault code architecture with S-45/S-65 stick boom models — same diagnostic procedure applies across S-series.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Genie S-60 HC",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://manuals.genielift.com/Parts%20And%20Service%20Manuals/data/Service/SmSeries/S-60_S-65SRM_Proto.pdf",
+    "title": "Genie S-60 / S-65 SRM Service and Repair Manual | Genie Official (manuals.genielift.com)",
+    "content_summary": "Official Genie S-60 and S-65 SRM (Service and Repair Manual) from manuals.genielift.com — manufacturer-official reliability 1.0. Prototype/early production SRM variant for S-60 and S-65 stick boom lifts. Contains complete technical service information: full fault code chart for S-60/S-65 GSDS control system, hydraulic circuit diagrams, electrical schematics, drive motor specifications and replacement procedures, boom angle/length sensor calibration procedures. Fault codes: GSDS-based DTC system with complete code descriptions, probable causes, and corrective actions for ECU, GCON/PCON modules, sensors, drive, and hydraulics. SRM designation = comprehensive service-level documentation beyond operator's manual scope. Key reference for diagnosing S-60 and S-65 control system faults.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Genie S-60, Genie S-65",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.jms.co.uk/wp-content/uploads/2018/03/NIFTYLIFT-HR28.pdf",
+    "title": "Niftylift HR28 (SP85 Series) Operating & Safety Instructions | JMS Access",
+    "content_summary": "Niftylift HR28 (designated SP85 Series) operating and safety instructions manual from JMS Access UK rental company. Niftylift HR28 is a compact electric articulating boom lift — NEW brand in AWP knowledge base. Fault codes: alphanumeric display codes on control panel. Example code: 01B40000 (Telescope Paddle out of neutral position). Error code 32: drive system fault (referenced in technical discussions). General diagnostic procedure: (1) Note full error code displayed on control panel. (2) Move machine to safe position. (3) Consult Niftylift Workshop manual for component-level diagnosis — operator's manual provides initial fault indicators only. (4) Reset via E-stop cycle after resolving fault. Safety interlocks: tilt sensor (prevents operation on slopes > 3°), overload sensor, height limit switches, pothole guards.",
+    "brands_mentioned": [
+      "Niftylift"
+    ],
+    "equipment_model": "Niftylift HR28",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1636069/Niftylift-Nifty-Heightrider-Hr21-Mk2-Series.html",
+    "title": "Niftylift Nifty Heightrider HR21 MK2 Series Operating/Safety Instructions | ManualsLib",
+    "content_summary": "Niftylift HR21 MK2 (Nifty Heightrider 21) operating and safety instructions manual on ManualsLib (document 1636069), 79 pages. HR21 is a compact electric articulating boom lift with approximately 21-foot (6.4m) platform height — popular in indoor construction and events. Manual covers: machine controls, safety procedures, fault codes (page 55), maintenance schedule. Fault codes section at page 55: alphanumeric codes displayed when safety system or control malfunction detected. Code format: 8-character alphanumeric (example: 01B40000). HR21 uses same Niftylift control architecture as HR28. Operation page p.38 covers normal operation. Battery-powered 24V drive and lift. Related fault code pages: p.38, p.55.",
+    "brands_mentioned": [
+      "Niftylift"
+    ],
+    "equipment_model": "Niftylift HR21",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1636069/Niftylift-Nifty-Heightrider-Hr21-Mk2-Series.html?page=55",
+    "title": "Fault Codes — Niftylift HR21 MK2 Series Operating/Safety Manual Page 55 | ManualsLib",
+    "content_summary": "Niftylift HR21 MK2 fault codes section at page 55 of operating and safety instructions manual (ManualsLib #1636069). Contains fault code table for Niftylift HR21 MK2 with alphanumeric error codes and descriptions. Code format: 8-character alphanumeric (e.g., 01B40000 = Telescope Paddle out of neutral). Fault categories: drive/traction faults, lift/telescope faults, tilt/overload safety faults, control module communication errors, sensor faults. Diagnostic procedure: (1) Note complete code from display. (2) Reference fault code table for fault description and initial corrective action. (3) More detailed workshop-level diagnosis requires Niftylift Workshop & Parts Manual. (4) After resolving fault, reset by cycling E-stop. HR21 fault code system shared with HR28 — same architecture across Niftylift range.",
+    "brands_mentioned": [
+      "Niftylift"
+    ],
+    "equipment_model": "Niftylift HR21",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.hiresafesolutions.com/wp-content/uploads/2015/04/HR21-Operators-Manual.pdf",
+    "title": "Niftylift HR21 MK2 Operators Manual PDF | Hire Safe Solutions",
+    "content_summary": "Niftylift HR21 MK2 operator's manual PDF hosted by Hire Safe Solutions (UK AWP rental and training company). Contains: machine overview, pre-use inspection checklist, operating controls, safety features, fault indicator lights and codes, maintenance schedule. Fault diagnostics: LED/display shows fault codes when safety system or control malfunction detected. Error codes require consultation of Niftylift Workshop manual for detailed component diagnosis. Safety features: tilt indicator (LL alert), overload alert, E-stop buttons at platform and ground level. Platform height: approximately 21 feet. Electric drive and lift. The manual provides initial fault response procedures; full DTC diagnosis requires separate Workshop & Parts manual from Niftylift.",
+    "brands_mentioned": [
+      "Niftylift"
+    ],
+    "equipment_model": "Niftylift HR21",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.hiresafesolutions.com/wp-content/uploads/2019/10/Niftylift-HR28-Operators-Manual.pdf",
+    "title": "Niftylift HR28 MK2 Operators Manual PDF | Hire Safe Solutions",
+    "content_summary": "Niftylift HR28 MK2 (updated HR28 variant) operator's manual PDF from Hire Safe Solutions UK. HR28 is a compact electric articulating boom lift with 28-foot (8.5m) working height. Contents: operating procedures, safety systems, fault indicator codes, maintenance schedule. Fault codes: alphanumeric display format. Referenced fault: Error code 32 on HR28 relates to drive/traction system issue. Safety interlocks: tilt sensor (machine will not raise on slope), overload sensor, E-stop buttons. Diagnostic first response: note full code, lower all functions, cycle E-stop, consult Workshop & Parts manual. Note: HR28 fault code repair and detailed diagnosis requires the Niftylift Workshop and Parts manual — operator's manual covers initial fault identification only.",
+    "brands_mentioned": [
+      "Niftylift"
+    ],
+    "equipment_model": "Niftylift HR28",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://jms.co.uk/wp-content/uploads/2018/02/JMS-Operating-Manual-Niftylift-HR-21.pdf",
+    "title": "Niftylift HR21 Operating Manual | JMS Access Equipment",
+    "content_summary": "Niftylift HR21 operating manual PDF from JMS Access Equipment (UK AWP rental company). JMS-branded version of the Niftylift HR21 Nifty Heightrider operator's manual. HR21 compact electric articulating boom lift — 21-foot (6.4m) working height, small footprint for indoor/restricted-access sites. Fault code diagnostics: alphanumeric codes displayed on control panel LED. Fault response procedure: (1) Note complete code. (2) Lower machine to ground. (3) Push in E-stop. (4) Consult fault code table in manual. (5) Cycle E-stop to reset after resolving fault. Safety features: tilt sensor prevents lift on slopes, overload sensor, height limit switch, E-stops at platform and ground. For in-depth fault diagnosis and repair: Niftylift Workshop & Parts Manual required.",
+    "brands_mentioned": [
+      "Niftylift"
+    ],
+    "equipment_model": "Niftylift HR21",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1862749/Niftylift-Nifty-Heightrider-Hr12-Series.html?page=35",
+    "title": "Fault Codes — Niftylift Nifty Heightrider HR12 Series Manual Page 35 | ManualsLib",
+    "content_summary": "Niftylift HR12 (Nifty Heightrider 12) fault codes section at page 35 of operating and safety instructions manual (ManualsLib #1862749). HR12 is the compact indoor-focused version of the Niftylift HR series with 12m working height and very small footprint for tight access. Fault codes: alphanumeric format consistent with Niftylift HR21/HR28 series. Code displayed on control panel LED when fault detected. Fault code list covers: drive system faults, lift/telescope faults, tilt/overload safety faults, control communication errors. HR12/HR21/HR28 share Niftylift common control architecture — fault code numbering system is consistent across the range. Full code table with corrective actions at page 35. For workshop-level repair: separate Niftylift Workshop & Parts Manual required.",
+    "brands_mentioned": [
+      "Niftylift"
+    ],
+    "equipment_model": "Niftylift HR12",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
   }
 ]

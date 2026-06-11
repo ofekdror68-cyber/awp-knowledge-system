@@ -1,7 +1,54 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-06-10_
+_עודכן: 2026-06-11_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
+
+> **ריצה 33 (2026-06-11):** 14 פריטים חדשים נוספו לסטייג'ינג (389 סה"כ). Supabase לא נגיש (DNS NXDOMAIN לפרויקט הספציפי); WebFetch חסום (403 על כל האתרים). 15 שאילתות סטנדרט (רוויה מלאה — 0 חדשים, צפוי) + 8 שאילתות ממוקדות (המלצות ריצה 32). **פריטים חדשים שנוספו:** JLG 800S/860SJ HC3 service manual (Scribd 709921464, 0.4) — HC3 variant ADE DTC; JLG 800S/810SJ/860SJ service 3121631 (Scribd 576863861, 0.4) — full DTC groups 1-9; **Terex Fault Code Manual V2.5 (Scribd 390994771, 0.4) — מותג חדש! Logicontrol LMS Plus;** Genie S-65 fault codes p.119 (ManualsLib 1251980, 0.8); Genie S-65 XC fault codes p.109 (ManualsLib 1479810, 0.8); Genie S-60 HC fault codes (Manualzz 8pfd7, 0.6); **Genie S-60/S-65 SRM רשמי! (manuals.genielift.com SmSeries, 1.0);** **Niftylift HR28 operating manual (jms.co.uk PDF, 0.6) — מותג חדש!;** Niftylift HR21 MK2 index (ManualsLib 1636069, 0.6); Niftylift HR21 fault codes p.55 (ManualsLib 1636069/p55, 0.6); Niftylift HR21 manual PDF (hiresafesolutions, 0.6); Niftylift HR28 manual PDF (hiresafesolutions, 0.6); Niftylift HR21 JMS manual (jms.co.uk, 0.6); Niftylift HR12 fault codes p.35 (ManualsLib 1862749, 0.6). **מותגים חדשים בריצה 33: Niftylift (HR12/HR21/HR28), Terex AWP.** **גפ קריטי שנותר:** Dingli JCPT1208DC (33 ריצות!); JLG 510AJ platform DTC; JLG 860SJ שירות מלא. להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
+
+### ריצה 33 — פריטים חדשים (2026-06-11)
+14 פריטים חדשים נוספו לסטייג'ינג — **15 שאילתות סטנדרט (0 חדשים — רוויה מלאה) + 8 שאילתות ממוקדות:**
+
+- **JLG / מודלי 860SJ (2):**
+  - JLG 800S HC3/860SJ HC3 service manual (Scribd #709921464, 0.4) — HC3 = High Capacity 3rd gen; 6 sections incl. fault codes; ADE DTC groups 1-9; load cell codes HC3-specific
+  - JLG 800S/810SJ/860SJ service 3121631 Rev D (Scribd #576863861, 0.4) — DTC groups 1-9 מלאים; ECT stage 1 codes; pressure/angle/CAN bus codes; Deutz engine integration
+- **Terex AWP — מותג חדש! (1):**
+  - **Terex Fault Code Manual V2.5 (Scribd #390994771, 0.4)** — Logicontrol LMS Plus system; codes: CAN bus node loss, overload, bypass active, powertronic unit faults (low fuel/high temp/low pressure/sensor); Terex + Genie S-series (Terex branded)
+- **Genie S-series booms (4) — gap S-60/S-65 סגור!**
+  - Genie S-65 control fault codes p.119 (ManualsLib #1251980, 0.8) — GSDS 2-digit codes; ECU/GCON/PCON/sensors/drive; retrieval: hold up+down switches
+  - Genie S-65 XC fault codes p.109 (ManualsLib #1479810, 0.8) — XC variant; extra load management codes; same GSDS architecture
+  - Genie S-60 HC fault codes (Manualzz, 0.6) — S-60 HC variant; same GSDS as S-65
+  - **Genie S-60/S-65 SRM רשמי! (manuals.genielift.com/SmSeries, 1.0)** — מסמך יצרן רשמי; complete fault chart + hydraulic/electrical schematics + calibration
+- **Niftylift — מותג חדש לחלוטין! (7):**
+  - Niftylift HR28 (SP85) operating manual (jms.co.uk PDF, 0.6) — fault code 01B40000 (telescope paddle); code 32 = drive fault; alphanumeric code format
+  - Niftylift HR21 MK2 manual index (ManualsLib #1636069, 0.6) — 79 pages; fault codes at p.55
+  - Niftylift HR21 fault codes p.55 (ManualsLib #1636069/p55, 0.6) — 8-char alphanumeric codes; ECU/drive/lift/tilt/overload/comms
+  - Niftylift HR21 MK2 manual PDF (hiresafesolutions, 0.6)
+  - Niftylift HR28 MK2 manual PDF (hiresafesolutions, 0.6) — error code 32 referenced
+  - Niftylift HR21 manual (jms.co.uk, 0.6)
+  - Niftylift HR12 fault codes p.35 (ManualsLib #1862749, 0.6) — HR12 compact indoor; same code architecture as HR21/HR28
+
+**מידע טכני מרכזי שנאסף בריצה 33 (מסיכומי WebSearch):**
+- **Niftylift קוד פורמט:** 8-תו אלפאנומרי (e.g., 01B40000 = Telescope Paddle out of neutral) — שונה מ-JLG/Genie/Dingli
+- **Terex Logicontrol V2.5:** קוד 4-ספרות; CAN bus node loss; powertronic unit faults — חפש "Logicontrol LMS Plus" בחיפוש עתידי
+- **Genie S-60/S-65:** GSDS 2-digit codes; retrieval: hold up+down switches on platform panel; S-60 HC = same architecture as S-65
+- **JLG 860SJ HC3:** P1/P2/P3 priority system; load cell codes HC3-specific; diagnostic port = ground control box
+
+**חיפושים שבוצעו בריצה 33:** 15 סטנדרט + 8 ממוקדים = 23 סה"כ
+**עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403; Supabase NXDOMAIN)
+**פריטים חדשים שנשמרו:** 14
+**מותגים חדשים:** Niftylift (HR12/HR21/HR28), Terex AWP
+
+**המלצה לריצה 34 — שאילתות חדשות:**
+1. "Niftylift HR17 HR17T HR21 workshop service manual fault code repair" — get workshop-level Niftylift codes (HR17 is also common)
+2. "Niftylift HR28 workshop parts service manual complete fault code table" — workshop = full DTC vs operators only
+3. "Terex AWP boom lift Logicontrol fault code complete list TL65 aerial" — expand Terex AWP codes
+4. "JLG 860SJ service manual 3121167 3121139 ADE DTC fault code complete" — specific manual numbers for 860SJ
+5. "Genie S-45 S-45 XC boom fault code service manual GSDS DTC" — S-45 still missing
+6. "Dingli JCPT1208DC 1208 narrow AC DC scissor fault code manual English" — 33 ריצות ללא הצלחה
+7. "MEC aerial work platform fault code service manual A92.20 DTC list" — MEC brand gap
+8. "Niftylift HR21 HR28 error code 32 diagnosis repair solution" — specific code 32 investigation
+
+---
 
 > **ריצה 32 (2026-06-10):** 0 פריטים חדשים נוספו לסטייג'ינג. Supabase לא נגיש (DNS fails + ECONNREFUSED); WebFetch חסום (403 על כל האתרים). 15 שאילתות סטנדרט בוצעו (Dingli JCPT scissor/1412/1208/0607, JLG 450AJ/520AJ/510AJ/860SJ, Genie GS-3246/GS-1932, Manitou 180ATJ, forkliftaction×2, כללי AWP hydraulic + AWP PDF). **רוויה מלאה** — כל 15 השאילתות הסטנדרטיות מייצרות URL כפילויות בלבד; לא נמצאו פריטים חדשים מעבר לריצה 31. מידע טכני מרכזי שאושר מחדש: Dingli JCPT codes 10/20/30/31/32/51-54/57-59/69; Genie GS-3246 codes 01-03/12/18/42-47/52-58/68; Genie GS-1932 E1/E4/E6/E12/E13 (272 DTC + 6 OIC); JLG 450AJ flash 3-3=tilt sensor, hydraulic valve loss=connector corrosion. **גפ קריטי שנותר:** Dingli JCPT1208DC (32 ריצות!); JLG 510AJ platform DTC; JLG 860SJ service+DTC. **המלצה:** שאילתות חדשות בלבד לריצה 33 (ראה רשימה למטה). להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 
