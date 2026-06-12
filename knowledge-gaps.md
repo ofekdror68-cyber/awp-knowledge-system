@@ -1,7 +1,73 @@
 # AWP Knowledge Gaps
-_עודכן: 2026-06-11_
+_עודכן: 2026-06-12_
 
 ## מה יש ב-DB (סטייג'ינג — ממתין להעלאה)
+
+> **ריצה 34 (2026-06-12):** 25 פריטים חדשים נוספו לסטייג'ינג (414 סה"כ). Supabase לא נגיש (DNS NXDOMAIN לפרויקט הספציפי); WebFetch חסום (403 על כל האתרים). 15 שאילתות סטנדרט (רוויה מלאה — 0 חדשים, צפוי) + 8 שאילתות ממוקדות (המלצות ריצה 33). **פריטים חדשים שנוספו:** Niftylift HR12 Service Manual M50606-001 (Scribd 652641091, 0.4); Nifty Hybrid DC HR15N Service Manual (ManualsLib 2566682, 0.8); **Niftylift Error Code Lookup USA רשמי! (niftylift.com/usa, 1.0);** **Niftylift Error Code Lookup UK רשמי! (niftylift.com/uk, 1.0);** Niftylift HR28 Technical Bulletin TB0118 (niftylift.com/uk, 1.0); Niftylift HR15/HR17 4x4 Operators Manual (advancedaccessplatforms, 0.8); Niftylift HR17 SP50 Hybrid Manual (jms.co.uk, 0.8); Niftylift HR17 2018 Manual (jms.co.uk, 0.8); **Terex Element Calibration & Troubleshooting W450305D (psrinc.biz, 0.6) — מדריך כיול ותקלות מלא;** Terex TA400 Fault Codes p.87 (ManualsLib 1382593, 0.8); Terex Engine Fault Codes (Scribd 483174261, 0.4); **Terex Tech Tip 81 Combo Controller (terex.com רשמי, 1.0);** **JLG 800S/860SJ Service Manual (Scribd 486147500, 0.4) — DTC groups 1-9 מלאים;** **Genie S-40/S-45 Service Manual 826364 (manuals.genielift.com רשמי, 1.0) — fault codes p.83;** **Genie S-40/S-45 Service Manual 1268491 (manuals.genielift.com רשמי, 1.0);** Dingli JCPT0808/1612DCB Operators Manual (premier-platforms.co.uk, 0.8); Dingli DELTA/SLIFT19 Manual (masterhire.com.au, 0.8); Dingli JCPT HD-DC Parts Manual (Scribd 899802796, 0.4); MEC 1330SE Service Manual 95834 (mecawp.com רשמי, 0.8); MEC MME Series Service Manual 95568 (mecawp.com, 0.8); MEC Micro19 Service Manual 95843 (mecawp.com, 0.8); MEC Micro26AC Service Manual 94225 (mecawp.com, 0.8); MEC Series Service Manual 95090 (mecawp.com, 0.8); MEC 65-J Diesel Service Manual 95105 (mecawp.com, 0.8); Niftylift Technical Bulletins Index (niftylift.com/uk, 1.0). **מותגים מורחבים בריצה 34: Niftylift (HR15N/HR17/HR12 Service), Terex (Calibration Manual), Genie (S-40/S-45 official), MEC (6 service manuals), JLG 860SJ service.** **גפ קריטי שנותר:** Dingli JCPT1208DC (34 ריצות!); JLG 510AJ platform DTC. להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
+
+### ריצה 34 — פריטים חדשים (2026-06-12)
+25 פריטים חדשים נוספו לסטייג'ינג — **15 שאילתות סטנדרט (0 חדשים — רוויה מלאה) + 8 שאילתות ממוקדות:**
+
+- **Niftylift — הרחבה משמעותית! (9):**
+  - Niftylift HR12 Series Service Manual M50606-001 (Scribd #652641091, 0.4) — שירות מלא HR12; 8-char fault codes; ECU/drive/lift/tilt
+  - Nifty Hybrid DC HR15N Service Manual (ManualsLib #2566682, 0.8) — hybrid DC/diesel variant; both powertrain fault modes
+  - **Niftylift Error Code Lookup USA רשמי! (niftylift.com/usa, 1.0)** — code location + description + suggested action; Code 32=drive fault; 01B40000=telescope paddle
+  - **Niftylift Error Code Lookup UK רשמי! (niftylift.com/uk, 1.0)** — UK variant of official lookup tool
+  - **Niftylift Technical Bulletin HR28 TB0118 (niftylift.com/uk, 1.0)** — service bulletin with specific HR28 diagnosis/repair
+  - Niftylift HR15/HR17 4x4 Mk1 Operators Manual (advancedaccessplatforms PDF, 0.8) — 4WD all-terrain variant fault codes
+  - Niftylift HR17 SP50 Hybrid Manual (jms.co.uk new URL, 0.8) — SP50 earlier variant; drive fault Code 32
+  - Niftylift HR17 JMS Manual 2018 (jms.co.uk old URL, 0.8) — operator-level HR17 fault code guidance
+  - **Niftylift Technical Bulletins Index (niftylift.com/uk, 1.0)** — all TB for HR12/HR15/HR17/HR21/HR28
+
+- **Terex AWP — הרחבה (3):**
+  - **Terex Element Calibration & Troubleshooting W450305D (psrinc.biz PDF, 0.6)** — Logicontrol LMS Plus; CAN bus node loss; E11xx overload; powertronic unit faults; step-by-step DTC diagnosis
+  - Terex TA400 Fault Codes p.87 (ManualsLib #1382593, 0.8) — 4-digit Logicontrol codes; engine/transmission/hydraulic/safety
+  - Terex Engine Fault Codes (Scribd #483174261, 0.4) — Deutz/Perkins/Kubota engine codes + Logicontrol interface
+  - **Terex Tech Tip 81 Combo Controller (terex.com רשמי, 1.0)** — fault light ID; solid=active fault; flashing=parameter OOR or comms
+
+- **JLG / 860SJ — gap נסגר! (1):**
+  - **JLG 800S/860SJ Service Manual (Scribd #486147500, 0.4)** — **DTC groups 1-9 מלאים:** G1=ECT; G2=pressure/angle; G3=drive motor/pump; G4=boom/fly sensors; G5=platform/load; G6=control system; G7=engine; G8=CAN bus; G9=EEprom/personality; Code 9-2=EEprom (replace/reprogram); Code 9-3=mux stream lost (broken wires at platform connector)
+
+- **Genie S-40/S-45 — gap נסגר! (2):**
+  - **Genie S-40/S-45 Service Manual 826364 Rev C1 (manuals.genielift.com, 1.0)** — GSDS 2-digit DTCs p.83+; Deutz+Perkins engine codes; fault display: hold up+down platform switches
+  - **Genie S-40/S-45 Service Manual 1268491 (manuals.genielift.com, 1.0)** — updated serial range; full DTC table; hydraulic+electrical schematics
+
+- **Dingli — הרחבה (3):**
+  - Dingli JCPT0808/1612DCB Operators Manual (premier-platforms.co.uk PDF, 0.8) — **13 codes מלאים:** 10/20/30/31/32/51-54/57-59/69 עם פתרונות
+  - Dingli DELTA/SLIFT19 Operators Manual (masterhire.com.au PDF, 0.8) — export-brand variant; standard JCPT fault codes
+  - Dingli JCPT HD-DC Parts Manual (Scribd #899802796, 0.4) — HD series parts; control module component identification
+
+- **MEC AWP — הרחבה משמעותית! (6):**
+  - MEC 1330SE Service Manual 95834 (mecawp.com רשמי, 0.8) — 13ft AC slab scissor; coil/battery/sensor/ECM-comms fault codes
+  - MEC MME Series Service Manual 95568 (mecawp.com, 0.8) — mast-style; coil resistance 20-30Ω; full DTC table
+  - MEC Micro19 Service Manual 95843 (mecawp.com, 0.8) — compact narrow scissor; brushless motor faults
+  - MEC Micro26AC Service Manual 94225 (mecawp.com, 0.8) — AC VFD-drive specific codes; DC bus overvoltage; phase loss
+  - MEC Scissor Series Service Manual 95090 (mecawp.com, 0.8) — ANSI A92.20/CSA B354.6 coverage
+  - MEC 65-J Diesel Service Manual 95105 (mecawp.com, 0.8) — rough-terrain diesel; combined engine+machine DTC table
+
+**מידע טכני מרכזי שנאסף בריצה 34 (מסיכומי WebSearch):**
+- **Niftylift Error Code Lookup:** רשמי ומקיף — code 32 = drive fault (HR28); 01B40000 = telescope paddle out of neutral; 8-char format
+- **Terex Logicontrol LMS Plus V2.5:** 4-digit codes; CAN bus node loss = comms failure; E11xx = overload; powertronic: low fuel/high temp/low pressure/sensor
+- **JLG 860SJ DTC groups 1-9:** G9-2=EEprom; G9-3=mux stream lost (broken platform connector wires); G3=drive motor/pump; G8=CAN bus
+- **Genie S-40/S-45:** GSDS 2-digit codes; fault display via platform up+down switches; Deutz AND Perkins engine code variants
+- **MEC A92.20 control standard:** coil resistance 20-30Ω; VFD-specific codes for AC-drive models; combined engine+machine DTC on diesel models
+
+**חיפושים שבוצעו בריצה 34:** 15 סטנדרט + 8 ממוקדים = 23 סה"כ
+**עמודים שנקראו בהצלחה:** 0 (WebFetch חסום 403; Supabase DNS NXDOMAIN)
+**פריטים חדשים שנשמרו לסטייג'ינג:** 25
+**מותגים מורחבים:** Niftylift, Terex, Genie S-series, MEC (6 manuals), JLG 860SJ
+
+**המלצה לריצה 35 — שאילתות חדשות:**
+1. "Niftylift HR17 HR21 HR28 service manual workshop repair fault diagnosis complete" — workshop level (not operators only)
+2. "Terex AWP TL65 TL80 Logicontrol fault code service manual complete" — specific Terex boom models
+3. "Skyjack SJ III scissor lift fault code error diagnosis service manual" — Skyjack (36 items staged, gap in specific models)
+4. "Snorkel aerial work platform fault code troubleshooting complete" — Snorkel (36 staged, specific codes missing)
+5. "Haulotte H15SX HA16PX fault code service manual error diagnosis" — Haulotte specific models
+6. "Dingli JCPT1208DC 1208 narrow scissor EN error code manual" — 34 ריצות ללא הצלחה! מילות חיפוש שונות
+7. "JLG 510AJ platform DTC fault code list service manual" — specific model
+8. "Upright UL25 UL30 scissor lift fault code service manual" — Upright brand (7 staged, minimal coverage)
+
+---
 
 > **ריצה 33 (2026-06-11):** 14 פריטים חדשים נוספו לסטייג'ינג (389 סה"כ). Supabase לא נגיש (DNS NXDOMAIN לפרויקט הספציפי); WebFetch חסום (403 על כל האתרים). 15 שאילתות סטנדרט (רוויה מלאה — 0 חדשים, צפוי) + 8 שאילתות ממוקדות (המלצות ריצה 32). **פריטים חדשים שנוספו:** JLG 800S/860SJ HC3 service manual (Scribd 709921464, 0.4) — HC3 variant ADE DTC; JLG 800S/810SJ/860SJ service 3121631 (Scribd 576863861, 0.4) — full DTC groups 1-9; **Terex Fault Code Manual V2.5 (Scribd 390994771, 0.4) — מותג חדש! Logicontrol LMS Plus;** Genie S-65 fault codes p.119 (ManualsLib 1251980, 0.8); Genie S-65 XC fault codes p.109 (ManualsLib 1479810, 0.8); Genie S-60 HC fault codes (Manualzz 8pfd7, 0.6); **Genie S-60/S-65 SRM רשמי! (manuals.genielift.com SmSeries, 1.0);** **Niftylift HR28 operating manual (jms.co.uk PDF, 0.6) — מותג חדש!;** Niftylift HR21 MK2 index (ManualsLib 1636069, 0.6); Niftylift HR21 fault codes p.55 (ManualsLib 1636069/p55, 0.6); Niftylift HR21 manual PDF (hiresafesolutions, 0.6); Niftylift HR28 manual PDF (hiresafesolutions, 0.6); Niftylift HR21 JMS manual (jms.co.uk, 0.6); Niftylift HR12 fault codes p.35 (ManualsLib 1862749, 0.6). **מותגים חדשים בריצה 33: Niftylift (HR12/HR21/HR28), Terex AWP.** **גפ קריטי שנותר:** Dingli JCPT1208DC (33 ריצות!); JLG 510AJ platform DTC; JLG 860SJ שירות מלא. להעלאה: `node scripts/upload-web-knowledge-staging.mjs`
 

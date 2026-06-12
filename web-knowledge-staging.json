@@ -4346,5 +4346,280 @@
     "equipment_model": "Niftylift HR12",
     "topic": "fault_codes",
     "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.scribd.com/document/652641091/Service-manual-M50606-001",
+    "title": "Niftylift HR12 Series Service Manual M50606-001 | Scribd",
+    "content_summary": "Niftylift HR12 series service manual (Part M50606-001) on Scribd. The HR12 is a compact indoor narrow-track scissor lift. Service manual covers: fault code system using 8-character alphanumeric codes (same architecture as HR21/HR28), drive system, hydraulics, electrical/ECU troubleshooting, overload and tilt protection. Key fault codes follow Niftylift's alphanumeric format. Includes wiring diagrams, hydraulic schematics, and calibration procedures for HR12 series. Essential workshop-level document for Niftylift HR12 technicians.",
+    "brands_mentioned": [
+      "Niftylift"
+    ],
+    "equipment_model": "Niftylift HR12",
+    "topic": "fault_codes",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://www.manualslib.com/manual/2566682/Nifty-Hybrid-Dc-Hr15n-Series.html",
+    "title": "NIFTY HYBRID DC HR15N Series Service Manual | ManualsLib",
+    "content_summary": "Nifty Hybrid DC HR15N series service and repair manual on ManualsLib. The HR15N is a hybrid diesel-electric narrow-track self-propelled boom lift (working height ~15m). Service manual covers: fault code diagnosis using Niftylift's 8-character alphanumeric format, drive system troubleshooting, hydraulic system repair, electrical/ECU diagnostics. Includes wiring diagrams and hydraulic schematics. The HR15N hybrid system integrates diesel engine and battery drive — fault codes cover both powertrain modes.",
+    "brands_mentioned": [
+      "Niftylift"
+    ],
+    "equipment_model": "Niftylift HR15N",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.niftylift.com/usa/support/error-code-lookup",
+    "title": "Niftylift Error Code Lookup — Official USA Support | Niftylift",
+    "content_summary": "Official Niftylift error code lookup tool (USA website). Online search for all Niftylift machine error codes providing: location of the fault, description of the fault condition, and suggested corrective action. Covers all current Niftylift models: HR12, HR15, HR17, HR21, HR28, and SP series. Error codes use 8-character alphanumeric format. Known codes: Code 32 = Drive fault (HR28); Code 01B40000 = Telescope paddle out of neutral. This is the authoritative official source for Niftylift fault code definitions and initial troubleshooting guidance.",
+    "brands_mentioned": [
+      "Niftylift"
+    ],
+    "equipment_model": "Niftylift HR12, Niftylift HR17, Niftylift HR21, Niftylift HR28",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.niftylift.com/uk/support/error-code-lookup",
+    "title": "Niftylift Error Code Lookup — Official UK Support | Niftylift",
+    "content_summary": "Official Niftylift error code lookup tool (UK website). Provides online search for all Niftylift machine error codes including: location of the fault, description of the fault condition, and suggested action/repair. Covers all Niftylift models: HR12, HR15, HR17, HR21, HR28, SP series. Error codes use Niftylift's 8-character alphanumeric format (e.g., 01B40000 = telescope paddle out of neutral; code 32 = drive fault on HR28). Authoritative official source for fault code definitions. Access without login for basic lookups.",
+    "brands_mentioned": [
+      "Niftylift"
+    ],
+    "equipment_model": "Niftylift HR12, Niftylift HR17, Niftylift HR21, Niftylift HR28",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.niftylift.com/uk/support/technical-bulletins/hr28-tb0118",
+    "title": "HR28 Technical Bulletin TB0118 | Niftylift UK Official",
+    "content_summary": "Official Niftylift UK technical bulletin TB0118 for the HR28 model. Niftylift technical bulletins contain important service updates, fault diagnosis notes, and safety/repair procedures for HR28 field technicians. The HR28 (SP85) is a self-propelled articulating boom with 28m working height. TB0118 provides specific diagnosis and repair procedure for a known HR28 issue. Niftylift issues technical bulletins (TB series) for all models through the UK support portal — these supplement the operating manual with field-discovered fault patterns and corrections.",
+    "brands_mentioned": [
+      "Niftylift"
+    ],
+    "equipment_model": "Niftylift HR28",
+    "topic": "maintenance",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://advancedaccessplatforms.co.uk/wp-content/uploads/2023/10/Niftylift-Operators-Manual-HR15-HR17-4X4.pdf",
+    "title": "Niftylift HR15/HR17 4x4 Mk1 Operators Manual | Advanced Access Platforms",
+    "content_summary": "Niftylift HR15 and HR17 4x4 Mk1 Series operators manual covering operating procedures, safety systems, and fault indicator overview. HR17 4x4 is a hybrid diesel-electric telescopic boom with 4-wheel drive (all-terrain), working height ~17m. HR15 4x4 working height ~15m. Fault code sections describe LED fault indicator patterns and initial reset procedures using Niftylift's 8-char alphanumeric format. Manual covers: emergency lowering procedures, hydraulic system checks, battery/charging system monitoring, and maintenance intervals. 4x4 variant adds terrain-related fault conditions.",
+    "brands_mentioned": [
+      "Niftylift"
+    ],
+    "equipment_model": "Niftylift HR15, Niftylift HR17",
+    "topic": "maintenance",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.jms.co.uk/wp-content/uploads/resources/HR17_operators_manual.pdf",
+    "title": "Niftylift HR17 SP50 Hybrid Operating Manual | JMS Access",
+    "content_summary": "Niftylift HR17 SP50 Hybrid series operators manual (JMS Access). HR17 SP50 is a self-propelled hybrid boom lift with 17m working height. Manual covers: operating controls, safety systems, fault indicator basics using Niftylift's 8-character alphanumeric code format, emergency lowering, maintenance checks. Key fault conditions: drive faults (Code 32), lift faults, tilt/overload protection activation, communication errors between platform and ground controls. The SP50 designation indicates an earlier HR17 variant with slightly different control architecture from later MK2 series.",
+    "brands_mentioned": [
+      "Niftylift"
+    ],
+    "equipment_model": "Niftylift HR17",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://jms.co.uk/wp-content/uploads/2018/02/JMS-Operating-Manual-Niftylift-HR-17.pdf",
+    "title": "Niftylift HR17 Operating Manual | JMS Access (2018 version)",
+    "content_summary": "JMS Access 2018 operating manual for Niftylift HR17 boom lift. Contains operator-level fault code guidance for Niftylift HR17 including: how to read the fault display, common fault codes in Niftylift's 8-character alphanumeric format, and initial troubleshooting steps. HR17 uses same control architecture as HR21 and HR28 models with onboard ECU providing real-time fault detection across drive, lift, hydraulic, and safety systems. Reset procedure: cycle E-stop and main key switch after clearing fault condition.",
+    "brands_mentioned": [
+      "Niftylift"
+    ],
+    "equipment_model": "Niftylift HR17",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "http://psrinc.biz/wp-content/uploads/2015/09/W450305D-Element-Terex-Calibration-Troubleshooting-English.pdf",
+    "title": "Terex AWP Element System Calibration and Troubleshooting Manual W450305D | PSR Inc",
+    "content_summary": "Terex aerial work platform Element control system calibration and troubleshooting manual (Part W450305D). Covers Terex AWP models with the Element/Logicontrol LMS Plus control system. Key contents: controller calibration procedures, reading fault codes via Logicontrol LMS Plus, 4-digit fault codes, CAN bus communication fault diagnosis, load sensor calibration, platform/chassis sensor checks. Fault code categories: CAN bus node loss (communication failure between controllers), overload (E11xx series), bypass active, powertronic unit faults (low fuel/high temperature/low pressure/sensor faults). Step-by-step DTC diagnosis for drive, lift, and engine subsystems.",
+    "brands_mentioned": [
+      "Terex"
+    ],
+    "equipment_model": "Terex Element AWP",
+    "topic": "fault_codes",
+    "reliability_score": 0.6
+  },
+  {
+    "url": "https://www.manualslib.com/manual/1382593/Terex-Ta400.html?page=87",
+    "title": "List of Fault Codes — Terex TA400 Operation Manual Page 87 | ManualsLib",
+    "content_summary": "Terex TA400 fault code list from operation manual page 87 on ManualsLib. Contains complete fault code table using Terex's Logicontrol fault management system displaying 4-digit codes on the instrument panel. Fault code categories: engine management (coolant temperature, oil pressure, fuel system), transmission faults, hydraulic system faults, and safety system faults. Key codes include CAN bus communication faults (node loss between ECU modules), load/overload conditions, and sensor out-of-range faults. Full DTC access requires Terex diagnostic software beyond the instrument panel display codes.",
+    "brands_mentioned": [
+      "Terex"
+    ],
+    "equipment_model": "Terex TA400",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://es.scribd.com/document/483174261/Terex-Engine-Fault-Codes",
+    "title": "Terex AWP Engine Fault Codes | Scribd",
+    "content_summary": "Terex AWP engine fault codes document covering engine-related DTC codes for Terex aerial work platforms. Covers Deutz, Perkins, and Kubota engine fault code integration with Terex machine control system. Engine fault codes displayed on Terex instrument panel or through Logicontrol diagnostic interface. Key categories: coolant temperature sensor (overheating/low coolant level), oil pressure (low pressure fault), fuel system (low fuel/fuel pressure), throttle position sensor, speed sensor, and injector faults. Engine fault codes appear alongside machine fault codes on Logicontrol LMS Plus display — cross-reference required for full diagnosis.",
+    "brands_mentioned": [
+      "Terex"
+    ],
+    "equipment_model": "Terex AWP (multiple models)",
+    "topic": "fault_codes",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://www.terex.com/docs/librariesprovider7/tech-tips/techtip_81.pdf",
+    "title": "Combo Controller Fault Light Identification — Terex Tech Tip 81 | Terex Official",
+    "content_summary": "Official Terex technical tip #81: Combo Controller Fault Light Identification for Terex aerial work platforms. Explains fault light indicator meanings on Terex AWP combo controller units. Fault light patterns: solid = active system fault; flashing = parameter out of range or communication fault; off = normal operation. Covers Terex AWP models with Combo Controller. Troubleshooting steps: identify flash pattern, record fault code, connect diagnostic tool for full DTC readout, check CAN bus connections if communication fault indicated. Combo Controller integrates drive and lift control in one unit — fault isolation requires distinguishing drive vs lift fault origin.",
+    "brands_mentioned": [
+      "Terex"
+    ],
+    "equipment_model": "Terex AWP (Combo Controller models)",
+    "topic": "electrical",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://www.scribd.com/document/486147500/JLG-800S-860SJ-service-manual-pdf",
+    "title": "JLG 800S / 860SJ Telescopic Boom Lift Service and Maintenance Manual PDF | Scribd",
+    "content_summary": "JLG 800S and 860SJ telescopic boom lift service and maintenance manual on Scribd. Contains complete DTC groups 1-9: Group 1 (ECT/engine cooling temp), Group 2 (pressure/angle sensors), Group 3 (drive motor and pump), Group 4 (boom/fly sensors), Group 5 (platform/load cell), Group 6 (control system), Group 7 (engine interface), Group 8 (CAN bus communication), Group 9 (EEprom/personality data). Key fault codes: 9-2 (EEprom fault — replace/reprogram control module), 9-3 (mux stream not updated — check platform connector wiring for broken wires), flash code 3/3 (joystick/basket angle sensor calibration fault). Includes hydraulic schematics, electrical diagrams, and calibration procedures for 860SJ.",
+    "brands_mentioned": [
+      "JLG"
+    ],
+    "equipment_model": "JLG 800S, JLG 860SJ",
+    "topic": "fault_codes",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://manuals.genielift.com/parts%20and%20service%20manuals/data/Service/Stick%20Booms/826364.pdf",
+    "title": "Genie S-40 / S-45 Boom Lift Service Manual Part 826364 Rev C1 | Genie Lift Official",
+    "content_summary": "Official Genie S-40 and S-45 telescopic boom lift service and repair manual (Part No. 826364, Rev C1, October 2014, from manuals.genielift.com). Contains: complete control system fault code list using GSDS (Genie SmartLink Diagnostic System) 2-digit DTC codes; engine fault codes for Deutz and Perkins engine variants; fault display procedure (hold up+down platform switches simultaneously). GSDS fault code categories: drive system faults, lift/boom faults, engine interface codes, tilt and load sensor codes, communication/CAN bus faults. Control DTC codes start on page 83. Full hydraulic schematics, electrical wiring diagrams, and calibration procedures included.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Genie S-40, Genie S-45",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://manuals.genielift.com/parts%20and%20service%20manuals/data/Service/Stick%20Booms/1268491.pdf",
+    "title": "Genie S-40 / S-45 Updated Service and Repair Manual Part 1268491 | Genie Lift Official",
+    "content_summary": "Official Genie S-40 and S-45 boom lift updated service manual (Part No. 1268491, from manuals.genielift.com). Covers updated control system variants with full DTC fault code table, cylinder and hydraulic component repair procedures, electrical system diagnosis. Fault codes follow Genie's GSDS 2-digit format categorized into: drive motor faults, lift/boom faults, load sensor faults, tilt sensor faults, communication faults, and control board faults. Covers later production serial number range for S-40/S-45 models with updated GSDS architecture. Essential service reference for S-40/S-45 field repairs.",
+    "brands_mentioned": [
+      "Genie"
+    ],
+    "equipment_model": "Genie S-40, Genie S-45",
+    "topic": "fault_codes",
+    "reliability_score": 1.0
+  },
+  {
+    "url": "https://premier-platforms.co.uk/wp-content/uploads/2020/07/JCPT0808-JCPT1612DCB-Operatots-manual.pdf",
+    "title": "Dingli JCPT0808 / JCPT1612DCB Self-Propelled Scissor Lift Operator's Manual | Premier Platforms",
+    "content_summary": "Operator's manual for Dingli JCPT0808 and JCPT1612DCB self-propelled DC scissor lifts (Premier Platforms UK). Fault code section with complete error indicator readout: 10 (General Alarm ECU), 20 (General Alarm TM1 — Traction Motor 1 controller), 30 (General Alarm PCU), 31 (PCU CPU0 Fault), 32 (PCU CPU1 Fault), 51 (ECU Alarm), 52 (PCU Alarm), 53 (TM1 Alarm), 54 (Pressure Sensor Error), 57 (Overload — reduce load below rated capacity), 58 (Pothole Protection Activated — move to level ground, reset guards, clean debris), 59 (High Position Limit), 69 (Power Relay Sleep — restart system, check battery charge and key switch). Emergency descent and maintenance schedules included.",
+    "brands_mentioned": [
+      "Dingli"
+    ],
+    "equipment_model": "Dingli JCPT0808, Dingli JCPT1612DCB",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://masterhire.com.au/wp-content/uploads/2015/02/SLIFT19_S06-E_DINGLI_DELTA.pdf",
+    "title": "Dingli DELTA Electric Scissor Lift Operator's Manual (SLIFT19 S06-E) | Master Hire Australia",
+    "content_summary": "Operator's manual for Dingli DELTA (SLIFT19 S06-E) electric scissor lift deployed by Master Hire Australia. Fault indicator readout uses standard Dingli alarm codes: 10 (ECU alarm), 20 (TM1/Traction Motor 1 alarm), 30 (PCU alarm), 57 (overload — reduce load), 58 (pothole protection activated — move to level surface and reset), 69 (power relay sleep — cycle E-stop and key switch). Reset procedure: push then pull red Emergency Stop button. Maintenance schedule, battery charging requirements, and emergency descent procedure for Australian-market operation. The DELTA series represents Dingli's export-branded scissor lifts with standard JCPT control architecture.",
+    "brands_mentioned": [
+      "Dingli"
+    ],
+    "equipment_model": "Dingli DELTA (SLIFT19)",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.scribd.com/document/899802796/Dingli-JCPT-HD-DC-Parts-Manual",
+    "title": "Dingli JCPT HD-DC Electric Scissor Lift Parts Manual | Scribd",
+    "content_summary": "Dingli JCPT HD-DC electric scissor lift parts manual on Scribd. The HD-DC series covers Dingli's heavy-duty DC-powered scissor lifts. Parts manual includes: electrical system component breakdown, hydraulic system parts identification, control module (DCM/PCU) components, and fault indicator system reference. HD-DC uses standard Dingli JCPT fault codes: Code 10 (ECU alarm), Code 20 (TM1 alarm — traction motor controller), Code 30 (PCU alarm — power control unit), Code 57 (overload), Code 58 (pothole protection), Code 59 (high position limit), Code 69 (power relay sleep). Parts breakdown aids fault isolation by identifying specific control module and sensor components.",
+    "brands_mentioned": [
+      "Dingli"
+    ],
+    "equipment_model": "Dingli JCPT HD-DC",
+    "topic": "parts",
+    "reliability_score": 0.4
+  },
+  {
+    "url": "https://www.mecawp.com/wp-content/uploads/2020/01/95834-A92.20.pdf",
+    "title": "MEC 1330SE Slab Scissor Lift Service & Parts Manual Part #95834 | MEC AWP Official",
+    "content_summary": "MEC 1330SE slab scissor lift complete service and parts manual (Part #95834, March 2026 update, mecawp.com). Covers control system fault codes using MEC A92.20 control standard. Key sections: Section 11 (Control System) with complete DTC table; hydraulic troubleshooting; electrical system diagnosis; component replacement. MEC 1330SE: 13ft platform height, 500 lb capacity, AC powered. Fault categories: hydraulic coil faults (open/short circuit for each valve), battery and charging system faults, sensor faults (tilt/height/pressure), control communication errors between platform ECM and ground ECM. Full wiring schematics and hydraulic circuit diagrams included.",
+    "brands_mentioned": [
+      "MEC"
+    ],
+    "equipment_model": "MEC 1330SE",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.mecawp.com/wp-content/uploads/2021/05/95568-A92.20.pdf",
+    "title": "MEC MME Series Mast Scissor Lift Service & Parts Manual Part #95568 | MEC AWP Official",
+    "content_summary": "MEC MME (Mast Series) scissor lift complete service and parts manual (Part #95568, June 2026 update, mecawp.com). Covers all MME mast-style models with A92.20 control system. Section 11 (Control System) contains complete fault code table: battery/power faults (low voltage, charger fault), hydraulic coil open/short circuit codes (each valve individually monitored), sensor faults (tilt sensor activation, height/position sensor out of range, pressure sensor), communication errors between platform ECM and ground ECM control boards. Coil resistance test specification: 20-30Ω. Includes wiring diagrams and hydraulic schematics.",
+    "brands_mentioned": [
+      "MEC"
+    ],
+    "equipment_model": "MEC MME Series",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.mecawp.com/wp-content/uploads/2020/01/95843-A92.20.pdf",
+    "title": "MEC Micro19 Compact Scissor Lift Service & Parts Manual Part #95843 | MEC AWP Official",
+    "content_summary": "MEC Micro19 compact indoor/slab scissor lift service and parts manual (Part #95843, February 2026 update, mecawp.com). Narrow-width electric scissor for restricted-access areas. A92.20 control standard fault codes on compact ground control panel. Fault categories: electrical drive/motor faults (motor overload, brush wear), hydraulic coil errors (up/down valve open or short circuit), battery low voltage detection, tilt sensor activation, pothole guard faults, and ECM-to-ECM communication errors. Includes brushless motor service procedures and compact hydraulic unit maintenance.",
+    "brands_mentioned": [
+      "MEC"
+    ],
+    "equipment_model": "MEC Micro19",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.mecawp.com/wp-content/uploads/2020/01/94225-A92.20.pdf",
+    "title": "MEC Micro26AC AC Scissor Lift Service & Parts Manual Part #94225 | MEC AWP Official",
+    "content_summary": "MEC Micro26AC AC-motor-driven compact scissor lift service and parts manual (Part #94225, September 2025 update, mecawp.com). Uses variable frequency drive (VFD/inverter) for AC motor control. A92.20 control standard. AC-drive specific fault codes: VFD faults (motor overtemperature, phase loss, DC bus overvoltage), AC motor protection alongside standard MEC faults (hydraulic coil faults, tilt sensor, pothole protection, ECM communication). Inverter/VFD diagnostic codes unique to AC-drive variant. Includes inverter troubleshooting flowchart and motor resistance testing procedures.",
+    "brands_mentioned": [
+      "MEC"
+    ],
+    "equipment_model": "MEC Micro26AC",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.mecawp.com/wp-content/uploads/2020/06/95090-A92.20.pdf",
+    "title": "MEC Scissor Lift Series Service & Parts Manual Part #95090 | MEC AWP Official",
+    "content_summary": "MEC scissor lift series service and parts manual (Part #95090, April 2026, mecawp.com). Covers MEC scissor lift models per ANSI A92.20-2020 and CSA B354.6-2019 standards. Section 11 control system fault codes with full DTC table. Standard MEC fault code categories: hydraulic coil faults (open/short), battery/charging system faults, sensor system (tilt/height/pressure), ECM communication errors, safety system (emergency stop, limit switches). Complete wiring harness diagrams, hydraulic system circuits, and calibration procedures for platform and ground control modules.",
+    "brands_mentioned": [
+      "MEC"
+    ],
+    "equipment_model": "MEC Scissor Lift Series",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.mecawp.com/wp-content/uploads/2020/06/95105-SCH-A92.20.pdf",
+    "title": "MEC 65-J Diesel Rough-Terrain Scissor Lift Service Manual Part #95105 | MEC AWP Official",
+    "content_summary": "MEC 65-J diesel engine-powered rough-terrain scissor lift service manual (Part #95105, June 2023, mecawp.com). The 65-J is a rough-terrain diesel scissor with 65ft working height. Covers: diesel engine fault codes (Deutz/Perkins integration with MEC controller), hydraulic system troubleshooting, drive/steer system diagnosis, and MEC A92.20 control system fault codes. Combined DTC table shows engine ECU codes and MEC machine codes together. Engine-to-machine interface wiring schematics included. Control system section covers fault diagnosis specific to engine-powered rough-terrain models including engine protection faults that inhibit machine functions.",
+    "brands_mentioned": [
+      "MEC"
+    ],
+    "equipment_model": "MEC 65-J",
+    "topic": "fault_codes",
+    "reliability_score": 0.8
+  },
+  {
+    "url": "https://www.niftylift.com/uk/support/technical-bulletins",
+    "title": "Technical Bulletins — Niftylift UK Official Support Portal",
+    "content_summary": "Official Niftylift UK technical bulletins index covering all current Niftylift models (HR12, HR15, HR17, HR21, HR28, SP series). Technical bulletins (TB series) address known issues, safety notices, software updates, component revision notes, and specific repair procedures discovered in field service. Key bulletin TB0118 covers specific HR28 fault/repair. Niftylift bulletins supplement operators manuals with field-discovered fault patterns, control system updates, and corrective actions. Essential resource for Niftylift field technicians — bulletins are model-specific, indexed by machine model and serial number range.",
+    "brands_mentioned": [
+      "Niftylift"
+    ],
+    "equipment_model": "Niftylift HR12, Niftylift HR17, Niftylift HR21, Niftylift HR28",
+    "topic": "maintenance",
+    "reliability_score": 1.0
   }
 ]
